@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://leonardobfn.github.io/webpage/index.html</loc>
-    <lastmod>2024-04-22T17:22:02.284Z</lastmod>
+    <lastmod>2024-04-22T19:26:36.163Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leonardobfn.github.io/webpage/Cursos/Introducao_R/Introducao_R.html</loc>
+    <lastmod>2024-04-22T17:47:59.724Z</lastmod>
   </url>
   <url>
     <loc>https://leonardobfn.github.io/webpage/about.html</loc>
     <lastmod>2024-04-22T17:22:02.286Z</lastmod>
   </url>
   <url>
-    <loc>https://leonardobfn.github.io/webpage/Cursos/Introducao_R/Introducao_R.html</loc>
-    <lastmod>2024-04-22T17:47:59.724Z</lastmod>
+    <loc>https://leonardobfn.github.io/webpage/Cursos/Probabilidade_Estatistica/Probabilidade_Estatistica.html</loc>
+    <lastmod>2024-04-22T19:08:12.317Z</lastmod>
   </url>
 </urlset>

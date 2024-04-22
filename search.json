@@ -2,19 +2,12 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "webpage",
+    "title": "Prof. Leonardo Brandão Freitas do Nascimento",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "text": "Doutor em Estatística pela Universidade Federal de Minas Gerais (UFMG). Mestre em Estatística pela Universidade Federal de Minas Gerais (UFMG) e graduado pela Universidade Federal do Amazonas (UFAM). Professor Adjunto C — Nível I no Departamento de Estatística da UFAM. Possuo experiência na linguagem de programação R, utilizada de maneira particular na análise de dados climáticos, com enfoque no estado do Amazonas.",
     "crumbs": [
       "Home"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "Cursos/Introducao_R/Introducao_R.html",
@@ -23,7 +16,7 @@
     "section": "",
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "Aulas",
+      "Cursos",
       "Introdução ao R",
       "Conceitos Iniciais"
     ]
@@ -35,9 +28,30 @@
     "section": "",
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "Aulas",
+      "Cursos",
       "Introdução ao R",
       "Conceitos Iniciais"
     ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Probabilidade_Estatistica.html",
+    "href": "Cursos/Probabilidade_Estatistica/Probabilidade_Estatistica.html",
+    "title": "Probabilidade_Estatistica oih",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Probabilidade_Estatistica.html#quarto",
+    "href": "Cursos/Probabilidade_Estatistica/Probabilidade_Estatistica.html#quarto",
+    "title": "Probabilidade_Estatistica oih",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
   }
 ]
