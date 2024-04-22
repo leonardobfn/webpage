@@ -17,10 +17,10 @@ website:
           
       - section: "Aulas"
         contents:
-          -  section: "Probabilidade e Estatistica"
+          -  section: "Introdução ao R"
              contents: 
-              # - href: Cursos/Probabilidade_Estatistica/Aulas/1-Conceitos_Iniciais/Conceitos_Iniciais.qmd
-                # text: "Conceitos Iniciais"
+              - href: Cursos/Introducao_R/Introducao_R.qmd
+                text: "Conceitos Iniciais"
           
               
 
