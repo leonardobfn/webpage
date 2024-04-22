@@ -1,0 +1,51 @@
+project:
+  type: website
+  
+website:
+  title: "Leonardo Brandão F. do Nascimento"
+  page-navigation: true
+  sidebar: 
+    style: floating
+    search: true
+    contents:
+      - href: index.qmd
+        text: Home
+        
+      - section: "Basics"
+        contents:
+          - index.qmd
+          
+      - section: "Aulas"
+        contents:
+          -  section: "Probabilidade e Estatistica"
+             contents: 
+              # - href: Cursos/Probabilidade_Estatistica/Aulas/1-Conceitos_Iniciais/Conceitos_Iniciais.qmd
+                # text: "Conceitos Iniciais"
+          
+              
+
+
+# website:
+#   title: "leonardo-site"
+#   navbar:
+#     left:
+#       - href: index.qmd
+#         text: Home
+#       - about.qmd
+#       - href: 
+#         text: A
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+revealjs:
+  output-ext: "slides.html"
+  # showNotes: true
+  # controls: true
+  # pdf-separate-fragments: true
+  # slide-number: true
+  # pdf-max-pages-per-slide: true
+  
