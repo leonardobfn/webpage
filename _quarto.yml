@@ -2,7 +2,7 @@ project:
   type: website
   
 website:
-  title: "Leonardo Brandão F. do Nascimento"
+  title: ""
   page-navigation: true
   sidebar: 
     style: floating
@@ -11,16 +11,20 @@ website:
       - href: index.qmd
         text: Home
         
-      - section: "Basics"
-        contents:
-          - index.qmd
+      # - section: "Basics"
+      #   contents:
+      #     - index.qmd
           
-      - section: "Aulas"
+      - section: "Cursos"
         contents:
           -  section: "Introdução ao R"
              contents: 
-              - href: Cursos/Introducao_R/Introducao_R.qmd
-                text: "Conceitos Iniciais"
+              - href: Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.qmd
+                text: "Apresentação do R e Rstudio"
+          # -  section: "Probabilidade e Estatística"
+          #    contents: 
+          #     - href: Cursos/Probabilidade_Estatistica/Probabilidade_Estatistica.qmd
+          #       text: "Conceitos Iniciais"
           
               
 

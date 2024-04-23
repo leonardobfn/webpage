@@ -1,11 +1,15 @@
 ---
-title: "webpage"
+title: "Prof. Leonardo Brandão \n Freitas do Nascimento"
+format: html
+engine: knitr
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
+```{css, echo = FALSE}
+.justify {
+  text-align: justify !important
+}
 ```
+
+
+
+Doutor em Estatística pela Universidade Federal de Minas Gerais (UFMG). Mestre em Estatística pela Universidade Federal de Minas Gerais (UFMG) e graduado pela Universidade Federal do Amazonas (UFAM). Professor Adjunto C — Nível I no Departamento de Estatística da UFAM. Possuo experiência na linguagem de programação R, utilizada de maneira particular na análise de dados climáticos, com enfoque no estado do Amazonas.
