@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Apresentação do R e Rstudio</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../index.html" rel="prev">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cursos</li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html">Introdução ao R</a></li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html">Apresentação do R e Rstudio</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Cursos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Introdução ao R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Apresentação do R e Rstudio</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sumário</h2>
+   
+  <ul>
+  <li><a href="#r" id="toc-r" class="nav-link active" data-scroll-target="#r">R</a></li>
+  <li><a href="#rstudio" id="toc-rstudio" class="nav-link" data-scroll-target="#rstudio">RStudio</a></li>
+  <li><a href="#instalação-do-r-e-rstudio" id="toc-instalação-do-r-e-rstudio" class="nav-link" data-scroll-target="#instalação-do-r-e-rstudio">Instalação do R e RStudio</a></li>
+  <li><a href="#apresentação-do-rstudio" id="toc-apresentação-do-rstudio" class="nav-link" data-scroll-target="#apresentação-do-rstudio">Apresentação do RStudio</a>
+  <ul class="collapse">
+  <li><a href="#telas" id="toc-telas" class="nav-link" data-scroll-target="#telas">Telas</a></li>
+  <li><a href="#cheatsheets" id="toc-cheatsheets" class="nav-link" data-scroll-target="#cheatsheets">Cheatsheets</a></li>
+  </ul></li>
+  <li><a href="#caminhos-e-diretório-de-trabalho" id="toc-caminhos-e-diretório-de-trabalho" class="nav-link" data-scroll-target="#caminhos-e-diretório-de-trabalho">Caminhos e Diretório de trabalho</a>
+  <ul class="collapse">
+  <li><a href="#caminhos" id="toc-caminhos" class="nav-link" data-scroll-target="#caminhos">Caminhos</a></li>
+  <li><a href="#caminho-absoluto" id="toc-caminho-absoluto" class="nav-link" data-scroll-target="#caminho-absoluto">Caminho Absoluto</a></li>
+  <li><a href="#caminho-relativo" id="toc-caminho-relativo" class="nav-link" data-scroll-target="#caminho-relativo">Caminho Relativo</a></li>
+  <li><a href="#diretório-de-trabalho" id="toc-diretório-de-trabalho" class="nav-link" data-scroll-target="#diretório-de-trabalho">Diretório de trabalho</a></li>
+  <li><a href="#observações" id="toc-observações" class="nav-link" data-scroll-target="#observações">Observações</a></li>
+  </ul></li>
+  <li><a href="#projetos" id="toc-projetos" class="nav-link" data-scroll-target="#projetos">Projetos</a>
+  <ul class="collapse">
+  <li><a href="#configuração" id="toc-configuração" class="nav-link" data-scroll-target="#configuração">Configuração</a></li>
+  </ul></li>
+  <li><a href="#fluxo-de-trabalho" id="toc-fluxo-de-trabalho" class="nav-link" data-scroll-target="#fluxo-de-trabalho">Fluxo de Trabalho</a></li>
+  <li><a href="#git-e-github" id="toc-git-e-github" class="nav-link" data-scroll-target="#git-e-github">Git e GitHub</a></li>
+  <li><a href="#atividade" id="toc-atividade" class="nav-link" data-scroll-target="#atividade">Atividade</a></li>
+  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cursos</li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html">Introdução ao R</a></li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html">Apresentação do R e Rstudio</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Apresentação do R e Rstudio</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="r" class="level1">
+<h1>R</h1>
+<ul>
+<li><p>R é uma linguagem e um ambiente de desenvolvimento integrado, livre e gratuito;</p></li>
+<li><p>O software R disponibiliza recursos para vários tipos de análises:</p>
+<ul>
+<li><p>Estatística descritiva: medidas de posição, dispersão, tabelas e gráficos;</p></li>
+<li><p>Modelos lineares, não lineares, generalizados: estimação dos parâmetros, resíduos, métodos de diagnóstico;</p></li>
+<li><p>Análise multivariada: Análise de componentes principais, clusters, fatorial;</p></li>
+<li><p>Aprendizado de Máquina</p></li>
+<li><p>DeepLearning,</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="rstudio" class="level1">
+<h1>RStudio</h1>
+<ul>
+<li><p>O RStudio é uma interface de desenvolvimento integrada (IDE) para a linguagem de programação R;</p></li>
+<li><p>Diferentemente do R em que todas as versões são gratuitas, o RStudio disponibiliza versões gratuitas e versões pagas.</p></li>
+<li><p>O <a href="https://code.visualstudio.com/">vs code</a> é Outra IDE que permite utilizar códigos R.</p></li>
+</ul>
+</section>
+<section id="instalação-do-r-e-rstudio" class="level1">
+<h1>Instalação do R e RStudio</h1>
+<ul>
+<li><p>A seguir é apresentado os passos para instalação do R para o sistema operacional Windows. Para outros sistemas operacionais, clique <a href="https://livro.curso-r.com/1-1-instalacao-do-r.html"><u>aqui</u></a></p></li>
+<li><p><strong>Passo a passo de instalação do R para Windows:</strong></p>
+<ol type="1">
+<li><p>Acesse o site do CRAN (Comprehensive R Archive Network) para Windows <a href="https://cran.r-project.org/bin/windows/base/"><u>aqui</u></a></p></li>
+<li><p>Baixe a versão mais recente do R para Windows.</p></li>
+<li><p>Execute o instalador e siga as instruções para completar a instalação.</p></li>
+</ol></li>
+<li><p><strong>Passo a passo de instalação do RStudio</strong></p></li>
+<li><p>O <strong>RStudio</strong> é uma IDE (Integrated Development Environment) para a linguagem R que oferece uma interface e ferramentas adicionais:</p>
+<ol type="1">
+<li><p>Acesse o site de download do RStudio <a href="https://www.rstudio.com/products/rstudio/download/"><u>aqui</u></a></p></li>
+<li><p>Baixe a versão do RStudio Desktop correspondente ao seu sistema operacional.</p></li>
+<li><p>Execute o instalador e siga as instruções para completar a instalação.</p></li>
+</ol></li>
+</ul>
+</section>
+<section id="apresentação-do-rstudio" class="level1">
+<h1>Apresentação do RStudio</h1>
+<section id="telas" class="level2">
+<h2 class="anchored" data-anchor-id="telas">Telas</h2>
+<ul>
+<li>Ele oferece várias telas e painéis para facilitar o desenvolvimento, análise de dados e criação de visualizações.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figuras/panel.png" class="img-fluid figure-img"></p>
+<figcaption>Painés do Rstudio</figcaption>
+</figure>
+</div>
+<ul>
+<li>Segue uma breve explicação das telas principais do RStudio.</li>
+</ul>
+<ol type="1">
+<li><p><strong>Console:</strong></p>
+<ul>
+<li>A tela principal onde você digita comandos R e recebe a saída imediata.</li>
+</ul></li>
+<li><p><strong>Script Editor:</strong></p>
+<ul>
+<li>Onde você escreve e edita seus scripts em R. Os scripts são arquivos contendo código R que podem ser executados no console.</li>
+</ul></li>
+<li><p><strong>Environment/Painel de Ambiente:</strong></p>
+<ul>
+<li>Exibe informações sobre objetos (variáveis, datasets) em sua sessão R atual.</li>
+</ul></li>
+<li><p><strong>History/Histórico:</strong></p>
+<ul>
+<li>Mantém um histórico de comandos R previamente executados.</li>
+</ul></li>
+<li><p><strong>Files/Painel de Arquivos:</strong></p>
+<ul>
+<li>Mostra os arquivos e diretórios do seu projeto. Facilita a navegação e a organização.</li>
+</ul></li>
+<li><p><strong>Plots/Painel de Gráficos:</strong></p>
+<ul>
+<li>Exibe visualizações geradas a partir do R.</li>
+</ul></li>
+<li><p><strong>Packages/Pacotes:</strong></p>
+<ul>
+<li>Gerencia pacotes R instalados e fornece ferramentas para instalação e atualização.</li>
+</ul></li>
+<li><p><strong>Help/Ajuda:</strong></p>
+<ul>
+<li>Fornece acesso à documentação e ajuda sobre funções e pacotes R.</li>
+</ul></li>
+<li><p><strong>Viewer/Visualizador:</strong></p>
+<ul>
+<li>Exibe visualizações mais complexas, como páginas web, no próprio IDE.</li>
+</ul></li>
+<li><p><strong>Git:</strong></p>
+<ul>
+<li>Facilita a integração com sistemas de controle de versão Git, permitindo o rastreamento de alterações em projetos.</li>
+</ul></li>
+<li><p><strong>Connections/Conexões:</strong></p>
+<ul>
+<li>Permite conectar-se a fontes de dados externas</li>
+</ul></li>
+<li><p><strong>Terminal:</strong></p>
+<ul>
+<li>Um terminal embutido para execução de comandos do sistema operacional.</li>
+</ul></li>
+</ol>
+</section>
+<section id="cheatsheets" class="level2">
+<h2 class="anchored" data-anchor-id="cheatsheets">Cheatsheets</h2>
+<ul>
+<li><p>As “cheatsheets” (folhas de dicas) no RStudio são recursos visuais e resumidos que fornecem informações rápidas e úteis sobre tópicos específicos relacionados à linguagem de programação R, ao ambiente RStudio e a pacotes específicos do R.</p></li>
+<li><p>Para acessar as cheatsheets, você pode ir diretamente à <a href="https://rstudio.com/resources/cheatsheets/"><u>página de cheatsheets do RStudio</u></a></p></li>
+<li><p>Também pode ser acessada cliclando em Help -&gt; Cheat Sheets</p></li>
+</ul>
+</section>
+</section>
+<section id="caminhos-e-diretório-de-trabalho" class="level1">
+<h1>Caminhos e Diretório de trabalho</h1>
+<section id="caminhos" class="level2">
+<h2 class="anchored" data-anchor-id="caminhos">Caminhos</h2>
+<ul>
+<li><p>Entende-se por <strong>caminho</strong> o endereço do arquivo no computador</p></li>
+<li><p>Existem duas formas de passarmos o caminho de arquivo: <strong>caminho absoluto</strong> ou <strong>caminho relativo</strong></p></li>
+</ul>
+</section>
+<section id="caminho-absoluto" class="level2">
+<h2 class="anchored" data-anchor-id="caminho-absoluto">Caminho Absoluto</h2>
+<ul>
+<li><p>O <strong>caminho absoluto</strong> especifica o local exato de um arquivo desde a raiz do sistema de arquivo.</p></li>
+<li><p>O diretório raiz é o que está no topo da hierarquia do sistema, isso significa que outros diretórios estão contidos nele.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figuras/dir_geral.png" class="img-fluid figure-img"></p>
+<figcaption>Caminho Absoluto</figcaption>
+</figure>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r watch-out code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R/Cadernos"</code></pre>
+</div>
+</div>
+<ul>
+<li>Observe que o local de referência é a pasta “<em>Cadernos</em>”, pois este é o caminho absoluto para a pasta onde esse aula foi produzida. Vamos voltar para a pasta “<em>Introducao_R</em>” utilizando o conceito de caminho r</li>
+</ul>
+</section>
+<section id="caminho-relativo" class="level2">
+<h2 class="anchored" data-anchor-id="caminho-relativo">Caminho Relativo</h2>
+<ul>
+<li><p>O <strong>caminho relativo</strong> é especificado em relação ao diretório de trabalho atual ou a outro local de referência. Assim, se você quiser acessar alguma base de dados na pasta “<em>dados”</em> partindo da pasta”<em>Cadernos”,</em> o caminho seria<em>:</em> <code>../dados/base_de_dados.formato</code>.</p></li>
+<li><p>Nesse caso, <code>../</code> é o comando para voltar uma pasta dentro do caminho e <code>./</code> representa a pasta/diretório atual.</p></li>
+<li><p>Caso você queira trocar o local referência da pasta “<em>caderno”</em> para a pasta”<em>Introducao_R</em> “, use o seguinte código:</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">".."</span>) <span class="co"># trocando local referência ou diretório de trabalho</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R"</code></pre>
+</div>
+</div>
+</section>
+<section id="diretório-de-trabalho" class="level2">
+<h2 class="anchored" data-anchor-id="diretório-de-trabalho">Diretório de trabalho</h2>
+<ul>
+<li><p>Basicamente, diretório de trabalho refere-se a uma pasta específica no sistema de arquivos do computador em que um programa está atualmente operando ou onde ele procura por arquivos para ler e salvar por padrão.</p></li>
+<li><p>No contexto do R, o diretório de trabalho é particularmente importante porque é o local onde o R procura por arquivos . Isso significa que, se você carregar ou salvar um arquivo sem especificar a pasta, o R assumirá que o arquivo está no diretório de trabalho.</p></li>
+<li><p>É no diretório de trabalho que o R procura os arquivos que você pede para carregar e onde ele coloca todos os arquivos que você pede para salvar. De forma geral, é o local que está localizada sua análise.</p></li>
+<li><p>RStudio mostra seu diretório de trabalho atual na parte superior do console:</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figuras/dir.png" class="img-fluid figure-img"></p>
+<figcaption>Diretório</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>Você também pode visualizar o diretório de trabalho atual usando a função <strong><code>getwd().</code></strong></p></li>
+<li><p>Você também pode definir o diretório de trabalho dentro do R utilizando a</p>
+<p>função <code>setwd("colocar_o_caminho").</code></p></li>
+</ul>
+</section>
+<section id="observações" class="level2">
+<h2 class="anchored" data-anchor-id="observações">Observações</h2>
+<ul>
+<li><p>Caminhos e diretórios são um pouco complicados porque existem dois estilos básicos de caminhos: Mac/Linux e Windows. Existem três maneiras principais pelas quais eles diferem</p>
+<ol type="1">
+<li><p>Como você separa os componentes do caminho. Mac e Linux usam barras (por exemplo&nbsp; <code>plots/diamonds.pdf</code>) e o Windows usa barras invertidas (por exemplo&nbsp; <code>plots\diamonds.pdf</code>). R pode funcionar com qualquer tipo. Porém, barras invertidas significam algo especial para R, e para obter uma única barra invertida no caminho, você precisa digitar duas barras invertidas! Recomendo sempre usar o estilo Linux/Mac com barras.</p></li>
+<li><p>Ao criar scripts ou projetos em R, é uma boa prática <strong>usar caminhos relativos</strong>, pois isso torna o código mais portátil e facilita a colaboração. Além disso, evita problemas quando você compartilha seu código com outros ou move seu projeto para um novo sistema operacional.</p></li>
+<li><p>A última pequena diferença é o local para onde <code>~</code>aponta. <code>~</code>é um atalho conveniente para o seu diretório inicial. No Windows, ele aponta para o diretório de documentos.</p></li>
+</ol></li>
+<li><p>Nesses casos, criar projetos no R é uma prática recomendada e traz vários benefícios para a organização, colaboração e reprodutibilidade do trabalho</p></li>
+<li><p>Crie um diretório onde você possa colocar todos os programas/projetos em R</p></li>
+</ul>
+</section>
+</section>
+<section id="projetos" class="level1">
+<h1>Projetos</h1>
+<ul>
+<li><p>Projetos no RStudio são uma maneira organizada e estruturada de trabalhar em análises de dados e programação em R ou em qualquer linguagem de programação suportada pelo RStudio.</p></li>
+<li><p>Aqui estão algumas razões pelas quais criar projetos no RStudio é importante:</p>
+<ol type="1">
+<li><p><strong>Organização Estruturada:</strong></p>
+<ul>
+<li>Projetos fornecem uma estrutura organizada para seus arquivos, dados e scripts. Isso facilita a navegação e a localização de recursos específicos relacionados ao projeto.</li>
+</ul></li>
+<li><p><strong>Reprodutibilidade:</strong></p>
+<ul>
+<li>Ao criar um projeto, você organiza seu trabalho de forma que seja mais fácil reproduzir suas análises. Outros usuários podem reproduzir facilmente os resultados, garantindo a reprodutibilidade do trabalho.</li>
+</ul></li>
+<li><p><strong>Configuração do Diretório de Trabalho:</strong></p>
+<ul>
+<li>O projeto define automaticamente o diretório de trabalho, eliminando a necessidade de definir caminhos relativos em seus scripts. Isso reduz erros e torna o código mais portátil.</li>
+</ul></li>
+<li><p><strong>Controle de Versão:</strong></p>
+<ul>
+<li>Projetos podem ser vinculados a sistemas de controle de versão, como o Git. Isso facilita o controle de alterações em seus scripts e colaboração em equipes.</li>
+</ul></li>
+<li><p><strong>Ambiente Isolado:</strong></p>
+<ul>
+<li>Projetos têm seu próprio ambiente no RStudio. Isso significa que as bibliotecas (pacotes) e as configurações específicas do projeto não interferem em outros projetos ou em seu ambiente global.</li>
+</ul></li>
+</ol></li>
+<li><p>A seguir são apresentados alguns passos para criar um projeto no RStudio.</p></li>
+<li><p><strong>Passo 1</strong>: Abra o RStudio</p>
+<ul>
+<li>Inicie o RStudio em seu computador.</li>
+</ul></li>
+<li><p><strong>Passo 2</strong>: Crie um Novo Projeto</p>
+<ul>
+<li>No canto superior direito do RStudio, clique em “File” (Arquivo) e selecione “New Project” (Novo Projeto).</li>
+</ul></li>
+</ul>
+<p><img src="Figuras/proj_1.png" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li><p><strong>Passo 3</strong>: Escolha o Tipo de Projeto</p>
+<ol type="1">
+<li><p>New Directory (Novo Diretório): Cria um novo diretório para o projeto.</p></li>
+<li><p>Existing Directory (Diretório Existente): Usa um diretório existente como projeto.</p></li>
+</ol></li>
+</ul>
+<p><img src="Figuras/proj_2.png" class="img-fluid" width="500"></p>
+<ul>
+<li><p><strong>Passo 4</strong>: Escolha um Modelo</p>
+<ul>
+<li>Você pode escolher um modelo específico se estiver disponível. Caso contrário, escolha “New Project” (Novo Projeto).</li>
+</ul></li>
+</ul>
+<p><img src="Figuras/proj_3.png" class="img-fluid" width="500"></p>
+<ul>
+<li><p><strong>Passo 5</strong>: Nomeie e Localize o Projeto</p>
+<ul>
+<li>Dê um nome ao seu projeto e escolha o local onde o diretório do projeto será armazenado.</li>
+</ul></li>
+</ul>
+<p><img src="Figuras/proj_4.png" class="img-fluid" style="width:132mm"></p>
+<ul>
+<li><p><strong>Passo 6</strong>: Clique em “Create Project”</p>
+<ul>
+<li>Clique em “Create Project” (Criar Projeto) para finalizar a criação do projeto.</li>
+</ul></li>
+<li><p>Após criar o projeto, você verá a estrutura do diretório do projeto no painel inferior direito do RStudio.</p></li>
+<li><p>Organize seus Arquivos. Dentro do diretório do projeto, você pode criar subdiretórios (por exemplo, “data”, “scripts”, “reports”) para organizar seus arquivos.</p></li>
+<li><p>Tudo o que você precisa está em um só lugar e bem separado de todos os outros projetos nos quais você está trabalhando.</p></li>
+</ul>
+<section id="configuração" class="level3">
+<h3 class="anchored" data-anchor-id="configuração">Configuração</h3>
+<ul>
+<li><p>Basicamente, podemos definir uma <strong>pesquisa reproduzível</strong> como uma pesquisa que documenta todas as etapas entre os dados brutos e os resultados de uma forma que possa ser verificada.</p></li>
+<li><p>Isso envolve escrever scripts que realizem algumas análises do início ao fim de forma completa e transparente, de maneira que produza o mesmo resultado para pessoas diferentes usando o mesmo software em computadores diferentes.</p></li>
+<li><p>Nesse caso, é <strong>recomendado</strong> realizar dois ajustes na configuração do RStudio para maximizar a reprodutibilidade. Será desabilitado <code>.RData e .Rhistory.</code></p></li>
+<li><p>O primeiro armazena todos os objetos gerados durante uma sessão R, enquanto o segundo mantém uma lista dos comandos mais recentemente executados.</p></li>
+<li><p>Ao reabrir o RStudio, o conteúdo desses arquivos é carregado no ambiente de trabalho atual, proporcionando a sensação de continuidade.</p></li>
+<li><p>Selecione <strong>Tools &gt; Global Options…</strong> na aba de ferramentas do RStudio e então ajustar as configurações.</p></li>
+<li><p>A página de configurações gerais deve apresentar semelhanças com a imagem a seguir:</p></li>
+</ul>
+<p><img src="Figuras/options.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="fluxo-de-trabalho" class="level1">
+<h1>Fluxo de Trabalho</h1>
+<ul>
+<li>Aqui será apresentado um fluxo de trabalho básico que pode incrementado no decorrer do curso.</li>
+</ul>
+<ol type="1">
+<li><p><strong>Organize o Projeto:</strong></p>
+<ul>
+<li><p>Mantenha um diretório de projeto bem estruturado.</p></li>
+<li><p>Use subdiretórios para dados brutos, scripts, figuras e relatórios.</p></li>
+</ul></li>
+<li><p><strong>Documente Seu Código:</strong></p>
+<ul>
+<li><p>Adicione comentários claros e informativos ao seu código.</p></li>
+<li><p>Use R Markdown ou Notebooks R para incorporar narrativa com o código.</p></li>
+</ul></li>
+<li><p><strong>Versione Seu Código:</strong></p>
+<ul>
+<li><p>Use um sistema de controle de versão como o Git para controlar as mudanças no seu código.</p></li>
+<li><p>Inclua um arquivo <strong><code>.gitignore</code></strong> para evitar a inclusão de arquivos desnecessários no repositório.</p></li>
+<li><p>Em <a href="https://semver.org/lang/pt-BR/">SemVer</a> (<em>Semantic Versioning</em>) apresenta o padrão de versionamentos. Irei apresentar na seção de Pacotes.</p></li>
+</ul></li>
+<li><p><strong>Compartilhe Seu Código e Dados:</strong></p>
+<ul>
+<li>Disponibilize seu código e dados em um repositório público (por exemplo, GitHub) ou em um formato acessível.</li>
+</ul></li>
+</ol>
+</section>
+<section id="git-e-github" class="level1">
+<h1>Git e GitHub</h1>
+<ul>
+<li><p>Git é um sistema de controle de versão que permite rastrear as alterações no código durante o desenvolvimento de uma análise/software.</p></li>
+<li><p>Git é usado para gerenciar projetos de análise/software, controlar as versões do código e facilitar o trabalho colaborativo entre desenvolvedores.</p></li>
+<li><p>Cada cópia do repositório Git contém todo o histórico de revisões.</p></li>
+<li><p>Permite a criação de ramificações independentes para o desenvolvimento de novos recursos e a fusão posterior dessas ramificações.</p></li>
+<li><p>O Git também pode se conectar a um serviço de hospedagem e armazenar todas as versões de um código fora do seu computador; o mais utilizado atualmente se chama GitHub. Uma alternativa é o GitLab.</p></li>
+<li><p>GitHub oferece funcionalidades adicionais, como controle de acesso, rastreamento de problemas, integração contínua e colaboração eficiente.</p></li>
+<li><p>Desenvolvedores usam o GitHub para compartilhar código, colaborar em projetos e contribuir para repositórios de código aberto.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figuras/git_ideia.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Ideia geral do funcionamento do Git</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>Na prática, a utilização do Git e do GitHub tem dois principais benefícios:</p>
+<ul>
+<li><p>Livrar-se da necessidade de controlar versões com arquivos como <code>analise.R</code>, <code>analise_v2.R</code>, <code>analise_v3.R</code>, <code>analise_final.R</code>, <code>analise_final_final.R</code>, <code>analise_final_revisada.R</code></p></li>
+<li><p>Eliminar a preocupação de perder seus projetos devido a falhas no seu computador.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="atividade" class="level1">
+<h1>Atividade</h1>
+<ol type="1">
+<li><p>Crie uma conta no <a href="https://github.com/"><u>Github</u></a></p></li>
+<li><p>Faça a instalação do <a href="https://git-scm.com/"><u>Git</u></a></p></li>
+<li><p>Crie um projeto</p></li>
+</ol>
+</section>
+<section id="referências" class="level1">
+<h1>Referências</h1>
+<ul>
+<li><p><a href="https://adv-r.hadley.nz/names-values.html"><u>Advanced R</u></a></p></li>
+<li><p><a href="https://r4ds.had.co.nz/index.html"><u>R for Data Science</u></a></p></li>
+<li><p><a href="https://livro.curso-r.com/index.html"><u>Ciência de Dados em R</u></a></p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/leonardobfn\.github\.io\/webpage\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../index.html" class="pagination-link" aria-label="Home">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Home</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
