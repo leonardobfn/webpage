@@ -83,7 +83,7 @@
     "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
     "title": "Apresentação do R e Rstudio",
     "section": "Caminho Absoluto",
-    "text": "Caminho Absoluto\n\nO caminho absoluto especifica o local exato de um arquivo desde a raiz do sistema de arquivo.\nO diretório raiz é o que está no topo da hierarquia do sistema, isso significa que outros diretórios estão contidos nele.\n\n\n\n\nCaminho Absoluto\n\n\n\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R/Cadernos\"\n\n\n\nObserve que o local de referência é a pasta “Cadernos”, pois este é o caminho absoluto para a pasta onde esse aula foi produzida. Vamos voltar para a pasta “Introducao_R” utilizando o conceito de caminho r",
+    "text": "Caminho Absoluto\n\nO caminho absoluto especifica o local exato de um arquivo desde a raiz do sistema de arquivo.\nO diretório raiz é o que está no topo da hierarquia do sistema, isso significa que outros diretórios estão contidos nele.\n\n\n\n\nCaminho Absoluto\n\n\n\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R/Cadernos\"\n\n\n\nObserve que o local de referência é a pasta “Cadernos”, pois este é o caminho absoluto para a pasta onde essa aula foi produzida. Vamos voltar para a pasta “Introducao_R” utilizando o conceito de caminho relativo",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
