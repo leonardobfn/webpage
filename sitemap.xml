@@ -2,19 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://leonardobfn.github.io/webpage/index.html</loc>
-    <lastmod>2024-04-22T19:40:26.063Z</lastmod>
+    <lastmod>2024-04-25T11:43:08.356Z</lastmod>
   </url>
   <url>
-    <loc>https://leonardobfn.github.io/webpage/Cursos/Introducao_R/Introducao_R.html</loc>
-    <lastmod>2024-04-22T17:47:59.724Z</lastmod>
+    <loc>https://leonardobfn.github.io/webpage/Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html</loc>
+    <lastmod>2024-04-25T17:23:06.210Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leonardobfn.github.io/webpage/Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html</loc>
+    <lastmod>2024-04-25T04:25:38.353Z</lastmod>
   </url>
   <url>
     <loc>https://leonardobfn.github.io/webpage/about.html</loc>
     <lastmod>2024-04-22T17:22:02.286Z</lastmod>
   </url>
   <url>
-    <loc>https://leonardobfn.github.io/webpage/Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html</loc>
-    <lastmod>2024-04-25T04:25:38.353Z</lastmod>
+    <loc>https://leonardobfn.github.io/webpage/Cursos/Introducao_R/Introducao_R.html</loc>
+    <lastmod>2024-04-22T17:47:59.724Z</lastmod>
   </url>
   <url>
     <loc>https://leonardobfn.github.io/webpage/Cursos/Probabilidade_Estatistica/Probabilidade_Estatistica.html</loc>

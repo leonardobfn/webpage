@@ -10,25 +10,352 @@
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Introducao_R.html",
-    "href": "Cursos/Introducao_R/Introducao_R.html",
-    "title": "Introducao_R oi",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplo---compra-da-tv",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplo---compra-da-tv",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplo - Compra da TV",
+    "text": "Exemplo - Compra da TV\n\nSuponha que você queira comprar uma televisão e quer saber qual é a loja que apresenta o melhor preço. O que você faz?\n\nDefine as características da televisão que você deseja;\nVocê inicia sua pesquisa nas lojas anotando os preços dos televisores;\nDepois você compara os preços de cada loja;\nApós comparar os preços, você seleciona aquela loja com melhor preço e se dirige até ela para efetuar a sua compra.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Introducao_R.html#quarto",
-    "href": "Cursos/Introducao_R/Introducao_R.html#quarto",
-    "title": "Introducao_R oi",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplo---compra-da-tv-continuação",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplo---compra-da-tv-continuação",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplo - Compra da TV (Continuação)",
+    "text": "Exemplo - Compra da TV (Continuação)\n\nNote que a Estatística estava presente quando você:\n\nDefiniu as características da televisão;\nColetou os dados;\nExtraiu as informações a partir da sua pesquisa;\nTomou decisão baseada nas informações extraídas.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#etimologia",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#etimologia",
+    "title": "Probabilidade e Estatística",
+    "section": "Etimologia",
+    "text": "Etimologia\n\nHistóricamente, a palavra “estatística” tem origem no latim “statisticus”, que significa “relativo ao Estado”;\nSeu uso estava associado à coleta e análise de dados demográficos e econômicos para governos, especialmente para fins de planejamento e tomada de decisões políticas;\nAo longo do tempo, o termo foi adotado em um contexto mais amplo, abrangendo a análise de dados em diversos campos, como ciências naturais, ciências sociais, negócios e muito mais.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#definição",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#definição",
+    "title": "Probabilidade e Estatística",
+    "section": "Definição",
+    "text": "Definição\n\nEstatística\n\nÉ a ciência que fornece os princípios e os métodos para coleta, organização, resumo, análise e interpretação de dados.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#aplicações-gerais",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#aplicações-gerais",
+    "title": "Probabilidade e Estatística",
+    "section": "Aplicações Gerais",
+    "text": "Aplicações Gerais\n\nEconomia: Modelagem econométrica para estudar relações entre variáveis econômicas, como oferta e demanda, inflação e desemprego;\nCiências Ambientais: Estudos para prever mudanças climáticas e seus efeitos;\nMedicina: Testes clínicos para avaliar a eficácia de novos tratamentos;\nBiologia: Estudos de epidemiologia para analisar a propagação de doenças em populações.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#aplicações-na-área-de-computação",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#aplicações-na-área-de-computação",
+    "title": "Probabilidade e Estatística",
+    "section": "Aplicações na Área de Computação",
+    "text": "Aplicações na Área de Computação\n\nAnálisar o Tempo e a ordem de falhas de componentes eletrônicos;\nA quantidade de memória alocada para a execução de determinado programa;\nQuantidade de defeitos em softwares recém lançados;\nQuantidade de arquivos e diretórios afetados por um vírus;\nClassificar se uma mensagem é um Spam.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#artigos",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#artigos",
+    "title": "Probabilidade e Estatística",
+    "section": "Artigos",
+    "text": "Artigos\n\nEm Sullivan and Chillarege (1991) é realizado uma comparação dos defeitos regulares com os defeitos que corrompem a memória do programa;\nEm Galinac Grbac and Huljenić (2015) foi analisada a distribuição de probabilidade das falhas detectadas durante a verificação em quatro versões consecutivas de um sistema de software complexo de grande escala para as centrais de telecomunicações;\nEm Khalid et al. (2023) foi utilizado modelos de Machine Learning para realizar predições de defeitos em software.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#população-e-amostra",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#população-e-amostra",
+    "title": "Probabilidade e Estatística",
+    "section": "População e Amostra",
+    "text": "População e Amostra\n\nPopulação e Amostra\n\nPopulação é o conjunto de elementos (pessoas, objetos) que possuem pelos menos uma característica em comum de interesse do pesquisador. Amostra é qualquer subconjunto da população.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#variável",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#variável",
+    "title": "Probabilidade e Estatística",
+    "section": "Variável",
+    "text": "Variável\n\nVariável\n\nÉ alguma característica que pode ser observada a partir da amostra.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#dados",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#dados",
+    "title": "Probabilidade e Estatística",
+    "section": "Dados",
+    "text": "Dados\n\nDados\n\nConjuntos de valores numéricos ou não.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplos",
+    "text": "Exemplos\n\nIdentifique a população, a amostra e a variável para cada um dos exemplos abaixo:\n\n\nConsideremos uma pesquisa para estudar os salários dos 500 funcionários de uma empresa. Seleciona-se 36 funcionários e anotam-se os seus salários.\nUm grupo de pesquisadores está interessado em estudar a preferência de linguagens de programação entre os desenvolvedores de software. Eles decidem realizar uma pesquisa online e coletam dados de uma amostra de 500 desenvolvedores.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos-continuação",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos-continuação",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplos (Continuação)",
+    "text": "Exemplos (Continuação)\n\nUma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#representações-das-variáveis",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#representações-das-variáveis",
+    "title": "Probabilidade e Estatística",
+    "section": "Representações das variáveis",
+    "text": "Representações das variáveis\n\nAs representações das variáveis podem ser feitas através de uma letra:\n\n\n\n\nVariável\nRepresentação\n\n\n\n\nEstado Civil\nX\n\n\nGrau de Instrução\nY\n\n\nNúmero de Filhos\nZ",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#quantitativas",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#quantitativas",
+    "title": "Probabilidade e Estatística",
+    "section": "Quantitativas",
+    "text": "Quantitativas\n\nEstão relacionadas às observações associadas a contagem ou mensurações. Elas podem ser:\n\nDiscretas: assumem somente valores inteiros em um conjunto de valores , é resultado de uma possível contagem. Exemplos: número de irmãos, número de estudantes em sala de aula;\nContínuas: assumem somente valores em um intervalo de valores. É o resultado de um processo de medição. Exemplos: temperatura, velocidade, peso, altura.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#qualitativas",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#qualitativas",
+    "title": "Probabilidade e Estatística",
+    "section": "Qualitativas",
+    "text": "Qualitativas\n\nRepresentam uma “qualidade” dos objetos da população. Também são chamadas de variáveis categóricas. Elas podem ser:\n\nNominal: possíveis respostas que não possuem uma ordenação natural. Exemplos: raça, sexo.\nOrdinal: possíveis respostas possuem uma ordenação natural. Exemplos: Classe social, escolaridade.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#observação",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#observação",
+    "title": "Probabilidade e Estatística",
+    "section": "Observação",
+    "text": "Observação\n\nObservação: algumas variáveis podem ser classificadas em mais de um tipo dependendo da unidade usada. Por exemplo, a renda medida em salários mínimos pode ser classificada como uma variável discreta, mas pode também ser ordinal se categorizada como baixa, média e alta.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplos",
+    "text": "Exemplos\n\nIdentifique e classifique as variáveis\n\n\nUma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia\nQuantidade de defeitos em softwares recém lançados;\nClassificar se uma mensagem é um Spam.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#amostragem",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#amostragem",
+    "title": "Probabilidade e Estatística",
+    "section": "Amostragem",
+    "text": "Amostragem\n\nTécnicas para colher amostras representativas da população;",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#estatísticas-descritivas",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#estatísticas-descritivas",
+    "title": "Probabilidade e Estatística",
+    "section": "Estatísticas Descritivas",
+    "text": "Estatísticas Descritivas\n\nEm geral, é utilizada na etapa inicial da análise, em um primeiro contato com os dados. Apresenta os dados em tabelas ou gráficos além de organizar e resumir resultados preliminares.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#probabilidade",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#probabilidade",
+    "title": "Probabilidade e Estatística",
+    "section": "Probabilidade",
+    "text": "Probabilidade\n\nÉ a teoria matemática utilizada para estudar a incerteza oriunda de fenômenos aleatório",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#inferência-estatística",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#inferência-estatística",
+    "title": "Probabilidade e Estatística",
+    "section": "Inferência estatística",
+    "text": "Inferência estatística\n\nTécnicas que tentam identificar um modelo de probabilidade para a exploração de informações e conclusões obtidas a partir de uma amostra. Pode ser dividida em teste de hipótese e estimação dos parâmetros.\nObservação: Note que a inferência ocorre quando as informações são obtidas a partir de uma amostra. Não se faz inferência nos casos em que toda a população é investigada. Esse tipo de estudo, onde toda a população é considerada, é denominado censo.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação",
+    "title": "Probabilidade e Estatística",
+    "section": "Causa e Efeito X Associação",
+    "text": "Causa e Efeito X Associação\n\nAntes de definir estudos experimentais e observacionais, irei comentar sobre a diferença entre Causa e Efeito e Associção. Suponha o seguinte exemplo:\n\n\nSuponha que uma equipe de pesquisadores queira investigar se a utilização de um determinado algoritmo de compressão de dados melhora o desempenho de um sistema de armazenamento em nuvem.\nEles realizam um experimento onde um grupo de servidores utiliza o algoritmo de compressão, enquanto outro grupo utiliza o armazenamento sem compressão.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Causa e Efeito X Associação",
+    "text": "Causa e Efeito X Associação\n\nEm seguida, eles medem métricas de desempenho, como taxa de transferência de dados e tempo de resposta do servidor, ao longo de um período de tempo.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-2",
+    "title": "Probabilidade e Estatística",
+    "section": "Causa e Efeito X Associação",
+    "text": "Causa e Efeito X Associação\n\nSuponha o seguinte exemplo:\n\nSuponha que uma equipe de pesquisadores esteja interessada em estudar a associação entre o uso de um determinado sistema operacional e a segurança dos dispositivos móveis.\nEles coletam dados de uma amostra de usuários de dispositivos móveis, registrando qual sistema operacional eles utilizam e quantos incidentes de segurança relataram ao longo de um período de tempo.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-3",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-3",
+    "title": "Probabilidade e Estatística",
+    "section": "Causa e Efeito X Associação",
+    "text": "Causa e Efeito X Associação\n\nOs usuários de um sistema operacional específico relatam mais incidentes de segurança em comparação com os usuários de outros sistemas operacionais\n\n\nNo entanto, eles não podem concluir que o uso desse sistema operacional causa diretamente mais incidentes de segurança, pois outros fatores podem influenciar essa relação.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional",
+    "title": "Probabilidade e Estatística",
+    "section": "Experimental X Observacional",
+    "text": "Experimental X Observacional\n\nSuponha as seguintes situações:\n\n\nUm grupo de pesquisadores está interessado em estudar a preferência de linguagens de programação entre os desenvolvedores de software. Eles decidem realizar uma pesquisa online e coletam dados de uma amostra de 500 desenvolvedores",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Experimental X Observacional",
+    "text": "Experimental X Observacional\n\nUma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional-2",
+    "title": "Probabilidade e Estatística",
+    "section": "Experimental X Observacional",
+    "text": "Experimental X Observacional\n\nExperimental\n\n\nEm um experimento, aplicamos determinado tratamento e passamos então a observar seus efeitos sobre os elementos.\nUm estudo experimental envolve a manipulação de uma ou mais variáveis para observar o efeito que essa manipulação tem em outra variável.\nEsse tipo de estudo é mais capaz de estabelecer causalidade, pois os pesquisadores podem controlar as condições experimentais.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#observacional",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#observacional",
+    "title": "Probabilidade e Estatística",
+    "section": "Observacional",
+    "text": "Observacional\n\nObervacional\n\n\nVerificamos e medimos características específicas, mas não tentamos manipular ou modificar os elementos que estão sendo estudados.\nUm estudo observacional observa e registra informações sobre um grupo, mas não tenta modificar as variáveis do ambiente\nEste tipo de estudo é útil para identificar associações entre variáveis, mas não pode estabelecer causalidade definitiva.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
   },
   {
     "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
@@ -125,6 +452,27 @@
       "Introdução ao R",
       "Apresentação do R e Rstudio"
     ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Introducao_R.html",
+    "href": "Cursos/Introducao_R/Introducao_R.html",
+    "title": "Introducao_R oi",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Introducao_R.html#quarto",
+    "href": "Cursos/Introducao_R/Introducao_R.html#quarto",
+    "title": "Introducao_R oi",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Probabilidade_Estatistica.html",
