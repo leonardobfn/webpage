@@ -21,10 +21,13 @@ website:
              contents: 
               - href: Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.qmd
                 text: "Apresentação do R e Rstudio"
+              - href: Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.qmd
+                text: Estrutura de dados
           -  section: "Probabilidade e Estatística"
              contents:
               - href: Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.qmd
                 text: "Conceitos Iniciais"
+               
           
               
 
