@@ -358,6 +358,123 @@
     ]
   },
   {
+    "objectID": "Cursos/Introducao_R/Introducao_R.html",
+    "href": "Cursos/Introducao_R/Introducao_R.html",
+    "title": "Introducao_R oi",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Introducao_R.html#quarto",
+    "href": "Cursos/Introducao_R/Introducao_R.html#quarto",
+    "title": "Introducao_R oi",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
+    "title": "Apresentação do R e Rstudio",
+    "section": "",
+    "text": "R é uma linguagem e um ambiente de desenvolvimento integrado, livre e gratuito;\nO software R disponibiliza recursos para vários tipos de análises:\n\nEstatística descritiva: medidas de posição, dispersão, tabelas e gráficos;\nModelos lineares, não lineares, generalizados: estimação dos parâmetros, resíduos, métodos de diagnóstico;\nAnálise multivariada: Análise de componentes principais, clusters, fatorial;\nAprendizado de Máquina\nDeepLearning,",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#telas",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#telas",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Telas",
+    "text": "Telas\n\nEle oferece várias telas e painéis para facilitar o desenvolvimento, análise de dados e criação de visualizações.\n\n\n\n\nPainés do Rstudio\n\n\n\nSegue uma breve explicação das telas principais do RStudio.\n\n\nConsole:\n\nA tela principal onde você digita comandos R e recebe a saída imediata.\n\nScript Editor:\n\nOnde você escreve e edita seus scripts em R. Os scripts são arquivos contendo código R que podem ser executados no console.\n\nEnvironment/Painel de Ambiente:\n\nExibe informações sobre objetos (variáveis, datasets) em sua sessão R atual.\n\nHistory/Histórico:\n\nMantém um histórico de comandos R previamente executados.\n\nFiles/Painel de Arquivos:\n\nMostra os arquivos e diretórios do seu projeto. Facilita a navegação e a organização.\n\nPlots/Painel de Gráficos:\n\nExibe visualizações geradas a partir do R.\n\nPackages/Pacotes:\n\nGerencia pacotes R instalados e fornece ferramentas para instalação e atualização.\n\nHelp/Ajuda:\n\nFornece acesso à documentação e ajuda sobre funções e pacotes R.\n\nViewer/Visualizador:\n\nExibe visualizações mais complexas, como páginas web, no próprio IDE.\n\nGit:\n\nFacilita a integração com sistemas de controle de versão Git, permitindo o rastreamento de alterações em projetos.\n\nConnections/Conexões:\n\nPermite conectar-se a fontes de dados externas\n\nTerminal:\n\nUm terminal embutido para execução de comandos do sistema operacional.",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#cheatsheets",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#cheatsheets",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Cheatsheets",
+    "text": "Cheatsheets\n\nAs “cheatsheets” (folhas de dicas) no RStudio são recursos visuais e resumidos que fornecem informações rápidas e úteis sobre tópicos específicos relacionados à linguagem de programação R, ao ambiente RStudio e a pacotes específicos do R.\nPara acessar as cheatsheets, você pode ir diretamente à página de cheatsheets do RStudio\nTambém pode ser acessada cliclando em Help -&gt; Cheat Sheets",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminhos",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminhos",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Caminhos",
+    "text": "Caminhos\n\nEntende-se por caminho o endereço do arquivo no computador\nExistem duas formas de passarmos o caminho de arquivo: caminho absoluto ou caminho relativo",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Caminho Absoluto",
+    "text": "Caminho Absoluto\n\nO caminho absoluto especifica o local exato de um arquivo desde a raiz do sistema de arquivo.\nO diretório raiz é o que está no topo da hierarquia do sistema, isso significa que outros diretórios estão contidos nele.\n\n\n\n\nCaminho Absoluto\n\n\n\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R/Cadernos\"\n\n\n\nObserve que o local de referência é a pasta “Cadernos”, pois este é o caminho absoluto para a pasta onde essa aula foi produzida. Vamos voltar para a pasta “Introducao_R” utilizando o conceito de caminho relativo",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-relativo",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-relativo",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Caminho Relativo",
+    "text": "Caminho Relativo\n\nO caminho relativo é especificado em relação ao diretório de trabalho atual ou a outro local de referência. Assim, se você quiser acessar alguma base de dados na pasta “dados” partindo da pasta”Cadernos”, o caminho seria: ../dados/base_de_dados.formato.\nNesse caso, ../ é o comando para voltar uma pasta dentro do caminho e ./ representa a pasta/diretório atual.\nCaso você queira trocar o local referência da pasta “caderno” para a pasta”Introducao_R “, use o seguinte código:\n\n\nsetwd(\"..\") # trocando local referência ou diretório de trabalho\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R\"",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#diretório-de-trabalho",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#diretório-de-trabalho",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Diretório de trabalho",
+    "text": "Diretório de trabalho\n\nBasicamente, diretório de trabalho refere-se a uma pasta específica no sistema de arquivos do computador em que um programa está atualmente operando ou onde ele procura por arquivos para ler e salvar por padrão.\nNo contexto do R, o diretório de trabalho é particularmente importante porque é o local onde o R procura por arquivos . Isso significa que, se você carregar ou salvar um arquivo sem especificar a pasta, o R assumirá que o arquivo está no diretório de trabalho.\nÉ no diretório de trabalho que o R procura os arquivos que você pede para carregar e onde ele coloca todos os arquivos que você pede para salvar. De forma geral, é o local que está localizada sua análise.\nRStudio mostra seu diretório de trabalho atual na parte superior do console:\n\n\n\n\nDiretório\n\n\n\nVocê também pode visualizar o diretório de trabalho atual usando a função getwd().\nVocê também pode definir o diretório de trabalho dentro do R utilizando a\nfunção setwd(\"colocar_o_caminho\").",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#observações",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#observações",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Observações",
+    "text": "Observações\n\nCaminhos e diretórios são um pouco complicados porque existem dois estilos básicos de caminhos: Mac/Linux e Windows. Existem três maneiras principais pelas quais eles diferem\n\nComo você separa os componentes do caminho. Mac e Linux usam barras (por exemplo  plots/diamonds.pdf) e o Windows usa barras invertidas (por exemplo  plots\\diamonds.pdf). R pode funcionar com qualquer tipo. Porém, barras invertidas significam algo especial para R, e para obter uma única barra invertida no caminho, você precisa digitar duas barras invertidas! Recomendo sempre usar o estilo Linux/Mac com barras.\nAo criar scripts ou projetos em R, é uma boa prática usar caminhos relativos, pois isso torna o código mais portátil e facilita a colaboração. Além disso, evita problemas quando você compartilha seu código com outros ou move seu projeto para um novo sistema operacional.\nA última pequena diferença é o local para onde ~aponta. ~é um atalho conveniente para o seu diretório inicial. No Windows, ele aponta para o diretório de documentos.\n\nNesses casos, criar projetos no R é uma prática recomendada e traz vários benefícios para a organização, colaboração e reprodutibilidade do trabalho\nCrie um diretório onde você possa colocar todos os programas/projetos em R",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
     "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html",
     "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html",
     "title": "Estrutura de dados",
@@ -478,121 +595,292 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
-    "title": "Apresentação do R e Rstudio",
-    "section": "",
-    "text": "R é uma linguagem e um ambiente de desenvolvimento integrado, livre e gratuito;\nO software R disponibiliza recursos para vários tipos de análises:\n\nEstatística descritiva: medidas de posição, dispersão, tabelas e gráficos;\nModelos lineares, não lineares, generalizados: estimação dos parâmetros, resíduos, métodos de diagnóstico;\nAnálise multivariada: Análise de componentes principais, clusters, fatorial;\nAprendizado de Máquina\nDeepLearning,",
+    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#questão-4",
+    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#questão-4",
+    "title": "Estrutura de dados",
+    "section": "Questão 4",
+    "text": "Questão 4\n\nCrie um data frame com as seguintes informações:\n\nColuna 1: nome de duas cidades, cada uma repetindo 5 vezes.\nColuna 2: variável temperatura, escolha o valor da temperatura para as cidades\nPara cada cidade, calcule a média (mean()) e o desvio padrão (sd()) da temperatura.\nPara cada cidade, use a função summary()\nTransforme o data frame em uma matriz. O que acontece?",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Apresentação do R e Rstudio"
+      "Estrutura de dados"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#telas",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#telas",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Telas",
-    "text": "Telas\n\nEle oferece várias telas e painéis para facilitar o desenvolvimento, análise de dados e criação de visualizações.\n\n\n\n\nPainés do Rstudio\n\n\n\nSegue uma breve explicação das telas principais do RStudio.\n\n\nConsole:\n\nA tela principal onde você digita comandos R e recebe a saída imediata.\n\nScript Editor:\n\nOnde você escreve e edita seus scripts em R. Os scripts são arquivos contendo código R que podem ser executados no console.\n\nEnvironment/Painel de Ambiente:\n\nExibe informações sobre objetos (variáveis, datasets) em sua sessão R atual.\n\nHistory/Histórico:\n\nMantém um histórico de comandos R previamente executados.\n\nFiles/Painel de Arquivos:\n\nMostra os arquivos e diretórios do seu projeto. Facilita a navegação e a organização.\n\nPlots/Painel de Gráficos:\n\nExibe visualizações geradas a partir do R.\n\nPackages/Pacotes:\n\nGerencia pacotes R instalados e fornece ferramentas para instalação e atualização.\n\nHelp/Ajuda:\n\nFornece acesso à documentação e ajuda sobre funções e pacotes R.\n\nViewer/Visualizador:\n\nExibe visualizações mais complexas, como páginas web, no próprio IDE.\n\nGit:\n\nFacilita a integração com sistemas de controle de versão Git, permitindo o rastreamento de alterações em projetos.\n\nConnections/Conexões:\n\nPermite conectar-se a fontes de dados externas\n\nTerminal:\n\nUm terminal embutido para execução de comandos do sistema operacional.",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#subdivisões-da-estatística",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#subdivisões-da-estatística",
+    "title": "Probabilidade e Estatística",
+    "section": "Subdivisões da Estatística",
+    "text": "Subdivisões da Estatística",
     "crumbs": [
       "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#cheatsheets",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#cheatsheets",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Cheatsheets",
-    "text": "Cheatsheets\n\nAs “cheatsheets” (folhas de dicas) no RStudio são recursos visuais e resumidos que fornecem informações rápidas e úteis sobre tópicos específicos relacionados à linguagem de programação R, ao ambiente RStudio e a pacotes específicos do R.\nPara acessar as cheatsheets, você pode ir diretamente à página de cheatsheets do RStudio\nTambém pode ser acessada cliclando em Help -&gt; Cheat Sheets",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#amostragem",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#amostragem",
+    "title": "Probabilidade e Estatística",
+    "section": "Amostragem",
+    "text": "Amostragem\n\nA utilização de amostra em pesquisa é uma prática fundamental para extrair conclusões válidas e representativas de uma população maior.\nAo invés de coletar dados de toda a população, o que pode ser impraticável em termos de tempo, custo e recursos, amostras são selecionadas e estudadas.\nIsso permite generalizar as descobertas da amostra para a população maior, desde que a amostra seja adequadamente selecionada e representativa.",
     "crumbs": [
       "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminhos",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminhos",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Caminhos",
-    "text": "Caminhos\n\nEntende-se por caminho o endereço do arquivo no computador\nExistem duas formas de passarmos o caminho de arquivo: caminho absoluto ou caminho relativo",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#amostragem-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#amostragem-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Amostragem",
+    "text": "Amostragem\n\nNestes casos, a Estatística apresenta algumas técnicas para a obtenção de uma amostra.\nCuidado básico: A amostra deve ser representativa da população.",
     "crumbs": [
       "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Caminho Absoluto",
-    "text": "Caminho Absoluto\n\nO caminho absoluto especifica o local exato de um arquivo desde a raiz do sistema de arquivo.\nO diretório raiz é o que está no topo da hierarquia do sistema, isso significa que outros diretórios estão contidos nele.\n\n\n\n\nCaminho Absoluto\n\n\n\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R/Cadernos\"\n\n\n\nObserve que o local de referência é a pasta “Cadernos”, pois este é o caminho absoluto para a pasta onde essa aula foi produzida. Vamos voltar para a pasta “Introducao_R” utilizando o conceito de caminho relativo",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#amostragem-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#amostragem-2",
+    "title": "Probabilidade e Estatística",
+    "section": "Amostragem",
+    "text": "Amostragem\n\nAlgumas razões de trabalhar com amostras:\n\nEnvelhecimento da pesquisa: tempo excessivo para coleta dos dados;\nEconômicas: restrições orçamentárias de projetos;\nÉticas: experimentos laboratoriais com seres vivos;\nInacessibilidade de informações: análise do sangue de uma pessoa ou experimento para determinar o tempo de funcionamento de uma lâmpada.",
     "crumbs": [
       "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-relativo",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-relativo",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Caminho Relativo",
-    "text": "Caminho Relativo\n\nO caminho relativo é especificado em relação ao diretório de trabalho atual ou a outro local de referência. Assim, se você quiser acessar alguma base de dados na pasta “dados” partindo da pasta”Cadernos”, o caminho seria: ../dados/base_de_dados.formato.\nNesse caso, ../ é o comando para voltar uma pasta dentro do caminho e ./ representa a pasta/diretório atual.\nCaso você queira trocar o local referência da pasta “caderno” para a pasta”Introducao_R “, use o seguinte código:\n\n\nsetwd(\"..\") # trocando local referência ou diretório de trabalho\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R\"",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#métodos-probabilísticos",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#métodos-probabilísticos",
+    "title": "Probabilidade e Estatística",
+    "section": "Métodos Probabilísticos",
+    "text": "Métodos Probabilísticos\n\nMétodos probabilísticos\n\nCada membro da população tem uma chance de ser selecionado para a amostra. Isso significa que todos os elementos da população têm a mesma oportunidade de serem escolhidos.\n\n\n\nOs Métodos probabilísticos são:\n\nAmostragem Aleatória Simples\nAmostragem Sistemática\nAmostragem Estratificada\nAmostragem por conglomerado",
     "crumbs": [
       "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#diretório-de-trabalho",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#diretório-de-trabalho",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Diretório de trabalho",
-    "text": "Diretório de trabalho\n\nBasicamente, diretório de trabalho refere-se a uma pasta específica no sistema de arquivos do computador em que um programa está atualmente operando ou onde ele procura por arquivos para ler e salvar por padrão.\nNo contexto do R, o diretório de trabalho é particularmente importante porque é o local onde o R procura por arquivos . Isso significa que, se você carregar ou salvar um arquivo sem especificar a pasta, o R assumirá que o arquivo está no diretório de trabalho.\nÉ no diretório de trabalho que o R procura os arquivos que você pede para carregar e onde ele coloca todos os arquivos que você pede para salvar. De forma geral, é o local que está localizada sua análise.\nRStudio mostra seu diretório de trabalho atual na parte superior do console:\n\n\n\n\nDiretório\n\n\n\nVocê também pode visualizar o diretório de trabalho atual usando a função getwd().\nVocê também pode definir o diretório de trabalho dentro do R utilizando a\nfunção setwd(\"colocar_o_caminho\").",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#aleatória-simples",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#aleatória-simples",
+    "title": "Probabilidade e Estatística",
+    "section": "Aleatória Simples",
+    "text": "Aleatória Simples\n\nAmostra Aleatória Simples (AAS)\n\nCada membro da população tem a mesma chance de ser selecionado para a amostra.\n\n\n\nProcedimento:\n\nCada participante/elemento da população “recebe” um número.\nOs elementos que irão compor a amostra são selecionados através de um sorteio aleatório.",
     "crumbs": [
       "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#observações",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#observações",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Observações",
-    "text": "Observações\n\nCaminhos e diretórios são um pouco complicados porque existem dois estilos básicos de caminhos: Mac/Linux e Windows. Existem três maneiras principais pelas quais eles diferem\n\nComo você separa os componentes do caminho. Mac e Linux usam barras (por exemplo  plots/diamonds.pdf) e o Windows usa barras invertidas (por exemplo  plots\\diamonds.pdf). R pode funcionar com qualquer tipo. Porém, barras invertidas significam algo especial para R, e para obter uma única barra invertida no caminho, você precisa digitar duas barras invertidas! Recomendo sempre usar o estilo Linux/Mac com barras.\nAo criar scripts ou projetos em R, é uma boa prática usar caminhos relativos, pois isso torna o código mais portátil e facilita a colaboração. Além disso, evita problemas quando você compartilha seu código com outros ou move seu projeto para um novo sistema operacional.\nA última pequena diferença é o local para onde ~aponta. ~é um atalho conveniente para o seu diretório inicial. No Windows, ele aponta para o diretório de documentos.\n\nNesses casos, criar projetos no R é uma prática recomendada e traz vários benefícios para a organização, colaboração e reprodutibilidade do trabalho\nCrie um diretório onde você possa colocar todos os programas/projetos em R",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#aleatória-simples-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#aleatória-simples-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Aleatória Simples",
+    "text": "Aleatória Simples\n\nObservações:\n\nPode não representar bem subgrupos populacionais.\nDevemos utilizar ASS somente quando a população for homogênea em relação a variável em estudo",
     "crumbs": [
       "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Introducao_R.html",
-    "href": "Cursos/Introducao_R/Introducao_R.html",
-    "title": "Introducao_R oi",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#aleatória-simples-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#aleatória-simples-2",
+    "title": "Probabilidade e Estatística",
+    "section": "Aleatória Simples",
+    "text": "Aleatória Simples\nExemplos\n\nUm estudo sobre preferências de linguagens de programação, selecionar aleatoriamente desenvolvedores de software de uma lista de empresas de tecnologia.\nUma empresa de comércio eletrônico deseje avaliar a satisfação dos clientes em relação a sua plataforma de vendas online. Eles têm uma base de dados com informações de todos os clientes que fizeram compras nos últimos seis meses.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Introducao_R.html#quarto",
-    "href": "Cursos/Introducao_R/Introducao_R.html#quarto",
-    "title": "Introducao_R oi",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#aleatória-simples-3",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#aleatória-simples-3",
+    "title": "Probabilidade e Estatística",
+    "section": "Aleatória Simples",
+    "text": "Aleatória Simples\nExemplo no R\n\nN = 1000 # quantidade de clientes\nx = 1:N # sequência de números de 1 a 1000\nn = 10 # tamanho da amostra\nset.seed(1) # para que selecione a mesma amostra\nsample(x,n) # realiza o sorteio de n clientes\n\n [1] 836 679 129 930 509 471 299 270 978 187",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#sistemática",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#sistemática",
+    "title": "Probabilidade e Estatística",
+    "section": "Sistemática",
+    "text": "Sistemática\n\nAmostragem Sistemática\n\nA amostra sistemática é constituída por \\(n\\) unidades retiradas da população segundo um sistema preestabelecido.\n\n\n\nProcedimentos: apresentado dentro do exemplo",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#sistemática-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#sistemática-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Sistemática",
+    "text": "Sistemática\n\nObservações:\n\nUtiliza-se em situações como amostrar pessoas que ficam em uma fila ou quando os elementos estão ordenados\nÉ de fundamental importância que a variável de interesse não apresente ciclos de variação coincidentes com os ciclos de retirada.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#sistemática-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#sistemática-2",
+    "title": "Probabilidade e Estatística",
+    "section": "Sistemática",
+    "text": "Sistemática\nExemplo\n\nSuponha que uma empresa de desenvolvimento de software esteja conduzindo um estudo sobre a eficiência de um sistema de processamento de pedidos online.\nA empresa possui uma lista ordenada de pedidos registrados no sistema, onde cada pedido é atribuído a um cliente.\nConsidere que tenha \\(N=1000\\) pedidos no total e a equipe quer uma amostra de \\(n=50\\) pedidos",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#sistemática-3",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#sistemática-3",
+    "title": "Probabilidade e Estatística",
+    "section": "Sistemática",
+    "text": "Sistemática\nExemplo (continuação)\n\nProcedimentos\n\nEnumerar a população de \\(1\\) até \\(N\\), onde \\(N\\) é o tamanho da população, ou seja, \\(N=1000\\)\nCalcular a constante \\(c = \\dfrac{N}{n}\\), onde \\(n\\) é o tamanho da amostra, ou seja, \\(c= \\dfrac{1000}{50}=20\\)\nSortear um número entre \\(1\\) e \\(c\\), ou seja, entre \\(1\\) e \\(20\\). Esse número é denominado Ponto Inicial de Amostragem (PIA).",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#sistemática-4",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#sistemática-4",
+    "title": "Probabilidade e Estatística",
+    "section": "Sistemática",
+    "text": "Sistemática\nExemplo (continuação)\n\nSuponha que o número escolhido seja 8. Nesse caso, o oitavo pedido/cliente será o primeiro da amostra\nA partir do pedido número 8, conte mais 20 e selecione esse pedido/cliente, ou seja, pedido/cliente de número 28.\nProceda dessa forma até completar a amostra de 50 clientes",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada",
+    "title": "Probabilidade e Estatística",
+    "section": "Estratificada",
+    "text": "Estratificada\n\nAmostragem Estratificada\n\nA população é dividida em estratos ou grupos com características semelhantes, e depois são selecionadas aleatoriamente amostras de cada estrato.\n\n\n\nProcedimentos: apresentado dentro do exemplo",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Estratificada",
+    "text": "Estratificada\n\nObservações:\n\nUtilizar em situações onde a variável de interesse apresenta uma heterogeneidade na população e essa heterogeneidade permite a identificação de grupos homogêneos.\nA sua implementação é dificultada pela falta de informação sobre a população para fazer a estratificação.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada-2",
+    "title": "Probabilidade e Estatística",
+    "section": "Estratificada",
+    "text": "Estratificada\nExemplo\n\nImagine que o prefeito de uma cidade \\(X\\) deseja fazer um pesquisa de satisfação das pessoas em relação aos serviços prestados pela prefeitura.\nEstudos anteriores mostram uma relação entre a satisfação das pessoas e a zona onde a pessoa mora.\nEssa cidade foi dividida em três zonas (estratos), conforme a Tabela a seguir.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada-3",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada-3",
+    "title": "Probabilidade e Estatística",
+    "section": "Estratificada",
+    "text": "Estratificada\nExemplo (continuação)\n\n\n\nZonas (Estratos)\nHab. em cada zona\nHab. em cada zona (%)\n\n\n\n\n1\n700\n84,6\n\n\n2\n100\n12,1\n\n\n3\n27\n3,3\n\n\nTotal\n827\n100",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada-4",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada-4",
+    "title": "Probabilidade e Estatística",
+    "section": "Estratificada",
+    "text": "Estratificada\nExemplo (continuação)\n\nProcedimentos:\n\nCalcule a proporção de cada estrato na população, dividindo o tamanho do estrato pelo tamanho da população\nConsidere o Tamanho da amostra igual a 200\nA obtenção da quantidade de pessoas que será amostrada na população (por zona) será dada por: multiplicando a proporção de cada estrato pelo tamanho da amostra \\((n=200)\\)",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada-5",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#estratificada-5",
+    "title": "Probabilidade e Estatística",
+    "section": "Estratificada",
+    "text": "Estratificada\nExemplo (continuação)\n\n\n\nZonas (Estratos)\nHab. em cada zona\nHab. em cada zona (%)\n\n\n\n\n1\n169\n84,6\n\n\n2\n24\n12,1\n\n\n3\n7\n3,3\n\n\nTotal\n200\n100",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#conglomerados",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#conglomerados",
+    "title": "Probabilidade e Estatística",
+    "section": "Conglomerados",
+    "text": "Conglomerados\n\nAmostragem por Conglomerados\n\nNesse procedimento, a população é dividida em subpopulações ou conglomerados de elementos heterogêneos, em seguida, uma \\(ASS\\) é utilizada para selecionar o conglomerado e depois todos os indivíduos dos conglomerados selecionado serão analisados.\n\n\n\nProcedimentos serão apresentados dentro do exemplo.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#conglomerados-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#conglomerados-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Conglomerados",
+    "text": "Conglomerados\n\nObservações:\n\nGeralmente, os conglomerados são definidos por fatores geográficos, como bairros e quarteirões. No entanto, podemos considerar, por exemplo, um asilo como um conglomerado de idoso ou o batalhão do exército como um glomerado de jovens.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#conglomerados-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#conglomerados-2",
+    "title": "Probabilidade e Estatística",
+    "section": "Conglomerados",
+    "text": "Conglomerados\nExemplo\n\nConsidere um estudo para avaliar a qualidade dos celulares (mesmo modelo) disponíveis em diferentes lojas Procedimentos:\n\nInicialmente, identificaremos todas as lojas de celulares na área de estudo.\nEm seguida, selecionaremos aleatoriamente um número específico de lojas de celulares para compor nossa amostra\nColetar a opinião de todos os clientes de cada loja de selecionada",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Técnicas de Amostragem"
+    ]
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Probabilidade_Estatistica.html",
