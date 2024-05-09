@@ -22,12 +22,15 @@ website:
               - href: Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.qmd
                 text: "Apresentação do R e Rstudio"
               - href: Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.qmd
-                text: Estrutura de dados
+                text: Estruturas de dados
+              - href: Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.qmd 
+                text: Estruturas de Controles
           -  section: "Probabilidade e Estatística"
              contents:
               - href: Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.qmd
                 text: "Conceitos Iniciais"
-               
+              - href: Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.qmd  
+                text: "Técnicas de Amostragem"
           
               
 

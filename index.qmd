@@ -10,6 +10,4 @@ engine: knitr
 }
 ```
 
-
-
-Doutor em Estatística pela Universidade Federal de Minas Gerais (UFMG). Mestre em Estatística pela Universidade Federal de Minas Gerais (UFMG) e graduado pela Universidade Federal do Amazonas (UFAM). Professor Adjunto C — Nível I no Departamento de Estatística da UFAM. Possuo experiência na linguagem de programação R, utilizada de maneira particular na análise de dados climáticos, com enfoque no estado do Amazonas.
+Doutor em Estatística pela Universidade Federal de Minas Gerais (UFMG). Mestre em Estatística pela Universidade Federal de Minas Gerais (UFMG) e graduado pela Universidade Federal do Amazonas (UFAM). Professor Adjunto C --- Nível I no Departamento de Estatística da UFAM. Possuo experiência na linguagem de programação R, utilizada de maneira particular na análise de dados climáticos, com enfoque no estado do Amazonas.
