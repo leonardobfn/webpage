@@ -216,7 +216,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Sumário</h2>
    
   <ul>
-  <li><a href="#estruturas-de-controle" id="toc-estruturas-de-controle" class="nav-link active" data-scroll-target="#estruturas-de-controle">Estruturas de Controle</a>
+  <li><a href="#definição" id="toc-definição" class="nav-link active" data-scroll-target="#definição">Definição</a>
   <ul class="collapse">
   <li><a href="#condicional" id="toc-condicional" class="nav-link" data-scroll-target="#condicional">Condicional</a>
   <ul class="collapse">
@@ -257,13 +257,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="estruturas-de-controle" class="level1">
-<h1>Estruturas de Controle</h1>
+<section id="definição" class="level1">
+<h1>Definição</h1>
 <ul>
-<li>Estruturas de controle são trechos de código que resultam em diferentes desfechos dependendo do resultado da verificação de uma ou mais condições lógicas.</li>
-<li>É um processo de tomada de decisão automatizado onde o programa escolhe executar uma instrução ou outra, ou até mesmo nenhuma delas, dependendo do resultado de uma parte anterior do código.</li>
-<li>Isso é especialmente útil quando o analista deseja realizar uma tarefa que é diferente dependendo da variável ou da situação.</li>
-<li>Existem duas estruturas de controle:
+<li><p>Estruturas de controle são trechos de código que resultam em diferentes desfechos dependendo do resultado da verificação de uma ou mais condições lógicas.</p></li>
+<li><p>É um processo de tomada de decisão automatizado onde o programa escolhe executar uma instrução ou outra, ou até mesmo nenhuma delas, dependendo do resultado de uma parte anterior do código.</p></li>
+<li><p>Isso é especialmente útil quando o analista deseja realizar uma tarefa que é diferente dependendo da variável ou da situação.</p></li>
+<li><p>Existem duas estruturas de controle:</p>
 <ul>
 <li>Condicional: onde uma determinada instrução é executada com base na veracidade de uma condição.</li>
 <li>Loop: repete uma instrução várias vezes</li>
@@ -277,20 +277,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Se a condição for verdadeira, o bloco de código associado ao “if” é executado; caso contrário, o programa pode optar por executar um bloco de código alternativo, definido pela estrutura “else”</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># if (condition) true_action</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># if ("condition is satisfied") {</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># "do something"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (condition) true_action</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"condition is satisfied"</span>) {</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">"do something"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># if (condition) true_action else false_action</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># if("condition is satisfied"){</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># "do something"</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># } else {</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># "otherwise do something else"</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (condition) true_action <span class="cf">else</span> false_action</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="st">"condition is satisfied"</span>){</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> <span class="st">"do something"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a> <span class="st">"otherwise do something else"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><p>If&nbsp;<code>condition</code>&nbsp;is&nbsp;<code>TRUE</code>,&nbsp;<code>true_action</code>&nbsp;é avaliada;</p></li>
@@ -321,7 +321,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>A função <strong><code>ifelse()</code></strong> permite executar duas instruções com base no resultado de uma condição lógica em uma única linha. A sintaxe para isso é a seguinte:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ifelse(condição, instrução_se_verdadeiro, instrução_se_falso)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ifelse</span>(condição, instrução_se_verdadeiro, instrução_se_falso)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><p><strong><code>condição</code></strong>: Uma condição lógica que avalia para TRUE ou FALSE.</p></li>
@@ -413,13 +413,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>O loop for é empregado para executar instruções de código repetitivas um número determinado de vezes.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for (variavel in sequencia) {</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   # código a ser executado em cada iteração</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># #ou</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co"># for (variavel in 1:n) { # n = quantidade de iterações</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co">#   # código a ser executado em cada iteração</span></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (variavel <span class="cf">in</span> sequencia) {</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># código a ser executado em cada iteração</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co">#ou</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (variavel <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n) { <span class="co"># n = quantidade de iterações</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># código a ser executado em cada iteração</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Ao executar este código, você verá a saída que mostra os quadrados dos números de 1 a 5.</li>
@@ -483,23 +483,23 @@ O quadrado de 5 é 25 </code></pre>
 <span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2</span>) <span class="co"># gerar sempre as mesmas amostras</span></span>
 <span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>m){</span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span>N,n) <span class="co"># sorteando n números de uma sequência de 1:N</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span>N,n,<span class="at">replace=</span>T) <span class="co"># sorteando n números de uma sequência de 1:N</span></span>
 <span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  media_amostra_sorteada <span class="ot">=</span> <span class="fu">append</span>(media_amostra_sorteada,<span class="fu">mean</span>(x))</span>
 <span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>  matrix_amostra_sorteada[,k] <span class="ot">&lt;-</span> x <span class="co"># guardando a amostra sorteada na coluna</span></span>
 <span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>matrix_amostra_sorteada[<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1] [,2] [,3]
-[1,]  853   96  382
-[2,]  975   52  794
-[3,]  710  483  525
-[4,]  774  208  174
-[5,]  416  284  669
-[6,]  392  142  643</code></pre>
+[1,]  853  239  586
+[2,]  975  732  623
+[3,]  710  906  488
+[4,]  774   59  848
+[5,]  416  373  784
+[6,]  392   48   57</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(media_amostra_sorteada)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 497.382 488.438 512.604 481.426 514.288 508.866</code></pre>
+<pre><code>[1] 523.802 491.546 485.894 503.402 506.608 510.678</code></pre>
 </div>
 </div>
 <ul>
@@ -507,10 +507,10 @@ O quadrado de 5 é 25 </code></pre>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2</span>)</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>matrix_amostra_sorteada <span class="ot">=</span> <span class="fu">replicate</span>(m,<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span>N,n))</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>matrix_amostra_sorteada <span class="ot">=</span> <span class="fu">replicate</span>(m,<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span>N,n,<span class="at">replace=</span>T))</span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>( <span class="fu">colMeans</span>(matrix_amostra_sorteada) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 497.382 488.438 512.604 481.426 514.288 508.866</code></pre>
+<pre><code>[1] 523.802 491.546 485.894 503.402 506.608 510.678</code></pre>
 </div>
 </div>
 <ul>
@@ -560,14 +560,11 @@ O quadrado de 5 é 25 </code></pre>
 <li><p>É considerada uma boa prática incluir um objeto contador para acompanhar o número total de iterações.</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">#|eval: false</span></span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="co">#|echo: true</span></span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="co"># contador &lt;- 0</span></span>
-<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="co"># while (condition) {</span></span>
-<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a><span class="co">#   # código executado enquanto a condição for verdade </span></span>
-<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="co">#   # contador &lt;- contador + 1</span></span>
-<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>contador <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a> <span class="cf">while</span> (condition) {</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>   <span class="co"># código executado enquanto a condição for verdade </span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>   <span class="co"># contador &lt;- contador + 1</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a> }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><p>O código a seguir irá imprimir o valor de&nbsp;<code>i</code>&nbsp;enquanto este objeto for menor que 5.</p></li>
@@ -602,16 +599,76 @@ O quadrado de 5 é 25 </code></pre>
 <span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Tentativa: 1 
- Número do dado é 4 
-Tentativa: 2 
  Número do dado é 1 
-Tentativa: 3 
+Tentativa: 2 
  Número do dado é 5 
+Tentativa: 3 
+ Número do dado é 3 
 Tentativa: 4 
- Número do dado é 4 
+ Número do dado é 3 
 Tentativa: 5 
- Número do dado é 2 
+ Número do dado é 3 
 Tentativa: 6 
+ Número do dado é 1 
+Tentativa: 7 
+ Número do dado é 5 
+Tentativa: 8 
+ Número do dado é 2 
+Tentativa: 9 
+ Número do dado é 4 
+Tentativa: 10 
+ Número do dado é 2 
+Tentativa: 11 
+ Número do dado é 4 
+Tentativa: 12 
+ Número do dado é 2 
+Tentativa: 13 
+ Número do dado é 1 
+Tentativa: 14 
+ Número do dado é 1 
+Tentativa: 15 
+ Número do dado é 1 
+Tentativa: 16 
+ Número do dado é 4 
+Tentativa: 17 
+ Número do dado é 5 
+Tentativa: 18 
+ Número do dado é 4 
+Tentativa: 19 
+ Número do dado é 1 
+Tentativa: 20 
+ Número do dado é 3 
+Tentativa: 21 
+ Número do dado é 5 
+Tentativa: 22 
+ Número do dado é 4 
+Tentativa: 23 
+ Número do dado é 4 
+Tentativa: 24 
+ Número do dado é 5 
+Tentativa: 25 
+ Número do dado é 5 
+Tentativa: 26 
+ Número do dado é 2 
+Tentativa: 27 
+ Número do dado é 5 
+Tentativa: 28 
+ Número do dado é 5 
+Tentativa: 29 
+ Número do dado é 5 
+Tentativa: 30 
+ Número do dado é 1 
+Tentativa: 31 
+ Número do dado é 3 
+Tentativa: 32 
+ Número do dado é 4 
+Tentativa: 33 
+ Número do dado é 4 
+Tentativa: 34 
+ Número do dado é 4 
+Tentativa: 35 
+ Número do dado é 4 
+Tentativa: 36 
  Número do dado é 6 </code></pre>
 </div>
 </div>
@@ -628,42 +685,36 @@ Tentativa: 6
 <li><p>A ideia é repetir um loop e parar quando a condição for satisfeita, para isso será utiliza a função <code>break</code></p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#|echo: true</span></span>
-<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="co">#|eval: false</span></span>
-<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="co"># contador = 1</span></span>
-<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="co"># repeat {</span></span>
-<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="co">#   # código será executado repetidamente </span></span>
-<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a><span class="co">#   if (condition) {</span></span>
-<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     break  # se a condição for satisfeita, para a repetição </span></span>
-<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a><span class="co">#   }</span></span>
-<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a><span class="co">#   contador = contador+1</span></span>
-<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>contador <span class="ot">=</span> <span class="dv">1</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="cf">repeat</span> {</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># código será executado repetidamente</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (condition) {</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span>  <span class="co"># se a condição for satisfeita, para a repetição</span></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>  contador <span class="ot">=</span> contador<span class="sc">+</span><span class="dv">1</span></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><p>Rode esse código no seu computador</p></li>
 <li><p>Avaliar como o tamanho da amostra afeta a média amostral</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">#|eval: false</span></span>
-<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="co">#|echo: true</span></span>
-<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="co"># N = 1000</span></span>
-<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a><span class="co"># populacao = runif(N, 0, 100) # gerar N números entre 0 e 100</span></span>
-<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a><span class="co"># head(populacao)</span></span>
-<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a><span class="co"># (media.populacao = mean(populacao))</span></span>
-<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="co"># n = 5 # tamanho da amostra inicial</span></span>
-<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a><span class="co"># repeat {</span></span>
-<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a><span class="co">#   amostra = sample(populacao, n, replace = T) # sorteando n observações da população</span></span>
-<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a><span class="co">#   media.amostra = mean(amostra)</span></span>
-<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a><span class="co">#   if (abs(media.amostra - media.populacao) &lt; 0.01) {</span></span>
-<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a><span class="co">#     n = 2 * n</span></span>
-<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a><span class="co">#     cat("n=", n, "\n", "Media amostral=", media.amostra, "\n")</span></span>
-<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a><span class="co">#     break</span></span>
-<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a><span class="co">#   }</span></span>
-<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a><span class="co">#   n = 2 * n</span></span>
-<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a><span class="co">#   cat("n=", n, "\n", "Media amostral=", media.amostra, "\n")</span></span>
-<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>N <span class="ot">=</span> <span class="dv">1000</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>populacao <span class="ot">=</span> <span class="fu">runif</span>(N, <span class="dv">0</span>, <span class="dv">100</span>) <span class="co"># gerar N números entre 0 e 100</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(populacao)</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>(<span class="at">media.populacao =</span> <span class="fu">mean</span>(populacao))</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">5</span> <span class="co"># tamanho da amostra inicial</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a><span class="cf">repeat</span> {</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>  amostra <span class="ot">=</span> <span class="fu">sample</span>(populacao, n, <span class="at">replace =</span> T) <span class="co"># sorteando n observações da população</span></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>  media.amostra <span class="ot">=</span> <span class="fu">mean</span>(amostra)</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">abs</span>(media.amostra <span class="sc">-</span> media.populacao) <span class="sc">&lt;</span> <span class="fl">0.01</span>) {</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>    n <span class="ot">=</span> <span class="dv">2</span> <span class="sc">*</span> n</span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"n="</span>, n, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, <span class="st">"Media amostral="</span>, media.amostra, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">=</span> <span class="dv">2</span> <span class="sc">*</span> n</span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"n="</span>, n, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, <span class="st">"Media amostral="</span>, media.amostra, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="next" class="level3">
