@@ -31,6 +31,8 @@ website:
                 text: "Conceitos Iniciais"
               - href: Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.qmd  
                 text: "Técnicas de Amostragem"
+              - href: Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.qmd  
+                text: "Gráficos"
           
               
 
