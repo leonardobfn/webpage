@@ -602,7 +602,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#apresentação-da-base-de-dados",
     "title": "Probabilidade e Estatística",
     "section": "Apresentação da base de dados",
-    "text": "Apresentação da base de dados\n\nBase simulada usando o programa R\nEmails de 100 remetentes\n\n\nprint(head(dados_email))\n\n                       remetente               assunto tamanho_kb prioridade\n1      Pedro-Almeida@example.com Confirmação de Pedido        279      Média\n2          Ana-Souza@example.com   Convite para Evento         54      Baixa\n3 Mariana-Cavalcante@example.com  Atualização de Conta        180       Alta\n4         João-Silva@example.com       Oferta Especial        458      Média\n5    Tatiane-Almeida@example.com  Atualização de Conta        168       Alta\n6 Tatiane-Cavalcante@example.com          Prêmio Ganho        490       Alta\n   spam qtd_caracteres formato\n1 FALSE            135   Texto\n2  TRUE            240    HTML\n3  TRUE            208   Texto\n4  TRUE            174    HTML\n5 FALSE            106   Texto\n6  TRUE            219    HTML",
+    "text": "Apresentação da base de dados\n\nBase simulada usando o programa R\nEmails de 100 remetentes\n\n\nprint(head(dados_email))\n\n                     remetente               assunto tamanho_kb prioridade\n1     Rafael-Souza@example.com  Atualização de Conta        334      Baixa\n2 Laura-Cavalcante@example.com       Oferta Especial        226       Alta\n3      Ana-Martins@example.com   Convite para Evento        313      Baixa\n4     José-Pereira@example.com          Prêmio Ganho        179       Alta\n5    Mariana-Costa@example.com          Prêmio Ganho         62      Média\n6     Rafael-Gomes@example.com Confirmação de Pedido        416       Alta\n   spam qtd_caracteres formato\n1  TRUE            234   Texto\n2  TRUE            113   Texto\n3  TRUE            256    HTML\n4 FALSE            278   Texto\n5  TRUE             87   Texto\n6 FALSE            255    HTML",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -614,7 +614,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#identificações-das-variáveis-1",
     "title": "Probabilidade e Estatística",
     "section": "Identificações das variáveis",
-    "text": "Identificações das variáveis\n\nstr(dados_email)\n\n'data.frame':   100 obs. of  7 variables:\n $ remetente     : chr  \"Pedro-Almeida@example.com\" \"Ana-Souza@example.com\" \"Mariana-Cavalcante@example.com\" \"João-Silva@example.com\" ...\n $ assunto       : chr  \"Confirmação de Pedido\" \"Convite para Evento\" \"Atualização de Conta\" \"Oferta Especial\" ...\n $ tamanho_kb    : num  279 54 180 458 168 490 263 123 231 300 ...\n $ prioridade    : chr  \"Média\" \"Baixa\" \"Alta\" \"Média\" ...\n $ spam          : logi  FALSE TRUE TRUE TRUE FALSE TRUE ...\n $ qtd_caracteres: num  135 240 208 174 106 219 248 235 65 145 ...\n $ formato       : chr  \"Texto\" \"HTML\" \"Texto\" \"HTML\" ...",
+    "text": "Identificações das variáveis\n\nstr(dados_email)\n\n'data.frame':   100 obs. of  7 variables:\n $ remetente     : chr  \"Rafael-Souza@example.com\" \"Laura-Cavalcante@example.com\" \"Ana-Martins@example.com\" \"José-Pereira@example.com\" ...\n $ assunto       : chr  \"Atualização de Conta\" \"Oferta Especial\" \"Convite para Evento\" \"Prêmio Ganho\" ...\n $ tamanho_kb    : num  334 226 313 179 62 416 441 195 376 85 ...\n $ prioridade    : chr  \"Baixa\" \"Alta\" \"Baixa\" \"Alta\" ...\n $ spam          : logi  TRUE TRUE TRUE FALSE TRUE FALSE ...\n $ qtd_caracteres: num  234 113 256 278 87 255 125 78 164 60 ...\n $ formato       : chr  \"Texto\" \"Texto\" \"HTML\" \"Texto\" ...",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -626,7 +626,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#gráficos-de-barras",
     "title": "Probabilidade e Estatística",
     "section": "Gráficos de Barras",
-    "text": "Gráficos de Barras\n\nTabelas: Frequências Absolutas e Relativas\n\n\ndados_email$prioridade &lt;- factor(dados_email$prioridade,levels = c(\"Baixa\",\"Média\",\"Alta\"))\n(tabela = table(dados_email$prioridade) ) \n\n\nBaixa Média  Alta \n   18    45    37 \n\n(tabela.prop = prop.table(tabela)) \n\n\nBaixa Média  Alta \n 0.18  0.45  0.37",
+    "text": "Gráficos de Barras\n\nTabelas: Frequências Absolutas e Relativas\n\n\ndados_email$prioridade &lt;- factor(dados_email$prioridade,levels = c(\"Baixa\",\"Média\",\"Alta\"))\n(tabela = table(dados_email$prioridade) ) \n\n\nBaixa Média  Alta \n   30    31    39 \n\n(tabela.prop = prop.table(tabela)) \n\n\nBaixa Média  Alta \n 0.30  0.31  0.39",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -698,7 +698,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#densidades-x-frequências",
     "title": "Probabilidade e Estatística",
     "section": "Densidades X Frequências",
-    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nx = runif(30,1,40) |&gt; round() # simulação\nx\n\n [1] 17 33 10 32 22 29 21 18  8 29 30 37 23 25 40  8 18 34 30 36 18 35 14 31 11\n[26] 31  5  4 27 27",
+    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nx = runif(30,1,40) |&gt; round() # simulação\nx\n\n [1]  2 24 16 33  2 12 19 36 27 35  6 16 23 13 40  1 14 39 10 38 33  6  6 13 24\n[26] 27 16  3  3 35",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -722,7 +722,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#densidades-x-frequências-2",
     "title": "Probabilidade e Estatística",
     "section": "Densidades X Frequências",
-    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nknitr::kable(tabela)\n\n\n\n\nX\nPM\nf_a\nf_r\nd_i\n\n\n\n\n(0,5]\n2.5\n2\n0.0667\n0.0133\n\n\n(5,10]\n7.5\n3\n0.1000\n0.0200\n\n\n(10,15]\n12.5\n2\n0.0667\n0.0133\n\n\n(15,30]\n22.5\n14\n0.4667\n0.0311\n\n\n(30,50]\n40.0\n9\n0.3000\n0.0150",
+    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nknitr::kable(tabela)\n\n\n\n\nX\nPM\nf_a\nf_r\nd_i\n\n\n\n\n(0,5]\n2.5\n5\n0.1667\n0.0333\n\n\n(5,10]\n7.5\n4\n0.1333\n0.0267\n\n\n(10,15]\n12.5\n4\n0.1333\n0.0267\n\n\n(15,30]\n22.5\n9\n0.3000\n0.0200\n\n\n(30,50]\n40.0\n8\n0.2667\n0.0133",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
