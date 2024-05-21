@@ -29,71 +29,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
@@ -415,7 +350,7 @@
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Probabilidade e Estatística</h1>
   <p class="subtitle"></p><center><br>
-Técnicas de Amostragem<br>
+Conceitos Iniciais<br>
 <center><p></p>
 
 <div class="quarto-title-authors">
@@ -428,408 +363,315 @@ Professor: Leonardo Brandão Freitas do Nascimento
 
 </center></center></section>
 <section>
-<section id="introdução" class="title-slide slide level1 center">
-<h1>Introdução</h1>
+<section id="o-que-é-estatística" class="title-slide slide level1 center">
+<h1>O que é Estatística?</h1>
 
 </section>
-<section id="subdivisões-da-estatística" class="slide level2">
-<h2>Subdivisões da Estatística</h2>
+<section id="exemplo---compra-da-tv" class="slide level2">
+<h2>Exemplo - Compra da TV</h2>
+<ul>
+<li><p>Suponha que você queira comprar uma televisão e quer saber qual é a loja que apresenta o melhor preço. O que você faz?</p>
+<ul>
+<li><p>Define as características da televisão que você deseja;</p></li>
+<li><p>Você inicia sua pesquisa nas lojas anotando os preços dos televisores;</p></li>
+<li><p>Depois você compara os preços de cada loja;</p></li>
+<li><p>Após comparar os preços, você seleciona aquela loja com melhor preço e se dirige até ela para efetuar a sua compra.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="exemplo---compra-da-tv-continuação" class="slide level2">
+<h2>Exemplo - Compra da TV (Continuação)</h2>
+<ul>
+<li><p>Note que a Estatística estava presente quando você:</p>
+<ul>
+<li><p>Definiu as características da televisão;</p></li>
+<li><p>Coletou os dados;</p></li>
+<li><p>Extraiu as informações a partir da sua pesquisa;</p></li>
+<li><p>Tomou decisão baseada nas informações extraídas.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="etimologia" class="slide level2">
+<h2>Etimologia</h2>
+<ul>
+<li><p>Históricamente, a palavra “estatística” tem origem no latim “statisticus”, que significa “relativo ao Estado”;</p></li>
+<li><p>Seu uso estava associado à coleta e análise de dados demográficos e econômicos para governos, especialmente para fins de planejamento e tomada de decisões políticas;</p></li>
+<li><p>Ao longo do tempo, o termo foi adotado em um contexto mais amplo, abrangendo a análise de dados em diversos campos, como ciências naturais, ciências sociais, negócios e muito mais.</p></li>
+</ul>
+</section>
+<section id="definição" class="slide level2">
+<h2>Definição</h2>
+<dl>
+<dt>Estatística</dt>
+<dd>
+<p>É a ciência que fornece os princípios e os métodos para coleta, organização, resumo, análise e interpretação de dados.</p>
+</dd>
+</dl>
+</section></section>
+<section>
+<section id="aplicações" class="title-slide slide level1 center">
+<h1>Aplicações</h1>
+
+</section>
+<section id="aplicações-gerais" class="slide level2">
+<h2>Aplicações Gerais</h2>
+<ul>
+<li><p><strong>Economia</strong>: Modelagem econométrica para estudar relações entre variáveis econômicas, como oferta e demanda, inflação e desemprego;</p></li>
+<li><p><strong>Ciências Ambientais</strong>: Estudos para prever mudanças climáticas e seus efeitos;</p></li>
+<li><p><strong>Medicina</strong>: Testes clínicos para avaliar a eficácia de novos tratamentos;</p></li>
+<li><p><strong>Biologia</strong>: Estudos de epidemiologia para analisar a propagação de doenças em populações.</p></li>
+</ul>
+</section>
+<section id="aplicações-na-área-de-computação" class="slide level2">
+<h2>Aplicações na Área de Computação</h2>
+<ul>
+<li><p>Análisar o Tempo e a ordem de falhas de componentes eletrônicos;</p></li>
+<li><p>A quantidade de memória alocada para a execução de determinado programa;</p></li>
+<li><p>Quantidade de defeitos em softwares recém lançados;</p></li>
+<li><p>Quantidade de arquivos e diretórios afetados por um vírus;</p></li>
+<li><p>Classificar se uma mensagem é um Spam.</p></li>
+</ul>
+</section>
+<section id="artigos" class="slide level2">
+<h2>Artigos</h2>
+<ul>
+<li><p>Em <span class="citation" data-cites="sullivan">Sullivan and Chillarege (<a href="#/referências" role="doc-biblioref" onclick="">1991</a>)</span> é realizado uma comparação dos defeitos regulares com os defeitos que corrompem a memória do programa;</p></li>
+<li><p>Em <span class="citation" data-cites="galinacgrbac2015">Galinac Grbac and Huljenić (<a href="#/referências" role="doc-biblioref" onclick="">2015</a>)</span> foi analisada a distribuição de probabilidade das falhas detectadas durante a verificação em quatro versões consecutivas de um sistema de software complexo de grande escala para as centrais de telecomunicações;</p></li>
+<li><p>Em <span class="citation" data-cites="khalid2023">Khalid et al. (<a href="#/referências" role="doc-biblioref" onclick="">2023</a>)</span> foi utilizado modelos de Machine Learning para realizar predições de defeitos em software.</p></li>
+</ul>
+</section></section>
+<section>
+<section id="conceitos-básicos" class="title-slide slide level1 center">
+<h1>Conceitos Básicos</h1>
+
+</section>
+<section id="população-e-amostra" class="slide level2">
+<h2>População e Amostra</h2>
+<dl>
+<dt>População e Amostra</dt>
+<dd>
+<p>População é o conjunto de elementos (pessoas, objetos) que possuem pelos menos uma característica em comum de interesse do pesquisador. Amostra é qualquer subconjunto da população.</p>
+</dd>
+</dl>
+
+<img data-src="Figuras/Populacao_amostra.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="variável" class="slide level2">
+<h2>Variável</h2>
+<dl>
+<dt>Variável</dt>
+<dd>
+<p>É alguma característica que pode ser observada a partir da amostra.</p>
+</dd>
+</dl>
+</section>
+<section id="dados" class="slide level2">
+<h2>Dados</h2>
+<dl>
+<dt>Dados</dt>
+<dd>
+<p>Conjuntos de valores numéricos ou não.</p>
+</dd>
+</dl>
+</section>
+<section id="exemplos" class="slide level2">
+<h2>Exemplos</h2>
+<ul>
+<li>Identifique a população, a amostra e a variável para cada um dos exemplos abaixo:</li>
+</ul>
+<ol type="1">
+<li><p>Consideremos uma pesquisa para estudar os salários dos 500 funcionários de uma empresa. Seleciona-se 36 funcionários e anotam-se os seus salários.</p></li>
+<li><p>Um grupo de pesquisadores está interessado em estudar a preferência de linguagens de programação entre os desenvolvedores de software. Eles decidem realizar uma pesquisa online e coletam dados de uma amostra de 500 desenvolvedores.</p></li>
+</ol>
+</section>
+<section id="exemplos-continuação" class="slide level2">
+<h2>Exemplos (Continuação)</h2>
+<ol start="3" type="1">
+<li>Uma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia</li>
+</ol>
+</section>
+<section id="representações-das-variáveis" class="slide level2">
+<h2>Representações das variáveis</h2>
+<ul>
+<li>As representações das variáveis podem ser feitas através de uma letra:</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variável</th>
+<th style="text-align: center;">Representação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Estado Civil</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Grau de Instrução</td>
+<td style="text-align: center;">Y</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Número de Filhos</td>
+<td style="text-align: center;">Z</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="classificação-das-variáveis" class="title-slide slide level1 center">
+<h1>Classificação das Variáveis</h1>
+<ul>
+<li>As variáveis podem ser classificadas em dois tipos: quantitativas/numéricas ou qualitativas/categóricas.</li>
+</ul>
+</section>
+<section id="quantitativas" class="slide level2">
+<h2>Quantitativas</h2>
+<ul>
+<li><p>Estão relacionadas às observações associadas a contagem ou mensurações. Elas podem ser:</p>
+<ul>
+<li><p><strong>Discretas</strong>: assumem somente valores inteiros em um conjunto de valores , é resultado de uma possível contagem. Exemplos: número de irmãos, número de estudantes em sala de aula;</p></li>
+<li><p><strong>Contínuas</strong>: assumem somente valores em um intervalo de valores. É o resultado de um processo de medição. Exemplos: temperatura, velocidade, peso, altura.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="qualitativas" class="slide level2">
+<h2>Qualitativas</h2>
+<ul>
+<li><p>Representam uma “qualidade” dos objetos da população. Também são chamadas de variáveis categóricas. Elas podem ser:</p>
+<ul>
+<li><p><strong>Nominal</strong>: possíveis respostas que não possuem uma ordenação natural. Exemplos: raça, sexo.</p></li>
+<li><p><strong>Ordinal</strong>: possíveis respostas possuem uma ordenação natural. Exemplos: Classe social, escolaridade.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="observação" class="slide level2">
+<h2>Observação</h2>
+<ul>
+<li><strong>Observação</strong>: algumas variáveis podem ser classificadas em mais de um tipo dependendo da unidade usada. Por exemplo, a renda medida em salários mínimos pode ser classificada como uma variável discreta, mas pode também ser ordinal se categorizada como baixa, média e alta.</li>
+</ul>
+</section>
+<section id="exemplos-1" class="slide level2">
+<h2>Exemplos</h2>
+<ul>
+<li>Identifique e classifique as variáveis</li>
+</ul>
+<ol type="1">
+<li><p>Uma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia</p></li>
+<li><p>Quantidade de defeitos em softwares recém lançados;</p></li>
+<li><p>Classificar se uma mensagem é um Spam.</p></li>
+</ol>
+</section></section>
+<section>
+<section id="subdivisões-da-estatística" class="title-slide slide level1 center">
+<h1>Subdivisões da Estatística</h1>
 
 <img data-src="Figuras/estatistica.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="amostragem" class="slide level2">
 <h2>Amostragem</h2>
 <ul>
-<li><p>A utilização de amostra em pesquisa é uma prática fundamental para extrair conclusões válidas e representativas de uma população maior.</p></li>
-<li><p>Ao invés de coletar dados de toda a população, o que pode ser impraticável em termos de tempo, custo e recursos, amostras são selecionadas e estudadas.</p></li>
-<li><p>Isso permite generalizar as descobertas da amostra para a população maior, desde que a amostra seja adequadamente selecionada e representativa.</p></li>
+<li>Técnicas para colher amostras representativas da população;</li>
 </ul>
 </section>
-<section id="amostragem-1" class="slide level2">
-<h2>Amostragem</h2>
+<section id="estatísticas-descritivas" class="slide level2">
+<h2>Estatísticas Descritivas</h2>
 <ul>
-<li><p>Nestes casos, a Estatística apresenta algumas técnicas para a obtenção de uma amostra.</p></li>
-<li><p>Cuidado básico: a amostra deve ser representativa da população, ou seja, deve possuir aproximadamente as mesmas características que a população da qual foi retirada.</p></li>
+<li>Em geral, é utilizada na etapa inicial da análise, em um primeiro contato com os dados. Apresenta os dados em tabelas ou gráficos além de organizar e resumir resultados preliminares.</li>
 </ul>
 </section>
-<section id="amostragem-2" class="slide level2">
-<h2>Amostragem</h2>
+<section id="probabilidade" class="slide level2">
+<h2>Probabilidade</h2>
 <ul>
-<li><p>Algumas razões de trabalhar com amostras:</p>
+<li>É a teoria matemática utilizada para estudar a incerteza oriunda de fenômenos aleatório</li>
+</ul>
+</section>
+<section id="inferência-estatística" class="slide level2">
+<h2>Inferência estatística</h2>
 <ul>
-<li><p>Envelhecimento da pesquisa: tempo excessivo para coleta dos dados;</p></li>
-<li><p>Econômicas: restrições orçamentárias de projetos;</p></li>
-<li><p>Éticas: experimentos laboratoriais com seres vivos;</p></li>
-<li><p>Inacessibilidade de informações: análise do sangue de uma pessoa ou experimento para determinar o tempo de funcionamento de uma lâmpada.</p></li>
-</ul></li>
+<li><p>Técnicas que tentam identificar um modelo de probabilidade para a exploração de informações e conclusões obtidas a partir de uma amostra. Pode ser dividida em teste de hipótese e estimação dos parâmetros.</p></li>
+<li><p><strong>Observação:</strong> Note que a inferência ocorre quando as informações são obtidas a partir de uma amostra. Não se faz inferência nos casos em que toda a população é investigada. Esse tipo de estudo, onde toda a população é considerada, é denominado censo.</p></li>
 </ul>
 </section></section>
 <section>
-<section id="técnicas-de-amostragem" class="title-slide slide level1 center">
-<h1>Técnicas de Amostragem</h1>
-<ul>
-<li><p>Uma amostra pode ser composta por métodos <strong>probabilísticos</strong> e <strong>não-probabilísticos.</strong></p></li>
-<li><p>A diferenciação entre amostragem probabilística e não probabilística está relacionada à maneira como os elementos são selecionados para compor a amostra.</p></li>
-<li><p>Para mais detalhes <span class="citation" data-cites="maurits2022statistics">Edwin (<a href="#/referências" role="doc-biblioref" onclick="">2022</a>)</span></p></li>
-</ul>
+<section id="tipos-de-estudos" class="title-slide slide level1 center">
+<h1>Tipos de Estudos</h1>
+
 </section>
-<section id="métodos-probabilísticos" class="slide level2">
-<h2>Métodos Probabilísticos</h2>
-<dl>
-<dt>Métodos probabilísticos</dt>
-<dd>
-<p>Cada membro da população tem uma chance de ser selecionado para a amostra. Isso significa que todos os elementos da população têm a mesma oportunidade de serem escolhidos.</p>
-</dd>
-</dl>
+<section id="causa-e-efeito-x-associação" class="slide level2">
+<h2>Causa e Efeito X Associação</h2>
 <ul>
-<li><p>Os Métodos probabilísticos são:</p>
-<ul>
-<li><p>Amostragem Aleatória Simples</p></li>
-<li><p>Amostragem Sistemática</p></li>
-<li><p>Amostragem Estratificada</p></li>
-<li><p>Amostragem por conglomerado</p></li>
-</ul></li>
+<li>Antes de definir estudos experimentais e observacionais, irei comentar sobre a diferença entre Causa e Efeito e Associção. Suponha o seguinte exemplo:</li>
 </ul>
-</section>
-<section id="aleatória-simples" class="slide level2">
-<h2>Aleatória Simples</h2>
-<dl>
-<dt>Amostra Aleatória Simples (AAS)</dt>
-<dd>
-<p>Cada membro da população tem a mesma chance de ser selecionado para a amostra.</p>
-</dd>
-</dl>
-<ul>
-<li><p>Procedimento:</p>
-<ul>
-<li><p>Cada participante/elemento da população “recebe” um número.</p></li>
-<li><p>Os elementos que irão compor a amostra são selecionados através de um sorteio aleatório.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="aleatória-simples-1" class="slide level2">
-<h2>Aleatória Simples</h2>
-<ul>
-<li><p>Observações:</p>
-<ul>
-<li><p>Pode não representar bem subgrupos populacionais.</p></li>
-<li><p>Devemos utilizar ASS somente quando a população for homogênea em relação a variável em estudo</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="aleatória-simples-2" class="slide level2">
-<h2>Aleatória Simples</h2>
-<h3 id="exemplos">Exemplos</h3>
 <ol type="1">
-<li><p>Um estudo sobre preferências de linguagens de programação, selecionar aleatoriamente desenvolvedores de software de uma lista de empresas de tecnologia.</p></li>
-<li><p>Uma empresa de comércio eletrônico deseje avaliar a satisfação dos clientes em relação a sua plataforma de vendas online. Eles têm uma base de dados com informações de todos os clientes que fizeram compras nos últimos seis meses.</p></li>
+<li><p>Suponha que uma equipe de pesquisadores queira investigar se a utilização de um determinado algoritmo de compressão de dados melhora o desempenho de um sistema de armazenamento em nuvem.</p></li>
+<li><p>Eles realizam um experimento onde um grupo de servidores utiliza o algoritmo de compressão, enquanto outro grupo utiliza o armazenamento sem compressão.</p></li>
 </ol>
 </section>
-<section id="aleatória-simples-3" class="slide level2">
-<h2>Aleatória Simples</h2>
-<h3 id="exemplo-no-r">Exemplo no R</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>N <span class="ot">=</span> <span class="dv">1000</span> <span class="co"># quantidade de clientes</span></span>
-<span id="cb1-2"><a></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span>N <span class="co"># sequência de números de 1 a 1000</span></span>
-<span id="cb1-3"><a></a>n <span class="ot">=</span> <span class="dv">10</span> <span class="co"># tamanho da amostra</span></span>
-<span id="cb1-4"><a></a><span class="fu">set.seed</span>(<span class="dv">1</span>) <span class="co"># para que selecione a mesma amostra</span></span>
-<span id="cb1-5"><a></a><span class="fu">sample</span>(x,n) <span class="co"># realiza o sorteio de n clientes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] 836 679 129 930 509 471 299 270 978 187</code></pre>
-</div>
-</div>
-</section>
-<section id="sistemática" class="slide level2">
-<h2>Sistemática</h2>
-<dl>
-<dt>Amostragem Sistemática</dt>
-<dd>
-<p>A amostra sistemática é constituída por <span class="math inline">\(n\)</span> unidades retiradas da população segundo um sistema preestabelecido.</p>
-</dd>
-</dl>
-<ul>
-<li>Procedimentos: apresentado dentro do exemplo</li>
-</ul>
-</section>
-<section id="sistemática-1" class="slide level2">
-<h2>Sistemática</h2>
-<ul>
-<li><p>Observações:</p>
-<ul>
-<li><p>Utiliza-se em situações como amostrar pessoas que ficam em uma fila ou quando os elementos estão ordenados</p></li>
-<li><p>É de fundamental importância que a variável de interesse não apresente ciclos de variação coincidentes com os ciclos de retirada.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="sistemática-2" class="slide level2">
-<h2>Sistemática</h2>
-<h3 id="exemplo">Exemplo</h3>
-<ol type="1">
-<li><p>Suponha que uma empresa de desenvolvimento de software esteja conduzindo um estudo sobre a eficiência de um sistema de processamento de pedidos online.</p></li>
-<li><p>A empresa possui uma lista ordenada de pedidos registrados no sistema, onde cada pedido é atribuído a um cliente.</p></li>
-<li><p>Considere que tenha <span class="math inline">\(N=1000\)</span> pedidos no total e a equipe quer uma amostra de <span class="math inline">\(n=50\)</span> pedidos</p></li>
+<section id="causa-e-efeito-x-associação-1" class="slide level2">
+<h2>Causa e Efeito X Associação</h2>
+<ol start="3" type="1">
+<li>Em seguida, eles medem métricas de desempenho, como taxa de transferência de dados e tempo de resposta do servidor, ao longo de um período de tempo.</li>
 </ol>
 </section>
-<section id="sistemática-3" class="slide level2">
-<h2>Sistemática</h2>
-<h3 id="exemplo-continuação">Exemplo (continuação)</h3>
+<section id="causa-e-efeito-x-associação-2" class="slide level2">
+<h2>Causa e Efeito X Associação</h2>
 <ul>
-<li><p>Procedimentos</p>
+<li>Suponha o seguinte exemplo:
 <ol type="1">
-<li><p>Enumerar a população de <span class="math inline">\(1\)</span> até <span class="math inline">\(N\)</span>, onde <span class="math inline">\(N\)</span> é o tamanho da população, ou seja, <span class="math inline">\(N=1000\)</span></p></li>
-<li><p>Calcular a constante <span class="math inline">\(c = \dfrac{N}{n}\)</span>, onde <span class="math inline">\(n\)</span> é o tamanho da amostra, ou seja, <span class="math inline">\(c= \dfrac{1000}{50}=20\)</span></p></li>
-<li><p>Sortear um número entre <span class="math inline">\(1\)</span> e <span class="math inline">\(c\)</span>, ou seja, entre <span class="math inline">\(1\)</span> e <span class="math inline">\(20\)</span>. Esse número é denominado Ponto Inicial de Amostragem (PIA).</p></li>
+<li><p>Suponha que uma equipe de pesquisadores esteja interessada em estudar a associação entre o uso de um determinado sistema operacional e a segurança dos dispositivos móveis.</p></li>
+<li><p>Eles coletam dados de uma amostra de usuários de dispositivos móveis, registrando qual sistema operacional eles utilizam e quantos incidentes de segurança relataram ao longo de um período de tempo.</p></li>
 </ol></li>
 </ul>
 </section>
-<section id="sistemática-4" class="slide level2">
-<h2>Sistemática</h2>
-<h3 id="exemplo-continuação-1">Exemplo (continuação)</h3>
-<ol start="4" type="1">
-<li><p>Suponha que o número escolhido seja 8. Nesse caso, o oitavo pedido/cliente será o primeiro da amostra</p></li>
-<li><p>A partir do pedido número 8, conte mais 20 e selecione esse pedido/cliente, ou seja, pedido/cliente de número 28.</p></li>
-<li><p>Proceda dessa forma até completar a amostra de 50 clientes</p></li>
+<section id="causa-e-efeito-x-associação-3" class="slide level2">
+<h2>Causa e Efeito X Associação</h2>
+<ol start="3" type="1">
+<li>Os usuários de um sistema operacional específico relatam mais incidentes de segurança em comparação com os usuários de outros sistemas operacionais</li>
+</ol>
+<ul>
+<li>No entanto, eles não podem concluir que o uso desse sistema operacional causa diretamente mais incidentes de segurança, pois outros fatores podem influenciar essa relação.</li>
+</ul>
+</section>
+<section id="experimental-x-observacional" class="slide level2">
+<h2>Experimental X Observacional</h2>
+<ul>
+<li>Suponha as seguintes situações:</li>
+</ul>
+<ol type="1">
+<li>Um grupo de pesquisadores está interessado em estudar a preferência de linguagens de programação entre os desenvolvedores de software. Eles decidem realizar uma pesquisa online e coletam dados de uma amostra de 500 desenvolvedores</li>
 </ol>
 </section>
-<section id="estratificada" class="slide level2">
-<h2>Estratificada</h2>
+<section id="experimental-x-observacional-1" class="slide level2">
+<h2>Experimental X Observacional</h2>
+<ol start="2" type="1">
+<li>Uma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia.</li>
+</ol>
+</section>
+<section id="experimental-x-observacional-2" class="slide level2">
+<h2>Experimental X Observacional</h2>
 <dl>
-<dt>Amostragem Estratificada</dt>
+<dt>Experimental</dt>
 <dd>
-<p>A população é dividida em estratos ou grupos com características semelhantes, e depois são selecionadas aleatoriamente amostras de cada estrato.</p>
+<ul>
+<li><p>Em um experimento, aplicamos determinado tratamento e passamos então a observar seus efeitos sobre os elementos.</p></li>
+<li><p>Um estudo experimental envolve a manipulação de uma ou mais variáveis para observar o efeito que essa manipulação tem em outra variável.</p></li>
+<li><p>Esse tipo de estudo é mais capaz de estabelecer causalidade, pois os pesquisadores podem controlar as condições experimentais.</p></li>
+</ul>
 </dd>
 </dl>
-<ul>
-<li>Procedimentos: apresentado dentro do exemplo</li>
-</ul>
 </section>
-<section id="estratificada-1" class="slide level2">
-<h2>Estratificada</h2>
-<ul>
-<li><p>Observações:</p>
-<ul>
-<li><p>Utilizar em situações onde a variável de interesse apresenta uma heterogeneidade na população e essa heterogeneidade permite a identificação de grupos homogêneos.</p></li>
-<li><p>A sua implementação é dificultada pela falta de informação sobre a população para fazer a estratificação.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="estratificada-2" class="slide level2">
-<h2>Estratificada</h2>
-<h3 id="exemplo-1">Exemplo</h3>
-<ul>
-<li><p>Imagine que o prefeito de uma cidade <span class="math inline">\(X\)</span> deseja fazer um pesquisa de satisfação das pessoas em relação aos serviços prestados pela prefeitura.</p></li>
-<li><p>Estudos anteriores mostram uma relação entre a satisfação das pessoas e a zona onde a pessoa mora.</p></li>
-<li><p>Essa cidade foi dividida em três zonas (estratos), conforme a Tabela a seguir.</p></li>
-</ul>
-</section>
-<section id="estratificada-3" class="slide level2">
-<h2>Estratificada</h2>
-<h3 id="exemplo-continuação-2">Exemplo (continuação)</h3>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Zonas (Estratos)</th>
-<th style="text-align: center;">Hab. em cada zona</th>
-<th style="text-align: center;">Hab. em cada zona (%)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">700</td>
-<td style="text-align: center;">84,6</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">100</td>
-<td style="text-align: center;">12,1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">27</td>
-<td style="text-align: center;">3,3</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Total</td>
-<td style="text-align: center;">827</td>
-<td style="text-align: center;">100</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="estratificada-4" class="slide level2">
-<h2>Estratificada</h2>
-<h3 id="exemplo-continuação-3">Exemplo (continuação)</h3>
-<ul>
-<li><p>Procedimentos:</p>
-<ul>
-<li><p>Calcule a proporção de cada estrato na população, dividindo o tamanho do estrato pelo tamanho da população</p></li>
-<li><p>Considere o Tamanho da amostra igual a 200</p></li>
-<li><p>A obtenção da quantidade de pessoas que será amostrada na população (por zona) será dada por: multiplicando a proporção de cada estrato pelo tamanho da amostra <span class="math inline">\((n=200)\)</span></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="estratificada-5" class="slide level2">
-<h2>Estratificada</h2>
-<h3 id="exemplo-continuação-4">Exemplo (continuação)</h3>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Zonas (Estratos)</th>
-<th style="text-align: center;">Hab. em cada zona</th>
-<th style="text-align: center;">Hab. em cada zona (%)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">169</td>
-<td style="text-align: center;">84,6</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">24</td>
-<td style="text-align: center;">12,1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">3,3</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Total</td>
-<td style="text-align: center;">200</td>
-<td style="text-align: center;">100</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="conglomerados" class="slide level2">
-<h2>Conglomerados</h2>
+<section id="observacional" class="slide level2">
+<h2>Observacional</h2>
 <dl>
-<dt>Amostragem por Conglomerados</dt>
+<dt>Obervacional</dt>
 <dd>
-<p>Nesse procedimento, a população é dividida em subpopulações ou conglomerados de elementos heterogêneos, em seguida, uma <span class="math inline">\(ASS\)</span> é utilizada para selecionar o conglomerado e depois todos os indivíduos dos conglomerados selecionado serão analisados.</p>
+<ul>
+<li><p>Verificamos e medimos características específicas, mas não tentamos manipular ou modificar os elementos que estão sendo estudados.</p></li>
+<li><p>Um estudo observacional observa e registra informações sobre um grupo, mas não tenta modificar as variáveis do ambiente</p></li>
+<li><p>Este tipo de estudo é útil para identificar associações entre variáveis, mas não pode estabelecer causalidade definitiva.</p></li>
+</ul>
 </dd>
 </dl>
-<ul>
-<li>Procedimentos serão apresentados dentro do exemplo.</li>
-</ul>
-</section>
-<section id="conglomerados-1" class="slide level2">
-<h2>Conglomerados</h2>
-<ul>
-<li><p>Observações:</p>
-<ul>
-<li>Geralmente, os conglomerados são definidos por fatores geográficos, como bairros e quarteirões. No entanto, podemos considerar, por exemplo, um asilo como um conglomerado de idoso ou o batalhão do exército como um glomerado de jovens.</li>
-</ul></li>
-</ul>
-</section>
-<section id="conglomerados-2" class="slide level2">
-<h2>Conglomerados</h2>
-<h3 id="exemplo-2">Exemplo</h3>
-<ul>
-<li><p>Considere um estudo para avaliar a qualidade dos celulares (mesmo modelo) disponíveis em diferentes lojas Procedimentos:</p></li>
-<li><p>Inicialmente, identificaremos todas as lojas de celulares na área de estudo.</p></li>
-<li><p>Em seguida, selecionaremos aleatoriamente um número específico de lojas de celulares para compor nossa amostra</p></li>
-</ul>
-</section>
-<section id="conglomerados-3" class="slide level2">
-<h2>Conglomerados</h2>
-<h3 id="exemplo-continuação-5">Exemplo (Continuação)</h3>
-<ul>
-<li>Coletar a opinião de todos os clientes de cada loja de selecionada</li>
-</ul>
 </section></section>
-<section>
-<section id="métodos-não-probabilísticos" class="title-slide slide level1 center">
-<h1>Métodos não Probabilísticos</h1>
-<dl>
-<dt>Métodos não Probabilísticos</dt>
-<dd>
-<p>É aquela em que a seleção dos elementos da população para compor a amostra depende ao menos em parte do julgamento do pesquisador ou do entrevistador no campo. A seleção não é realizada de maneira aleatória.</p>
-</dd>
-</dl>
-<ul>
-<li>Os métodos são: julgamento e acidental/coveniência. Outros métodos são apresentado em <span class="citation" data-cites="maurits2022statistics">Edwin (<a href="#/referências" role="doc-biblioref" onclick="">2022</a>)</span></li>
-</ul>
-</section>
-<section id="julgamento" class="slide level2">
-<h2>Julgamento</h2>
-<dl>
-<dt>Amostragem por julgamento</dt>
-<dd>
-<ul>
-<li><p>Os elementos são selecionados com base no julgamento dos pesquisadores sobre sua relevância para o estudo</p></li>
-<li><p>Isso significa que a coleta de unidades é focada em uma ou mais características particulares, o que implica que apenas unidades mais semelhantes são amostradas.</p></li>
-</ul>
-</dd>
-</dl>
-</section>
-<section id="julgamento-1" class="slide level2">
-<h2>Julgamento</h2>
-<h3 id="exemplo-3">Exemplo</h3>
-<ul>
-<li><p>Vamos considerar um estudo que investiga as preferências de desenvolvedores de software em relação ao sistema operacional que utilizam para desenvolvimento.</p></li>
-<li><p>Na amostragem por julgamento, os pesquisadores podem escolher entrevistar desenvolvedores que se destacam em termos de experiência e influência na comunidade de desenvolvimento de software.</p></li>
-</ul>
-</section>
-<section id="julgamento-2" class="slide level2">
-<h2>Julgamento</h2>
-<ul>
-<li>Nesse caso, os pesquisadores podem selecionar desenvolvedores seniores que têm um histórico de contribuições para projetos de código aberto em plataformas como GitHub ou GitLab.</li>
-</ul>
-</section>
-<section id="conveniência" class="slide level2">
-<h2>Conveniência</h2>
-<dl>
-<dt>Amostragem por Conveniência</dt>
-<dd>
-<p>Os pesquisadores selecionam elementos com base em sua disponibilidade e acessibilidade.</p>
-</dd>
-</dl>
-<ul>
-<li><p>Observações:</p>
-<ul>
-<li><p>A amostragem por conveniência é é frequentemente justificada com o argumento da homogeneidade da população.</p></li>
-<li><p>Em alguns casos os resultados da amostragem por conveniência podem ser bons, mas em outros casos podem apresentar séria tendenciosidade;<br>
-</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="conveniência-1" class="slide level2">
-<h2>Conveniência</h2>
-<h3 id="exemplo-4">Exemplo:</h3>
-<ul>
-<li><p>Suponha que uma empresa queira realizar um estudo sobre o uso de ferramentas de controle de versão entre os desenvolvedores.</p></li>
-<li><p>Nesse caso a empresa entrevista desenvolvedores que trabalham na própria empresa</p></li>
-</ul>
-</section>
-<section id="conveniência-2" class="slide level2">
-<h2>Conveniência</h2>
-<h3 id="exemplo-5">Exemplo:</h3>
-<ul>
-<li><p>O pesquisador deseja saber qual a preferência dos eleitores em uma disputa ao governo;</p></li>
-<li><p>Pesquisadores de campo poderia ficar em locais de grande tráfego de eleitores, questionando-os sobre suas preferências;</p></li>
-<li><p>Note que os eleitores mais fáceis foram selecionados;</p></li>
-<li><p>Problema: o local escolhido para a coleta influencia a composição da amostra</p></li>
-</ul>
-</section></section>
-<section id="resumo" class="title-slide slide level1 center">
-<h1>Resumo</h1>
-<ul>
-<li><p>Na amostragem probabilística, a teoria da probabilidade permite que o pesquisador calcule a natureza e extensão do viés das estimativas;</p></li>
-<li><p>Uma amostragem probabilística podem ser feitas inteiramente por métodos estatísticos, não assumindo critérios em relação à distribuição das características na população;</p></li>
-<li><p>A amostragem não probabilística envolve uma série de métodos de seleção de amostras onde são realizados julgamentos, sendo portanto não aleatório;</p></li>
-</ul>
-</section>
-
-<section id="resumo-1" class="title-slide slide level1 center">
-<h1>Resumo</h1>
-<ul>
-<li>Os resultados de uma pesquisa baseada em amostragem não probabilística não permitem generalizações a respeito da população em estudo.</li>
-</ul>
-</section>
-
 <section id="referências" class="title-slide slide level1 smaller scrollable">
 <h1>Referências</h1>
 
@@ -839,8 +681,14 @@ Professor: Leonardo Brandão Freitas do Nascimento
 </div>
 </div>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-maurits2022statistics" class="csl-entry" role="listitem">
-Edwin, Maurits; Van Den Heuvel Kaptein. 2022. <em>Statistics for Data Scientists: An Introduction to Probability, Statistics, and Data Analysis</em>. Springer.
+<div id="ref-galinacgrbac2015" class="csl-entry" role="listitem">
+Galinac Grbac, Tihana, and Darko Huljenić. 2015. <span>“On the Probability Distribution of Faults in Complex Software Systems.”</span> <em>Information and Software Technology</em> 58 (February): 250–58. <a href="https://doi.org/10.1016/j.infsof.2014.06.014">https://doi.org/10.1016/j.infsof.2014.06.014</a>.
+</div>
+<div id="ref-khalid2023" class="csl-entry" role="listitem">
+Khalid, Aimen, Gran Badshah, Nasir Ayub, Muhammad Shiraz, and Mohamed Ghouse. 2023. <span>“Software Defect Prediction Analysis Using Machine Learning Techniques.”</span> <em>Sustainability</em> 15 (6): 5517. <a href="https://doi.org/10.3390/su15065517">https://doi.org/10.3390/su15065517</a>.
+</div>
+<div id="ref-sullivan" class="csl-entry" role="listitem">
+Sullivan, M., and R. Chillarege. 1991. <span>“Software Defects and Their Impact on System Availability-a Study of Field Failures in Operating Systems.”</span> <em>[1991] Digest of Papers. Fault-Tolerant Computing: The Twenty-First International Symposium</em>. <a href="https://doi.org/10.1109/ftcs.1991.146625">https://doi.org/10.1109/ftcs.1991.146625</a>.
 </div>
 </div>
 </section>
@@ -1058,82 +906,6 @@ Edwin, Maurits; Van Den Heuvel Kaptein. 2022. <em>Statistics for Data Scientists
         ]
       });
     </script>
-    
-
-    <script>
-
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
-      // slide changes (different for each slide format).
-
-      (function () {
-
-        // dispatch for htmlwidgets
-
-        function fireSlideEnter() {
-
-          const event = window.document.createEvent("Event");
-
-          event.initEvent("slideenter", true, true);
-
-          window.document.dispatchEvent(event);
-
-        }
-
-    
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          fireSlideEnter();
-
-    
-
-          // dispatch for shiny
-
-          if (window.jQuery) {
-
-            if (previousSlide) {
-
-              window.jQuery(previousSlide).trigger("hidden");
-
-            }
-
-            if (currentSlide) {
-
-              window.jQuery(currentSlide).trigger("shown");
-
-            }
-
-          }
-
-        }
-
-    
-
-        // hookup for slidy
-
-        if (window.w3c_slidy) {
-
-          window.w3c_slidy.add_observer(function (slide_num) {
-
-            // slide_num starts at position 1
-
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
-          });
-
-        }
-
-    
-
-      })();
-
-    </script>
-
-    
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

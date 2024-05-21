@@ -94,27 +94,7 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+  </style>
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -415,7 +395,7 @@
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Probabilidade e Estatística</h1>
   <p class="subtitle"></p><center><br>
-Técnicas de Amostragem<br>
+Medidas de Posição<br>
 <center><p></p>
 
 <div class="quarto-title-authors">
@@ -430,417 +410,751 @@ Professor: Leonardo Brandão Freitas do Nascimento
 <section>
 <section id="introdução" class="title-slide slide level1 center">
 <h1>Introdução</h1>
-
-</section>
-<section id="subdivisões-da-estatística" class="slide level2">
-<h2>Subdivisões da Estatística</h2>
-
-<img data-src="Figuras/estatistica.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="amostragem" class="slide level2">
-<h2>Amostragem</h2>
 <ul>
-<li><p>A utilização de amostra em pesquisa é uma prática fundamental para extrair conclusões válidas e representativas de uma população maior.</p></li>
-<li><p>Ao invés de coletar dados de toda a população, o que pode ser impraticável em termos de tempo, custo e recursos, amostras são selecionadas e estudadas.</p></li>
-<li><p>Isso permite generalizar as descobertas da amostra para a população maior, desde que a amostra seja adequadamente selecionada e representativa.</p></li>
+<li><p>As medidas de tendência central são estatísticas usadas para resumir um conjunto de dados, indicando um valor central ou típico em torno do qual os dados se distribuem.</p></li>
+<li><p>As principais medidas de tendência central são a média, a mediana e a moda.</p></li>
+<li><p>Cada uma dessas medidas tem suas próprias características e aplicações, dependendo do tipo de dados e do contexto da análise</p></li>
+<li><p>O interesse é caracterizar o conjunto de dados através de medidas que resumem as informações</p></li>
 </ul>
 </section>
-<section id="amostragem-1" class="slide level2">
-<h2>Amostragem</h2>
+<section id="símbolos-matemáticos" class="slide level2">
+<h2>Símbolos matemáticos</h2>
 <ul>
-<li><p>Nestes casos, a Estatística apresenta algumas técnicas para a obtenção de uma amostra.</p></li>
-<li><p>Cuidado básico: a amostra deve ser representativa da população, ou seja, deve possuir aproximadamente as mesmas características que a população da qual foi retirada.</p></li>
+<li><p>Para representar uma amostra de tamanho <span class="math inline">\(n\)</span>, escrevemos: <span class="math display">\[x_1, x_2,..., x_n,\]</span> onde <span class="math inline">\(x_i\)</span> é a <span class="math inline">\(i\)</span>-ésima observação em um conjunto de <span class="math inline">\(n\)</span> observações, ou seja, <span class="math inline">\(x_1\)</span> representa a primeira observação, <span class="math inline">\(x_2\)</span> a segunda e assim por diante.</p></li>
+<li><p>Considere os tempos, em segundos, de cinco tarefas realizadas por uma CPU: <span class="math display">\[30; 25; 28;33;31. \]</span></p></li>
+<li><p>Escreva esse conjunto na notação geral: <span class="math inline">\(x_1 = 30\)</span>,<span class="math inline">\(x_2 = 25\)</span>, <span class="math inline">\(x_3 = 28\)</span>, <span class="math inline">\(x_4 = 33\)</span>, <span class="math inline">\(x_5 = 31\)</span>.</p></li>
 </ul>
 </section>
-<section id="amostragem-2" class="slide level2">
-<h2>Amostragem</h2>
+<section id="símbolos-matemáticos-1" class="slide level2">
+<h2>Símbolos matemáticos</h2>
 <ul>
-<li><p>Algumas razões de trabalhar com amostras:</p>
+<li><p>Em alguns momentos estamos interessados em ordenar os dados do menor valor para o maior valor, dessa forma escrevemos: <span class="math display">\[x_{(1)}, x_{(2)},...,  x_{(n)},\]</span> onde <span class="math inline">\(x_{(1)}\)</span> é a menor observação, <span class="math inline">\(x_{(2)}\)</span> é a segunda menor e assim por diante.</p></li>
+<li><p>Considere os tempos, em segundos, de cinco tarefas realizadas por uma CPU: <span class="math display">\[30; 25; 28;33;31. \]</span></p></li>
+<li><p>Ordene os dados e escreva na notação apresentada: <span class="math inline">\(x_{(1)} = 25\)</span>,<span class="math inline">\(x_{(1)} = 28\)</span>, <span class="math inline">\(x_{(3)} = 30\)</span>, <span class="math inline">\(x_{(4)} = 31\)</span>, <span class="math inline">\(x_{(5)} = 33\)</span>.</p></li>
+</ul>
+</section>
+<section id="símbolos-matemáticos-2" class="slide level2">
+<h2>Símbolos matemáticos</h2>
 <ul>
-<li><p>Envelhecimento da pesquisa: tempo excessivo para coleta dos dados;</p></li>
-<li><p>Econômicas: restrições orçamentárias de projetos;</p></li>
-<li><p>Éticas: experimentos laboratoriais com seres vivos;</p></li>
-<li><p>Inacessibilidade de informações: análise do sangue de uma pessoa ou experimento para determinar o tempo de funcionamento de uma lâmpada.</p></li>
-</ul></li>
+<li><p>Para indicarmos a soma dos valores <span class="math inline">\(x_1, x_2,..., x_n\)</span>, isto é, <span class="math inline">\(x_1+x_2+x_3+...+x_n\)</span>, utilizamos o símbolo <span class="math inline">\(\Sigma\)</span> (letra grega maiúscula: sigma), denominado como somatório em linguagem matemática.</p></li>
+<li><p>A soma dos valores <span class="math inline">\(x_1, x_2,..., x_n\)</span> é escrita, de forma mais compacta, como segue: <span class="math display">\[x_1+x_2+x_3+...+x_n = \sum_{i=1}^{n}x_i. \]</span></p></li>
+<li><p>Lemos: somatório de <span class="math inline">\(x\)</span> índice <span class="math inline">\(i\)</span>, para <span class="math inline">\(i\)</span> de <span class="math inline">\(1\)</span> a <span class="math inline">\(n\)</span>.</p></li>
 </ul>
 </section></section>
 <section>
-<section id="técnicas-de-amostragem" class="title-slide slide level1 center">
-<h1>Técnicas de Amostragem</h1>
+<section id="média" class="title-slide slide level1 center">
+<h1>Média</h1>
+
+</section>
+<section id="média-aritmética-simples" class="slide level2">
+<h2>Média Aritmética Simples</h2>
 <ul>
-<li><p>Uma amostra pode ser composta por métodos <strong>probabilísticos</strong> e <strong>não-probabilísticos.</strong></p></li>
-<li><p>A diferenciação entre amostragem probabilística e não probabilística está relacionada à maneira como os elementos são selecionados para compor a amostra.</p></li>
-<li><p>Para mais detalhes <span class="citation" data-cites="maurits2022statistics">Edwin (<a href="#/referências" role="doc-biblioref" onclick="">2022</a>)</span></p></li>
+<li>A média arimética simples de um conjunto de dados é obtida somando todos os valores e dividindo o resultado pelo tamanho da amostra, ou seja, <span class="math display">\[\mbox{Média} = \dfrac{\mbox{soma de todos os valores}}{\mbox{Tamanho da amostra}}.\]</span></li>
 </ul>
 </section>
-<section id="métodos-probabilísticos" class="slide level2">
-<h2>Métodos Probabilísticos</h2>
-<dl>
-<dt>Métodos probabilísticos</dt>
-<dd>
-<p>Cada membro da população tem uma chance de ser selecionado para a amostra. Isso significa que todos os elementos da população têm a mesma oportunidade de serem escolhidos.</p>
-</dd>
-</dl>
+<section id="média-aritmética-simples-1" class="slide level2">
+<h2>Média Aritmética Simples</h2>
 <ul>
-<li><p>Os Métodos probabilísticos são:</p>
-<ul>
-<li><p>Amostragem Aleatória Simples</p></li>
-<li><p>Amostragem Sistemática</p></li>
-<li><p>Amostragem Estratificada</p></li>
-<li><p>Amostragem por conglomerado</p></li>
-</ul></li>
+<li>Se as <span class="math inline">\(n\)</span> observações em uma amostra forem denotadas por <span class="math inline">\(x_1,x_2,\ldots,x_n\)</span>, então a média amostral será <span class="math display">\[\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{\sum\limits_{i=1}^{n}x_i}{n}.\]</span></li>
 </ul>
 </section>
-<section id="aleatória-simples" class="slide level2">
-<h2>Aleatória Simples</h2>
-<dl>
-<dt>Amostra Aleatória Simples (AAS)</dt>
-<dd>
-<p>Cada membro da população tem a mesma chance de ser selecionado para a amostra.</p>
-</dd>
-</dl>
+<section id="média-aritmética-simples---exemplo" class="slide level2">
+<h2>Média Aritmética Simples - Exemplo</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Escrito</a></li><li><a href="#tabset-1-2">No R</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
 <ul>
-<li><p>Procedimento:</p>
-<ul>
-<li><p>Cada participante/elemento da população “recebe” um número.</p></li>
-<li><p>Os elementos que irão compor a amostra são selecionados através de um sorteio aleatório.</p></li>
-</ul></li>
+<li>Para calcular a média do conjunto de dados <span class="math inline">\(30, 25, 28, 33, 31\)</span>, utilizamos a fórmula da média aritmética: <span class="math inline">\(\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}\)</span>, ou seja, <span class="math display">\[\bar{x} = \frac{30 + 25 + 28 + 33 + 31}{5} = \frac{145}{5} = 29.4\]</span></li>
 </ul>
-</section>
-<section id="aleatória-simples-1" class="slide level2">
-<h2>Aleatória Simples</h2>
-<ul>
-<li><p>Observações:</p>
-<ul>
-<li><p>Pode não representar bem subgrupos populacionais.</p></li>
-<li><p>Devemos utilizar ASS somente quando a população for homogênea em relação a variável em estudo</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="aleatória-simples-2" class="slide level2">
-<h2>Aleatória Simples</h2>
-<h3 id="exemplos">Exemplos</h3>
-<ol type="1">
-<li><p>Um estudo sobre preferências de linguagens de programação, selecionar aleatoriamente desenvolvedores de software de uma lista de empresas de tecnologia.</p></li>
-<li><p>Uma empresa de comércio eletrônico deseje avaliar a satisfação dos clientes em relação a sua plataforma de vendas online. Eles têm uma base de dados com informações de todos os clientes que fizeram compras nos últimos seis meses.</p></li>
-</ol>
-</section>
-<section id="aleatória-simples-3" class="slide level2">
-<h2>Aleatória Simples</h2>
-<h3 id="exemplo-no-r">Exemplo no R</h3>
+<!-- -   Portanto, o tempo médio da cpu para realizar as tarefas foi de $29.4$ segundos. -->
+</div>
+<div id="tabset-1-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>N <span class="ot">=</span> <span class="dv">1000</span> <span class="co"># quantidade de clientes</span></span>
-<span id="cb1-2"><a></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span>N <span class="co"># sequência de números de 1 a 1000</span></span>
-<span id="cb1-3"><a></a>n <span class="ot">=</span> <span class="dv">10</span> <span class="co"># tamanho da amostra</span></span>
-<span id="cb1-4"><a></a><span class="fu">set.seed</span>(<span class="dv">1</span>) <span class="co"># para que selecione a mesma amostra</span></span>
-<span id="cb1-5"><a></a><span class="fu">sample</span>(x,n) <span class="co"># realiza o sorteio de n clientes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>tempo.cpu <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">30</span>,<span class="dv">25</span>,<span class="dv">28</span>,<span class="dv">33</span>,<span class="dv">31</span>)</span>
+<span id="cb1-2"><a></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"A média do conjunto de dados é:"</span>, <span class="fu">mean</span>(tempo.cpu) ) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 836 679 129 930 509 471 299 270 978 187</code></pre>
+<pre><code>[1] "A média do conjunto de dados é: 29.4"</code></pre>
 </div>
 </div>
+</div>
+</div>
+</div>
 </section>
-<section id="sistemática" class="slide level2">
-<h2>Sistemática</h2>
-<dl>
-<dt>Amostragem Sistemática</dt>
-<dd>
-<p>A amostra sistemática é constituída por <span class="math inline">\(n\)</span> unidades retiradas da população segundo um sistema preestabelecido.</p>
-</dd>
-</dl>
+<section id="média-aritmética-ponderada---exemplo" class="slide level2">
+<h2>Média Aritmética Ponderada - Exemplo</h2>
 <ul>
-<li>Procedimentos: apresentado dentro do exemplo</li>
+<li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 20 tarefas</li>
+<li>As frequências podem ser observadas como o peso de cada observação.</li>
 </ul>
 </section>
-<section id="sistemática-1" class="slide level2">
-<h2>Sistemática</h2>
-<ul>
-<li><p>Observações:</p>
-<ul>
-<li><p>Utiliza-se em situações como amostrar pessoas que ficam em uma fila ou quando os elementos estão ordenados</p></li>
-<li><p>É de fundamental importância que a variável de interesse não apresente ciclos de variação coincidentes com os ciclos de retirada.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="sistemática-2" class="slide level2">
-<h2>Sistemática</h2>
-<h3 id="exemplo">Exemplo</h3>
-<ol type="1">
-<li><p>Suponha que uma empresa de desenvolvimento de software esteja conduzindo um estudo sobre a eficiência de um sistema de processamento de pedidos online.</p></li>
-<li><p>A empresa possui uma lista ordenada de pedidos registrados no sistema, onde cada pedido é atribuído a um cliente.</p></li>
-<li><p>Considere que tenha <span class="math inline">\(N=1000\)</span> pedidos no total e a equipe quer uma amostra de <span class="math inline">\(n=50\)</span> pedidos</p></li>
-</ol>
-</section>
-<section id="sistemática-3" class="slide level2">
-<h2>Sistemática</h2>
-<h3 id="exemplo-continuação">Exemplo (continuação)</h3>
-<ul>
-<li><p>Procedimentos</p>
-<ol type="1">
-<li><p>Enumerar a população de <span class="math inline">\(1\)</span> até <span class="math inline">\(N\)</span>, onde <span class="math inline">\(N\)</span> é o tamanho da população, ou seja, <span class="math inline">\(N=1000\)</span></p></li>
-<li><p>Calcular a constante <span class="math inline">\(c = \dfrac{N}{n}\)</span>, onde <span class="math inline">\(n\)</span> é o tamanho da amostra, ou seja, <span class="math inline">\(c= \dfrac{1000}{50}=20\)</span></p></li>
-<li><p>Sortear um número entre <span class="math inline">\(1\)</span> e <span class="math inline">\(c\)</span>, ou seja, entre <span class="math inline">\(1\)</span> e <span class="math inline">\(20\)</span>. Esse número é denominado Ponto Inicial de Amostragem (PIA).</p></li>
-</ol></li>
-</ul>
-</section>
-<section id="sistemática-4" class="slide level2">
-<h2>Sistemática</h2>
-<h3 id="exemplo-continuação-1">Exemplo (continuação)</h3>
-<ol start="4" type="1">
-<li><p>Suponha que o número escolhido seja 8. Nesse caso, o oitavo pedido/cliente será o primeiro da amostra</p></li>
-<li><p>A partir do pedido número 8, conte mais 20 e selecione esse pedido/cliente, ou seja, pedido/cliente de número 28.</p></li>
-<li><p>Proceda dessa forma até completar a amostra de 50 clientes</p></li>
-</ol>
-</section>
-<section id="estratificada" class="slide level2">
-<h2>Estratificada</h2>
-<dl>
-<dt>Amostragem Estratificada</dt>
-<dd>
-<p>A população é dividida em estratos ou grupos com características semelhantes, e depois são selecionadas aleatoriamente amostras de cada estrato.</p>
-</dd>
-</dl>
-<ul>
-<li>Procedimentos: apresentado dentro do exemplo</li>
-</ul>
-</section>
-<section id="estratificada-1" class="slide level2">
-<h2>Estratificada</h2>
-<ul>
-<li><p>Observações:</p>
-<ul>
-<li><p>Utilizar em situações onde a variável de interesse apresenta uma heterogeneidade na população e essa heterogeneidade permite a identificação de grupos homogêneos.</p></li>
-<li><p>A sua implementação é dificultada pela falta de informação sobre a população para fazer a estratificação.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="estratificada-2" class="slide level2">
-<h2>Estratificada</h2>
-<h3 id="exemplo-1">Exemplo</h3>
-<ul>
-<li><p>Imagine que o prefeito de uma cidade <span class="math inline">\(X\)</span> deseja fazer um pesquisa de satisfação das pessoas em relação aos serviços prestados pela prefeitura.</p></li>
-<li><p>Estudos anteriores mostram uma relação entre a satisfação das pessoas e a zona onde a pessoa mora.</p></li>
-<li><p>Essa cidade foi dividida em três zonas (estratos), conforme a Tabela a seguir.</p></li>
-</ul>
-</section>
-<section id="estratificada-3" class="slide level2">
-<h2>Estratificada</h2>
-<h3 id="exemplo-continuação-2">Exemplo (continuação)</h3>
+<section id="média-aritmética-ponderada---exemplo-1" class="slide level2">
+<h2>Média Aritmética Ponderada - Exemplo</h2>
+<div class="cell">
+<div class="cell-output-display">
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Zonas (Estratos)</th>
-<th style="text-align: center;">Hab. em cada zona</th>
-<th style="text-align: center;">Hab. em cada zona (%)</th>
+<th style="text-align: right;">X</th>
+<th style="text-align: right;">fa</th>
+<th style="text-align: right;">fr</th>
+<th style="text-align: right;">Fa</th>
+<th style="text-align: right;">Fr</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">700</td>
-<td style="text-align: center;">84,6</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">100</td>
-<td style="text-align: center;">12,1</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.35</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">27</td>
-<td style="text-align: center;">3,3</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.80</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Total</td>
-<td style="text-align: center;">827</td>
-<td style="text-align: center;">100</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0.90</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0.95</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1.00</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 </section>
-<section id="estratificada-4" class="slide level2">
-<h2>Estratificada</h2>
-<h3 id="exemplo-continuação-3">Exemplo (continuação)</h3>
+<section id="média-aritmética-ponderada---exemplo-2" class="slide level2">
+<h2>Média Aritmética Ponderada - Exemplo</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Escrito</a></li><li><a href="#tabset-2-2">No R</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
 <ul>
-<li><p>Procedimentos:</p>
+<li>Para calcular a média do conjunto de dados utilizamos a média ponderada: <span class="math display">\[\bar{x}=\frac{f_{a_1} x_1+f_{a_2} x_2+\cdots+f_{a_k}
+x_k}{n}=\frac{\sum\limits_{i=1}^{k}f_{a_i} x_i}{n}=\sum\limits_{i=1}^{k}x_i
+f_{r_i}.\]</span></li>
+</ul>
+</div>
+<div id="tabset-2-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">35</span>,<span class="dv">36</span>,<span class="dv">37</span>,<span class="dv">38</span>,<span class="dv">39</span>,<span class="dv">40</span>)</span>
+<span id="cb3-2"><a></a>fr <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">0.05</span>,<span class="fl">0.30</span>,<span class="fl">0.45</span>,<span class="fl">0.10</span>,<span class="fl">0.05</span>,<span class="fl">0.05</span>)</span>
+<span id="cb3-3"><a></a>media.ponderada <span class="ot">=</span> <span class="fu">weighted.mean</span>(<span class="at">x =</span> x,<span class="at">w =</span> fr)</span>
+<span id="cb3-4"><a></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"A média ponderada do conjunto de dados é: "</span>, media.ponderada) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "A média ponderada do conjunto de dados é:  36.95"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="média-aritmética-ponderada---exemplo-3" class="slide level2">
+<h2>Média Aritmética Ponderada - Exemplo</h2>
 <ul>
-<li><p>Calcule a proporção de cada estrato na população, dividindo o tamanho do estrato pelo tamanho da população</p></li>
-<li><p>Considere o Tamanho da amostra igual a 200</p></li>
-<li><p>A obtenção da quantidade de pessoas que será amostrada na população (por zona) será dada por: multiplicando a proporção de cada estrato pelo tamanho da amostra <span class="math inline">\((n=200)\)</span></p></li>
-</ul></li>
+<li>Suponha que um aluno obteve as seguintes notas: 8 (parcial 1), 6 (parcial 2) e 9 (parcial 3). Nessa caso, a média dos exercícios escolares é: <span class="math inline">\(MEE = \frac{8+6+9}{3} = 7.67\)</span>. Sabendo que MEE tem peso 2 e a nota da prova final (peso 1) foi de 5, quanto é a nota final do aluno?</li>
 </ul>
 </section>
-<section id="estratificada-5" class="slide level2">
-<h2>Estratificada</h2>
-<h3 id="exemplo-continuação-4">Exemplo (continuação)</h3>
+<section id="média-aritmética-ponderada---exemplo-4" class="slide level2">
+<h2>Média Aritmética Ponderada - Exemplo</h2>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Escrito</a></li><li><a href="#tabset-3-2">No R</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<ul>
+<li>Para calcular a média do conjunto de dados utilizamos a média ponderada: <span class="math display">\[{MF}=\frac{2 MEE+PF}{3}=\frac{2\times7.67+5}{3} = 6.78\]</span></li>
+</ul>
+</div>
+<div id="tabset-3-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">7.67</span>,<span class="dv">5</span>)</span>
+<span id="cb5-2"><a></a>fr <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">1</span>)</span>
+<span id="cb5-3"><a></a>media.ponderada <span class="ot">=</span> <span class="fu">weighted.mean</span>(<span class="at">x =</span> x,<span class="at">w =</span> fr)</span>
+<span id="cb5-4"><a></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"A média ponderada do conjunto de dados é: "</span>, media.ponderada) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "A média ponderada do conjunto de dados é:  6.78"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="média-aritmética-ponderada---exemplo-5" class="slide level2">
+<h2>Média Aritmética Ponderada - Exemplo</h2>
+<ul>
+<li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 50 tarefas</li>
+</ul>
+</section>
+<section id="média-aritmética-ponderada---exemplo-6" class="slide level2">
+<h2>Média Aritmética Ponderada - Exemplo</h2>
+<div class="cell">
+<div class="cell-output-display">
 <table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Zonas (Estratos)</th>
-<th style="text-align: center;">Hab. em cada zona</th>
-<th style="text-align: center;">Hab. em cada zona (%)</th>
-</tr>
-</thead>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">169</td>
-<td style="text-align: center;">84,6</td>
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">(34,36]</td>
+<td style="text-align: left;">(36,38]</td>
+<td style="text-align: left;">(38,40]</td>
+<td style="text-align: left;">(40,42]</td>
+<td style="text-align: left;">(42,44]</td>
+<td style="text-align: left;">(44,46]</td>
+<td style="text-align: left;">(46,48]</td>
+<td style="text-align: left;">(48,50]</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">24</td>
-<td style="text-align: center;">12,1</td>
+<td style="text-align: left;">PM</td>
+<td style="text-align: left;">35</td>
+<td style="text-align: left;">37</td>
+<td style="text-align: left;">39</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">43</td>
+<td style="text-align: left;">45</td>
+<td style="text-align: left;">47</td>
+<td style="text-align: left;">49</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">3,3</td>
+<td style="text-align: left;">fa</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">1</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Total</td>
-<td style="text-align: center;">200</td>
-<td style="text-align: center;">100</td>
+<td style="text-align: left;">fr</td>
+<td style="text-align: left;">0.06</td>
+<td style="text-align: left;">0.20</td>
+<td style="text-align: left;">0.18</td>
+<td style="text-align: left;">0.10</td>
+<td style="text-align: left;">0.24</td>
+<td style="text-align: left;">0.04</td>
+<td style="text-align: left;">0.16</td>
+<td style="text-align: left;">0.02</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fa</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">22</td>
+<td style="text-align: left;">27</td>
+<td style="text-align: left;">39</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">49</td>
+<td style="text-align: left;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fr</td>
+<td style="text-align: left;">0.06</td>
+<td style="text-align: left;">0.26</td>
+<td style="text-align: left;">0.44</td>
+<td style="text-align: left;">0.54</td>
+<td style="text-align: left;">0.78</td>
+<td style="text-align: left;">0.82</td>
+<td style="text-align: left;">0.98</td>
+<td style="text-align: left;">1.00</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 </section>
-<section id="conglomerados" class="slide level2">
-<h2>Conglomerados</h2>
-<dl>
-<dt>Amostragem por Conglomerados</dt>
-<dd>
-<p>Nesse procedimento, a população é dividida em subpopulações ou conglomerados de elementos heterogêneos, em seguida, uma <span class="math inline">\(ASS\)</span> é utilizada para selecionar o conglomerado e depois todos os indivíduos dos conglomerados selecionado serão analisados.</p>
-</dd>
-</dl>
+<section id="média-aritmética-ponderada---exemplo-7" class="slide level2">
+<h2>Média Aritmética Ponderada - Exemplo</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Escrito</a></li><li><a href="#tabset-4-2">No R</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
 <ul>
-<li>Procedimentos serão apresentados dentro do exemplo.</li>
+<li>Para calcular a média do conjunto de dados utilizamos a média ponderada: <span class="math display">\[\bar{x}=\frac{\sum_{i=1}^{k}f_{a_i} PM_i}{n}=\sum\limits_{i=1}^{k}PM_i
+f_{r_i},\]</span> em que <span class="math inline">\(PM_i\)</span> é o ponto médio da classe <span class="math inline">\(i\)</span></li>
+</ul>
+</div>
+<div id="tabset-4-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="fu">seq</span>(<span class="dv">35</span>,<span class="dv">49</span>,<span class="dv">2</span>))</span>
+<span id="cb7-2"><a></a>fr <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">0.06</span>,<span class="fl">0.20</span>,<span class="fl">0.18</span>,<span class="fl">0.10</span>,<span class="fl">0.24</span>,<span class="fl">0.04</span>,<span class="fl">0.16</span>,<span class="fl">0.02</span>)</span>
+<span id="cb7-3"><a></a>media.ponderada <span class="ot">=</span> <span class="fu">weighted.mean</span>(<span class="at">x =</span> x,<span class="at">w =</span> fr)</span>
+<span id="cb7-4"><a></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"A média ponderada do conjunto de dados é: "</span>, media.ponderada) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "A média ponderada do conjunto de dados é:  41.24"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="moda" class="title-slide slide level1 center">
+<h1>Moda</h1>
+<ul>
+<li><p>A moda de uma variável é o valor que ocorre com mais frequência, ou seja, aquele que mais se repete.</p></li>
+<li><p>Se dois valores ocorrerem com a mesma frequência máxima a variável é bimodal;</p></li>
+<li><p>Se mais de dois valores ocorrem com a mesma frequência máxima, a variável é multimodal;</p></li>
+<li><p>Quando nenhum valor se repete, a variável não tem moda.</p></li>
+<li><p>A moda do conjunto de dados será denotada por <span class="math inline">\(Mo\)</span>.</p></li>
 </ul>
 </section>
-<section id="conglomerados-1" class="slide level2">
-<h2>Conglomerados</h2>
+<section id="dados-não-agrupadados---exemplo" class="slide level2">
+<h2>Dados não agrupadados - <strong>Exemplo</strong></h2>
+<p>Considere as seguintes séries de dados e identifique a moda:</p>
 <ul>
-<li><p>Observações:</p>
+<li><p>7, 8, 9, 10, 10, 10, 11, 12, 13, 15</p></li>
+<li><p>3, 5, 8, 10, 12, 13</p></li>
+<li><p>2, 3, 4, 4, 4, 5, 6, 7, 7, 7, 8, 9</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>ex1 <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">15</span>)</span>
+<span id="cb9-2"><a></a><span class="fu">table</span>(ex1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>ex1
+ 7  8  9 10 11 12 13 15 
+ 1  1  1  3  1  1  1  1 </code></pre>
+</div>
+</div>
+</section>
+<section id="dados-agrupadados---exemplo" class="slide level2">
+<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
 <ul>
-<li>Geralmente, os conglomerados são definidos por fatores geográficos, como bairros e quarteirões. No entanto, podemos considerar, por exemplo, um asilo como um conglomerado de idoso ou o batalhão do exército como um glomerado de jovens.</li>
-</ul></li>
+<li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 50 tarefas</li>
+<li>Para cada série de dados, primeiro identificamos a classe modal (a classe com a maior frequência) e então aplicamos a fórmula para calcular a moda.</li>
 </ul>
 </section>
-<section id="conglomerados-2" class="slide level2">
-<h2>Conglomerados</h2>
-<h3 id="exemplo-2">Exemplo</h3>
+<section id="dados-agrupadados---exemplo-1" class="slide level2">
+<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">(34,36]</td>
+<td style="text-align: left;">(36,38]</td>
+<td style="text-align: left;">(38,40]</td>
+<td style="text-align: left;">(40,42]</td>
+<td style="text-align: left;">(42,44]</td>
+<td style="text-align: left;">(44,46]</td>
+<td style="text-align: left;">(46,48]</td>
+<td style="text-align: left;">(48,50]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PM</td>
+<td style="text-align: left;">35</td>
+<td style="text-align: left;">37</td>
+<td style="text-align: left;">39</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">43</td>
+<td style="text-align: left;">45</td>
+<td style="text-align: left;">47</td>
+<td style="text-align: left;">49</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fa</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fr</td>
+<td style="text-align: left;">0.06</td>
+<td style="text-align: left;">0.20</td>
+<td style="text-align: left;">0.18</td>
+<td style="text-align: left;">0.10</td>
+<td style="text-align: left;">0.24</td>
+<td style="text-align: left;">0.04</td>
+<td style="text-align: left;">0.16</td>
+<td style="text-align: left;">0.02</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fa</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">22</td>
+<td style="text-align: left;">27</td>
+<td style="text-align: left;">39</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">49</td>
+<td style="text-align: left;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fr</td>
+<td style="text-align: left;">0.06</td>
+<td style="text-align: left;">0.26</td>
+<td style="text-align: left;">0.44</td>
+<td style="text-align: left;">0.54</td>
+<td style="text-align: left;">0.78</td>
+<td style="text-align: left;">0.82</td>
+<td style="text-align: left;">0.98</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="dados-agrupadados---exemplo-2" class="slide level2">
+<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
+<p><span class="math inline">\(Mo(X) = l+\left( \dfrac{d_1}{d_1+d_2}\right) \times h,\)</span></p>
+<p>onde:</p>
 <ul>
-<li><p>Considere um estudo para avaliar a qualidade dos celulares (mesmo modelo) disponíveis em diferentes lojas Procedimentos:</p></li>
-<li><p>Inicialmente, identificaremos todas as lojas de celulares na área de estudo.</p></li>
-<li><p>Em seguida, selecionaremos aleatoriamente um número específico de lojas de celulares para compor nossa amostra</p></li>
+<li><p><strong>Classe modal</strong>: classe com maior frequência</p></li>
+<li><p><span class="math inline">\(l\)</span> : é o limite inferior da classe modal;</p></li>
+<li><p><span class="math inline">\(d_1\)</span>: diferença entre a frequência absoluta da classe modal e a imediatamente anterior;</p></li>
+<li><p><span class="math inline">\(d_2\)</span>: diferença entre a frequência absoluta da classe modal e a imediatamente posterior;</p></li>
+<li><p><span class="math inline">\(h\)</span>: amplitude da classe modal.</p></li>
 </ul>
 </section>
-<section id="conglomerados-3" class="slide level2">
-<h2>Conglomerados</h2>
-<h3 id="exemplo-continuação-5">Exemplo (Continuação)</h3>
+<section id="dados-agrupadados---exemplo-3" class="slide level2">
+<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
 <ul>
-<li>Coletar a opinião de todos os clientes de cada loja de selecionada</li>
+<li>O método mais simples para o cálculo da moda consiste em tomar o ponto médio da classe modal.</li>
 </ul>
 </section></section>
 <section>
-<section id="métodos-não-probabilísticos" class="title-slide slide level1 center">
-<h1>Métodos não Probabilísticos</h1>
-<dl>
-<dt>Métodos não Probabilísticos</dt>
-<dd>
-<p>É aquela em que a seleção dos elementos da população para compor a amostra depende ao menos em parte do julgamento do pesquisador ou do entrevistador no campo. A seleção não é realizada de maneira aleatória.</p>
-</dd>
-</dl>
+<section id="mediana" class="title-slide slide level1 center">
+<h1>Mediana</h1>
+
+</section>
+<section id="dados-não-agrupados" class="slide level2">
+<h2>Dados não agrupados</h2>
 <ul>
-<li>Os métodos são: julgamento e acidental/coveniência. Outros métodos são apresentado em <span class="citation" data-cites="maurits2022statistics">Edwin (<a href="#/referências" role="doc-biblioref" onclick="">2022</a>)</span></li>
+<li>Considere o tempo (segundos) de cinco tarefas realizadas por uma CPU:<span class="math inline">\(30, 25, 28, 33, 31\)</span></li>
+<li>Considere o tempo (segundos) de seis tarefas realizadas por uma CPU:<span class="math inline">\(30, 25, 28, 33, 31,32\)</span></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">median</span>(<span class="fu">c</span>(<span class="dv">30</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">33</span>, <span class="dv">31</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 30</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">median</span>(<span class="fu">c</span>(<span class="dv">30</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">33</span>, <span class="dv">31</span>,<span class="dv">32</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 30.5</code></pre>
+</div>
+</div>
+</section>
+<section id="dados-não-agrupados-1" class="slide level2">
+<h2>Dados não agrupados</h2>
+<ul>
+<li>Consideremos, agora, as observações ordenadas em ordem crescente. Vamos denotar a menor observação por <span class="math inline">\(x_{(1)}\)</span>, a segunda por <span class="math inline">\(x_{(2)}\)</span>, e assim por diante, obtendo-se</li>
+</ul>
+<p><span class="math display">\[x_{(1)} \leq x_{(2)} \leq \ldots \leq x_{(n-1)} \leq x_{(n)}\]</span></p>
+</section>
+<section id="dados-não-agrupados-2" class="slide level2">
+<h2>Dados não agrupados</h2>
+<ul>
+<li>Com esta notação, a mediana da variável <span class="math inline">\(X\)</span> pode ser definida por</li>
+</ul>
+<span class="math display">\[\begin{align}
+md(X) &amp;= x_{\left(\frac{n+1}{2}\right)} \quad \text{se } n \text{ é ímpar} \\
+md(X) &amp;= \dfrac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2}+1\right)}}{2} \quad \text{se } n \text{ é par}.
+\end{align}\]</span>
+</section>
+<section id="dados-não-agrupados-3" class="slide level2">
+<h2>Dados não agrupados</h2>
+<ul>
+<li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 20 tarefas. Obtenha a mediana.</li>
 </ul>
 </section>
-<section id="julgamento" class="slide level2">
-<h2>Julgamento</h2>
-<dl>
-<dt>Amostragem por julgamento</dt>
-<dd>
-<ul>
-<li><p>Os elementos são selecionados com base no julgamento dos pesquisadores sobre sua relevância para o estudo</p></li>
-<li><p>Isso significa que a coleta de unidades é focada em uma ou mais características particulares, o que implica que apenas unidades mais semelhantes são amostradas.</p></li>
-</ul>
-</dd>
-</dl>
+<section id="dados-não-agrupados-4" class="slide level2">
+<h2>Dados não agrupados</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">X</th>
+<th style="text-align: right;">fa</th>
+<th style="text-align: right;">fr</th>
+<th style="text-align: right;">Fa</th>
+<th style="text-align: right;">Fr</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.35</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.80</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0.90</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0.95</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
-<section id="julgamento-1" class="slide level2">
-<h2>Julgamento</h2>
-<h3 id="exemplo-3">Exemplo</h3>
+<section id="dados-agrupadados---exemplo-4" class="slide level2">
+<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
 <ul>
-<li><p>Vamos considerar um estudo que investiga as preferências de desenvolvedores de software em relação ao sistema operacional que utilizam para desenvolvimento.</p></li>
-<li><p>Na amostragem por julgamento, os pesquisadores podem escolher entrevistar desenvolvedores que se destacam em termos de experiência e influência na comunidade de desenvolvimento de software.</p></li>
+<li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 50 tarefas</li>
+<li>Para cada série de dados, primeiro identificamos a classe mediana (a classe que acumula 50% das observações) e então aplicamos a fórmula para calcular a mediana.</li>
 </ul>
 </section>
-<section id="julgamento-2" class="slide level2">
-<h2>Julgamento</h2>
-<ul>
-<li>Nesse caso, os pesquisadores podem selecionar desenvolvedores seniores que têm um histórico de contribuições para projetos de código aberto em plataformas como GitHub ou GitLab.</li>
-</ul>
+<section id="dados-agrupadados---exemplo-5" class="slide level2">
+<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">(34,36]</td>
+<td style="text-align: left;">(36,38]</td>
+<td style="text-align: left;">(38,40]</td>
+<td style="text-align: left;">(40,42]</td>
+<td style="text-align: left;">(42,44]</td>
+<td style="text-align: left;">(44,46]</td>
+<td style="text-align: left;">(46,48]</td>
+<td style="text-align: left;">(48,50]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PM</td>
+<td style="text-align: left;">35</td>
+<td style="text-align: left;">37</td>
+<td style="text-align: left;">39</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">43</td>
+<td style="text-align: left;">45</td>
+<td style="text-align: left;">47</td>
+<td style="text-align: left;">49</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fa</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fr</td>
+<td style="text-align: left;">0.06</td>
+<td style="text-align: left;">0.20</td>
+<td style="text-align: left;">0.18</td>
+<td style="text-align: left;">0.10</td>
+<td style="text-align: left;">0.24</td>
+<td style="text-align: left;">0.04</td>
+<td style="text-align: left;">0.16</td>
+<td style="text-align: left;">0.02</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fa</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">22</td>
+<td style="text-align: left;">27</td>
+<td style="text-align: left;">39</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">49</td>
+<td style="text-align: left;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fr</td>
+<td style="text-align: left;">0.06</td>
+<td style="text-align: left;">0.26</td>
+<td style="text-align: left;">0.44</td>
+<td style="text-align: left;">0.54</td>
+<td style="text-align: left;">0.78</td>
+<td style="text-align: left;">0.82</td>
+<td style="text-align: left;">0.98</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
-<section id="conveniência" class="slide level2">
-<h2>Conveniência</h2>
-<dl>
-<dt>Amostragem por Conveniência</dt>
-<dd>
-<p>Os pesquisadores selecionam elementos com base em sua disponibilidade e acessibilidade.</p>
-</dd>
-</dl>
+<section id="dados-agrupadados---exemplo-6" class="slide level2">
+<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
 <ul>
-<li><p>Observações:</p>
+<li>A fórmula usada é dada por:</li>
+</ul>
+<p><span class="math display">\[Md(X) = l + \left( \dfrac{n/2 - F}{f_{a_{cm}}} \right) \times h,\]</span></p>
+</section>
+<section id="dados-agrupadados---exemplo-7" class="slide level2">
+<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
+<p>onde:</p>
 <ul>
-<li><p>A amostragem por conveniência é é frequentemente justificada com o argumento da homogeneidade da população.</p></li>
-<li><p>Em alguns casos os resultados da amostragem por conveniência podem ser bons, mas em outros casos podem apresentar séria tendenciosidade;<br>
-</p></li>
+<li><strong>Classe mediana</strong>: classe que acumula 50% das observações.</li>
+<li><span class="math inline">\(l\)</span> : é o limite inferior da classe mediana;</li>
+<li><span class="math inline">\(n\)</span>: número total de elementos;</li>
+<li><span class="math inline">\(F\)</span>: frequência absoluta acumulada até a classe anterior à classe mediana;</li>
+<li><span class="math inline">\(f_{a_{cm}}\)</span>: frequência absoluta da classe mediana;</li>
+<li><span class="math inline">\(h\)</span>: amplitude da classe mediana.</li>
+</ul>
+</section></section>
+<section id="observações" class="title-slide slide level1 center">
+<h1>Observações</h1>
+<ul>
+<li><strong>Média.</strong>
+<ul>
+<li><em>Vantagens:</em> é a mais usada das medidas, existe em qualquer variável quantitativa, leva em conta todos os valores da amostra e é usada em muitos métodos estatísticos.</li>
+<li><em>Desvantagem:</em> é afetada por valores extremos.</li>
 </ul></li>
 </ul>
 </section>
-<section id="conveniência-1" class="slide level2">
-<h2>Conveniência</h2>
-<h3 id="exemplo-4">Exemplo:</h3>
+
+<section id="observações-1" class="title-slide slide level1 center">
+<h1>Observações</h1>
 <ul>
-<li><p>Suponha que uma empresa queira realizar um estudo sobre o uso de ferramentas de controle de versão entre os desenvolvedores.</p></li>
-<li><p>Nesse caso a empresa entrevista desenvolvedores que trabalham na própria empresa</p></li>
-</ul>
-</section>
-<section id="conveniência-2" class="slide level2">
-<h2>Conveniência</h2>
-<h3 id="exemplo-5">Exemplo:</h3>
+<li><strong>Mediana.</strong>
 <ul>
-<li><p>O pesquisador deseja saber qual a preferência dos eleitores em uma disputa ao governo;</p></li>
-<li><p>Pesquisadores de campo poderia ficar em locais de grande tráfego de eleitores, questionando-os sobre suas preferências;</p></li>
-<li><p>Note que os eleitores mais fáceis foram selecionados;</p></li>
-<li><p>Problema: o local escolhido para a coleta influencia a composição da amostra</p></li>
-</ul>
-</section></section>
-<section id="resumo" class="title-slide slide level1 center">
-<h1>Resumo</h1>
-<ul>
-<li><p>Na amostragem probabilística, a teoria da probabilidade permite que o pesquisador calcule a natureza e extensão do viés das estimativas;</p></li>
-<li><p>Uma amostragem probabilística podem ser feitas inteiramente por métodos estatísticos, não assumindo critérios em relação à distribuição das características na população;</p></li>
-<li><p>A amostragem não probabilística envolve uma série de métodos de seleção de amostras onde são realizados julgamentos, sendo portanto não aleatório;</p></li>
+<li><em>Vantagens:</em> é usada com frequência, existe em qualquer variável quantitativa e não é afetada por valores extremos.</li>
+<li><em>Desvantagem:</em> não leva em conta todos os valores no cálculo.</li>
+</ul></li>
 </ul>
 </section>
 
-<section id="resumo-1" class="title-slide slide level1 center">
-<h1>Resumo</h1>
+<section id="observações-2" class="title-slide slide level1 center">
+<h1>Observações</h1>
 <ul>
-<li>Os resultados de uma pesquisa baseada em amostragem não probabilística não permitem generalizações a respeito da população em estudo.</li>
+<li><strong>Moda.</strong>
+<ul>
+<li><em>Vantagem:</em> Não é afetada por valores extremos.</li>
+<li><em>Desvantagens:</em> é raramente usada, pode não existir em uma variável quantitativa, não leva em conta todos os valores e pode existir mais de uma moda em uma variável.</li>
+</ul></li>
 </ul>
 </section>
 
-<section id="referências" class="title-slide slide level1 smaller scrollable">
+<section id="assimetria-e-simetria" class="title-slide slide level1 center">
+<h1>Assimetria e Simetria</h1>
+<ul>
+<li><p>Uma distribuição é simétrica quando a metade direita do gráfico é uma imagem espelhada da metade esquerda, indicando que os valores estão igualmente distribuídos em torno da média.</p></li>
+<li><p>Nesse caso, a média, a mediana e a moda geralmente são iguais.</p></li>
+</ul>
+</section>
+
+<section id="assimetria-e-simetria-1" class="title-slide slide level1 center">
+<h1>Assimetria e Simetria</h1>
+<ul>
+<li><p>Por outro lado, uma distribuição assimétrica ocorre quando a distribuição dos dados não é simétrica, o que significa que há uma assimetria ou distorção na forma da distribuição.</p></li>
+<li><p>Isso pode ocorrer quando há valores extremos ou quando os dados estão inclinados para a esquerda (assimetria negativa) ou para a direita (assimetria positiva).</p></li>
+</ul>
+</section>
+
+<section id="assimetria-e-simetria-2" class="title-slide slide level1 center">
+<h1>Assimetria e Simetria</h1>
+<ul>
+<li>Nesse caso, a média, a mediana e a moda podem ser diferentes.</li>
+</ul>
+</section>
+
+<section id="assimetria-e-simetria-3" class="title-slide slide level1 center">
+<h1>Assimetria e Simetria</h1>
+
+<img data-src="4-Medidas_Posicao_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+
+<section id="referências" class="title-slide slide level1 center">
 <h1>Referências</h1>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
-</div>
-</div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-maurits2022statistics" class="csl-entry" role="listitem">
-Edwin, Maurits; Van Den Heuvel Kaptein. 2022. <em>Statistics for Data Scientists: An Introduction to Probability, Statistics, and Data Analysis</em>. Springer.
 </div>
 </div>
 </section>
