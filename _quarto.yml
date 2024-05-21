@@ -27,15 +27,16 @@ website:
                 text: Estruturas de Controles
           -  section: "Probabilidade e Estatística"
              contents:
-              - href: Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.qmd
+              - href: Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.qmd
                 text: "Conceitos Iniciais"
               - href: Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.qmd  
                 text: "Técnicas de Amostragem"
-              - href: Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.qmd  
-                text: "Gráficos"
+              - href: Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.qmd  
+                text: "Tabelas e Gráficos"
+              - href: Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.qmd 
+                text: "Medidas de Posição"
           
-              
-
+            
 
 # website:
 #   title: "leonardo-site"
