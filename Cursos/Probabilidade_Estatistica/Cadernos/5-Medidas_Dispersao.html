@@ -407,89 +407,134 @@ Professor: Leonardo Brandão Freitas do Nascimento
 </div>
 
 </center></center></section>
-<section>
 <section id="introdução" class="title-slide slide level1 center">
 <h1>Introdução</h1>
 <ul>
-<li><p>As medidas de tendência central são estatísticas usadas para resumir um conjunto de dados, indicando um valor central ou típico em torno do qual os dados se distribuem.</p></li>
-<li><p>As principais medidas de tendência central são a média, a mediana e a moda.</p></li>
-<li><p>Cada uma dessas medidas tem suas próprias características e aplicações, dependendo do tipo de dados e do contexto da análise</p></li>
-<li><p>O interesse é caracterizar o conjunto de dados através de medidas que resumem as informações</p></li>
+<li><p>Considere os seguintes valores das variáveis X, Y e Z:</p>
+<ul>
+<li><span class="math display">\[x: 70, 70, 70, 70, 70.\]</span></li>
+<li><span class="math display">\[y: 68, 69, 70, 71, 72.\]</span></li>
+<li><span class="math display">\[z: 5, 15, 50, 120, 160.\]</span></li>
+</ul></li>
+<li><p>Note que a média aritmética de cada variável é igual a 70.</p></li>
+<li><p>Note que o conjunto x é mais homogêneo que os conjuntos y e z.</p></li>
 </ul>
 </section>
-<section id="símbolos-matemáticos" class="slide level2">
-<h2>Símbolos matemáticos</h2>
-<ul>
-<li><p>Para representar uma amostra de tamanho <span class="math inline">\(n\)</span>, escrevemos: <span class="math display">\[x_1, x_2,..., x_n,\]</span> onde <span class="math inline">\(x_i\)</span> é a <span class="math inline">\(i\)</span>-ésima observação em um conjunto de <span class="math inline">\(n\)</span> observações, ou seja, <span class="math inline">\(x_1\)</span> representa a primeira observação, <span class="math inline">\(x_2\)</span> a segunda e assim por diante.</p></li>
-<li><p>Considere os tempos, em segundos, de cinco tarefas realizadas por uma CPU: <span class="math display">\[30; 25; 28;33;31. \]</span></p></li>
-<li><p>Escreva esse conjunto na notação geral: <span class="math inline">\(x_1 = 30\)</span>,<span class="math inline">\(x_2 = 25\)</span>, <span class="math inline">\(x_3 = 28\)</span>, <span class="math inline">\(x_4 = 33\)</span>, <span class="math inline">\(x_5 = 31\)</span>.</p></li>
-</ul>
-</section>
-<section id="símbolos-matemáticos-1" class="slide level2">
-<h2>Símbolos matemáticos</h2>
-<ul>
-<li><p>Em alguns momentos estamos interessados em ordenar os dados do menor valor para o maior valor, dessa forma escrevemos: <span class="math display">\[x_{(1)}, x_{(2)},...,  x_{(n)},\]</span> onde <span class="math inline">\(x_{(1)}\)</span> é a menor observação, <span class="math inline">\(x_{(2)}\)</span> é a segunda menor e assim por diante.</p></li>
-<li><p>Considere os tempos, em segundos, de cinco tarefas realizadas por uma CPU: <span class="math display">\[30; 25; 28;33;31. \]</span></p></li>
-<li><p>Ordene os dados e escreva na notação apresentada: <span class="math inline">\(x_{(1)} = 25\)</span>,<span class="math inline">\(x_{(1)} = 28\)</span>, <span class="math inline">\(x_{(3)} = 30\)</span>, <span class="math inline">\(x_{(4)} = 31\)</span>, <span class="math inline">\(x_{(5)} = 33\)</span>.</p></li>
-</ul>
-</section>
-<section id="símbolos-matemáticos-2" class="slide level2">
-<h2>Símbolos matemáticos</h2>
-<ul>
-<li><p>Para indicarmos a soma dos valores <span class="math inline">\(x_1, x_2,..., x_n\)</span>, isto é, <span class="math inline">\(x_1+x_2+x_3+...+x_n\)</span>, utilizamos o símbolo <span class="math inline">\(\Sigma\)</span> (letra grega maiúscula: sigma), denominado como somatório em linguagem matemática.</p></li>
-<li><p>A soma dos valores <span class="math inline">\(x_1, x_2,..., x_n\)</span> é escrita, de forma mais compacta, como segue: <span class="math display">\[x_1+x_2+x_3+...+x_n = \sum_{i=1}^{n}x_i. \]</span></p></li>
-<li><p>Lemos: somatório de <span class="math inline">\(x\)</span> índice <span class="math inline">\(i\)</span>, para <span class="math inline">\(i\)</span> de <span class="math inline">\(1\)</span> a <span class="math inline">\(n\)</span>.</p></li>
-</ul>
-</section></section>
-<section>
-<section id="média" class="title-slide slide level1 center">
-<h1>Média</h1>
 
-</section>
-<section id="média-aritmética-simples" class="slide level2">
-<h2>Média Aritmética Simples</h2>
+<section id="introdução-1" class="title-slide slide level1 center">
+<h1>Introdução</h1>
 <ul>
-<li>A média arimética simples de um conjunto de dados é obtida somando todos os valores e dividindo o resultado pelo tamanho da amostra, ou seja, <span class="math display">\[\mbox{Média} = \dfrac{\mbox{soma de todos os valores}}{\mbox{Tamanho da amostra}}.\]</span></li>
+<li><p>Note que y é mais homogêneo que o conjunto z, pois há menor diversificação entre cada um dos valores e a média.</p></li>
+<li><p>As medidas de tendência central são tanto mais descritivas de um conjunto de dados quanto menor for a variabilidade.</p></li>
 </ul>
 </section>
-<section id="média-aritmética-simples-1" class="slide level2">
-<h2>Média Aritmética Simples</h2>
-<ul>
-<li>Se as <span class="math inline">\(n\)</span> observações em uma amostra forem denotadas por <span class="math inline">\(x_1,x_2,\ldots,x_n\)</span>, então a média amostral será <span class="math display">\[\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{\sum\limits_{i=1}^{n}x_i}{n}.\]</span></li>
-</ul>
+
+<section id="introdução-2" class="title-slide slide level1 center">
+<h1>Introdução</h1>
+<p>Considere dois servidores, A e B, que processam requisições. Ambos têm o mesmo tempo (segundos) médio, 70 segundos.</p>
 </section>
-<section id="média-aritmética-simples---exemplo" class="slide level2">
-<h2>Média Aritmética Simples - Exemplo</h2>
-<div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Escrito</a></li><li><a href="#tabset-1-2">No R</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1">
-<ul>
-<li>Para calcular a média do conjunto de dados <span class="math inline">\(30, 25, 28, 33, 31\)</span>, utilizamos a fórmula da média aritmética: <span class="math inline">\(\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}\)</span>, ou seja, <span class="math display">\[\bar{x} = \frac{30 + 25 + 28 + 33 + 31}{5} = \frac{145}{5} = 29.4\]</span></li>
-</ul>
-<!-- -   Portanto, o tempo médio da cpu para realizar as tarefas foi de $29.4$ segundos. -->
-</div>
-<div id="tabset-1-2">
+
+<section id="introdução-3" class="title-slide slide level1 center">
+<h1>Introdução</h1>
+<div class="columns">
+<div class="column" style="width:40%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>tempo.cpu <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">30</span>,<span class="dv">25</span>,<span class="dv">28</span>,<span class="dv">33</span>,<span class="dv">31</span>)</span>
-<span id="cb1-2"><a></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"A média do conjunto de dados é:"</span>, <span class="fu">mean</span>(tempo.cpu) ) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "A média do conjunto de dados é: 29.4"</code></pre>
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tempo de resposta (A)</th>
+<th style="text-align: right;">Freq</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">69</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">70</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">71</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
 </div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tempo de resposta (B)</th>
+<th style="text-align: right;">Freq</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">69</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">70</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">71</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">72</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">73</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="média-aritmética-ponderada---exemplo" class="slide level2">
-<h2>Média Aritmética Ponderada - Exemplo</h2>
+
+<section id="introdução-4" class="title-slide slide level1 center">
+<h1>Introdução</h1>
+<ul>
+<li><p>Mesmo que ambos os servidores tenham o mesmo tempo médio de resposta, o Servidor B mostra uma maior variabilidade nos tempos de resposta</p></li>
+<li><p>Essa variabilidade pode impactar a consistência da experiência do usuário, especialmente em sistemas que exigem tempos de resposta previsíveis.</p></li>
+</ul>
+</section>
+
+<section id="introdução-5" class="title-slide slide level1 center">
+<h1>Introdução</h1>
+<ul>
+<li><p>As medidas de dispersão são fundamentais na estatística descritiva, pois indicam o quanto os dados estão espalhados ou concentrados em torno de um valor central (como a média ou a mediana).</p></li>
+<li><p>Elas são essenciais para entender a variabilidade dos dados</p></li>
+</ul>
+</section>
+
+<section>
+<section id="amplitude" class="title-slide slide level1 center">
+<h1>Amplitude</h1>
+<ul>
+<li><p>A medida mais simples de variabilidade é amplitude <span class="math inline">\(\mbox{Amplitude} = \mbox{maior valor} - \mbox{menor valor}\)</span></p></li>
+<li><p>Em uma análise de tempo de resposta de servidores, a amplitude pode indicar a diferença entre o tempo mais rápido e o mais lento de resposta.</p></li>
+</ul>
+</section>
+<section id="amplitude--exemplo" class="slide level2">
+<h2>Amplitude- Exemplo</h2>
 <ul>
 <li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 20 tarefas</li>
-<li>As frequências podem ser observadas como o peso de cada observação.</li>
 </ul>
 </section>
-<section id="média-aritmética-ponderada---exemplo-1" class="slide level2">
-<h2>Média Aritmética Ponderada - Exemplo</h2>
+<section id="amplitude---exemplo" class="slide level2">
+<h2>Amplitude - Exemplo</h2>
 <div class="cell">
 <div class="cell-output-display">
 <table>
@@ -550,70 +595,29 @@ Professor: Leonardo Brandão Freitas do Nascimento
 </div>
 </div>
 </section>
-<section id="média-aritmética-ponderada---exemplo-2" class="slide level2">
-<h2>Média Aritmética Ponderada - Exemplo</h2>
-<div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Escrito</a></li><li><a href="#tabset-2-2">No R</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1">
-<ul>
-<li>Para calcular a média do conjunto de dados utilizamos a média ponderada: <span class="math display">\[\bar{x}=\frac{f_{a_1} x_1+f_{a_2} x_2+\cdots+f_{a_k}
-x_k}{n}=\frac{\sum\limits_{i=1}^{k}f_{a_i} x_i}{n}=\sum\limits_{i=1}^{k}x_i
-f_{r_i}.\]</span></li>
-</ul>
-</div>
-<div id="tabset-2-2">
+<section id="amplitude---exemplo-1" class="slide level2">
+<h2>Amplitude - Exemplo</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">35</span>,<span class="dv">36</span>,<span class="dv">37</span>,<span class="dv">38</span>,<span class="dv">39</span>,<span class="dv">40</span>)</span>
-<span id="cb3-2"><a></a>fr <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">0.05</span>,<span class="fl">0.30</span>,<span class="fl">0.45</span>,<span class="fl">0.10</span>,<span class="fl">0.05</span>,<span class="fl">0.05</span>)</span>
-<span id="cb3-3"><a></a>media.ponderada <span class="ot">=</span> <span class="fu">weighted.mean</span>(<span class="at">x =</span> x,<span class="at">w =</span> fr)</span>
-<span id="cb3-4"><a></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"A média ponderada do conjunto de dados é: "</span>, media.ponderada) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">35</span>,<span class="dv">36</span>,<span class="dv">37</span>,<span class="dv">38</span>,<span class="dv">39</span>,<span class="dv">40</span>)</span>
+<span id="cb1-2"><a></a>x  <span class="ot">=</span> <span class="fu">rep</span>(x,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">6</span>,<span class="dv">9</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>))</span>
+<span id="cb1-3"><a></a><span class="fu">range</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "A média ponderada do conjunto de dados é:  36.95"</code></pre>
+<pre><code>[1] 35 40</code></pre>
 </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="média-aritmética-ponderada---exemplo-3" class="slide level2">
-<h2>Média Aritmética Ponderada - Exemplo</h2>
-<ul>
-<li>Suponha que um aluno obteve as seguintes notas: 8 (parcial 1), 6 (parcial 2) e 9 (parcial 3). Nessa caso, a média dos exercícios escolares é: <span class="math inline">\(MEE = \frac{8+6+9}{3} = 7.67\)</span>. Sabendo que MEE tem peso 2 e a nota da prova final (peso 1) foi de 5, quanto é a nota final do aluno?</li>
-</ul>
-</section>
-<section id="média-aritmética-ponderada---exemplo-4" class="slide level2">
-<h2>Média Aritmética Ponderada - Exemplo</h2>
-<div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Escrito</a></li><li><a href="#tabset-3-2">No R</a></li></ul>
-<div class="tab-content">
-<div id="tabset-3-1">
-<ul>
-<li>Para calcular a média do conjunto de dados utilizamos a média ponderada: <span class="math display">\[{MF}=\frac{2 MEE+PF}{3}=\frac{2\times7.67+5}{3} = 6.78\]</span></li>
-</ul>
-</div>
-<div id="tabset-3-2">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">7.67</span>,<span class="dv">5</span>)</span>
-<span id="cb5-2"><a></a>fr <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">1</span>)</span>
-<span id="cb5-3"><a></a>media.ponderada <span class="ot">=</span> <span class="fu">weighted.mean</span>(<span class="at">x =</span> x,<span class="at">w =</span> fr)</span>
-<span id="cb5-4"><a></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"A média ponderada do conjunto de dados é: "</span>, media.ponderada) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">max</span>(x)<span class="sc">-</span><span class="fu">min</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "A média ponderada do conjunto de dados é:  6.78"</code></pre>
-</div>
-</div>
-</div>
+<pre><code>[1] 5</code></pre>
 </div>
 </div>
 </section>
-<section id="média-aritmética-ponderada---exemplo-5" class="slide level2">
-<h2>Média Aritmética Ponderada - Exemplo</h2>
+<section id="amplitude---exemplo-2" class="slide level2">
+<h2>Amplitude - Exemplo</h2>
 <ul>
 <li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 50 tarefas</li>
 </ul>
 </section>
-<section id="média-aritmética-ponderada---exemplo-6" class="slide level2">
-<h2>Média Aritmética Ponderada - Exemplo</h2>
+<section id="amplitude---exemplo-3" class="slide level2">
+<h2>Amplitude - Exemplo</h2>
 <div class="cell">
 <div class="cell-output-display">
 <table>
@@ -700,569 +704,476 @@ f_{r_i}.\]</span></li>
 </div>
 </div>
 </section>
-<section id="média-aritmética-ponderada---exemplo-7" class="slide level2">
-<h2>Média Aritmética Ponderada - Exemplo</h2>
-<div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Escrito</a></li><li><a href="#tabset-4-2">No R</a></li></ul>
-<div class="tab-content">
-<div id="tabset-4-1">
-<ul>
-<li>Para calcular a média do conjunto de dados utilizamos a média ponderada: <span class="math display">\[\bar{x}=\frac{\sum_{i=1}^{k}f_{a_i} PM_i}{n}=\sum\limits_{i=1}^{k}PM_i
-f_{r_i},\]</span> em que <span class="math inline">\(PM_i\)</span> é o ponto médio da classe <span class="math inline">\(i\)</span></li>
-</ul>
-</div>
-<div id="tabset-4-2">
+<section id="amplitude---exemplo-4" class="slide level2">
+<h2>Amplitude - Exemplo</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="fu">seq</span>(<span class="dv">35</span>,<span class="dv">49</span>,<span class="dv">2</span>))</span>
-<span id="cb7-2"><a></a>fr <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">0.06</span>,<span class="fl">0.20</span>,<span class="fl">0.18</span>,<span class="fl">0.10</span>,<span class="fl">0.24</span>,<span class="fl">0.04</span>,<span class="fl">0.16</span>,<span class="fl">0.02</span>)</span>
-<span id="cb7-3"><a></a>media.ponderada <span class="ot">=</span> <span class="fu">weighted.mean</span>(<span class="at">x =</span> x,<span class="at">w =</span> fr)</span>
-<span id="cb7-4"><a></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"A média ponderada do conjunto de dados é: "</span>, media.ponderada) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>x <span class="ot">=</span> <span class="fu">seq</span>(<span class="dv">35</span>,<span class="dv">49</span>,<span class="dv">2</span>)</span>
+<span id="cb5-2"><a></a>x  <span class="ot">=</span> <span class="fu">rep</span>(x,<span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">10</span>,<span class="dv">9</span>,<span class="dv">5</span>,<span class="dv">12</span>,<span class="dv">2</span>,<span class="dv">8</span>,<span class="dv">1</span>))</span>
+<span id="cb5-3"><a></a><span class="fu">range</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "A média ponderada do conjunto de dados é:  41.24"</code></pre>
+<pre><code>[1] 35 49</code></pre>
 </div>
-</div>
-</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">max</span>(x)<span class="sc">-</span><span class="fu">min</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 14</code></pre>
 </div>
 </div>
 </section></section>
-<section>
-<section id="moda" class="title-slide slide level1 center">
-<h1>Moda</h1>
+<section id="iqr" class="title-slide slide level1 center">
+<h1>IQR</h1>
 <ul>
-<li><p>A moda de uma variável é o valor que ocorre com mais frequência, ou seja, aquele que mais se repete.</p></li>
-<li><p>Se dois valores ocorrerem com a mesma frequência máxima a variável é bimodal;</p></li>
-<li><p>Se mais de dois valores ocorrem com a mesma frequência máxima, a variável é multimodal;</p></li>
-<li><p>Quando nenhum valor se repete, a variável não tem moda.</p></li>
-<li><p>A moda do conjunto de dados será denotada por <span class="math inline">\(Mo\)</span>.</p></li>
-</ul>
-</section>
-<section id="dados-não-agrupadados---exemplo" class="slide level2">
-<h2>Dados não agrupadados - <strong>Exemplo</strong></h2>
-<p>Considere as seguintes séries de dados e identifique a moda:</p>
-<ul>
-<li><p>7, 8, 9, 10, 10, 10, 11, 12, 13, 15</p></li>
-<li><p>3, 5, 8, 10, 12, 13</p></li>
-<li><p>2, 3, 4, 4, 4, 5, 6, 7, 7, 7, 8, 9</p></li>
+<li>Uma medida de variabilidade que supera a dependência de valores extremos é a amplitude interquartil (IQR). <span class="math display">\[IQR = Q_3 - Q_1\]</span></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>ex1 <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">15</span>)</span>
-<span id="cb9-2"><a></a><span class="fu">table</span>(ex1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">35</span>,<span class="dv">36</span>,<span class="dv">37</span>,<span class="dv">38</span>,<span class="dv">39</span>,<span class="dv">40</span>)</span>
+<span id="cb9-2"><a></a>x  <span class="ot">=</span> <span class="fu">rep</span>(x,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">6</span>,<span class="dv">9</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>))</span>
+<span id="cb9-3"><a></a><span class="fu">IQR</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>ex1
- 7  8  9 10 11 12 13 15 
- 1  1  1  3  1  1  1  1 </code></pre>
+<pre><code>[1] 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">max</span>(x) <span class="sc">-</span> <span class="fu">min</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
 </div>
 </div>
-</section>
-<section id="dados-agrupadados---exemplo" class="slide level2">
-<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
-<ul>
-<li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 50 tarefas</li>
-<li>Para cada série de dados, primeiro identificamos a classe modal (a classe com a maior frequência) e então aplicamos a fórmula para calcular a moda.</li>
-</ul>
-</section>
-<section id="dados-agrupadados---exemplo-1" class="slide level2">
-<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
 <div class="cell">
-<div class="cell-output-display">
-<table>
-<colgroup>
-<col style="width: 4%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">X</td>
-<td style="text-align: left;">(34,36]</td>
-<td style="text-align: left;">(36,38]</td>
-<td style="text-align: left;">(38,40]</td>
-<td style="text-align: left;">(40,42]</td>
-<td style="text-align: left;">(42,44]</td>
-<td style="text-align: left;">(44,46]</td>
-<td style="text-align: left;">(46,48]</td>
-<td style="text-align: left;">(48,50]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">PM</td>
-<td style="text-align: left;">35</td>
-<td style="text-align: left;">37</td>
-<td style="text-align: left;">39</td>
-<td style="text-align: left;">41</td>
-<td style="text-align: left;">43</td>
-<td style="text-align: left;">45</td>
-<td style="text-align: left;">47</td>
-<td style="text-align: left;">49</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">fa</td>
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">9</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">12</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">8</td>
-<td style="text-align: left;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">fr</td>
-<td style="text-align: left;">0.06</td>
-<td style="text-align: left;">0.20</td>
-<td style="text-align: left;">0.18</td>
-<td style="text-align: left;">0.10</td>
-<td style="text-align: left;">0.24</td>
-<td style="text-align: left;">0.04</td>
-<td style="text-align: left;">0.16</td>
-<td style="text-align: left;">0.02</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Fa</td>
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">13</td>
-<td style="text-align: left;">22</td>
-<td style="text-align: left;">27</td>
-<td style="text-align: left;">39</td>
-<td style="text-align: left;">41</td>
-<td style="text-align: left;">49</td>
-<td style="text-align: left;">50</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Fr</td>
-<td style="text-align: left;">0.06</td>
-<td style="text-align: left;">0.26</td>
-<td style="text-align: left;">0.44</td>
-<td style="text-align: left;">0.54</td>
-<td style="text-align: left;">0.78</td>
-<td style="text-align: left;">0.82</td>
-<td style="text-align: left;">0.98</td>
-<td style="text-align: left;">1.00</td>
-</tr>
-</tbody>
-</table>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">35</span>,<span class="dv">36</span>,<span class="dv">37</span>,<span class="dv">38</span>,<span class="dv">39</span>,<span class="dv">40</span>,<span class="dv">90</span>)</span>
+<span id="cb13-2"><a></a>x  <span class="ot">=</span> <span class="fu">rep</span>(x,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">6</span>,<span class="dv">9</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">3</span>))</span>
+<span id="cb13-3"><a></a><span class="fu">IQR</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">max</span>(x) <span class="sc">-</span> <span class="fu">min</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 55</code></pre>
 </div>
 </div>
 </section>
-<section id="dados-agrupadados---exemplo-2" class="slide level2">
-<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
-<p><span class="math inline">\(Mo(X) = l+\left( \dfrac{d_1}{d_1+d_2}\right) \times h,\)</span></p>
-<p>onde:</p>
-<ul>
-<li><p><strong>Classe modal</strong>: classe com maior frequência</p></li>
-<li><p><span class="math inline">\(l\)</span> : é o limite inferior da classe modal;</p></li>
-<li><p><span class="math inline">\(d_1\)</span>: diferença entre a frequência absoluta da classe modal e a imediatamente anterior;</p></li>
-<li><p><span class="math inline">\(d_2\)</span>: diferença entre a frequência absoluta da classe modal e a imediatamente posterior;</p></li>
-<li><p><span class="math inline">\(h\)</span>: amplitude da classe modal.</p></li>
-</ul>
-</section>
-<section id="dados-agrupadados---exemplo-3" class="slide level2">
-<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
-<ul>
-<li>O método mais simples para o cálculo da moda consiste em tomar o ponto médio da classe modal.</li>
-</ul>
-</section></section>
-<section>
-<section id="mediana" class="title-slide slide level1 center">
-<h1>Mediana</h1>
 
-</section>
-<section id="dados-não-agrupados" class="slide level2">
-<h2>Dados não agrupados</h2>
-<ul>
-<li>Considere o tempo (segundos) de cinco tarefas realizadas por uma CPU:<span class="math inline">\(30, 25, 28, 33, 31\)</span></li>
-<li>Considere o tempo (segundos) de seis tarefas realizadas por uma CPU:<span class="math inline">\(30, 25, 28, 33, 31,32\)</span></li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">median</span>(<span class="fu">c</span>(<span class="dv">30</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">33</span>, <span class="dv">31</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 30</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">median</span>(<span class="fu">c</span>(<span class="dv">30</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">33</span>, <span class="dv">31</span>,<span class="dv">32</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 30.5</code></pre>
-</div>
-</div>
-</section>
-<section id="dados-não-agrupados-1" class="slide level2">
-<h2>Dados não agrupados</h2>
-<ul>
-<li>Consideremos, agora, as observações ordenadas em ordem crescente. Vamos denotar a menor observação por <span class="math inline">\(x_{(1)}\)</span>, a segunda por <span class="math inline">\(x_{(2)}\)</span>, e assim por diante, obtendo-se</li>
-</ul>
-<p><span class="math display">\[x_{(1)} \leq x_{(2)} \leq \ldots \leq x_{(n-1)} \leq x_{(n)}\]</span></p>
-</section>
-<section id="dados-não-agrupados-2" class="slide level2">
-<h2>Dados não agrupados</h2>
-<ul>
-<li>Com esta notação, a mediana da variável <span class="math inline">\(X\)</span> pode ser definida por</li>
-</ul>
-<span class="math display">\[\begin{align}
-md(X) &amp;= x_{\left(\frac{n+1}{2}\right)} \quad \text{se } n \text{ é ímpar} \\
-md(X) &amp;= \dfrac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2}+1\right)}}{2} \quad \text{se } n \text{ é par}.
-\end{align}\]</span>
-</section>
-<section id="dados-não-agrupados-3" class="slide level2">
-<h2>Dados não agrupados</h2>
-<ul>
-<li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 20 tarefas. Obtenha a mediana.</li>
-</ul>
-</section>
-<section id="dados-não-agrupados-4" class="slide level2">
-<h2>Dados não agrupados</h2>
-<div class="cell">
-<div class="cell-output-display">
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: right;">X</th>
-<th style="text-align: right;">fa</th>
-<th style="text-align: right;">fr</th>
-<th style="text-align: right;">Fa</th>
-<th style="text-align: right;">Fr</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">35</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.05</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.05</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">36</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">0.30</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">0.35</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">37</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">0.45</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">0.80</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">38</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0.10</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">0.90</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">39</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.05</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">0.95</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">40</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.05</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">1.00</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<section id="dados-agrupadados---exemplo-4" class="slide level2">
-<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
-<ul>
-<li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 50 tarefas</li>
-<li>Para cada série de dados, primeiro identificamos a classe mediana (a classe que acumula 50% das observações) e então aplicamos a fórmula para calcular a mediana.</li>
-</ul>
-</section>
-<section id="dados-agrupadados---exemplo-5" class="slide level2">
-<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
-<div class="cell">
-<div class="cell-output-display">
-<table>
-<colgroup>
-<col style="width: 4%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">X</td>
-<td style="text-align: left;">(34,36]</td>
-<td style="text-align: left;">(36,38]</td>
-<td style="text-align: left;">(38,40]</td>
-<td style="text-align: left;">(40,42]</td>
-<td style="text-align: left;">(42,44]</td>
-<td style="text-align: left;">(44,46]</td>
-<td style="text-align: left;">(46,48]</td>
-<td style="text-align: left;">(48,50]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">PM</td>
-<td style="text-align: left;">35</td>
-<td style="text-align: left;">37</td>
-<td style="text-align: left;">39</td>
-<td style="text-align: left;">41</td>
-<td style="text-align: left;">43</td>
-<td style="text-align: left;">45</td>
-<td style="text-align: left;">47</td>
-<td style="text-align: left;">49</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">fa</td>
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">9</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">12</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">8</td>
-<td style="text-align: left;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">fr</td>
-<td style="text-align: left;">0.06</td>
-<td style="text-align: left;">0.20</td>
-<td style="text-align: left;">0.18</td>
-<td style="text-align: left;">0.10</td>
-<td style="text-align: left;">0.24</td>
-<td style="text-align: left;">0.04</td>
-<td style="text-align: left;">0.16</td>
-<td style="text-align: left;">0.02</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Fa</td>
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">13</td>
-<td style="text-align: left;">22</td>
-<td style="text-align: left;">27</td>
-<td style="text-align: left;">39</td>
-<td style="text-align: left;">41</td>
-<td style="text-align: left;">49</td>
-<td style="text-align: left;">50</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Fr</td>
-<td style="text-align: left;">0.06</td>
-<td style="text-align: left;">0.26</td>
-<td style="text-align: left;">0.44</td>
-<td style="text-align: left;">0.54</td>
-<td style="text-align: left;">0.78</td>
-<td style="text-align: left;">0.82</td>
-<td style="text-align: left;">0.98</td>
-<td style="text-align: left;">1.00</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<section id="dados-agrupadados---exemplo-6" class="slide level2">
-<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
-<ul>
-<li>A fórmula usada é dada por:</li>
-</ul>
-<p><span class="math display">\[Md(X) = l + \left( \dfrac{n/2 - F}{f_{a_{cm}}} \right) \times h,\]</span></p>
-</section>
-<section id="dados-agrupadados---exemplo-7" class="slide level2">
-<h2>Dados agrupadados - <strong>Exemplo</strong></h2>
-<p>onde:</p>
-<ul>
-<li><strong>Classe mediana</strong>: classe que acumula 50% das observações.</li>
-<li><span class="math inline">\(l\)</span> : é o limite inferior da classe mediana;</li>
-<li><span class="math inline">\(n\)</span>: número total de elementos;</li>
-<li><span class="math inline">\(F\)</span>: frequência absoluta acumulada até a classe anterior à classe mediana;</li>
-<li><span class="math inline">\(f_{a_{cm}}\)</span>: frequência absoluta da classe mediana;</li>
-<li><span class="math inline">\(h\)</span>: amplitude da classe mediana.</li>
-</ul>
-</section></section>
 <section id="observações" class="title-slide slide level1 center">
 <h1>Observações</h1>
 <ul>
-<li><strong>Média.</strong>
-<ul>
-<li><em>Vantagens:</em> é a mais usada das medidas, existe em qualquer variável quantitativa, leva em conta todos os valores da amostra e é usada em muitos métodos estatísticos.</li>
-<li><em>Desvantagem:</em> é afetada por valores extremos.</li>
-</ul></li>
+<li><p>Um problema com as medidas de dispersão anteriores, como a amplitude e o intervalo interquartil, é que elas consideram apenas as diferenças entre valores em determinadas posições quando os dados são ordenados.</p></li>
+<li><p>Existem medidas que indica a variabilidade de uma variável levando em conta todos os seus valores.</p></li>
 </ul>
 </section>
 
-<section id="observações-1" class="title-slide slide level1 center">
-<h1>Observações</h1>
+<section id="variância" class="title-slide slide level1 center">
+<h1>Variância</h1>
 <ul>
-<li><strong>Mediana.</strong>
-<ul>
-<li><em>Vantagens:</em> é usada com frequência, existe em qualquer variável quantitativa e não é afetada por valores extremos.</li>
-<li><em>Desvantagem:</em> não leva em conta todos os valores no cálculo.</li>
-</ul></li>
+<li>A variância é uma medida de variabilidade que utiliza todos os dados;</li>
+<li>A variância baseia-se na diferença entre o valor de cada observação <span class="math inline">\(x_i\)</span> e a média;</li>
+<li>A diferença entre cada <span class="math inline">\(x_i\)</span> e a média denomina-se desvio em torno da média;</li>
+<li>A variância amostral é representada por <span class="math inline">\(S^2\)</span></li>
 </ul>
 </section>
 
-<section id="observações-2" class="title-slide slide level1 center">
-<h1>Observações</h1>
+<section id="variância---exemplo" class="title-slide slide level1 center">
+<h1>Variância - Exemplo</h1>
 <ul>
-<li><strong>Moda.</strong>
-<ul>
-<li><em>Vantagem:</em> Não é afetada por valores extremos.</li>
-<li><em>Desvantagens:</em> é raramente usada, pode não existir em uma variável quantitativa, não leva em conta todos os valores e pode existir mais de uma moda em uma variável.</li>
-</ul></li>
+<li><p>Considere o tempo (segundos) de cinco tarefas realizadas por um CPU <span class="math inline">\((x: 3, 6, 5, 7, 9)\)</span>. Calcule a variância.</p></li>
+<li><p>Obtenha a média, ou seja, 6.</p></li>
 </ul>
 </section>
 
-<section id="assimetria-e-simetria" class="title-slide slide level1 center">
-<h1>Assimetria e Simetria</h1>
+<section id="variância---exemplo-1" class="title-slide slide level1 center">
+<h1>Variância - Exemplo</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Observação (<span class="math inline">\(x\)</span>)</th>
+<th><span class="math inline">\((x-\bar{x})\)</span></th>
+<th><span class="math inline">\((x-\bar{x})^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3</td>
+<td>(3-6=-3)</td>
+<td><span class="math inline">\((-3)^2=9\)</span></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>(6-6=0)</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>(5-6=-1)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>(7-6=1)</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>(9-6=3)</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td>0</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="variância---exemplo-2" class="title-slide slide level1 center">
+<h1>Variância - Exemplo</h1>
 <ul>
-<li><p>Uma distribuição é simétrica quando a metade direita do gráfico é uma imagem espelhada da metade esquerda, indicando que os valores estão igualmente distribuídos em torno da média.</p></li>
-<li><p>Nesse caso, a média, a mediana e a moda geralmente são iguais.</p></li>
+<li><p>Divida 20 por <span class="math inline">\(n-1\)</span>, ou seja, <span class="math inline">\(5-1=4\)</span>. Portanto, <span class="math inline">\(S^2=\dfrac{20}{4}=5 segundos^2\)</span></p></li>
+<li><p>Uma interpretação prática será visto juntamente com o conceito de desvio padrão</p></li>
 </ul>
 </section>
 
-<section id="assimetria-e-simetria-1" class="title-slide slide level1 center">
-<h1>Assimetria e Simetria</h1>
+<section id="variância---exemplo-3" class="title-slide slide level1 center">
+<h1>Variância - Exemplo</h1>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">No R</a></li><li><a href="#tabset-1-2">Escrito</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>)</span>
+<span id="cb17-2"><a></a><span class="fu">var</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<p><span class="math display">\[
+s^2 = \dfrac{(x_1 - \bar{x})^2+(x_2 - \bar{x})^2+...+(x_n - \bar{x})^2}{n-1}
+\]</span></p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="variância---exemplo-4" class="title-slide slide level1 center">
+<h1>Variância - Exemplo</h1>
 <ul>
-<li><p>Por outro lado, uma distribuição assimétrica ocorre quando a distribuição dos dados não é simétrica, o que significa que há uma assimetria ou distorção na forma da distribuição.</p></li>
-<li><p>Isso pode ocorrer quando há valores extremos ou quando os dados estão inclinados para a esquerda (assimetria negativa) ou para a direita (assimetria positiva).</p></li>
+<li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 20 tarefas</li>
 </ul>
 </section>
 
-<section id="assimetria-e-simetria-2" class="title-slide slide level1 center">
-<h1>Assimetria e Simetria</h1>
+<section id="variância---exemplo-5" class="title-slide slide level1 center">
+<h1>Variância - Exemplo</h1>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">X</th>
+<th style="text-align: right;">fa</th>
+<th style="text-align: right;">fr</th>
+<th style="text-align: right;">Fa</th>
+<th style="text-align: right;">Fr</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.35</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.80</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0.90</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0.95</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="variância---exemplo-6" class="title-slide slide level1 center">
+<h1>Variância - Exemplo</h1>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">No R</a></li><li><a href="#tabset-2-2">Escrito</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">35</span>,<span class="dv">36</span>,<span class="dv">37</span>,<span class="dv">38</span>,<span class="dv">39</span>,<span class="dv">40</span>)</span>
+<span id="cb19-2"><a></a>n <span class="ot">=</span> <span class="dv">20</span></span>
+<span id="cb19-3"><a></a>fr <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">0.05</span>,<span class="fl">0.30</span>,<span class="fl">0.45</span>,<span class="fl">0.10</span>,<span class="fl">0.05</span>,<span class="fl">0.05</span>)</span>
+<span id="cb19-4"><a></a>fa <span class="ot">=</span> n<span class="sc">*</span>fr</span>
+<span id="cb19-5"><a></a>media.ponderada <span class="ot">=</span> <span class="fu">weighted.mean</span>(<span class="at">x =</span> x,<span class="at">w =</span> fr)</span>
+<span id="cb19-6"><a></a></span>
+<span id="cb19-7"><a></a><span class="fu">sum</span>(fa<span class="sc">*</span>(x<span class="sc">-</span>media.ponderada)<span class="sc">^</span><span class="dv">2</span>)<span class="sc">/</span>(n<span class="dv">-1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.313158</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-2-2">
+<p><span class="math display">\[
+s^2 = \dfrac{(x_1 - \bar{x})^2f_{a_1}+(x_2 - \bar{x})^2f_{a_2}+...+(x_k - \bar{x})^2f_{a_k}}{n-1}
+\]</span></p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="variância---exemplo-7" class="title-slide slide level1 center">
+<h1>Variância - Exemplo</h1>
 <ul>
-<li>Nesse caso, a média, a mediana e a moda podem ser diferentes.</li>
+<li>A tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 50 tarefas</li>
 </ul>
 </section>
 
-<section id="assimetria-e-simetria-3" class="title-slide slide level1 center">
-<h1>Assimetria e Simetria</h1>
+<section id="variância---exemplo-8" class="title-slide slide level1 center">
+<h1>Variância - Exemplo</h1>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">(34,36]</td>
+<td style="text-align: left;">(36,38]</td>
+<td style="text-align: left;">(38,40]</td>
+<td style="text-align: left;">(40,42]</td>
+<td style="text-align: left;">(42,44]</td>
+<td style="text-align: left;">(44,46]</td>
+<td style="text-align: left;">(46,48]</td>
+<td style="text-align: left;">(48,50]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PM</td>
+<td style="text-align: left;">35</td>
+<td style="text-align: left;">37</td>
+<td style="text-align: left;">39</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">43</td>
+<td style="text-align: left;">45</td>
+<td style="text-align: left;">47</td>
+<td style="text-align: left;">49</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fa</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fr</td>
+<td style="text-align: left;">0.06</td>
+<td style="text-align: left;">0.20</td>
+<td style="text-align: left;">0.18</td>
+<td style="text-align: left;">0.10</td>
+<td style="text-align: left;">0.24</td>
+<td style="text-align: left;">0.04</td>
+<td style="text-align: left;">0.16</td>
+<td style="text-align: left;">0.02</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fa</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">22</td>
+<td style="text-align: left;">27</td>
+<td style="text-align: left;">39</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">49</td>
+<td style="text-align: left;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fr</td>
+<td style="text-align: left;">0.06</td>
+<td style="text-align: left;">0.26</td>
+<td style="text-align: left;">0.44</td>
+<td style="text-align: left;">0.54</td>
+<td style="text-align: left;">0.78</td>
+<td style="text-align: left;">0.82</td>
+<td style="text-align: left;">0.98</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
 
-<img data-src="4-Medidas_Posicao_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<section id="variância---exemplo-9" class="title-slide slide level1 center">
+<h1>Variância - Exemplo</h1>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">No R</a></li><li><a href="#tabset-3-2">Escrito</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="fu">seq</span>(<span class="dv">35</span>,<span class="dv">49</span>,<span class="dv">2</span>))</span>
+<span id="cb21-2"><a></a>n <span class="ot">=</span> <span class="dv">50</span></span>
+<span id="cb21-3"><a></a>fr <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">0.06</span>,<span class="fl">0.20</span>,<span class="fl">0.18</span>,<span class="fl">0.10</span>,<span class="fl">0.24</span>,<span class="fl">0.04</span>,<span class="fl">0.16</span>,<span class="fl">0.02</span>)</span>
+<span id="cb21-4"><a></a>fa <span class="ot">=</span> n<span class="sc">*</span>fr</span>
+<span id="cb21-5"><a></a>media.ponderada <span class="ot">=</span> <span class="fu">weighted.mean</span>(<span class="at">x =</span> x,<span class="at">w =</span> fr)</span>
+<span id="cb21-6"><a></a><span class="fu">sum</span>(fa<span class="sc">*</span>(x<span class="sc">-</span>media.ponderada)<span class="sc">^</span><span class="dv">2</span>)<span class="sc">/</span>(n<span class="dv">-1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 14.96163</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-3-2">
+<p><span class="math display">\[
+s^2 = \dfrac{(PM_1 - \bar{x})^2f_{a_1}+(PM_2 - \bar{x})^2f_{a_2}+...+(PM_k - \bar{x})^2f_{a_k}}{n-1}
+\]</span></p>
+</div>
+</div>
+</div>
+</section>
 
 <section>
-<section id="separatrizes" class="title-slide slide level1 center">
-<h1>Separatrizes</h1>
+<section id="desvio-padrão" class="title-slide slide level1 center">
+<h1>Desvio Padrão</h1>
+<ul>
+<li><p>As unidades elevadas ao quadrado associadas à variância tornam difícil obter uma compreensão e uma interpretação intuitiva do valor numérico da variância;</p></li>
+<li><p>Considere o tempo (segundos) de processamento do Servidor A</p></li>
+</ul>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 26 36 35 30 24 35 34 34 34 28 34 37 30 25 34 34 28 38 26 32</code></pre>
+</div>
+</div>
+</section>
+<section id="desvio-padrão---exemplo" class="slide level2">
+<h2>Desvio Padrão - Exemplo</h2>
+<ul>
+<li>A variância amostral é de <span class="math inline">\(S^2 =\)</span> 18 <span class="math inline">\(segundos^2\)</span></li>
+<li>Uma vez que o desvio padrão é a raiz quadrada da variância, a unidade da variância, segundos elevado ao quadrado, é convertida em segundos no desvio padrão.</li>
+<li>Em outras palavras, o desvio padrão é medido nas mesmas unidades dos dados originais.</li>
+</ul>
+</section>
+<section id="desvio-padrão---exemplo-1" class="slide level2">
+<h2>Desvio Padrão - Exemplo</h2>
+<ul>
+<li><p>Desvio padrão amostral é dado por <span class="math inline">\(s = \sqrt{s^2}\)</span>.<br>
+</p></li>
+<li><p>Considerando os salários iniciais dos graduados, tem-se que o desvio padrão dos tempos de procesamentos é de <span class="math inline">\(s=\)</span> 4.244</p></li>
+<li><p>Portanto, os valores dos tempos estão em torno de uma média amostral (<span class="math inline">\(\bar{x}\)</span>) com desvio <span class="math inline">\(s\)</span>, isto é, <span class="math inline">\(\bar{x}\pm s\)</span>. Portanto 31.7 <span class="math inline">\(\pm\)</span> 4.244 segundos</p></li>
+<li><p>Para calcular o desvio padrão no R usamos: <code>sd(x)</code></p></li>
+</ul>
+</section>
+<section id="desvio-padrão---exemplo-2" class="slide level2">
+<h2>Desvio Padrão - Exemplo</h2>
 
-</section>
-<section id="exemplos" class="slide level2">
-<h2>Exemplos</h2>
-<ol type="1">
-<li><p>Determinar os 10% mais ricos ou os 25% mais pobres</p></li>
-<li><p>Identificar os 20% de clientes que geram mais receita</p></li>
-<li><p>10% das requisições estão enfrentando atrasos significativos</p></li>
-<li><p>75% dos usuários do aplicativo gastam até 3 minutos nas sessões</p></li>
-</ol>
-</section>
-<section id="quartis" class="slide level2">
-<h2>Quartis</h2>
+<img data-src="5-Medidas_Dispersao_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section></section>
+<section id="coeficiente-de-variação" class="title-slide slide level1 center">
+<h1>Coeficiente de Variação</h1>
 <ul>
-<li>Os quartis são três valores que dividem os dados em quatro partes iguais:</li>
-</ul>
-<ol type="1">
-<li><p><strong>Primeiro quartil</strong> <span class="math inline">\(Q_1\)</span>: é o valor abaixo do qual 25% dos dados estão situados.</p></li>
-<li><p><strong>Segundo quartil</strong> <span class="math inline">\(Q_2\)</span>: é a mediana, divide os dados ao meio, com 50% dos dados abaixo dele.</p></li>
-<li><p><strong>Terceiro quartil</strong> <span class="math inline">\(Q_3\)</span>: é o valor abaixo do qual 75% dos dados estão situados.</p></li>
-</ol>
-</section>
-<section id="quartis-1" class="slide level2">
-<h2>Quartis</h2>
-<p>Para calcular os quartis, siga estes passos:</p>
-<ol type="1">
-<li><p>Ordene os dados em ordem crescente.</p></li>
-<li><p>Encontre a mediana (<span class="math inline">\(Q_2\)</span>), divide os dados em duas metades.</p></li>
-<li><p><span class="math inline">\(Q_1\)</span> é o número que está na metade inferior dos dados (do menor valor até <span class="math inline">\(Q_2\)</span>).</p></li>
-<li><p><span class="math inline">\(Q_3\)</span> é o número que está da metade superior dos dados (de <span class="math inline">\(Q_2\)</span> até o maior valor).</p></li>
-</ol>
-</section>
-<section id="quartis---exemplos" class="slide level2">
-<h2>Quartis - Exemplos</h2>
-<ul>
-<li>Considere os tempos, em segundos, de cinco tarefas realizadas por uma CPU: <span class="math display">\[30; 25;20;28;33;31;32. \]</span></li>
+<li><p>Um desvio padrão pode ser considerado grande ou pequeno dependendo da ordem de grandeza da variável.</p></li>
+<li><p>Uma maneira de se expressar a variabilidade dos dados tirando a influência da ordem de grandeza da variável é através do coeficiente de variação.</p></li>
 </ul>
 </section>
-<section id="quartis---exemplos-1" class="slide level2">
-<h2>Quartis - Exemplos</h2>
-<div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">No R</a></li><li><a href="#tabset-5-2">Escrito</a></li></ul>
-<div class="tab-content">
-<div id="tabset-5-1">
+
+<section id="coeficiente-de-variação-1" class="title-slide slide level1 center">
+<h1>Coeficiente de Variação</h1>
+<ul>
+<li>Essa medida indica quão grande é o desvio padrão em torno da média. <span class="math display">\[CV = \left(\dfrac{s}{\bar{x}} \times 100\right)\%\]</span></li>
+</ul>
+</section>
+
+<section>
+<section id="coeficiente-de-variação-2" class="title-slide slide level1 center">
+<h1>Coeficiente de Variação</h1>
+<ul>
+<li><p>Interpretado como a variabilidade dos dados em relação à média. Quanto menor o CV mais homogêneo é o conjunto de dados.</p></li>
+<li><p>O fato de o coeficiente de variação ser dado em valor relativo nos permite <strong>comparar conjuntos de valores que apresentam unidades de medida distintas.</strong></p></li>
+</ul>
+</section>
+<section id="coeficiente-de-variação---exemplo" class="slide level2">
+<h2>Coeficiente de Variação - Exemplo</h2>
+<ul>
+<li><p>Suponha que você tenha medido o tempo de execução (em milissegundos) de dois algoritmos de ordenação, Algoritmo A e Algoritmo B, em várias execuções com o mesmo conjunto de dados. Os tempos de execução foram registrados como segue:</p></li>
+<li><p><strong>Algoritmo A:</strong> Tempos de execução: 15, 16, 15, 17, 14, 16, 15 ms</p></li>
+<li><p><strong>Algoritmo B:</strong> Tempos de execução: 45, 47, 44, 46, 45, 48, 46 ms</p></li>
+</ul>
+</section>
+<section id="coeficiente-de-variação---exemplo-1" class="slide level2">
+<h2>Coeficiente de Variação - Exemplo</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>z <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">30</span>,<span class="dv">25</span>,<span class="dv">20</span>,<span class="dv">28</span>,<span class="dv">33</span>,<span class="dv">31</span>,<span class="dv">32</span>)</span>
-<span id="cb15-2"><a></a><span class="fu">summary</span>(z)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>A <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">16</span>, <span class="dv">15</span>, <span class="dv">17</span>, <span class="dv">14</span>, <span class="dv">16</span>, <span class="dv">15</span>)</span>
+<span id="cb24-2"><a></a>B <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">45</span>, <span class="dv">47</span>, <span class="dv">44</span>, <span class="dv">46</span>, <span class="dv">45</span>, <span class="dv">48</span>, <span class="dv">46</span>)</span>
+<span id="cb24-3"><a></a></span>
+<span id="cb24-4"><a></a>(<span class="at">media.A =</span> <span class="fu">mean</span>(A));(<span class="at">media.B =</span> <span class="fu">mean</span>(B))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  20.00   26.50   30.00   28.43   31.50   33.00 </code></pre>
+<pre><code>[1] 15.42857</code></pre>
 </div>
-</div>
-</div>
-<div id="tabset-5-2">
-<ul>
-<li><p>Dados ordenados: 20, 25, 28, 30, 31, 32, 33</p></li>
-<li><p><span class="math inline">\(Q_1 = \frac{25+28}{2} = 26.5\)</span>. Portanto, 25% das tarefas foram realizadas em até 26.5 segundos</p></li>
-<li><p><span class="math inline">\(Q_2 = 30\)</span>. Portanto, 50% das tarefas foram realizadas em até 30 segundos</p></li>
-<li><p><span class="math inline">\(Q_3 = \frac{31+32}{2} = 31.5\)</span>. Portanto, 75% das tarefas foram realizadas em até 31.5 segundos</p></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="percentis" class="slide level2">
-<h2>Percentis</h2>
-<ul>
-<li>De forma geral, pode-se determinar o <span class="math inline">\(p\)</span>-ésimo percentil.</li>
-</ul>
-<dl>
-<dt>Percentil</dt>
-<dd>
-<p>O p-ésimo percentil é o valor que pelo menos <span class="math inline">\(p\)</span> por cento das observações são menores ou iguais a esse valor e pelo menos (100 − p) por cento das observações são maiores ou iguais a esse valor.</p>
-</dd>
-</dl>
-</section>
-<section id="percentis-1" class="slide level2">
-<h2>Percentis</h2>
-<p>O procedimento a seguir pode ser usado para calcular o <span class="math inline">\(p\)</span>-ésimo percentil.</p>
-<ul>
-<li><p><strong>Etapa 1</strong>: Organize os dados em ordem crescente.</p></li>
-<li><p><strong>Etapa 2</strong>: Calcule um índice <span class="math inline">\(i\)</span> <span class="math display">\[
-i = \left(\frac{p}{100}\right)n
-\]</span> onde <span class="math inline">\(p\)</span> é o percentil procurado e <span class="math inline">\(n\)</span> é o número de observações.</p></li>
-</ul>
-</section>
-<section id="percentis-2" class="slide level2">
-<h2>Percentis</h2>
-<ul>
-<li><p><strong>Etapa 3</strong>:</p>
-<ul>
-<li>Se <span class="math inline">\(i\)</span> não for um número inteiro, arredonde-o para cima. O próximo número inteiro maior do que <span class="math inline">\(i\)</span> denota a posição do <span class="math inline">\(p\)</span>-ésimo percentil.</li>
-<li>Se <span class="math inline">\(i\)</span> for um número inteiro, o <span class="math inline">\(p\)</span>-ésimo percentil será a média dos valores que ocupam as posições <span class="math inline">\(i\)</span> e <span class="math inline">\(i+1\)</span>.</li>
-</ul></li>
-</ul>
-</section>
-<section id="percentis---exemplos" class="slide level2">
-<h2>Percentis - Exemplos</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>z <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">30</span>,<span class="dv">25</span>,<span class="dv">20</span>,<span class="dv">28</span>,<span class="dv">33</span>,<span class="dv">31</span>,<span class="dv">32</span>)</span>
-<span id="cb17-2"><a></a>per <span class="ot">=</span> <span class="fu">c</span>(.<span class="dv">10</span>,.<span class="dv">20</span>,.<span class="dv">25</span>,.<span class="dv">50</span>,.<span class="dv">75</span>,.<span class="dv">90</span>)</span>
-<span id="cb17-3"><a></a><span class="fu">quantile</span>(z,per)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> 10%  20%  25%  50%  75%  90% 
-23.0 25.6 26.5 30.0 31.5 32.4 </code></pre>
+<pre><code>[1] 45.85714</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>(<span class="at">sd.A =</span> <span class="fu">sd</span>(A));(<span class="at">sd.B =</span> <span class="fu">sd</span>(B))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.9759001</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.345185</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>(<span class="at">cv.A =</span> (sd.A<span class="sc">/</span>media.A)<span class="sc">*</span><span class="dv">100</span>);(<span class="at">cv.B =</span> (sd.B<span class="sc">/</span>media.B)<span class="sc">*</span><span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6.325278</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.933426</code></pre>
 </div>
 </div>
+</section>
+<section id="coeficiente-de-variação---exemplo-2" class="slide level2">
+<h2>Coeficiente de Variação - Exemplo</h2>
 <ul>
-<li><p>20% das tarefas foram realizadas em até 25.6 segundos</p></li>
-<li><p>90% das tarefas foram realizadas em até 32.4 segundos</p></li>
-<li><p>Observação: às vezes são utilizadas outras convenções para calcular os percentis, e os valores reais atribuídos aos percentis podem variar ligeiramente. Para mais informações, digite: <code>?quantile</code></p></li>
+<li><p>O Algoritmo A tem um CV de aproximadamente 6.33%, enquanto o Algoritmo B tem um CV de aproximadamente 2.93%.</p></li>
+<li><p>Isso indica que o Algoritmo B possui uma variabilidade menor em relação ao seu tempo de execução médio, sendo mais consistente do que o Algoritmo A.</p></li>
+<li><p>A análise do coeficiente de variação é útil para comparar a consistência de desempenho dos algoritmos, independentemente das unidades de medida.</p></li>
 </ul>
 </section></section>
 <section id="referências" class="title-slide slide level1 center">

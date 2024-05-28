@@ -10,207 +10,148 @@
     ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplo---compra-da-tv",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplo---compra-da-tv",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude--exemplo",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude--exemplo",
     "title": "Probabilidade e Estatística",
-    "section": "Exemplo - Compra da TV",
-    "text": "Exemplo - Compra da TV\n\nSuponha que você queira comprar uma televisão e quer saber qual é a loja que apresenta o melhor preço. O que você faz?\n\nDefine as características da televisão que você deseja;\nVocê inicia sua pesquisa nas lojas anotando os preços dos televisores;\nDepois você compara os preços de cada loja;\nApós comparar os preços, você seleciona aquela loja com melhor preço e se dirige até ela para efetuar a sua compra."
+    "section": "Amplitude- Exemplo",
+    "text": "Amplitude- Exemplo\n\nA tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 20 tarefas",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplo---compra-da-tv-continuação",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplo---compra-da-tv-continuação",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude---exemplo",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude---exemplo",
     "title": "Probabilidade e Estatística",
-    "section": "Exemplo - Compra da TV (Continuação)",
-    "text": "Exemplo - Compra da TV (Continuação)\n\nNote que a Estatística estava presente quando você:\n\nDefiniu as características da televisão;\nColetou os dados;\nExtraiu as informações a partir da sua pesquisa;\nTomou decisão baseada nas informações extraídas."
+    "section": "Amplitude - Exemplo",
+    "text": "Amplitude - Exemplo\n\n\n\n\n\nX\nfa\nfr\nFa\nFr\n\n\n\n\n35\n1\n0.05\n1\n0.05\n\n\n36\n6\n0.30\n7\n0.35\n\n\n37\n9\n0.45\n16\n0.80\n\n\n38\n2\n0.10\n18\n0.90\n\n\n39\n1\n0.05\n19\n0.95\n\n\n40\n1\n0.05\n20\n1.00",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#etimologia",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#etimologia",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude---exemplo-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude---exemplo-1",
     "title": "Probabilidade e Estatística",
-    "section": "Etimologia",
-    "text": "Etimologia\n\nHistóricamente, a palavra “estatística” tem origem no latim “statisticus”, que significa “relativo ao Estado”;\nSeu uso estava associado à coleta e análise de dados demográficos e econômicos para governos, especialmente para fins de planejamento e tomada de decisões políticas;\nAo longo do tempo, o termo foi adotado em um contexto mais amplo, abrangendo a análise de dados em diversos campos, como ciências naturais, ciências sociais, negócios e muito mais."
+    "section": "Amplitude - Exemplo",
+    "text": "Amplitude - Exemplo\n\nx = c(35,36,37,38,39,40)\nx  = rep(x,c(1,6,9,2,1,1))\nrange(x)\n\n[1] 35 40\n\nmax(x)-min(x)\n\n[1] 5",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#definição",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#definição",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude---exemplo-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude---exemplo-2",
     "title": "Probabilidade e Estatística",
-    "section": "Definição",
-    "text": "Definição\n\nEstatística\n\nÉ a ciência que fornece os princípios e os métodos para coleta, organização, resumo, análise e interpretação de dados."
+    "section": "Amplitude - Exemplo",
+    "text": "Amplitude - Exemplo\n\nA tabala abaixo mostra o tempo gasto (segundos) de uma CPU na realização de 50 tarefas",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#aplicações-gerais",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#aplicações-gerais",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude---exemplo-3",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude---exemplo-3",
     "title": "Probabilidade e Estatística",
-    "section": "Aplicações Gerais",
-    "text": "Aplicações Gerais\n\nEconomia: Modelagem econométrica para estudar relações entre variáveis econômicas, como oferta e demanda, inflação e desemprego;\nCiências Ambientais: Estudos para prever mudanças climáticas e seus efeitos;\nMedicina: Testes clínicos para avaliar a eficácia de novos tratamentos;\nBiologia: Estudos de epidemiologia para analisar a propagação de doenças em populações."
+    "section": "Amplitude - Exemplo",
+    "text": "Amplitude - Exemplo\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nX\n(34,36]\n(36,38]\n(38,40]\n(40,42]\n(42,44]\n(44,46]\n(46,48]\n(48,50]\n\n\nPM\n35\n37\n39\n41\n43\n45\n47\n49\n\n\nfa\n3\n10\n9\n5\n12\n2\n8\n1\n\n\nfr\n0.06\n0.20\n0.18\n0.10\n0.24\n0.04\n0.16\n0.02\n\n\nFa\n3\n13\n22\n27\n39\n41\n49\n50\n\n\nFr\n0.06\n0.26\n0.44\n0.54\n0.78\n0.82\n0.98\n1.00",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#aplicações-na-área-de-computação",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#aplicações-na-área-de-computação",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude---exemplo-4",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#amplitude---exemplo-4",
     "title": "Probabilidade e Estatística",
-    "section": "Aplicações na Área de Computação",
-    "text": "Aplicações na Área de Computação\n\nAnálisar o Tempo e a ordem de falhas de componentes eletrônicos;\nA quantidade de memória alocada para a execução de determinado programa;\nQuantidade de defeitos em softwares recém lançados;\nQuantidade de arquivos e diretórios afetados por um vírus;\nClassificar se uma mensagem é um Spam."
+    "section": "Amplitude - Exemplo",
+    "text": "Amplitude - Exemplo\n\nx = seq(35,49,2)\nx  = rep(x,c(3,10,9,5,12,2,8,1))\nrange(x)\n\n[1] 35 49\n\nmax(x)-min(x)\n\n[1] 14",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#artigos",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#artigos",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#desvio-padrão---exemplo",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#desvio-padrão---exemplo",
     "title": "Probabilidade e Estatística",
-    "section": "Artigos",
-    "text": "Artigos\n\nEm Sullivan and Chillarege (1991) é realizado uma comparação dos defeitos regulares com os defeitos que corrompem a memória do programa;\nEm Galinac Grbac and Huljenić (2015) foi analisada a distribuição de probabilidade das falhas detectadas durante a verificação em quatro versões consecutivas de um sistema de software complexo de grande escala para as centrais de telecomunicações;\nEm Khalid et al. (2023) foi utilizado modelos de Machine Learning para realizar predições de defeitos em software."
+    "section": "Desvio Padrão - Exemplo",
+    "text": "Desvio Padrão - Exemplo\n\nA variância amostral é de \\(S^2 =\\) 18 \\(segundos^2\\)\nUma vez que o desvio padrão é a raiz quadrada da variância, a unidade da variância, segundos elevado ao quadrado, é convertida em segundos no desvio padrão.\nEm outras palavras, o desvio padrão é medido nas mesmas unidades dos dados originais.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#população-e-amostra",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#população-e-amostra",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#desvio-padrão---exemplo-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#desvio-padrão---exemplo-1",
     "title": "Probabilidade e Estatística",
-    "section": "População e Amostra",
-    "text": "População e Amostra\n\nPopulação e Amostra\n\nPopulação é o conjunto de elementos (pessoas, objetos) que possuem pelos menos uma característica em comum de interesse do pesquisador. Amostra é qualquer subconjunto da população."
+    "section": "Desvio Padrão - Exemplo",
+    "text": "Desvio Padrão - Exemplo\n\nDesvio padrão amostral é dado por \\(s = \\sqrt{s^2}\\).\n\nConsiderando os salários iniciais dos graduados, tem-se que o desvio padrão dos tempos de procesamentos é de \\(s=\\) 4.244\nPortanto, os valores dos tempos estão em torno de uma média amostral (\\(\\bar{x}\\)) com desvio \\(s\\), isto é, \\(\\bar{x}\\pm s\\). Portanto 31.7 \\(\\pm\\) 4.244 segundos\nPara calcular o desvio padrão no R usamos: sd(x)",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#variável",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#variável",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#desvio-padrão---exemplo-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#desvio-padrão---exemplo-2",
     "title": "Probabilidade e Estatística",
-    "section": "Variável",
-    "text": "Variável\n\nVariável\n\nÉ alguma característica que pode ser observada a partir da amostra."
+    "section": "Desvio Padrão - Exemplo",
+    "text": "Desvio Padrão - Exemplo",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#dados",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#dados",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#coeficiente-de-variação---exemplo",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#coeficiente-de-variação---exemplo",
     "title": "Probabilidade e Estatística",
-    "section": "Dados",
-    "text": "Dados\n\nDados\n\nConjuntos de valores numéricos ou não."
+    "section": "Coeficiente de Variação - Exemplo",
+    "text": "Coeficiente de Variação - Exemplo\n\nSuponha que você tenha medido o tempo de execução (em milissegundos) de dois algoritmos de ordenação, Algoritmo A e Algoritmo B, em várias execuções com o mesmo conjunto de dados. Os tempos de execução foram registrados como segue:\nAlgoritmo A: Tempos de execução: 15, 16, 15, 17, 14, 16, 15 ms\nAlgoritmo B: Tempos de execução: 45, 47, 44, 46, 45, 48, 46 ms",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#coeficiente-de-variação---exemplo-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#coeficiente-de-variação---exemplo-1",
     "title": "Probabilidade e Estatística",
-    "section": "Exemplos",
-    "text": "Exemplos\n\nIdentifique a população, a amostra e a variável para cada um dos exemplos abaixo:\n\n\nConsideremos uma pesquisa para estudar os salários dos 500 funcionários de uma empresa. Seleciona-se 36 funcionários e anotam-se os seus salários.\nUm grupo de pesquisadores está interessado em estudar a preferência de linguagens de programação entre os desenvolvedores de software. Eles decidem realizar uma pesquisa online e coletam dados de uma amostra de 500 desenvolvedores."
+    "section": "Coeficiente de Variação - Exemplo",
+    "text": "Coeficiente de Variação - Exemplo\n\nA = c(15, 16, 15, 17, 14, 16, 15)\nB = c(45, 47, 44, 46, 45, 48, 46)\n\n(media.A = mean(A));(media.B = mean(B))\n\n[1] 15.42857\n\n\n[1] 45.85714\n\n(sd.A = sd(A));(sd.B = sd(B))\n\n[1] 0.9759001\n\n\n[1] 1.345185\n\n(cv.A = (sd.A/media.A)*100);(cv.B = (sd.B/media.B)*100)\n\n[1] 6.325278\n\n\n[1] 2.933426",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos-continuação",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos-continuação",
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#coeficiente-de-variação---exemplo-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_Dispersao.html#coeficiente-de-variação---exemplo-2",
     "title": "Probabilidade e Estatística",
-    "section": "Exemplos (Continuação)",
-    "text": "Exemplos (Continuação)\n\nUma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia"
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#representações-das-variáveis",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#representações-das-variáveis",
-    "title": "Probabilidade e Estatística",
-    "section": "Representações das variáveis",
-    "text": "Representações das variáveis\n\nAs representações das variáveis podem ser feitas através de uma letra:\n\n\n\n\nVariável\nRepresentação\n\n\n\n\nEstado Civil\nX\n\n\nGrau de Instrução\nY\n\n\nNúmero de Filhos\nZ"
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#quantitativas",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#quantitativas",
-    "title": "Probabilidade e Estatística",
-    "section": "Quantitativas",
-    "text": "Quantitativas\n\nEstão relacionadas às observações associadas a contagem ou mensurações. Elas podem ser:\n\nDiscretas: assumem somente valores inteiros em um conjunto de valores , é resultado de uma possível contagem. Exemplos: número de irmãos, número de estudantes em sala de aula;\nContínuas: assumem somente valores em um intervalo de valores. É o resultado de um processo de medição. Exemplos: temperatura, velocidade, peso, altura."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#qualitativas",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#qualitativas",
-    "title": "Probabilidade e Estatística",
-    "section": "Qualitativas",
-    "text": "Qualitativas\n\nRepresentam uma “qualidade” dos objetos da população. Também são chamadas de variáveis categóricas. Elas podem ser:\n\nNominal: possíveis respostas que não possuem uma ordenação natural. Exemplos: raça, sexo.\nOrdinal: possíveis respostas possuem uma ordenação natural. Exemplos: Classe social, escolaridade."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#observação",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#observação",
-    "title": "Probabilidade e Estatística",
-    "section": "Observação",
-    "text": "Observação\n\nObservação: algumas variáveis podem ser classificadas em mais de um tipo dependendo da unidade usada. Por exemplo, a renda medida em salários mínimos pode ser classificada como uma variável discreta, mas pode também ser ordinal se categorizada como baixa, média e alta."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos-1",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#exemplos-1",
-    "title": "Probabilidade e Estatística",
-    "section": "Exemplos",
-    "text": "Exemplos\n\nIdentifique e classifique as variáveis\n\n\nUma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia\nQuantidade de defeitos em softwares recém lançados;\nClassificar se uma mensagem é um Spam."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#amostragem",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#amostragem",
-    "title": "Probabilidade e Estatística",
-    "section": "Amostragem",
-    "text": "Amostragem\n\nTécnicas para colher amostras representativas da população;"
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#estatísticas-descritivas",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#estatísticas-descritivas",
-    "title": "Probabilidade e Estatística",
-    "section": "Estatísticas Descritivas",
-    "text": "Estatísticas Descritivas\n\nEm geral, é utilizada na etapa inicial da análise, em um primeiro contato com os dados. Apresenta os dados em tabelas ou gráficos além de organizar e resumir resultados preliminares."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#probabilidade",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#probabilidade",
-    "title": "Probabilidade e Estatística",
-    "section": "Probabilidade",
-    "text": "Probabilidade\n\nÉ a teoria matemática utilizada para estudar a incerteza oriunda de fenômenos aleatório"
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#inferência-estatística",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#inferência-estatística",
-    "title": "Probabilidade e Estatística",
-    "section": "Inferência estatística",
-    "text": "Inferência estatística\n\nTécnicas que tentam identificar um modelo de probabilidade para a exploração de informações e conclusões obtidas a partir de uma amostra. Pode ser dividida em teste de hipótese e estimação dos parâmetros.\nObservação: Note que a inferência ocorre quando as informações são obtidas a partir de uma amostra. Não se faz inferência nos casos em que toda a população é investigada. Esse tipo de estudo, onde toda a população é considerada, é denominado censo."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação",
-    "title": "Probabilidade e Estatística",
-    "section": "Causa e Efeito X Associação",
-    "text": "Causa e Efeito X Associação\n\nAntes de definir estudos experimentais e observacionais, irei comentar sobre a diferença entre Causa e Efeito e Associção. Suponha o seguinte exemplo:\n\n\nSuponha que uma equipe de pesquisadores queira investigar se a utilização de um determinado algoritmo de compressão de dados melhora o desempenho de um sistema de armazenamento em nuvem.\nEles realizam um experimento onde um grupo de servidores utiliza o algoritmo de compressão, enquanto outro grupo utiliza o armazenamento sem compressão."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-1",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-1",
-    "title": "Probabilidade e Estatística",
-    "section": "Causa e Efeito X Associação",
-    "text": "Causa e Efeito X Associação\n\nEm seguida, eles medem métricas de desempenho, como taxa de transferência de dados e tempo de resposta do servidor, ao longo de um período de tempo."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-2",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-2",
-    "title": "Probabilidade e Estatística",
-    "section": "Causa e Efeito X Associação",
-    "text": "Causa e Efeito X Associação\n\nSuponha o seguinte exemplo:\n\nSuponha que uma equipe de pesquisadores esteja interessada em estudar a associação entre o uso de um determinado sistema operacional e a segurança dos dispositivos móveis.\nEles coletam dados de uma amostra de usuários de dispositivos móveis, registrando qual sistema operacional eles utilizam e quantos incidentes de segurança relataram ao longo de um período de tempo."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-3",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#causa-e-efeito-x-associação-3",
-    "title": "Probabilidade e Estatística",
-    "section": "Causa e Efeito X Associação",
-    "text": "Causa e Efeito X Associação\n\nOs usuários de um sistema operacional específico relatam mais incidentes de segurança em comparação com os usuários de outros sistemas operacionais\n\n\nNo entanto, eles não podem concluir que o uso desse sistema operacional causa diretamente mais incidentes de segurança, pois outros fatores podem influenciar essa relação."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional",
-    "title": "Probabilidade e Estatística",
-    "section": "Experimental X Observacional",
-    "text": "Experimental X Observacional\n\nSuponha as seguintes situações:\n\n\nUm grupo de pesquisadores está interessado em estudar a preferência de linguagens de programação entre os desenvolvedores de software. Eles decidem realizar uma pesquisa online e coletam dados de uma amostra de 500 desenvolvedores"
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional-1",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional-1",
-    "title": "Probabilidade e Estatística",
-    "section": "Experimental X Observacional",
-    "text": "Experimental X Observacional\n\nUma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional-2",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#experimental-x-observacional-2",
-    "title": "Probabilidade e Estatística",
-    "section": "Experimental X Observacional",
-    "text": "Experimental X Observacional\n\nExperimental\n\n\nEm um experimento, aplicamos determinado tratamento e passamos então a observar seus efeitos sobre os elementos.\nUm estudo experimental envolve a manipulação de uma ou mais variáveis para observar o efeito que essa manipulação tem em outra variável.\nEsse tipo de estudo é mais capaz de estabelecer causalidade, pois os pesquisadores podem controlar as condições experimentais."
-  },
-  {
-    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#observacional",
-    "href": "Cursos/Probabilidade_Estatistica/Cadernos/Conceitos_Iniciais.html#observacional",
-    "title": "Probabilidade e Estatística",
-    "section": "Observacional",
-    "text": "Observacional\n\nObervacional\n\n\nVerificamos e medimos características específicas, mas não tentamos manipular ou modificar os elementos que estão sendo estudados.\nUm estudo observacional observa e registra informações sobre um grupo, mas não tenta modificar as variáveis do ambiente\nEste tipo de estudo é útil para identificar associações entre variáveis, mas não pode estabelecer causalidade definitiva."
+    "section": "Coeficiente de Variação - Exemplo",
+    "text": "Coeficiente de Variação - Exemplo\n\nO Algoritmo A tem um CV de aproximadamente 6.33%, enquanto o Algoritmo B tem um CV de aproximadamente 2.93%.\nIsso indica que o Algoritmo B possui uma variabilidade menor em relação ao seu tempo de execução médio, sendo mais consistente do que o Algoritmo A.\nA análise do coeficiente de variação é útil para comparar a consistência de desempenho dos algoritmos, independentemente das unidades de medida.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Dispersão"
+    ]
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#conceitos-básicos",
@@ -805,7 +746,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#apresentação-da-base-de-dados",
     "title": "Probabilidade e Estatística",
     "section": "Apresentação da base de dados",
-    "text": "Apresentação da base de dados\n\nBase simulada usando o programa R\nEmails de 100 remetentes\n\n\nprint(head(dados_email))\n\n                     remetente             assunto tamanho_kb prioridade  spam\n1 Lucas-Cavalcante@example.com     Oferta Especial        447      Média FALSE\n2      João-Santos@example.com Convite para Evento        382       Alta  TRUE\n3      Maria-Silva@example.com     Oferta Especial        243      Média FALSE\n4     Lucas-Santos@example.com     Oferta Especial         56      Média  TRUE\n5      Maria-Silva@example.com     Oferta Especial        404      Média FALSE\n6     Lucas-Santos@example.com        Prêmio Ganho        453       Alta FALSE\n  qtd_caracteres formato\n1            182   Texto\n2            278   Texto\n3            140   Texto\n4            171   Texto\n5            165    HTML\n6             71   Texto",
+    "text": "Apresentação da base de dados\n\nBase simulada usando o programa R\nEmails de 100 remetentes\n\n\nprint(head(dados_email))\n\n                    remetente              assunto tamanho_kb prioridade  spam\n1 Carlos-Ferreira@example.com         Prêmio Ganho        284       Alta FALSE\n2   Maria-Pereira@example.com      Oferta Especial        445      Média  TRUE\n3  Carlos-Ribeiro@example.com Atualização de Conta        141      Média  TRUE\n4   Tatiane-Costa@example.com  Convite para Evento        392       Alta  TRUE\n5     Lucas-Silva@example.com Atualização de Conta        239       Alta FALSE\n6 Mariana-Ribeiro@example.com         Prêmio Ganho        479       Alta FALSE\n  qtd_caracteres formato\n1            123   Texto\n2            294    HTML\n3            113    HTML\n4             51   Texto\n5            210    HTML\n6            130    HTML",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -817,7 +758,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#identificações-das-variáveis-1",
     "title": "Probabilidade e Estatística",
     "section": "Identificações das variáveis",
-    "text": "Identificações das variáveis\n\nstr(dados_email)\n\n'data.frame':   100 obs. of  7 variables:\n $ remetente     : chr  \"Lucas-Cavalcante@example.com\" \"João-Santos@example.com\" \"Maria-Silva@example.com\" \"Lucas-Santos@example.com\" ...\n $ assunto       : chr  \"Oferta Especial\" \"Convite para Evento\" \"Oferta Especial\" \"Oferta Especial\" ...\n $ tamanho_kb    : num  447 382 243 56 404 453 265 495 244 438 ...\n $ prioridade    : chr  \"Média\" \"Alta\" \"Média\" \"Média\" ...\n $ spam          : logi  FALSE TRUE FALSE TRUE FALSE FALSE ...\n $ qtd_caracteres: num  182 278 140 171 165 71 78 121 137 89 ...\n $ formato       : chr  \"Texto\" \"Texto\" \"Texto\" \"Texto\" ...",
+    "text": "Identificações das variáveis\n\nstr(dados_email)\n\n'data.frame':   100 obs. of  7 variables:\n $ remetente     : chr  \"Carlos-Ferreira@example.com\" \"Maria-Pereira@example.com\" \"Carlos-Ribeiro@example.com\" \"Tatiane-Costa@example.com\" ...\n $ assunto       : chr  \"Prêmio Ganho\" \"Oferta Especial\" \"Atualização de Conta\" \"Convite para Evento\" ...\n $ tamanho_kb    : num  284 445 141 392 239 479 278 210 280 89 ...\n $ prioridade    : chr  \"Alta\" \"Média\" \"Média\" \"Alta\" ...\n $ spam          : logi  FALSE TRUE TRUE TRUE FALSE FALSE ...\n $ qtd_caracteres: num  123 294 113 51 210 130 200 51 281 273 ...\n $ formato       : chr  \"Texto\" \"HTML\" \"HTML\" \"Texto\" ...",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -829,7 +770,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#gráficos-de-barras",
     "title": "Probabilidade e Estatística",
     "section": "Gráficos de Barras",
-    "text": "Gráficos de Barras\n\nTabelas: Frequências Absolutas e Relativas\n\n\ndados_email$prioridade &lt;- factor(dados_email$prioridade,levels = c(\"Baixa\",\"Média\",\"Alta\"))\n(tabela = table(dados_email$prioridade) ) \n\n\nBaixa Média  Alta \n   16    45    39 \n\n(tabela.prop = prop.table(tabela)) \n\n\nBaixa Média  Alta \n 0.16  0.45  0.39",
+    "text": "Gráficos de Barras\n\nTabelas: Frequências Absolutas e Relativas\n\n\ndados_email$prioridade &lt;- factor(dados_email$prioridade,levels = c(\"Baixa\",\"Média\",\"Alta\"))\n(tabela = table(dados_email$prioridade) ) \n\n\nBaixa Média  Alta \n   24    40    36 \n\n(tabela.prop = prop.table(tabela)) \n\n\nBaixa Média  Alta \n 0.24  0.40  0.36",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -901,7 +842,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#densidades-x-frequências",
     "title": "Probabilidade e Estatística",
     "section": "Densidades X Frequências",
-    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nx = runif(30,1,40) |&gt; round() # simulação\nx\n\n [1] 15 10 19 30 23 18 30 24 20 23 34  5 25 29  6  3  5 23 37 18 25  4 38 24 20\n[26] 31 33 30 27  1",
+    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nx = runif(30,1,40) |&gt; round() # simulação\nx\n\n [1] 24  5 31  6  6  8  1 30  7 20 36 32 16 36 29  7 34  4  4 33  2  5 26 15  3\n[26]  4 22 10  8  4",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -925,7 +866,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#densidades-x-frequências-2",
     "title": "Probabilidade e Estatística",
     "section": "Densidades X Frequências",
-    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nknitr::kable(tabela)\n\n\n\n\nX\nPM\nf_a\nf_r\nd_i\n\n\n\n\n(0,5]\n2.5\n5\n0.1667\n0.0333\n\n\n(5,10]\n7.5\n2\n0.0667\n0.0133\n\n\n(10,15]\n12.5\n1\n0.0333\n0.0067\n\n\n(15,30]\n22.5\n17\n0.5667\n0.0378\n\n\n(30,50]\n40.0\n5\n0.1667\n0.0083",
+    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nknitr::kable(tabela)\n\n\n\n\nX\nPM\nf_a\nf_r\nd_i\n\n\n\n\n(0,5]\n2.5\n9\n0.3000\n0.0600\n\n\n(5,10]\n7.5\n7\n0.2333\n0.0467\n\n\n(10,15]\n12.5\n1\n0.0333\n0.0067\n\n\n(15,30]\n22.5\n7\n0.2333\n0.0156\n\n\n(30,50]\n40.0\n6\n0.2000\n0.0100",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -1317,100 +1258,157 @@
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html",
-    "title": "Funções",
+    "objectID": "Cursos/Introducao_R/Introducao_R.html",
+    "href": "Cursos/Introducao_R/Introducao_R.html",
+    "title": "Introducao_R oi",
     "section": "",
-    "text": "Funções são blocos de código que podem ser chamados para realizar uma tarefa específica\nElas facilitam a organização do código, promovem a reutilização e tornam o código mais organizados.\nAs funções permitem-lhe reduzir a duplicação de código, automatizando uma tarefa generalizada a ser aplicada recursivamente.\nDica: você deve considerar escrever uma função sempre que copiar e colar um bloco de código mais de duas vezes\nPara definir uma função em R, você usa a palavra-chave function seguida pelos parâmetros/argumentos da função e o corpo da função\n\n\nname &lt;- function(arguments) {\n  body\n  return(objeto que guarda o resultado final)\n}\n\n\nFunções são objetos, assim como vetores são objetos.\nDe forma geral, as funções podem ser divididas em três partes:\n\nO formals(), a lista de argumentos que controlam como você chama a função.\nO body(), o código dentro da função.\nO environment(), a estrutura de dados que determina como a função encontra os valores associados aos nomes.\n\nEmbora os formals() e o body() sejam especificados explicitamente quando você cria uma função, o environment() é especificado implicitamente, com base em onde você definiu a função.\nO environment() da função sempre existe, mas só é impresso quando a função não está definida no ambiente global.\nf(x) = 2x\n\n\nf_x = function(x){\n  f_x = 2*x # função\n  return(f_x)\n}\n\nx = c(1,2,3,4)\n(y = f_x(x))\n\n[1] 2 4 6 8\n\nplot(x,y)\n\n\n\n\n\n\n\n\n\nformals(f_x)\n\n$x\n\nbody(f_x)\n\n{\n    f_x = 2 * x\n    return(f_x)\n}\n\nenvironment(f_x)\n\n&lt;environment: R_GlobalEnv&gt;\n\nattr(f_x, \"srcref\")\n\nfunction(x){\n  f_x = 2*x # função\n  return(f_x)\n}\n\n\n\nMédia de um vetor numérico\n\n\nmedia = function(x){\n  media_x = sum(x)/length(x)\n  return(media_x)\n}\ny = sample(1:100,20,replace=T)\nmedia(y)\n\n[1] 47.4\n\nmean(y)\n\n[1] 47.4\n\n\n\nFunção para fazer uma correspondência entre o número e o dia da semana\n\n\ndia_semana &lt;- function(numero_dia) {\n  dia &lt;- switch(\n    numero_dia,\n    \"1\" = \"Domingo\",\n    \"2\" = \"Segunda-feira\",\n    \"3\" = \"Terça-feira\",\n    \"4\" = \"Quarta-feira\",\n    \"5\" = \"Quinta-feira\",\n    \"6\" = \"Sexta-feira\",\n    \"7\" = \"Sábado\"\n  )\n  return(cat(\"O dia correspondente ao número\", numero_dia, \"é\", dia, \"\\n\"))\n}\ndia_semana(2)\n\nO dia correspondente ao número 2 é Segunda-feira \n\n\n\n\n\nNa definição de uma função, você pode usar três pontos (...) para indicar que a função aceita argumentos adicionais.\nEsses argumentos adicionais não precisam ser explicitamente listados na definição da função\nEsses argumentos adicionais geralmente são passados para outras funções dentro do corpo da função.\nNo exemplo abaixo, ... permite a passagem de argumentos adicionais, como na.rm para remover valores ausentes ao calcular a média.\n\n\nmedia_ponderada &lt;- function(valores,pesos,...) {\n  # Calcula a média ponderada\n  resultado &lt;- sum(valores * pesos,...) / sum(pesos,...)\n  return(resultado)\n}\nmedia_ponderada(c(1,2,NA),c(1,2,3))\n\n[1] NA\n\nmedia_ponderada(c(1,2,NA),c(1,2,3),na.rm=T)\n\n[1] 0.8333333\n\n\n\n\n\n\nA função on.exit é usada para especificar código que deve ser executado quando a execução de uma função é concluída\nFrequentemente usada para garantir que determinadas ações sejam realizadas antes que a função termine, independentemente de como ele termina\nNo exemplo a seguir vamos trocar de diretório\n\n\nnames_wd_atual &lt;- \"colocar caminho\" # diretório atual\nwd_atual &lt;- setwd(names_wd_atual)\n\ncriar_grafico &lt;- function() {\n  x11() # abrindo nova janela para a figura\n  new_wd &lt;- paste0(wd_atual,\"/Figuras/figura_exemplo_on_exit.jpg\")\n  jpeg(new_wd) # salvando figura no novo diretório\n  plot(1:10, main = \"Meu Gráfico\", ylab = \"Valores\")\n  # Configura on.exit para fechar o dispositivo gráfico ao sair\n  on.exit({\n    dev.off()\n    cat(\"Fechando o dispositivo gráfico\\n\")\n    setwd(wd_atual) # voltando para o diretório atual\n    cat(\"voltando para o diretório atual\\n\")\n  }, add = TRUE)\n}\n\n# Chama a função\ncriar_grafico()\n\n\n\n\n\nEmbora tudo o que acontece em R seja resultado de uma função, nem todos as funções são formuladas da mesma forma.\nExistem quatro formas de funções:\n\nPrefix Functions\nInfix Functions\nReplacement Functions\nSpecial functios\n\n\n\n\n\nSão as funções padrão ou regulares, identificadas por um nome seguido de argumentos entre parênteses.\n\n\nmedia_ponderada &lt;- function(x,peso=c(1,1,1),...)return(sum(peso*x,...)/sum(peso,...))\n\n\nmedia_ponderada(c(1,2,3)) # o nome da função vem antes de seus argumento\n\n[1] 2\n\n\n\n\n\n\nO nome da função fica entre seus argumentos\nAs formas infixas são usadas para muitos operadores matemáticos e para funções definidas pelo usuário que começam e terminam com %\n\n\n\n[1] -1\n\n\n[1] 5\n\n\n[1] 6\n\n\n[1] 0.6666667\n\n\n\nx &lt;- c(1,2,3,4,5)\n6 %in% x # o número 6 pertence ao conjuto x?\n\n[1] FALSE\n\nx &lt;- c(1,2,3,4,5)\n2 %in% x # o número 2 pertence ao conjuto x?\n\n[1] TRUE\n\n\n\nmat1 = matrix(c(1,2,3,4),2,2)\nmat2 = matrix(c(1,2,3,4),2,2)\nmat1 %*% mat2 # multiplicação de matriz\n\n     [,1] [,2]\n[1,]    7   15\n[2,]   10   22\n\n\n\nDefinindo nova função infix\n\n\n`%+%` &lt;- function(a, b) paste(a, b,sep=\"-\")\n\"new \" %+% \"string\"\n\n[1] \"new -string\"\n\n\n\nA biblioteca magrittr adiciona o operador pipe, que permite usar a saída de uma função como entrada de outra função\n\n\nrequire(magrittr) # pacote para usar %&gt;%\nx &lt;- c(1,2,3,4)\ndesvio_padrao = sqrt( var(x) )\ndesvio_padrao = var(x) %&gt;% sqrt()\ndesvio_padrao = var(x) |&gt; sqrt() # pacote base\n\n\nOs colchetes transformam o pipe no que é quase uma função anônima\n\n\n1:5 %&gt;% {(. + 1) / 2} # 1:5 são utilizados no lugar do ponto\n\n[1] 1.0 1.5 2.0 2.5 3.0\n\n\n\n\n\n\nEstas funções são frequentemente usadas para atribuir valores a variáveis ou modificar objetos existentes.\n\n\n'function_name&lt;-' &lt;- function(x, additional arguments, value) \n{ \nfunction body \n} \n\n\nNomear elementos do vetor com a função names\n\n\nx = c(1,2,3,4)\nnames(x) &lt;- paste0(\"n\",1:length(x))\nx\n\nn1 n2 n3 n4 \n 1  2  3  4 \n\n\n\nMudar o segundo elemento do vetor\n\n\n\"replace_second&lt;-\" = function(x,value){\n  x[2] &lt;- value\n  x\n}\nx = c(1,2,3,4)\nreplace_second(x) &lt;- 0L\nx\n\n[1] 1 0 3 4\n\n\n\n'modify&lt;-' &lt;- function(x, position, value) {\n  x[position] &lt;- value\n  x\n}\nx = 1:5\nmodify(x, 1) &lt;- 2 # value=2\nx\n\n[1] 2 2 3 4 5\n\n\n\n\n\n\nFunções especiais muitas vezes desempenham papéis específicos, como manipulação condicional, filtragem de dados e manipulação de strings.\nFerramentas de controle de fluxo\n\nif (cond) true (`if`(cond, true))\nif (cond) true else false (`if`(cond, true, false))\nfor(var in seq) action (`for`(var, seq, action))\nwhile(cond) action (`while`(cond, action))\nrepeat expr (`repeat`(expr))\nnext (`next`())\nbreak (`break`())",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#dotdotdot",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#dotdotdot",
-    "title": "Funções",
+    "objectID": "Cursos/Introducao_R/Introducao_R.html#quarto",
+    "href": "Cursos/Introducao_R/Introducao_R.html#quarto",
+    "title": "Introducao_R oi",
     "section": "",
-    "text": "Na definição de uma função, você pode usar três pontos (...) para indicar que a função aceita argumentos adicionais.\nEsses argumentos adicionais não precisam ser explicitamente listados na definição da função\nEsses argumentos adicionais geralmente são passados para outras funções dentro do corpo da função.\nNo exemplo abaixo, ... permite a passagem de argumentos adicionais, como na.rm para remover valores ausentes ao calcular a média.\n\n\nmedia_ponderada &lt;- function(valores,pesos,...) {\n  # Calcula a média ponderada\n  resultado &lt;- sum(valores * pesos,...) / sum(pesos,...)\n  return(resultado)\n}\nmedia_ponderada(c(1,2,NA),c(1,2,3))\n\n[1] NA\n\nmedia_ponderada(c(1,2,NA),c(1,2,3),na.rm=T)\n\n[1] 0.8333333",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#on.exit",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#on.exit",
-    "title": "Funções",
+    "objectID": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html",
+    "href": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html",
+    "title": "Estruturas de Controles",
     "section": "",
-    "text": "A função on.exit é usada para especificar código que deve ser executado quando a execução de uma função é concluída\nFrequentemente usada para garantir que determinadas ações sejam realizadas antes que a função termine, independentemente de como ele termina\nNo exemplo a seguir vamos trocar de diretório\n\n\nnames_wd_atual &lt;- \"colocar caminho\" # diretório atual\nwd_atual &lt;- setwd(names_wd_atual)\n\ncriar_grafico &lt;- function() {\n  x11() # abrindo nova janela para a figura\n  new_wd &lt;- paste0(wd_atual,\"/Figuras/figura_exemplo_on_exit.jpg\")\n  jpeg(new_wd) # salvando figura no novo diretório\n  plot(1:10, main = \"Meu Gráfico\", ylab = \"Valores\")\n  # Configura on.exit para fechar o dispositivo gráfico ao sair\n  on.exit({\n    dev.off()\n    cat(\"Fechando o dispositivo gráfico\\n\")\n    setwd(wd_atual) # voltando para o diretório atual\n    cat(\"voltando para o diretório atual\\n\")\n  }, add = TRUE)\n}\n\n# Chama a função\ncriar_grafico()",
+    "text": "Estruturas de controle são trechos de código que resultam em diferentes desfechos dependendo do resultado da verificação de uma ou mais condições lógicas.\nÉ um processo de tomada de decisão automatizado onde o programa escolhe executar uma instrução ou outra, ou até mesmo nenhuma delas, dependendo do resultado de uma parte anterior do código.\nIsso é especialmente útil quando o analista deseja realizar uma tarefa que é diferente dependendo da variável ou da situação.\nExistem duas estruturas de controle:\n\nCondicional: onde uma determinada instrução é executada com base na veracidade de uma condição.\nLoop: repete uma instrução várias vezes\n\n\n\n\n\nA estrutura condicional “if” é uma construção que permite a execução de determinados blocos de código com base na avaliação de uma condição lógica\nEssa condição lógica pode ser qualquer expressão que resulte em verdadeiro ou falso.\nSe a condição for verdadeira, o bloco de código associado ao “if” é executado; caso contrário, o programa pode optar por executar um bloco de código alternativo, definido pela estrutura “else”\n\n\nif (condition) true_action\n \nif (\"condition is satisfied\") {\n\"do something\"\n}\n\n\nif (condition) true_action else false_action\n \nif(\"condition is satisfied\"){\n \"do something\"\n} else {\n \"otherwise do something else\"\n}\n\n\nIf condition is TRUE, true_action é avaliada;\nif condition is FALSE, a opção false_action é avaliada.\n\n\nx = \"Leonardo\"\nif(class(x)==\"character\"){\n  cat(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n}\n\n O objeto x= Leonardo é da classe character\n\n\n\nx = 1\n\nif(class(x)==\"character\"){\n  paste(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n} else{\n  paste(\" O objeto x=\",x,\" é da classe\",class(x),sep=\" \")\n}\n\n[1] \" O objeto x= 1  é da classe numeric\"\n\n\n\nA função ifelse() permite executar duas instruções com base no resultado de uma condição lógica em uma única linha. A sintaxe para isso é a seguinte:\n\n\nifelse(condição, instrução_se_verdadeiro, instrução_se_falso)\n\n\ncondição: Uma condição lógica que avalia para TRUE ou FALSE.\ninstrução_se_verdadeiro: A instrução a ser executada se a condição for TRUE.\ninstrução_se_falso: A instrução a ser executada se a condição for FALSE.\n\n\nx = 1:10\nifelse(x %% 2 == 0, \"par\", \"ímpar\")\n\n [1] \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\"\n[10] \"par\"  \n\n\n\nx = 70\n if (x &gt;= 90 & x &lt;= 100) {\n    \"A\"\n  } else if (x &gt;= 80 & x &lt; 90) {\n    \"B\"\n  } else {\n    \"C\"\n  }\n\n[1] \"C\"\n\n\n\nx = 80\n if (x &gt;= 100 | x &lt;= 70) {\n    \"Extremo\"\n  } else {\n    \"Não é extremo\"\n  } \n\n[1] \"Não é extremo\"\n\n\n\n\n\nA função switch uma construção condicional que permite escolher um valor com base na correspondência de casos.\nEla é frequentemente utilizada quando você tem várias opções e deseja realizar diferentes ações dependendo do valor de uma expressão.\nÉ útil quando você tem uma série de casos possíveis e deseja evitar a aninhamento excessivo de instruções if-else.\nTorna o código mais limpo e legível, especialmente em situações em que há muitas opções possíveis.\nEsse exemplo faz uma correspondência entre o número e o dia da semana\n\n\nnumero = 1\ndia &lt;- switch(numero,\n                \"1\"=\"Domingo\",\n                \"2\"=\"Segunda-feira\",\n                \"3\"=\"Terça-feira\",\n                \"4\"=\"Quarta-feira\",\n                \"5\"=\"Quinta-feira\",\n                \"6\"=\"Sexta-feira\",\n                \"7\"=\"Sábado\"\n               )\ncat(\"O dia correspondente ao número\", numero, \"é\", dia, \"\\n\")\n\nO dia correspondente ao número 1 é Domingo \n\n\n\nEsse exemplo faz uma correspondência entre o número percentual (character) e o número decimal (numeric)\n\n\nPROP = \"25%\"\nprop &lt;- switch (PROP,\n    \"25%\" = 0.25,\n    \"50%\" = 0.5,\n    \"75%\" = 0.75\n  )\nprop\n\n[1] 0.25\n\n\n\n\n\n\n\nOs loops, ou laços de repetição, são estruturas que permitem executar um bloco de código repetidamente\n\n\n\n\nO loop for é empregado para executar instruções de código repetitivas um número determinado de vezes.\n\n\nfor (variavel in sequencia) {\n  # código a ser executado em cada iteração\n}\n#ou\nfor (variavel in 1:n) { # n = quantidade de iterações\n  # código a ser executado em cada iteração\n}\n\n\nAo executar este código, você verá a saída que mostra os quadrados dos números de 1 a 5.\n\n\nfor (i in 1:5) {\n  quadrado &lt;- i^2\n  cat(\"O quadrado de\", i, \"é\", quadrado, \"\\n\")\n}\n\nO quadrado de 1 é 1 \nO quadrado de 2 é 4 \nO quadrado de 3 é 9 \nO quadrado de 4 é 16 \nO quadrado de 5 é 25 \n\n\n\nAo executar este código, você obterá a saída mostrando a soma dos primeiros 10 números naturais.\n\n\nn = 12\nsoma &lt;- 0\nfor (i in 1:n) {\n  soma &lt;- soma + i\n}\ncat(\"A soma dos primeiros\",n, \"números naturais é:\", soma, \"\\n\")\n\nA soma dos primeiros 12 números naturais é: 78 \n\ncumsum(1:n) # forma alternativa\n\n [1]  1  3  6 10 15 21 28 36 45 55 66 78\n\n\n\nSe quisermos combinar as saídas anteriores em um único vetor x, podemos primeiro iniciar x e depois anexar a saída do loop for a x.\n\n\nx &lt;- NULL # criando vetor vazio\n\nfor(i in 2010:2016) {\noutput &lt;- paste (\"The year is\", i)\nx &lt;- append(x, output)\n}\nhead(x)\n\n[1] \"The year is 2010\" \"The year is 2011\" \"The year is 2012\" \"The year is 2013\"\n[5] \"The year is 2014\" \"The year is 2015\"\n\n\n\nSorteio de n números de uma sequência de 1 a N\n\n\nN = 1000 # número total de elementos 1:N\nm = 10 # colunas\nn = 500 # linhas ; amostra de tamanho n \nmatrix_amostra_sorteada = matrix(0,nrow = n,ncol = m) # criando a matriz\nmedia_amostra_sorteada = NULL\n\nset.seed(2) # gerar sempre as mesmas amostras\nfor(k in 1:m){\n  x = sample(1:N,n,replace=T) # sorteando n números de uma sequência de 1:N\n  media_amostra_sorteada = append(media_amostra_sorteada,mean(x))\n  matrix_amostra_sorteada[,k] &lt;- x # guardando a amostra sorteada na coluna\n}\nmatrix_amostra_sorteada[1:6,1:3]\n\n     [,1] [,2] [,3]\n[1,]  853  239  586\n[2,]  975  732  623\n[3,]  710  906  488\n[4,]  774   59  848\n[5,]  416  373  784\n[6,]  392   48   57\n\nhead(media_amostra_sorteada)\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nUsando a função replicate()\n\n\nset.seed(2)\nmatrix_amostra_sorteada = replicate(m,sample(1:N,n,replace=T))\nhead( colMeans(matrix_amostra_sorteada) )\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nVariando dentro do vetor\n\n\nn = c(10,20,30,40)\nfor(k in n){\n  print(2*k)\n}\n\n[1] 20\n[1] 40\n[1] 60\n[1] 80\n\n\n\nUtilizando dois for\n\n\nmatriz &lt;- matrix(0, nrow = 3, ncol = 3)\n\n# Preencher a matriz com números sequenciais usando um loop for\ncontador &lt;- 1\n\nfor (i in 1:3) {\n  for (j in 1:3) { # fixa o i e varia o j\n    matriz[i, j] &lt;- contador \n    contador &lt;- contador + 1\n  }\n}\nmatriz\n\n     [,1] [,2] [,3]\n[1,]    1    2    3\n[2,]    4    5    6\n[3,]    7    8    9\n\n\n\n\n\n\nOs loops while começam testando uma condição. Se for verdadeira, então eles executam a instrução.\nUma vez que a instrução é executada, a condição é testada novamente, e assim por diante, até que a condição seja falsa, momento em que o loop é encerrado.\nÉ considerada uma boa prática incluir um objeto contador para acompanhar o número total de iterações.\n\n\ncontador &lt;- 0\n while (condition) {\n   # código executado enquanto a condição for verdade \n   # contador &lt;- contador + 1\n }\n\n\nO código a seguir irá imprimir o valor de i enquanto este objeto for menor que 5.\nQuando a condição não for mais respeitada, o processo será interrompido.\n\n\ni = 0\nwhile(i&lt;5){\n  cat(i,\"é menor que 5\",\"\\n\")\n  i = i+1\n}\n\n0 é menor que 5 \n1 é menor que 5 \n2 é menor que 5 \n3 é menor que 5 \n4 é menor que 5 \n\n\n\nLançamento de um dado até que um determinado número seja obtido.\n\n\nnumero_escolhido &lt;- 6\nresultado_dado = 1 # iniciar com número diferente do número escolhido\ntentativas = 0\nwhile (resultado_dado!=numero_escolhido) {\n  resultado_dado = sample(1:6,1,replace = T,prob = NULL) # sorteando número de 1 a 6\n   tentativas = tentativas + 1\n   cat(\"Tentativa:\",tentativas,\"\\n\",\"Número do dado é\",resultado_dado,\"\\n\")\n  \n}\n\nTentativa: 1 \n Número do dado é 1 \nTentativa: 2 \n Número do dado é 5 \nTentativa: 3 \n Número do dado é 3 \nTentativa: 4 \n Número do dado é 3 \nTentativa: 5 \n Número do dado é 3 \nTentativa: 6 \n Número do dado é 1 \nTentativa: 7 \n Número do dado é 5 \nTentativa: 8 \n Número do dado é 2 \nTentativa: 9 \n Número do dado é 4 \nTentativa: 10 \n Número do dado é 2 \nTentativa: 11 \n Número do dado é 4 \nTentativa: 12 \n Número do dado é 2 \nTentativa: 13 \n Número do dado é 1 \nTentativa: 14 \n Número do dado é 1 \nTentativa: 15 \n Número do dado é 1 \nTentativa: 16 \n Número do dado é 4 \nTentativa: 17 \n Número do dado é 5 \nTentativa: 18 \n Número do dado é 4 \nTentativa: 19 \n Número do dado é 1 \nTentativa: 20 \n Número do dado é 3 \nTentativa: 21 \n Número do dado é 5 \nTentativa: 22 \n Número do dado é 4 \nTentativa: 23 \n Número do dado é 4 \nTentativa: 24 \n Número do dado é 5 \nTentativa: 25 \n Número do dado é 5 \nTentativa: 26 \n Número do dado é 2 \nTentativa: 27 \n Número do dado é 5 \nTentativa: 28 \n Número do dado é 5 \nTentativa: 29 \n Número do dado é 5 \nTentativa: 30 \n Número do dado é 1 \nTentativa: 31 \n Número do dado é 3 \nTentativa: 32 \n Número do dado é 4 \nTentativa: 33 \n Número do dado é 4 \nTentativa: 34 \n Número do dado é 4 \nTentativa: 35 \n Número do dado é 4 \nTentativa: 36 \n Número do dado é 6 \n\n\n\nObservação: a diferença principal entre um loop for e um loop while é: um loop for é usado quando o número de iterações que um código deve ser executado é conhecido, enquanto um loop while é usado quando o número de iterações não é conhecido.\n\n\n\n\n\nUm loop repeat é usado para iterar sobre um bloco de código várias vezes.\nNão há uma expressão de teste em um loop repeat para encerrar ou sair do loop.\nEm vez disso, devemos colocar uma declaração de condição explicitamente dentro do corpo do loop e usar a função break para sair do loop. Não fazer isso resultará em um loop infinito.\nA ideia é repetir um loop e parar quando a condição for satisfeita, para isso será utiliza a função break\n\n\ncontador = 1\nrepeat {\n  # código será executado repetidamente\n  if (condition) {\n    break  # se a condição for satisfeita, para a repetição\n  }\n  contador = contador+1\n}\n\n\nRode esse código no seu computador\nAvaliar como o tamanho da amostra afeta a média amostral\n\n\nN = 1000\npopulacao = runif(N, 0, 100) # gerar N números entre 0 e 100\nhead(populacao)\n(media.populacao = mean(populacao))\nn = 5 # tamanho da amostra inicial\nrepeat {\n  amostra = sample(populacao, n, replace = T) # sorteando n observações da população\n  media.amostra = mean(amostra)\n  if (abs(media.amostra - media.populacao) &lt; 0.01) {\n    n = 2 * n\n    cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n    break\n  }\n  n = 2 * n\n  cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n}\n\n\n\n\n\nÉ útil quando queremos pular a iteração atual de um loop sem terminá-lo.\nAo encontrar next, o analisador R pula a avaliação adicional e inicia a próxima iteração do loop.\n\n\nx &lt;- 1:5\nfor (i in x) {\nif (i == 3){\nnext\n}\nprint (i)\n}\n\n[1] 1\n[1] 2\n[1] 4\n[1] 5\n\n\n\n\n\n\nA função break é usada para sair imediatamente de um loop, independentemente da iteração em que o loop possa estar.\nAs funções break geralmente estão embutidas em uma declaração if, na qual uma condição é avaliada: se for VERDADEIRA, sai do loop; se for FALSA, continua com o loop.\nEm uma situação de looping aninhado, onde há um loop dentro de outro loop, essa declaração sai do loop mais interno que está sendo avaliado.\n\n\nx &lt;- 1:5\nfor (i in x) {\n  if (i == 3){\n  break\n  }\nprint (i)\n}\n\n[1] 1\n[1] 2",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Funções"
+      "Estruturas de Controles"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#formas-de-funções",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#formas-de-funções",
-    "title": "Funções",
+    "objectID": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#condicional",
+    "href": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#condicional",
+    "title": "Estruturas de Controles",
     "section": "",
-    "text": "Embora tudo o que acontece em R seja resultado de uma função, nem todos as funções são formuladas da mesma forma.\nExistem quatro formas de funções:\n\nPrefix Functions\nInfix Functions\nReplacement Functions\nSpecial functios\n\n\n\n\n\nSão as funções padrão ou regulares, identificadas por um nome seguido de argumentos entre parênteses.\n\n\nmedia_ponderada &lt;- function(x,peso=c(1,1,1),...)return(sum(peso*x,...)/sum(peso,...))\n\n\nmedia_ponderada(c(1,2,3)) # o nome da função vem antes de seus argumento\n\n[1] 2\n\n\n\n\n\n\nO nome da função fica entre seus argumentos\nAs formas infixas são usadas para muitos operadores matemáticos e para funções definidas pelo usuário que começam e terminam com %\n\n\n\n[1] -1\n\n\n[1] 5\n\n\n[1] 6\n\n\n[1] 0.6666667\n\n\n\nx &lt;- c(1,2,3,4,5)\n6 %in% x # o número 6 pertence ao conjuto x?\n\n[1] FALSE\n\nx &lt;- c(1,2,3,4,5)\n2 %in% x # o número 2 pertence ao conjuto x?\n\n[1] TRUE\n\n\n\nmat1 = matrix(c(1,2,3,4),2,2)\nmat2 = matrix(c(1,2,3,4),2,2)\nmat1 %*% mat2 # multiplicação de matriz\n\n     [,1] [,2]\n[1,]    7   15\n[2,]   10   22\n\n\n\nDefinindo nova função infix\n\n\n`%+%` &lt;- function(a, b) paste(a, b,sep=\"-\")\n\"new \" %+% \"string\"\n\n[1] \"new -string\"\n\n\n\nA biblioteca magrittr adiciona o operador pipe, que permite usar a saída de uma função como entrada de outra função\n\n\nrequire(magrittr) # pacote para usar %&gt;%\nx &lt;- c(1,2,3,4)\ndesvio_padrao = sqrt( var(x) )\ndesvio_padrao = var(x) %&gt;% sqrt()\ndesvio_padrao = var(x) |&gt; sqrt() # pacote base\n\n\nOs colchetes transformam o pipe no que é quase uma função anônima\n\n\n1:5 %&gt;% {(. + 1) / 2} # 1:5 são utilizados no lugar do ponto\n\n[1] 1.0 1.5 2.0 2.5 3.0\n\n\n\n\n\n\nEstas funções são frequentemente usadas para atribuir valores a variáveis ou modificar objetos existentes.\n\n\n'function_name&lt;-' &lt;- function(x, additional arguments, value) \n{ \nfunction body \n} \n\n\nNomear elementos do vetor com a função names\n\n\nx = c(1,2,3,4)\nnames(x) &lt;- paste0(\"n\",1:length(x))\nx\n\nn1 n2 n3 n4 \n 1  2  3  4 \n\n\n\nMudar o segundo elemento do vetor\n\n\n\"replace_second&lt;-\" = function(x,value){\n  x[2] &lt;- value\n  x\n}\nx = c(1,2,3,4)\nreplace_second(x) &lt;- 0L\nx\n\n[1] 1 0 3 4\n\n\n\n'modify&lt;-' &lt;- function(x, position, value) {\n  x[position] &lt;- value\n  x\n}\nx = 1:5\nmodify(x, 1) &lt;- 2 # value=2\nx\n\n[1] 2 2 3 4 5\n\n\n\n\n\n\nFunções especiais muitas vezes desempenham papéis específicos, como manipulação condicional, filtragem de dados e manipulação de strings.\nFerramentas de controle de fluxo\n\nif (cond) true (`if`(cond, true))\nif (cond) true else false (`if`(cond, true, false))\nfor(var in seq) action (`for`(var, seq, action))\nwhile(cond) action (`while`(cond, action))\nrepeat expr (`repeat`(expr))\nnext (`next`())\nbreak (`break`())",
+    "text": "A estrutura condicional “if” é uma construção que permite a execução de determinados blocos de código com base na avaliação de uma condição lógica\nEssa condição lógica pode ser qualquer expressão que resulte em verdadeiro ou falso.\nSe a condição for verdadeira, o bloco de código associado ao “if” é executado; caso contrário, o programa pode optar por executar um bloco de código alternativo, definido pela estrutura “else”\n\n\nif (condition) true_action\n \nif (\"condition is satisfied\") {\n\"do something\"\n}\n\n\nif (condition) true_action else false_action\n \nif(\"condition is satisfied\"){\n \"do something\"\n} else {\n \"otherwise do something else\"\n}\n\n\nIf condition is TRUE, true_action é avaliada;\nif condition is FALSE, a opção false_action é avaliada.\n\n\nx = \"Leonardo\"\nif(class(x)==\"character\"){\n  cat(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n}\n\n O objeto x= Leonardo é da classe character\n\n\n\nx = 1\n\nif(class(x)==\"character\"){\n  paste(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n} else{\n  paste(\" O objeto x=\",x,\" é da classe\",class(x),sep=\" \")\n}\n\n[1] \" O objeto x= 1  é da classe numeric\"\n\n\n\nA função ifelse() permite executar duas instruções com base no resultado de uma condição lógica em uma única linha. A sintaxe para isso é a seguinte:\n\n\nifelse(condição, instrução_se_verdadeiro, instrução_se_falso)\n\n\ncondição: Uma condição lógica que avalia para TRUE ou FALSE.\ninstrução_se_verdadeiro: A instrução a ser executada se a condição for TRUE.\ninstrução_se_falso: A instrução a ser executada se a condição for FALSE.\n\n\nx = 1:10\nifelse(x %% 2 == 0, \"par\", \"ímpar\")\n\n [1] \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\"\n[10] \"par\"  \n\n\n\nx = 70\n if (x &gt;= 90 & x &lt;= 100) {\n    \"A\"\n  } else if (x &gt;= 80 & x &lt; 90) {\n    \"B\"\n  } else {\n    \"C\"\n  }\n\n[1] \"C\"\n\n\n\nx = 80\n if (x &gt;= 100 | x &lt;= 70) {\n    \"Extremo\"\n  } else {\n    \"Não é extremo\"\n  } \n\n[1] \"Não é extremo\"\n\n\n\n\n\nA função switch uma construção condicional que permite escolher um valor com base na correspondência de casos.\nEla é frequentemente utilizada quando você tem várias opções e deseja realizar diferentes ações dependendo do valor de uma expressão.\nÉ útil quando você tem uma série de casos possíveis e deseja evitar a aninhamento excessivo de instruções if-else.\nTorna o código mais limpo e legível, especialmente em situações em que há muitas opções possíveis.\nEsse exemplo faz uma correspondência entre o número e o dia da semana\n\n\nnumero = 1\ndia &lt;- switch(numero,\n                \"1\"=\"Domingo\",\n                \"2\"=\"Segunda-feira\",\n                \"3\"=\"Terça-feira\",\n                \"4\"=\"Quarta-feira\",\n                \"5\"=\"Quinta-feira\",\n                \"6\"=\"Sexta-feira\",\n                \"7\"=\"Sábado\"\n               )\ncat(\"O dia correspondente ao número\", numero, \"é\", dia, \"\\n\")\n\nO dia correspondente ao número 1 é Domingo \n\n\n\nEsse exemplo faz uma correspondência entre o número percentual (character) e o número decimal (numeric)\n\n\nPROP = \"25%\"\nprop &lt;- switch (PROP,\n    \"25%\" = 0.25,\n    \"50%\" = 0.5,\n    \"75%\" = 0.75\n  )\nprop\n\n[1] 0.25",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Funções"
+      "Estruturas de Controles"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#erro-stop-condition",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#erro-stop-condition",
-    "title": "Funções",
-    "section": "Erro (Stop Condition):",
-    "text": "Erro (Stop Condition):\n\nA função stop() é usada para sinalizar um erro. Quando um erro é sinalizado, a execução do código é interrompida e uma mensagem de erro é exibida.\n\n\ncalcular_media &lt;- function(x) {\n  if (length(x) == 0) {\n    stop(\"Erro: O vetor está vazio.\")\n  }\n  if (is.numeric(x) == F) {\n    stop(\"Erro: vetor deve ser do tipo numérico\")\n  }\n  return(mean(x))\n}\ncalcular_media(1:4)\n\n[1] 2.5\n\n\n\ncalcular_media &lt;- function(x) {\n  if (length(x) == 0) {\n    stop(\"Erro: O vetor está vazio.\")\n  }\n  if (is.numeric(x) == F) {\n    stop(\"Erro: vetor deve ser do tipo numérico\")\n  }\n  return(mean(x))\n}\ncalcular_media(c(1,2,3,\"l\"))\n# Error in calcular_media(c(1, 2, 3, \"l\")) : \n#  Erro: vetor deve ser do tipo numérico",
+    "objectID": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#loops",
+    "href": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#loops",
+    "title": "Estruturas de Controles",
+    "section": "",
+    "text": "Os loops, ou laços de repetição, são estruturas que permitem executar um bloco de código repetidamente\n\n\n\n\nO loop for é empregado para executar instruções de código repetitivas um número determinado de vezes.\n\n\nfor (variavel in sequencia) {\n  # código a ser executado em cada iteração\n}\n#ou\nfor (variavel in 1:n) { # n = quantidade de iterações\n  # código a ser executado em cada iteração\n}\n\n\nAo executar este código, você verá a saída que mostra os quadrados dos números de 1 a 5.\n\n\nfor (i in 1:5) {\n  quadrado &lt;- i^2\n  cat(\"O quadrado de\", i, \"é\", quadrado, \"\\n\")\n}\n\nO quadrado de 1 é 1 \nO quadrado de 2 é 4 \nO quadrado de 3 é 9 \nO quadrado de 4 é 16 \nO quadrado de 5 é 25 \n\n\n\nAo executar este código, você obterá a saída mostrando a soma dos primeiros 10 números naturais.\n\n\nn = 12\nsoma &lt;- 0\nfor (i in 1:n) {\n  soma &lt;- soma + i\n}\ncat(\"A soma dos primeiros\",n, \"números naturais é:\", soma, \"\\n\")\n\nA soma dos primeiros 12 números naturais é: 78 \n\ncumsum(1:n) # forma alternativa\n\n [1]  1  3  6 10 15 21 28 36 45 55 66 78\n\n\n\nSe quisermos combinar as saídas anteriores em um único vetor x, podemos primeiro iniciar x e depois anexar a saída do loop for a x.\n\n\nx &lt;- NULL # criando vetor vazio\n\nfor(i in 2010:2016) {\noutput &lt;- paste (\"The year is\", i)\nx &lt;- append(x, output)\n}\nhead(x)\n\n[1] \"The year is 2010\" \"The year is 2011\" \"The year is 2012\" \"The year is 2013\"\n[5] \"The year is 2014\" \"The year is 2015\"\n\n\n\nSorteio de n números de uma sequência de 1 a N\n\n\nN = 1000 # número total de elementos 1:N\nm = 10 # colunas\nn = 500 # linhas ; amostra de tamanho n \nmatrix_amostra_sorteada = matrix(0,nrow = n,ncol = m) # criando a matriz\nmedia_amostra_sorteada = NULL\n\nset.seed(2) # gerar sempre as mesmas amostras\nfor(k in 1:m){\n  x = sample(1:N,n,replace=T) # sorteando n números de uma sequência de 1:N\n  media_amostra_sorteada = append(media_amostra_sorteada,mean(x))\n  matrix_amostra_sorteada[,k] &lt;- x # guardando a amostra sorteada na coluna\n}\nmatrix_amostra_sorteada[1:6,1:3]\n\n     [,1] [,2] [,3]\n[1,]  853  239  586\n[2,]  975  732  623\n[3,]  710  906  488\n[4,]  774   59  848\n[5,]  416  373  784\n[6,]  392   48   57\n\nhead(media_amostra_sorteada)\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nUsando a função replicate()\n\n\nset.seed(2)\nmatrix_amostra_sorteada = replicate(m,sample(1:N,n,replace=T))\nhead( colMeans(matrix_amostra_sorteada) )\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nVariando dentro do vetor\n\n\nn = c(10,20,30,40)\nfor(k in n){\n  print(2*k)\n}\n\n[1] 20\n[1] 40\n[1] 60\n[1] 80\n\n\n\nUtilizando dois for\n\n\nmatriz &lt;- matrix(0, nrow = 3, ncol = 3)\n\n# Preencher a matriz com números sequenciais usando um loop for\ncontador &lt;- 1\n\nfor (i in 1:3) {\n  for (j in 1:3) { # fixa o i e varia o j\n    matriz[i, j] &lt;- contador \n    contador &lt;- contador + 1\n  }\n}\nmatriz\n\n     [,1] [,2] [,3]\n[1,]    1    2    3\n[2,]    4    5    6\n[3,]    7    8    9\n\n\n\n\n\n\nOs loops while começam testando uma condição. Se for verdadeira, então eles executam a instrução.\nUma vez que a instrução é executada, a condição é testada novamente, e assim por diante, até que a condição seja falsa, momento em que o loop é encerrado.\nÉ considerada uma boa prática incluir um objeto contador para acompanhar o número total de iterações.\n\n\ncontador &lt;- 0\n while (condition) {\n   # código executado enquanto a condição for verdade \n   # contador &lt;- contador + 1\n }\n\n\nO código a seguir irá imprimir o valor de i enquanto este objeto for menor que 5.\nQuando a condição não for mais respeitada, o processo será interrompido.\n\n\ni = 0\nwhile(i&lt;5){\n  cat(i,\"é menor que 5\",\"\\n\")\n  i = i+1\n}\n\n0 é menor que 5 \n1 é menor que 5 \n2 é menor que 5 \n3 é menor que 5 \n4 é menor que 5 \n\n\n\nLançamento de um dado até que um determinado número seja obtido.\n\n\nnumero_escolhido &lt;- 6\nresultado_dado = 1 # iniciar com número diferente do número escolhido\ntentativas = 0\nwhile (resultado_dado!=numero_escolhido) {\n  resultado_dado = sample(1:6,1,replace = T,prob = NULL) # sorteando número de 1 a 6\n   tentativas = tentativas + 1\n   cat(\"Tentativa:\",tentativas,\"\\n\",\"Número do dado é\",resultado_dado,\"\\n\")\n  \n}\n\nTentativa: 1 \n Número do dado é 1 \nTentativa: 2 \n Número do dado é 5 \nTentativa: 3 \n Número do dado é 3 \nTentativa: 4 \n Número do dado é 3 \nTentativa: 5 \n Número do dado é 3 \nTentativa: 6 \n Número do dado é 1 \nTentativa: 7 \n Número do dado é 5 \nTentativa: 8 \n Número do dado é 2 \nTentativa: 9 \n Número do dado é 4 \nTentativa: 10 \n Número do dado é 2 \nTentativa: 11 \n Número do dado é 4 \nTentativa: 12 \n Número do dado é 2 \nTentativa: 13 \n Número do dado é 1 \nTentativa: 14 \n Número do dado é 1 \nTentativa: 15 \n Número do dado é 1 \nTentativa: 16 \n Número do dado é 4 \nTentativa: 17 \n Número do dado é 5 \nTentativa: 18 \n Número do dado é 4 \nTentativa: 19 \n Número do dado é 1 \nTentativa: 20 \n Número do dado é 3 \nTentativa: 21 \n Número do dado é 5 \nTentativa: 22 \n Número do dado é 4 \nTentativa: 23 \n Número do dado é 4 \nTentativa: 24 \n Número do dado é 5 \nTentativa: 25 \n Número do dado é 5 \nTentativa: 26 \n Número do dado é 2 \nTentativa: 27 \n Número do dado é 5 \nTentativa: 28 \n Número do dado é 5 \nTentativa: 29 \n Número do dado é 5 \nTentativa: 30 \n Número do dado é 1 \nTentativa: 31 \n Número do dado é 3 \nTentativa: 32 \n Número do dado é 4 \nTentativa: 33 \n Número do dado é 4 \nTentativa: 34 \n Número do dado é 4 \nTentativa: 35 \n Número do dado é 4 \nTentativa: 36 \n Número do dado é 6 \n\n\n\nObservação: a diferença principal entre um loop for e um loop while é: um loop for é usado quando o número de iterações que um código deve ser executado é conhecido, enquanto um loop while é usado quando o número de iterações não é conhecido.\n\n\n\n\n\nUm loop repeat é usado para iterar sobre um bloco de código várias vezes.\nNão há uma expressão de teste em um loop repeat para encerrar ou sair do loop.\nEm vez disso, devemos colocar uma declaração de condição explicitamente dentro do corpo do loop e usar a função break para sair do loop. Não fazer isso resultará em um loop infinito.\nA ideia é repetir um loop e parar quando a condição for satisfeita, para isso será utiliza a função break\n\n\ncontador = 1\nrepeat {\n  # código será executado repetidamente\n  if (condition) {\n    break  # se a condição for satisfeita, para a repetição\n  }\n  contador = contador+1\n}\n\n\nRode esse código no seu computador\nAvaliar como o tamanho da amostra afeta a média amostral\n\n\nN = 1000\npopulacao = runif(N, 0, 100) # gerar N números entre 0 e 100\nhead(populacao)\n(media.populacao = mean(populacao))\nn = 5 # tamanho da amostra inicial\nrepeat {\n  amostra = sample(populacao, n, replace = T) # sorteando n observações da população\n  media.amostra = mean(amostra)\n  if (abs(media.amostra - media.populacao) &lt; 0.01) {\n    n = 2 * n\n    cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n    break\n  }\n  n = 2 * n\n  cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n}\n\n\n\n\n\nÉ útil quando queremos pular a iteração atual de um loop sem terminá-lo.\nAo encontrar next, o analisador R pula a avaliação adicional e inicia a próxima iteração do loop.\n\n\nx &lt;- 1:5\nfor (i in x) {\nif (i == 3){\nnext\n}\nprint (i)\n}\n\n[1] 1\n[1] 2\n[1] 4\n[1] 5\n\n\n\n\n\n\nA função break é usada para sair imediatamente de um loop, independentemente da iteração em que o loop possa estar.\nAs funções break geralmente estão embutidas em uma declaração if, na qual uma condição é avaliada: se for VERDADEIRA, sai do loop; se for FALSA, continua com o loop.\nEm uma situação de looping aninhado, onde há um loop dentro de outro loop, essa declaração sai do loop mais interno que está sendo avaliado.\n\n\nx &lt;- 1:5\nfor (i in x) {\n  if (i == 3){\n  break\n  }\nprint (i)\n}\n\n[1] 1\n[1] 2",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Funções"
+      "Estruturas de Controles"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#aviso-warning-condition",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#aviso-warning-condition",
-    "title": "Funções",
-    "section": "Aviso (Warning Condition):",
-    "text": "Aviso (Warning Condition):\n\nA função warning() é usada para sinalizar um aviso. Um aviso não interrompe a execução do código, mas alerta o usuário sobre algo que pode ser problemático.\n\n\ncalcular_raiz_quadrada &lt;- function(x) {\n  if (any(x &lt; 0)) {\n    warning(\"Alguns valores são negativos. A raiz quadrada de números negativos será tratada como NaN.\")\n  }\n  return(sqrt(x))\n}\n\n# Exemplo de uso\nresultado &lt;- calcular_raiz_quadrada(c(4, -9, 16))\nprint(resultado)\n\n[1]   2 NaN   4",
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
+    "title": "Apresentação do R e Rstudio",
+    "section": "",
+    "text": "R é uma linguagem e um ambiente de desenvolvimento integrado, livre e gratuito;\nO software R disponibiliza recursos para vários tipos de análises:\n\nEstatística descritiva: medidas de posição, dispersão, tabelas e gráficos;\nModelos lineares, não lineares, generalizados: estimação dos parâmetros, resíduos, métodos de diagnóstico;\nAnálise multivariada: Análise de componentes principais, clusters, fatorial;\nAprendizado de Máquina\nDeepLearning,",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Funções"
+      "Apresentação do R e Rstudio"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#mensagem-informativa-message-condition",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#mensagem-informativa-message-condition",
-    "title": "Funções",
-    "section": "Mensagem Informativa (Message Condition):",
-    "text": "Mensagem Informativa (Message Condition):\n\nA função message() é usada para sinalizar mensagens informativas. Essas mensagens são úteis para fornecer informações adicionais durante a execução do código.\n\n\ncalcular_cubo &lt;- function(x) {\n  message(\"Calculando o cubo dos valores.\")\n  return(x^3)\n}\n\n# Exemplo de uso\nresultado &lt;- calcular_cubo(c(2, 3, 4))\nprint(resultado)\n\n[1]  8 27 64",
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#telas",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#telas",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Telas",
+    "text": "Telas\n\nEle oferece várias telas e painéis para facilitar o desenvolvimento, análise de dados e criação de visualizações.\n\n\n\n\nPainés do Rstudio\n\n\n\nSegue uma breve explicação das telas principais do RStudio.\n\n\nConsole:\n\nA tela principal onde você digita comandos R e recebe a saída imediata.\n\nScript Editor:\n\nOnde você escreve e edita seus scripts em R. Os scripts são arquivos contendo código R que podem ser executados no console.\n\nEnvironment/Painel de Ambiente:\n\nExibe informações sobre objetos (variáveis, datasets) em sua sessão R atual.\n\nHistory/Histórico:\n\nMantém um histórico de comandos R previamente executados.\n\nFiles/Painel de Arquivos:\n\nMostra os arquivos e diretórios do seu projeto. Facilita a navegação e a organização.\n\nPlots/Painel de Gráficos:\n\nExibe visualizações geradas a partir do R.\n\nPackages/Pacotes:\n\nGerencia pacotes R instalados e fornece ferramentas para instalação e atualização.\n\nHelp/Ajuda:\n\nFornece acesso à documentação e ajuda sobre funções e pacotes R.\n\nViewer/Visualizador:\n\nExibe visualizações mais complexas, como páginas web, no próprio IDE.\n\nGit:\n\nFacilita a integração com sistemas de controle de versão Git, permitindo o rastreamento de alterações em projetos.\n\nConnections/Conexões:\n\nPermite conectar-se a fontes de dados externas\n\nTerminal:\n\nUm terminal embutido para execução de comandos do sistema operacional.",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Funções"
+      "Apresentação do R e Rstudio"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#ignorando-as-condições",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#ignorando-as-condições",
-    "title": "Funções",
-    "section": "Ignorando as condições",
-    "text": "Ignorando as condições\n\nAo lidar com condições em R, você pode usar as funções try(), suppressWarnings(), e suppressMessages() para controlar o tratamento de erros, avisos e mensagens.\n\n\ntry()\n\nA função try() é usada para avaliar expressões e manipular erros sem interromper a execução do código. Ela retorna um objeto que você pode verificar usando inherits() para determinar se ocorreu um erro.\n\n\nx = c()\nmean(x)\n\n[1] NA\n\nresultado &lt;- try(mean(), silent = TRUE)\nresultado\n\n[1] \"Error in mean.default() : argumento \\\"x\\\" ausente, sem padrão\\n\"\nattr(,\"class\")\n[1] \"try-error\"\nattr(,\"condition\")\n&lt;simpleError in mean.default(): argumento \"x\" ausente, sem padrão&gt;\n\nif (inherits(resultado, \"try-error\")) { # verifica se o objeto resultado é da classe \"try-error\n    cat(\"Erro: Ocorreu um problema ao calcular a média.\\n\")}\n\nErro: Ocorreu um problema ao calcular a média.\n\n\n\n\nsuppressWarnings() para Suprimir Avisos:\n\nA função suppressWarnings() é usada para executar uma expressão e suprimir os avisos que ela pode gerar.\n\n\nx = c()\nmean(x)\n\nWarning in mean.default(x): argumento não é numérico nem lógico: retornando NA\n\n\n[1] NA\n\nsuppressWarnings(mean(x))\n\n[1] NA\n\n\n\n\nsuppressMessages() para Suprimir Mensagens:\n\nA função suppressMessages() é usada para executar uma expressão e suprimir as mensagens informativas que ela pode gerar.\n\n\ncalcular_cubo &lt;- function(x) {\n  message(\"Calculando o cubo dos valores.\")\n  return(x^3)\n}\n\n# Exemplo de uso\nresultado &lt;- suppressMessages(calcular_cubo(c(2, 3, 4)))\nresultado\n\n[1]  8 27 64",
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#cheatsheets",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#cheatsheets",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Cheatsheets",
+    "text": "Cheatsheets\n\nAs “cheatsheets” (folhas de dicas) no RStudio são recursos visuais e resumidos que fornecem informações rápidas e úteis sobre tópicos específicos relacionados à linguagem de programação R, ao ambiente RStudio e a pacotes específicos do R.\nPara acessar as cheatsheets, você pode ir diretamente à página de cheatsheets do RStudio\nTambém pode ser acessada cliclando em Help -&gt; Cheat Sheets",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Funções"
+      "Apresentação do R e Rstudio"
     ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminhos",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminhos",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Caminhos",
+    "text": "Caminhos\n\nEntende-se por caminho o endereço do arquivo no computador\nExistem duas formas de passarmos o caminho de arquivo: caminho absoluto ou caminho relativo",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Caminho Absoluto",
+    "text": "Caminho Absoluto\n\nO caminho absoluto especifica o local exato de um arquivo desde a raiz do sistema de arquivo.\nO diretório raiz é o que está no topo da hierarquia do sistema, isso significa que outros diretórios estão contidos nele.\n\n\n\n\nCaminho Absoluto\n\n\n\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R/Cadernos\"\n\n\n\nObserve que o local de referência é a pasta “Cadernos”, pois este é o caminho absoluto para a pasta onde essa aula foi produzida. Vamos voltar para a pasta “Introducao_R” utilizando o conceito de caminho relativo",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-relativo",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-relativo",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Caminho Relativo",
+    "text": "Caminho Relativo\n\nO caminho relativo é especificado em relação ao diretório de trabalho atual ou a outro local de referência. Assim, se você quiser acessar alguma base de dados na pasta “dados” partindo da pasta”Cadernos”, o caminho seria: ../dados/base_de_dados.formato.\nNesse caso, ../ é o comando para voltar uma pasta dentro do caminho e ./ representa a pasta/diretório atual.\nCaso você queira trocar o local referência da pasta “caderno” para a pasta”Introducao_R “, use o seguinte código:\n\n\nsetwd(\"..\") # trocando local referência ou diretório de trabalho\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R\"",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#diretório-de-trabalho",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#diretório-de-trabalho",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Diretório de trabalho",
+    "text": "Diretório de trabalho\n\nBasicamente, diretório de trabalho refere-se a uma pasta específica no sistema de arquivos do computador em que um programa está atualmente operando ou onde ele procura por arquivos para ler e salvar por padrão.\nNo contexto do R, o diretório de trabalho é particularmente importante porque é o local onde o R procura por arquivos . Isso significa que, se você carregar ou salvar um arquivo sem especificar a pasta, o R assumirá que o arquivo está no diretório de trabalho.\nÉ no diretório de trabalho que o R procura os arquivos que você pede para carregar e onde ele coloca todos os arquivos que você pede para salvar. De forma geral, é o local que está localizada sua análise.\nRStudio mostra seu diretório de trabalho atual na parte superior do console:\n\n\n\n\nDiretório\n\n\n\nVocê também pode visualizar o diretório de trabalho atual usando a função getwd().\nVocê também pode definir o diretório de trabalho dentro do R utilizando a\nfunção setwd(\"colocar_o_caminho\").",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#observações",
+    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#observações",
+    "title": "Apresentação do R e Rstudio",
+    "section": "Observações",
+    "text": "Observações\n\nCaminhos e diretórios são um pouco complicados porque existem dois estilos básicos de caminhos: Mac/Linux e Windows. Existem três maneiras principais pelas quais eles diferem\n\nComo você separa os componentes do caminho. Mac e Linux usam barras (por exemplo  plots/diamonds.pdf) e o Windows usa barras invertidas (por exemplo  plots\\diamonds.pdf). R pode funcionar com qualquer tipo. Porém, barras invertidas significam algo especial para R, e para obter uma única barra invertida no caminho, você precisa digitar duas barras invertidas! Recomendo sempre usar o estilo Linux/Mac com barras.\nAo criar scripts ou projetos em R, é uma boa prática usar caminhos relativos, pois isso torna o código mais portátil e facilita a colaboração. Além disso, evita problemas quando você compartilha seu código com outros ou move seu projeto para um novo sistema operacional.\nA última pequena diferença é o local para onde ~aponta. ~é um atalho conveniente para o seu diretório inicial. No Windows, ele aponta para o diretório de documentos.\n\nNesses casos, criar projetos no R é uma prática recomendada e traz vários benefícios para a organização, colaboração e reprodutibilidade do trabalho\nCrie um diretório onde você possa colocar todos os programas/projetos em R",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Apresentação do R e Rstudio"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html",
@@ -1545,157 +1543,448 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html",
+    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html",
+    "title": "Funções",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Funções são blocos de código que podem ser chamados para realizar uma tarefa específica\nElas facilitam a organização do código, promovem a reutilização e tornam o código mais organizados.\nAs funções permitem-lhe reduzir a duplicação de código, automatizando uma tarefa generalizada a ser aplicada recursivamente.\nDica: você deve considerar escrever uma função sempre que copiar e colar um bloco de código mais de duas vezes\nPara definir uma função em R, você usa a palavra-chave function seguida pelos parâmetros/argumentos da função e o corpo da função\n\n\nname &lt;- function(arguments) {\n  body\n  return(objeto que guarda o resultado final)\n}\n\n\nFunções são objetos, assim como vetores são objetos.\nDe forma geral, as funções podem ser divididas em três partes:\n\nO formals(), a lista de argumentos que controlam como você chama a função.\nO body(), o código dentro da função.\nO environment(), a estrutura de dados que determina como a função encontra os valores associados aos nomes.\n\nEmbora os formals() e o body() sejam especificados explicitamente quando você cria uma função, o environment() é especificado implicitamente, com base em onde você definiu a função.\nO environment() da função sempre existe, mas só é impresso quando a função não está definida no ambiente global.\nf(x) = 2x\n\n\nf_x = function(x){\n  f_x = 2*x # função\n  return(f_x)\n}\n\nx = c(1,2,3,4)\n(y = f_x(x))\n\n[1] 2 4 6 8\n\nplot(x,y)\n\n\n\n\n\n\n\n\n\nformals(f_x)\n\n$x\n\nbody(f_x)\n\n{\n    f_x = 2 * x\n    return(f_x)\n}\n\nenvironment(f_x)\n\n&lt;environment: R_GlobalEnv&gt;\n\nattr(f_x, \"srcref\")\n\nfunction(x){\n  f_x = 2*x # função\n  return(f_x)\n}\n\n\n\nMédia de um vetor numérico\n\n\nmedia = function(x){\n  media_x = sum(x)/length(x)\n  return(media_x)\n}\ny = sample(1:100,20,replace=T)\nmedia(y)\n\n[1] 60.9\n\nmean(y)\n\n[1] 60.9\n\n\n\nFunção para fazer uma correspondência entre o número e o dia da semana\n\n\ndia_semana &lt;- function(numero_dia) {\n  dia &lt;- switch(\n    numero_dia,\n    \"1\" = \"Domingo\",\n    \"2\" = \"Segunda-feira\",\n    \"3\" = \"Terça-feira\",\n    \"4\" = \"Quarta-feira\",\n    \"5\" = \"Quinta-feira\",\n    \"6\" = \"Sexta-feira\",\n    \"7\" = \"Sábado\"\n  )\n  return(cat(\"O dia correspondente ao número\", numero_dia, \"é\", dia, \"\\n\"))\n}\ndia_semana(2)\n\nO dia correspondente ao número 2 é Segunda-feira \n\n\n\n\n\nNa definição de uma função, você pode usar três pontos (...) para indicar que a função aceita argumentos adicionais.\nEsses argumentos adicionais não precisam ser explicitamente listados na definição da função\nEsses argumentos adicionais geralmente são passados para outras funções dentro do corpo da função.\nNo exemplo abaixo, ... permite a passagem de argumentos adicionais, como na.rm para remover valores ausentes ao calcular a média.\n\n\nmedia_ponderada &lt;- function(valores,pesos,...) {\n  # Calcula a média ponderada\n  resultado &lt;- sum(valores * pesos,...) / sum(pesos,...)\n  return(resultado)\n}\nmedia_ponderada(c(1,2,NA),c(1,2,3))\n\n[1] NA\n\nmedia_ponderada(c(1,2,NA),c(1,2,3),na.rm=T)\n\n[1] 0.8333333\n\n\n\n\n\n\nA função on.exit é usada para especificar código que deve ser executado quando a execução de uma função é concluída\nFrequentemente usada para garantir que determinadas ações sejam realizadas antes que a função termine, independentemente de como ele termina\nNo exemplo a seguir vamos trocar de diretório\n\n\nnames_wd_atual &lt;- \"colocar caminho\" # diretório atual\nwd_atual &lt;- setwd(names_wd_atual)\n\ncriar_grafico &lt;- function() {\n  x11() # abrindo nova janela para a figura\n  new_wd &lt;- paste0(wd_atual,\"/Figuras/figura_exemplo_on_exit.jpg\")\n  jpeg(new_wd) # salvando figura no novo diretório\n  plot(1:10, main = \"Meu Gráfico\", ylab = \"Valores\")\n  # Configura on.exit para fechar o dispositivo gráfico ao sair\n  on.exit({\n    dev.off()\n    cat(\"Fechando o dispositivo gráfico\\n\")\n    setwd(wd_atual) # voltando para o diretório atual\n    cat(\"voltando para o diretório atual\\n\")\n  }, add = TRUE)\n}\n\n# Chama a função\ncriar_grafico()\n\n\n\n\n\nEmbora tudo o que acontece em R seja resultado de uma função, nem todos as funções são formuladas da mesma forma.\nExistem quatro formas de funções:\n\nPrefix Functions\nInfix Functions\nReplacement Functions\nSpecial functios\n\n\n\n\n\nSão as funções padrão ou regulares, identificadas por um nome seguido de argumentos entre parênteses.\n\n\nmedia_ponderada &lt;- function(x,peso=c(1,1,1),...)return(sum(peso*x,...)/sum(peso,...))\n\n\nmedia_ponderada(c(1,2,3)) # o nome da função vem antes de seus argumento\n\n[1] 2\n\n\n\n\n\n\nO nome da função fica entre seus argumentos\nAs formas infixas são usadas para muitos operadores matemáticos e para funções definidas pelo usuário que começam e terminam com %\n\n\n\n[1] -1\n\n\n[1] 5\n\n\n[1] 6\n\n\n[1] 0.6666667\n\n\n\nx &lt;- c(1,2,3,4,5)\n6 %in% x # o número 6 pertence ao conjuto x?\n\n[1] FALSE\n\nx &lt;- c(1,2,3,4,5)\n2 %in% x # o número 2 pertence ao conjuto x?\n\n[1] TRUE\n\n\n\nmat1 = matrix(c(1,2,3,4),2,2)\nmat2 = matrix(c(1,2,3,4),2,2)\nmat1 %*% mat2 # multiplicação de matriz\n\n     [,1] [,2]\n[1,]    7   15\n[2,]   10   22\n\n\n\nDefinindo nova função infix\n\n\n`%+%` &lt;- function(a, b) paste(a, b,sep=\"-\")\n\"new \" %+% \"string\"\n\n[1] \"new -string\"\n\n\n\nA biblioteca magrittr adiciona o operador pipe, que permite usar a saída de uma função como entrada de outra função\n\n\nrequire(magrittr) # pacote para usar %&gt;%\nx &lt;- c(1,2,3,4)\ndesvio_padrao = sqrt( var(x) )\ndesvio_padrao = var(x) %&gt;% sqrt()\ndesvio_padrao = var(x) |&gt; sqrt() # pacote base\n\n\nOs colchetes transformam o pipe no que é quase uma função anônima\n\n\n1:5 %&gt;% {(. + 1) / 2} # 1:5 são utilizados no lugar do ponto\n\n[1] 1.0 1.5 2.0 2.5 3.0\n\n\n\n\n\n\nEstas funções são frequentemente usadas para atribuir valores a variáveis ou modificar objetos existentes.\n\n\n'function_name&lt;-' &lt;- function(x, additional arguments, value) \n{ \nfunction body \n} \n\n\nNomear elementos do vetor com a função names\n\n\nx = c(1,2,3,4)\nnames(x) &lt;- paste0(\"n\",1:length(x))\nx\n\nn1 n2 n3 n4 \n 1  2  3  4 \n\n\n\nMudar o segundo elemento do vetor\n\n\n\"replace_second&lt;-\" = function(x,value){\n  x[2] &lt;- value\n  x\n}\nx = c(1,2,3,4)\nreplace_second(x) &lt;- 0L\nx\n\n[1] 1 0 3 4\n\n\n\n'modify&lt;-' &lt;- function(x, position, value) {\n  x[position] &lt;- value\n  x\n}\nx = 1:5\nmodify(x, 1) &lt;- 2 # value=2\nx\n\n[1] 2 2 3 4 5\n\n\n\n\n\n\nFunções especiais muitas vezes desempenham papéis específicos, como manipulação condicional, filtragem de dados e manipulação de strings.\nFerramentas de controle de fluxo\n\nif (cond) true (`if`(cond, true))\nif (cond) true else false (`if`(cond, true, false))\nfor(var in seq) action (`for`(var, seq, action))\nwhile(cond) action (`while`(cond, action))\nrepeat expr (`repeat`(expr))\nnext (`next`())\nbreak (`break`())",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Funções"
+    ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
-    "title": "Apresentação do R e Rstudio",
+    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#dotdotdot",
+    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#dotdotdot",
+    "title": "Funções",
     "section": "",
-    "text": "R é uma linguagem e um ambiente de desenvolvimento integrado, livre e gratuito;\nO software R disponibiliza recursos para vários tipos de análises:\n\nEstatística descritiva: medidas de posição, dispersão, tabelas e gráficos;\nModelos lineares, não lineares, generalizados: estimação dos parâmetros, resíduos, métodos de diagnóstico;\nAnálise multivariada: Análise de componentes principais, clusters, fatorial;\nAprendizado de Máquina\nDeepLearning,",
+    "text": "Na definição de uma função, você pode usar três pontos (...) para indicar que a função aceita argumentos adicionais.\nEsses argumentos adicionais não precisam ser explicitamente listados na definição da função\nEsses argumentos adicionais geralmente são passados para outras funções dentro do corpo da função.\nNo exemplo abaixo, ... permite a passagem de argumentos adicionais, como na.rm para remover valores ausentes ao calcular a média.\n\n\nmedia_ponderada &lt;- function(valores,pesos,...) {\n  # Calcula a média ponderada\n  resultado &lt;- sum(valores * pesos,...) / sum(pesos,...)\n  return(resultado)\n}\nmedia_ponderada(c(1,2,NA),c(1,2,3))\n\n[1] NA\n\nmedia_ponderada(c(1,2,NA),c(1,2,3),na.rm=T)\n\n[1] 0.8333333",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Apresentação do R e Rstudio"
+      "Funções"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#telas",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#telas",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Telas",
-    "text": "Telas\n\nEle oferece várias telas e painéis para facilitar o desenvolvimento, análise de dados e criação de visualizações.\n\n\n\n\nPainés do Rstudio\n\n\n\nSegue uma breve explicação das telas principais do RStudio.\n\n\nConsole:\n\nA tela principal onde você digita comandos R e recebe a saída imediata.\n\nScript Editor:\n\nOnde você escreve e edita seus scripts em R. Os scripts são arquivos contendo código R que podem ser executados no console.\n\nEnvironment/Painel de Ambiente:\n\nExibe informações sobre objetos (variáveis, datasets) em sua sessão R atual.\n\nHistory/Histórico:\n\nMantém um histórico de comandos R previamente executados.\n\nFiles/Painel de Arquivos:\n\nMostra os arquivos e diretórios do seu projeto. Facilita a navegação e a organização.\n\nPlots/Painel de Gráficos:\n\nExibe visualizações geradas a partir do R.\n\nPackages/Pacotes:\n\nGerencia pacotes R instalados e fornece ferramentas para instalação e atualização.\n\nHelp/Ajuda:\n\nFornece acesso à documentação e ajuda sobre funções e pacotes R.\n\nViewer/Visualizador:\n\nExibe visualizações mais complexas, como páginas web, no próprio IDE.\n\nGit:\n\nFacilita a integração com sistemas de controle de versão Git, permitindo o rastreamento de alterações em projetos.\n\nConnections/Conexões:\n\nPermite conectar-se a fontes de dados externas\n\nTerminal:\n\nUm terminal embutido para execução de comandos do sistema operacional.",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#cheatsheets",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#cheatsheets",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Cheatsheets",
-    "text": "Cheatsheets\n\nAs “cheatsheets” (folhas de dicas) no RStudio são recursos visuais e resumidos que fornecem informações rápidas e úteis sobre tópicos específicos relacionados à linguagem de programação R, ao ambiente RStudio e a pacotes específicos do R.\nPara acessar as cheatsheets, você pode ir diretamente à página de cheatsheets do RStudio\nTambém pode ser acessada cliclando em Help -&gt; Cheat Sheets",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminhos",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminhos",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Caminhos",
-    "text": "Caminhos\n\nEntende-se por caminho o endereço do arquivo no computador\nExistem duas formas de passarmos o caminho de arquivo: caminho absoluto ou caminho relativo",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Caminho Absoluto",
-    "text": "Caminho Absoluto\n\nO caminho absoluto especifica o local exato de um arquivo desde a raiz do sistema de arquivo.\nO diretório raiz é o que está no topo da hierarquia do sistema, isso significa que outros diretórios estão contidos nele.\n\n\n\n\nCaminho Absoluto\n\n\n\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R/Cadernos\"\n\n\n\nObserve que o local de referência é a pasta “Cadernos”, pois este é o caminho absoluto para a pasta onde essa aula foi produzida. Vamos voltar para a pasta “Introducao_R” utilizando o conceito de caminho relativo",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-relativo",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-relativo",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Caminho Relativo",
-    "text": "Caminho Relativo\n\nO caminho relativo é especificado em relação ao diretório de trabalho atual ou a outro local de referência. Assim, se você quiser acessar alguma base de dados na pasta “dados” partindo da pasta”Cadernos”, o caminho seria: ../dados/base_de_dados.formato.\nNesse caso, ../ é o comando para voltar uma pasta dentro do caminho e ./ representa a pasta/diretório atual.\nCaso você queira trocar o local referência da pasta “caderno” para a pasta”Introducao_R “, use o seguinte código:\n\n\nsetwd(\"..\") # trocando local referência ou diretório de trabalho\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R\"",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#diretório-de-trabalho",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#diretório-de-trabalho",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Diretório de trabalho",
-    "text": "Diretório de trabalho\n\nBasicamente, diretório de trabalho refere-se a uma pasta específica no sistema de arquivos do computador em que um programa está atualmente operando ou onde ele procura por arquivos para ler e salvar por padrão.\nNo contexto do R, o diretório de trabalho é particularmente importante porque é o local onde o R procura por arquivos . Isso significa que, se você carregar ou salvar um arquivo sem especificar a pasta, o R assumirá que o arquivo está no diretório de trabalho.\nÉ no diretório de trabalho que o R procura os arquivos que você pede para carregar e onde ele coloca todos os arquivos que você pede para salvar. De forma geral, é o local que está localizada sua análise.\nRStudio mostra seu diretório de trabalho atual na parte superior do console:\n\n\n\n\nDiretório\n\n\n\nVocê também pode visualizar o diretório de trabalho atual usando a função getwd().\nVocê também pode definir o diretório de trabalho dentro do R utilizando a\nfunção setwd(\"colocar_o_caminho\").",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#observações",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#observações",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Observações",
-    "text": "Observações\n\nCaminhos e diretórios são um pouco complicados porque existem dois estilos básicos de caminhos: Mac/Linux e Windows. Existem três maneiras principais pelas quais eles diferem\n\nComo você separa os componentes do caminho. Mac e Linux usam barras (por exemplo  plots/diamonds.pdf) e o Windows usa barras invertidas (por exemplo  plots\\diamonds.pdf). R pode funcionar com qualquer tipo. Porém, barras invertidas significam algo especial para R, e para obter uma única barra invertida no caminho, você precisa digitar duas barras invertidas! Recomendo sempre usar o estilo Linux/Mac com barras.\nAo criar scripts ou projetos em R, é uma boa prática usar caminhos relativos, pois isso torna o código mais portátil e facilita a colaboração. Além disso, evita problemas quando você compartilha seu código com outros ou move seu projeto para um novo sistema operacional.\nA última pequena diferença é o local para onde ~aponta. ~é um atalho conveniente para o seu diretório inicial. No Windows, ele aponta para o diretório de documentos.\n\nNesses casos, criar projetos no R é uma prática recomendada e traz vários benefícios para a organização, colaboração e reprodutibilidade do trabalho\nCrie um diretório onde você possa colocar todos os programas/projetos em R",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html",
-    "href": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html",
-    "title": "Estruturas de Controles",
+    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#on.exit",
+    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#on.exit",
+    "title": "Funções",
     "section": "",
-    "text": "Estruturas de controle são trechos de código que resultam em diferentes desfechos dependendo do resultado da verificação de uma ou mais condições lógicas.\nÉ um processo de tomada de decisão automatizado onde o programa escolhe executar uma instrução ou outra, ou até mesmo nenhuma delas, dependendo do resultado de uma parte anterior do código.\nIsso é especialmente útil quando o analista deseja realizar uma tarefa que é diferente dependendo da variável ou da situação.\nExistem duas estruturas de controle:\n\nCondicional: onde uma determinada instrução é executada com base na veracidade de uma condição.\nLoop: repete uma instrução várias vezes\n\n\n\n\n\nA estrutura condicional “if” é uma construção que permite a execução de determinados blocos de código com base na avaliação de uma condição lógica\nEssa condição lógica pode ser qualquer expressão que resulte em verdadeiro ou falso.\nSe a condição for verdadeira, o bloco de código associado ao “if” é executado; caso contrário, o programa pode optar por executar um bloco de código alternativo, definido pela estrutura “else”\n\n\nif (condition) true_action\n \nif (\"condition is satisfied\") {\n\"do something\"\n}\n\n\nif (condition) true_action else false_action\n \nif(\"condition is satisfied\"){\n \"do something\"\n} else {\n \"otherwise do something else\"\n}\n\n\nIf condition is TRUE, true_action é avaliada;\nif condition is FALSE, a opção false_action é avaliada.\n\n\nx = \"Leonardo\"\nif(class(x)==\"character\"){\n  cat(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n}\n\n O objeto x= Leonardo é da classe character\n\n\n\nx = 1\n\nif(class(x)==\"character\"){\n  paste(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n} else{\n  paste(\" O objeto x=\",x,\" é da classe\",class(x),sep=\" \")\n}\n\n[1] \" O objeto x= 1  é da classe numeric\"\n\n\n\nA função ifelse() permite executar duas instruções com base no resultado de uma condição lógica em uma única linha. A sintaxe para isso é a seguinte:\n\n\nifelse(condição, instrução_se_verdadeiro, instrução_se_falso)\n\n\ncondição: Uma condição lógica que avalia para TRUE ou FALSE.\ninstrução_se_verdadeiro: A instrução a ser executada se a condição for TRUE.\ninstrução_se_falso: A instrução a ser executada se a condição for FALSE.\n\n\nx = 1:10\nifelse(x %% 2 == 0, \"par\", \"ímpar\")\n\n [1] \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\"\n[10] \"par\"  \n\n\n\nx = 70\n if (x &gt;= 90 & x &lt;= 100) {\n    \"A\"\n  } else if (x &gt;= 80 & x &lt; 90) {\n    \"B\"\n  } else {\n    \"C\"\n  }\n\n[1] \"C\"\n\n\n\nx = 80\n if (x &gt;= 100 | x &lt;= 70) {\n    \"Extremo\"\n  } else {\n    \"Não é extremo\"\n  } \n\n[1] \"Não é extremo\"\n\n\n\n\n\nA função switch uma construção condicional que permite escolher um valor com base na correspondência de casos.\nEla é frequentemente utilizada quando você tem várias opções e deseja realizar diferentes ações dependendo do valor de uma expressão.\nÉ útil quando você tem uma série de casos possíveis e deseja evitar a aninhamento excessivo de instruções if-else.\nTorna o código mais limpo e legível, especialmente em situações em que há muitas opções possíveis.\nEsse exemplo faz uma correspondência entre o número e o dia da semana\n\n\nnumero = 1\ndia &lt;- switch(numero,\n                \"1\"=\"Domingo\",\n                \"2\"=\"Segunda-feira\",\n                \"3\"=\"Terça-feira\",\n                \"4\"=\"Quarta-feira\",\n                \"5\"=\"Quinta-feira\",\n                \"6\"=\"Sexta-feira\",\n                \"7\"=\"Sábado\"\n               )\ncat(\"O dia correspondente ao número\", numero, \"é\", dia, \"\\n\")\n\nO dia correspondente ao número 1 é Domingo \n\n\n\nEsse exemplo faz uma correspondência entre o número percentual (character) e o número decimal (numeric)\n\n\nPROP = \"25%\"\nprop &lt;- switch (PROP,\n    \"25%\" = 0.25,\n    \"50%\" = 0.5,\n    \"75%\" = 0.75\n  )\nprop\n\n[1] 0.25\n\n\n\n\n\n\n\nOs loops, ou laços de repetição, são estruturas que permitem executar um bloco de código repetidamente\n\n\n\n\nO loop for é empregado para executar instruções de código repetitivas um número determinado de vezes.\n\n\nfor (variavel in sequencia) {\n  # código a ser executado em cada iteração\n}\n#ou\nfor (variavel in 1:n) { # n = quantidade de iterações\n  # código a ser executado em cada iteração\n}\n\n\nAo executar este código, você verá a saída que mostra os quadrados dos números de 1 a 5.\n\n\nfor (i in 1:5) {\n  quadrado &lt;- i^2\n  cat(\"O quadrado de\", i, \"é\", quadrado, \"\\n\")\n}\n\nO quadrado de 1 é 1 \nO quadrado de 2 é 4 \nO quadrado de 3 é 9 \nO quadrado de 4 é 16 \nO quadrado de 5 é 25 \n\n\n\nAo executar este código, você obterá a saída mostrando a soma dos primeiros 10 números naturais.\n\n\nn = 12\nsoma &lt;- 0\nfor (i in 1:n) {\n  soma &lt;- soma + i\n}\ncat(\"A soma dos primeiros\",n, \"números naturais é:\", soma, \"\\n\")\n\nA soma dos primeiros 12 números naturais é: 78 \n\ncumsum(1:n) # forma alternativa\n\n [1]  1  3  6 10 15 21 28 36 45 55 66 78\n\n\n\nSe quisermos combinar as saídas anteriores em um único vetor x, podemos primeiro iniciar x e depois anexar a saída do loop for a x.\n\n\nx &lt;- NULL # criando vetor vazio\n\nfor(i in 2010:2016) {\noutput &lt;- paste (\"The year is\", i)\nx &lt;- append(x, output)\n}\nhead(x)\n\n[1] \"The year is 2010\" \"The year is 2011\" \"The year is 2012\" \"The year is 2013\"\n[5] \"The year is 2014\" \"The year is 2015\"\n\n\n\nSorteio de n números de uma sequência de 1 a N\n\n\nN = 1000 # número total de elementos 1:N\nm = 10 # colunas\nn = 500 # linhas ; amostra de tamanho n \nmatrix_amostra_sorteada = matrix(0,nrow = n,ncol = m) # criando a matriz\nmedia_amostra_sorteada = NULL\n\nset.seed(2) # gerar sempre as mesmas amostras\nfor(k in 1:m){\n  x = sample(1:N,n,replace=T) # sorteando n números de uma sequência de 1:N\n  media_amostra_sorteada = append(media_amostra_sorteada,mean(x))\n  matrix_amostra_sorteada[,k] &lt;- x # guardando a amostra sorteada na coluna\n}\nmatrix_amostra_sorteada[1:6,1:3]\n\n     [,1] [,2] [,3]\n[1,]  853  239  586\n[2,]  975  732  623\n[3,]  710  906  488\n[4,]  774   59  848\n[5,]  416  373  784\n[6,]  392   48   57\n\nhead(media_amostra_sorteada)\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nUsando a função replicate()\n\n\nset.seed(2)\nmatrix_amostra_sorteada = replicate(m,sample(1:N,n,replace=T))\nhead( colMeans(matrix_amostra_sorteada) )\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nVariando dentro do vetor\n\n\nn = c(10,20,30,40)\nfor(k in n){\n  print(2*k)\n}\n\n[1] 20\n[1] 40\n[1] 60\n[1] 80\n\n\n\nUtilizando dois for\n\n\nmatriz &lt;- matrix(0, nrow = 3, ncol = 3)\n\n# Preencher a matriz com números sequenciais usando um loop for\ncontador &lt;- 1\n\nfor (i in 1:3) {\n  for (j in 1:3) { # fixa o i e varia o j\n    matriz[i, j] &lt;- contador \n    contador &lt;- contador + 1\n  }\n}\nmatriz\n\n     [,1] [,2] [,3]\n[1,]    1    2    3\n[2,]    4    5    6\n[3,]    7    8    9\n\n\n\n\n\n\nOs loops while começam testando uma condição. Se for verdadeira, então eles executam a instrução.\nUma vez que a instrução é executada, a condição é testada novamente, e assim por diante, até que a condição seja falsa, momento em que o loop é encerrado.\nÉ considerada uma boa prática incluir um objeto contador para acompanhar o número total de iterações.\n\n\ncontador &lt;- 0\n while (condition) {\n   # código executado enquanto a condição for verdade \n   # contador &lt;- contador + 1\n }\n\n\nO código a seguir irá imprimir o valor de i enquanto este objeto for menor que 5.\nQuando a condição não for mais respeitada, o processo será interrompido.\n\n\ni = 0\nwhile(i&lt;5){\n  cat(i,\"é menor que 5\",\"\\n\")\n  i = i+1\n}\n\n0 é menor que 5 \n1 é menor que 5 \n2 é menor que 5 \n3 é menor que 5 \n4 é menor que 5 \n\n\n\nLançamento de um dado até que um determinado número seja obtido.\n\n\nnumero_escolhido &lt;- 6\nresultado_dado = 1 # iniciar com número diferente do número escolhido\ntentativas = 0\nwhile (resultado_dado!=numero_escolhido) {\n  resultado_dado = sample(1:6,1,replace = T,prob = NULL) # sorteando número de 1 a 6\n   tentativas = tentativas + 1\n   cat(\"Tentativa:\",tentativas,\"\\n\",\"Número do dado é\",resultado_dado,\"\\n\")\n  \n}\n\nTentativa: 1 \n Número do dado é 1 \nTentativa: 2 \n Número do dado é 5 \nTentativa: 3 \n Número do dado é 3 \nTentativa: 4 \n Número do dado é 3 \nTentativa: 5 \n Número do dado é 3 \nTentativa: 6 \n Número do dado é 1 \nTentativa: 7 \n Número do dado é 5 \nTentativa: 8 \n Número do dado é 2 \nTentativa: 9 \n Número do dado é 4 \nTentativa: 10 \n Número do dado é 2 \nTentativa: 11 \n Número do dado é 4 \nTentativa: 12 \n Número do dado é 2 \nTentativa: 13 \n Número do dado é 1 \nTentativa: 14 \n Número do dado é 1 \nTentativa: 15 \n Número do dado é 1 \nTentativa: 16 \n Número do dado é 4 \nTentativa: 17 \n Número do dado é 5 \nTentativa: 18 \n Número do dado é 4 \nTentativa: 19 \n Número do dado é 1 \nTentativa: 20 \n Número do dado é 3 \nTentativa: 21 \n Número do dado é 5 \nTentativa: 22 \n Número do dado é 4 \nTentativa: 23 \n Número do dado é 4 \nTentativa: 24 \n Número do dado é 5 \nTentativa: 25 \n Número do dado é 5 \nTentativa: 26 \n Número do dado é 2 \nTentativa: 27 \n Número do dado é 5 \nTentativa: 28 \n Número do dado é 5 \nTentativa: 29 \n Número do dado é 5 \nTentativa: 30 \n Número do dado é 1 \nTentativa: 31 \n Número do dado é 3 \nTentativa: 32 \n Número do dado é 4 \nTentativa: 33 \n Número do dado é 4 \nTentativa: 34 \n Número do dado é 4 \nTentativa: 35 \n Número do dado é 4 \nTentativa: 36 \n Número do dado é 6 \n\n\n\nObservação: a diferença principal entre um loop for e um loop while é: um loop for é usado quando o número de iterações que um código deve ser executado é conhecido, enquanto um loop while é usado quando o número de iterações não é conhecido.\n\n\n\n\n\nUm loop repeat é usado para iterar sobre um bloco de código várias vezes.\nNão há uma expressão de teste em um loop repeat para encerrar ou sair do loop.\nEm vez disso, devemos colocar uma declaração de condição explicitamente dentro do corpo do loop e usar a função break para sair do loop. Não fazer isso resultará em um loop infinito.\nA ideia é repetir um loop e parar quando a condição for satisfeita, para isso será utiliza a função break\n\n\ncontador = 1\nrepeat {\n  # código será executado repetidamente\n  if (condition) {\n    break  # se a condição for satisfeita, para a repetição\n  }\n  contador = contador+1\n}\n\n\nRode esse código no seu computador\nAvaliar como o tamanho da amostra afeta a média amostral\n\n\nN = 1000\npopulacao = runif(N, 0, 100) # gerar N números entre 0 e 100\nhead(populacao)\n(media.populacao = mean(populacao))\nn = 5 # tamanho da amostra inicial\nrepeat {\n  amostra = sample(populacao, n, replace = T) # sorteando n observações da população\n  media.amostra = mean(amostra)\n  if (abs(media.amostra - media.populacao) &lt; 0.01) {\n    n = 2 * n\n    cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n    break\n  }\n  n = 2 * n\n  cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n}\n\n\n\n\n\nÉ útil quando queremos pular a iteração atual de um loop sem terminá-lo.\nAo encontrar next, o analisador R pula a avaliação adicional e inicia a próxima iteração do loop.\n\n\nx &lt;- 1:5\nfor (i in x) {\nif (i == 3){\nnext\n}\nprint (i)\n}\n\n[1] 1\n[1] 2\n[1] 4\n[1] 5\n\n\n\n\n\n\nA função break é usada para sair imediatamente de um loop, independentemente da iteração em que o loop possa estar.\nAs funções break geralmente estão embutidas em uma declaração if, na qual uma condição é avaliada: se for VERDADEIRA, sai do loop; se for FALSA, continua com o loop.\nEm uma situação de looping aninhado, onde há um loop dentro de outro loop, essa declaração sai do loop mais interno que está sendo avaliado.\n\n\nx &lt;- 1:5\nfor (i in x) {\n  if (i == 3){\n  break\n  }\nprint (i)\n}\n\n[1] 1\n[1] 2",
+    "text": "A função on.exit é usada para especificar código que deve ser executado quando a execução de uma função é concluída\nFrequentemente usada para garantir que determinadas ações sejam realizadas antes que a função termine, independentemente de como ele termina\nNo exemplo a seguir vamos trocar de diretório\n\n\nnames_wd_atual &lt;- \"colocar caminho\" # diretório atual\nwd_atual &lt;- setwd(names_wd_atual)\n\ncriar_grafico &lt;- function() {\n  x11() # abrindo nova janela para a figura\n  new_wd &lt;- paste0(wd_atual,\"/Figuras/figura_exemplo_on_exit.jpg\")\n  jpeg(new_wd) # salvando figura no novo diretório\n  plot(1:10, main = \"Meu Gráfico\", ylab = \"Valores\")\n  # Configura on.exit para fechar o dispositivo gráfico ao sair\n  on.exit({\n    dev.off()\n    cat(\"Fechando o dispositivo gráfico\\n\")\n    setwd(wd_atual) # voltando para o diretório atual\n    cat(\"voltando para o diretório atual\\n\")\n  }, add = TRUE)\n}\n\n# Chama a função\ncriar_grafico()",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Estruturas de Controles"
+      "Funções"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#condicional",
-    "href": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#condicional",
-    "title": "Estruturas de Controles",
+    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#formas-de-funções",
+    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#formas-de-funções",
+    "title": "Funções",
     "section": "",
-    "text": "A estrutura condicional “if” é uma construção que permite a execução de determinados blocos de código com base na avaliação de uma condição lógica\nEssa condição lógica pode ser qualquer expressão que resulte em verdadeiro ou falso.\nSe a condição for verdadeira, o bloco de código associado ao “if” é executado; caso contrário, o programa pode optar por executar um bloco de código alternativo, definido pela estrutura “else”\n\n\nif (condition) true_action\n \nif (\"condition is satisfied\") {\n\"do something\"\n}\n\n\nif (condition) true_action else false_action\n \nif(\"condition is satisfied\"){\n \"do something\"\n} else {\n \"otherwise do something else\"\n}\n\n\nIf condition is TRUE, true_action é avaliada;\nif condition is FALSE, a opção false_action é avaliada.\n\n\nx = \"Leonardo\"\nif(class(x)==\"character\"){\n  cat(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n}\n\n O objeto x= Leonardo é da classe character\n\n\n\nx = 1\n\nif(class(x)==\"character\"){\n  paste(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n} else{\n  paste(\" O objeto x=\",x,\" é da classe\",class(x),sep=\" \")\n}\n\n[1] \" O objeto x= 1  é da classe numeric\"\n\n\n\nA função ifelse() permite executar duas instruções com base no resultado de uma condição lógica em uma única linha. A sintaxe para isso é a seguinte:\n\n\nifelse(condição, instrução_se_verdadeiro, instrução_se_falso)\n\n\ncondição: Uma condição lógica que avalia para TRUE ou FALSE.\ninstrução_se_verdadeiro: A instrução a ser executada se a condição for TRUE.\ninstrução_se_falso: A instrução a ser executada se a condição for FALSE.\n\n\nx = 1:10\nifelse(x %% 2 == 0, \"par\", \"ímpar\")\n\n [1] \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\"\n[10] \"par\"  \n\n\n\nx = 70\n if (x &gt;= 90 & x &lt;= 100) {\n    \"A\"\n  } else if (x &gt;= 80 & x &lt; 90) {\n    \"B\"\n  } else {\n    \"C\"\n  }\n\n[1] \"C\"\n\n\n\nx = 80\n if (x &gt;= 100 | x &lt;= 70) {\n    \"Extremo\"\n  } else {\n    \"Não é extremo\"\n  } \n\n[1] \"Não é extremo\"\n\n\n\n\n\nA função switch uma construção condicional que permite escolher um valor com base na correspondência de casos.\nEla é frequentemente utilizada quando você tem várias opções e deseja realizar diferentes ações dependendo do valor de uma expressão.\nÉ útil quando você tem uma série de casos possíveis e deseja evitar a aninhamento excessivo de instruções if-else.\nTorna o código mais limpo e legível, especialmente em situações em que há muitas opções possíveis.\nEsse exemplo faz uma correspondência entre o número e o dia da semana\n\n\nnumero = 1\ndia &lt;- switch(numero,\n                \"1\"=\"Domingo\",\n                \"2\"=\"Segunda-feira\",\n                \"3\"=\"Terça-feira\",\n                \"4\"=\"Quarta-feira\",\n                \"5\"=\"Quinta-feira\",\n                \"6\"=\"Sexta-feira\",\n                \"7\"=\"Sábado\"\n               )\ncat(\"O dia correspondente ao número\", numero, \"é\", dia, \"\\n\")\n\nO dia correspondente ao número 1 é Domingo \n\n\n\nEsse exemplo faz uma correspondência entre o número percentual (character) e o número decimal (numeric)\n\n\nPROP = \"25%\"\nprop &lt;- switch (PROP,\n    \"25%\" = 0.25,\n    \"50%\" = 0.5,\n    \"75%\" = 0.75\n  )\nprop\n\n[1] 0.25",
+    "text": "Embora tudo o que acontece em R seja resultado de uma função, nem todos as funções são formuladas da mesma forma.\nExistem quatro formas de funções:\n\nPrefix Functions\nInfix Functions\nReplacement Functions\nSpecial functios\n\n\n\n\n\nSão as funções padrão ou regulares, identificadas por um nome seguido de argumentos entre parênteses.\n\n\nmedia_ponderada &lt;- function(x,peso=c(1,1,1),...)return(sum(peso*x,...)/sum(peso,...))\n\n\nmedia_ponderada(c(1,2,3)) # o nome da função vem antes de seus argumento\n\n[1] 2\n\n\n\n\n\n\nO nome da função fica entre seus argumentos\nAs formas infixas são usadas para muitos operadores matemáticos e para funções definidas pelo usuário que começam e terminam com %\n\n\n\n[1] -1\n\n\n[1] 5\n\n\n[1] 6\n\n\n[1] 0.6666667\n\n\n\nx &lt;- c(1,2,3,4,5)\n6 %in% x # o número 6 pertence ao conjuto x?\n\n[1] FALSE\n\nx &lt;- c(1,2,3,4,5)\n2 %in% x # o número 2 pertence ao conjuto x?\n\n[1] TRUE\n\n\n\nmat1 = matrix(c(1,2,3,4),2,2)\nmat2 = matrix(c(1,2,3,4),2,2)\nmat1 %*% mat2 # multiplicação de matriz\n\n     [,1] [,2]\n[1,]    7   15\n[2,]   10   22\n\n\n\nDefinindo nova função infix\n\n\n`%+%` &lt;- function(a, b) paste(a, b,sep=\"-\")\n\"new \" %+% \"string\"\n\n[1] \"new -string\"\n\n\n\nA biblioteca magrittr adiciona o operador pipe, que permite usar a saída de uma função como entrada de outra função\n\n\nrequire(magrittr) # pacote para usar %&gt;%\nx &lt;- c(1,2,3,4)\ndesvio_padrao = sqrt( var(x) )\ndesvio_padrao = var(x) %&gt;% sqrt()\ndesvio_padrao = var(x) |&gt; sqrt() # pacote base\n\n\nOs colchetes transformam o pipe no que é quase uma função anônima\n\n\n1:5 %&gt;% {(. + 1) / 2} # 1:5 são utilizados no lugar do ponto\n\n[1] 1.0 1.5 2.0 2.5 3.0\n\n\n\n\n\n\nEstas funções são frequentemente usadas para atribuir valores a variáveis ou modificar objetos existentes.\n\n\n'function_name&lt;-' &lt;- function(x, additional arguments, value) \n{ \nfunction body \n} \n\n\nNomear elementos do vetor com a função names\n\n\nx = c(1,2,3,4)\nnames(x) &lt;- paste0(\"n\",1:length(x))\nx\n\nn1 n2 n3 n4 \n 1  2  3  4 \n\n\n\nMudar o segundo elemento do vetor\n\n\n\"replace_second&lt;-\" = function(x,value){\n  x[2] &lt;- value\n  x\n}\nx = c(1,2,3,4)\nreplace_second(x) &lt;- 0L\nx\n\n[1] 1 0 3 4\n\n\n\n'modify&lt;-' &lt;- function(x, position, value) {\n  x[position] &lt;- value\n  x\n}\nx = 1:5\nmodify(x, 1) &lt;- 2 # value=2\nx\n\n[1] 2 2 3 4 5\n\n\n\n\n\n\nFunções especiais muitas vezes desempenham papéis específicos, como manipulação condicional, filtragem de dados e manipulação de strings.\nFerramentas de controle de fluxo\n\nif (cond) true (`if`(cond, true))\nif (cond) true else false (`if`(cond, true, false))\nfor(var in seq) action (`for`(var, seq, action))\nwhile(cond) action (`while`(cond, action))\nrepeat expr (`repeat`(expr))\nnext (`next`())\nbreak (`break`())",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Estruturas de Controles"
+      "Funções"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#loops",
-    "href": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#loops",
-    "title": "Estruturas de Controles",
-    "section": "",
-    "text": "Os loops, ou laços de repetição, são estruturas que permitem executar um bloco de código repetidamente\n\n\n\n\nO loop for é empregado para executar instruções de código repetitivas um número determinado de vezes.\n\n\nfor (variavel in sequencia) {\n  # código a ser executado em cada iteração\n}\n#ou\nfor (variavel in 1:n) { # n = quantidade de iterações\n  # código a ser executado em cada iteração\n}\n\n\nAo executar este código, você verá a saída que mostra os quadrados dos números de 1 a 5.\n\n\nfor (i in 1:5) {\n  quadrado &lt;- i^2\n  cat(\"O quadrado de\", i, \"é\", quadrado, \"\\n\")\n}\n\nO quadrado de 1 é 1 \nO quadrado de 2 é 4 \nO quadrado de 3 é 9 \nO quadrado de 4 é 16 \nO quadrado de 5 é 25 \n\n\n\nAo executar este código, você obterá a saída mostrando a soma dos primeiros 10 números naturais.\n\n\nn = 12\nsoma &lt;- 0\nfor (i in 1:n) {\n  soma &lt;- soma + i\n}\ncat(\"A soma dos primeiros\",n, \"números naturais é:\", soma, \"\\n\")\n\nA soma dos primeiros 12 números naturais é: 78 \n\ncumsum(1:n) # forma alternativa\n\n [1]  1  3  6 10 15 21 28 36 45 55 66 78\n\n\n\nSe quisermos combinar as saídas anteriores em um único vetor x, podemos primeiro iniciar x e depois anexar a saída do loop for a x.\n\n\nx &lt;- NULL # criando vetor vazio\n\nfor(i in 2010:2016) {\noutput &lt;- paste (\"The year is\", i)\nx &lt;- append(x, output)\n}\nhead(x)\n\n[1] \"The year is 2010\" \"The year is 2011\" \"The year is 2012\" \"The year is 2013\"\n[5] \"The year is 2014\" \"The year is 2015\"\n\n\n\nSorteio de n números de uma sequência de 1 a N\n\n\nN = 1000 # número total de elementos 1:N\nm = 10 # colunas\nn = 500 # linhas ; amostra de tamanho n \nmatrix_amostra_sorteada = matrix(0,nrow = n,ncol = m) # criando a matriz\nmedia_amostra_sorteada = NULL\n\nset.seed(2) # gerar sempre as mesmas amostras\nfor(k in 1:m){\n  x = sample(1:N,n,replace=T) # sorteando n números de uma sequência de 1:N\n  media_amostra_sorteada = append(media_amostra_sorteada,mean(x))\n  matrix_amostra_sorteada[,k] &lt;- x # guardando a amostra sorteada na coluna\n}\nmatrix_amostra_sorteada[1:6,1:3]\n\n     [,1] [,2] [,3]\n[1,]  853  239  586\n[2,]  975  732  623\n[3,]  710  906  488\n[4,]  774   59  848\n[5,]  416  373  784\n[6,]  392   48   57\n\nhead(media_amostra_sorteada)\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nUsando a função replicate()\n\n\nset.seed(2)\nmatrix_amostra_sorteada = replicate(m,sample(1:N,n,replace=T))\nhead( colMeans(matrix_amostra_sorteada) )\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nVariando dentro do vetor\n\n\nn = c(10,20,30,40)\nfor(k in n){\n  print(2*k)\n}\n\n[1] 20\n[1] 40\n[1] 60\n[1] 80\n\n\n\nUtilizando dois for\n\n\nmatriz &lt;- matrix(0, nrow = 3, ncol = 3)\n\n# Preencher a matriz com números sequenciais usando um loop for\ncontador &lt;- 1\n\nfor (i in 1:3) {\n  for (j in 1:3) { # fixa o i e varia o j\n    matriz[i, j] &lt;- contador \n    contador &lt;- contador + 1\n  }\n}\nmatriz\n\n     [,1] [,2] [,3]\n[1,]    1    2    3\n[2,]    4    5    6\n[3,]    7    8    9\n\n\n\n\n\n\nOs loops while começam testando uma condição. Se for verdadeira, então eles executam a instrução.\nUma vez que a instrução é executada, a condição é testada novamente, e assim por diante, até que a condição seja falsa, momento em que o loop é encerrado.\nÉ considerada uma boa prática incluir um objeto contador para acompanhar o número total de iterações.\n\n\ncontador &lt;- 0\n while (condition) {\n   # código executado enquanto a condição for verdade \n   # contador &lt;- contador + 1\n }\n\n\nO código a seguir irá imprimir o valor de i enquanto este objeto for menor que 5.\nQuando a condição não for mais respeitada, o processo será interrompido.\n\n\ni = 0\nwhile(i&lt;5){\n  cat(i,\"é menor que 5\",\"\\n\")\n  i = i+1\n}\n\n0 é menor que 5 \n1 é menor que 5 \n2 é menor que 5 \n3 é menor que 5 \n4 é menor que 5 \n\n\n\nLançamento de um dado até que um determinado número seja obtido.\n\n\nnumero_escolhido &lt;- 6\nresultado_dado = 1 # iniciar com número diferente do número escolhido\ntentativas = 0\nwhile (resultado_dado!=numero_escolhido) {\n  resultado_dado = sample(1:6,1,replace = T,prob = NULL) # sorteando número de 1 a 6\n   tentativas = tentativas + 1\n   cat(\"Tentativa:\",tentativas,\"\\n\",\"Número do dado é\",resultado_dado,\"\\n\")\n  \n}\n\nTentativa: 1 \n Número do dado é 1 \nTentativa: 2 \n Número do dado é 5 \nTentativa: 3 \n Número do dado é 3 \nTentativa: 4 \n Número do dado é 3 \nTentativa: 5 \n Número do dado é 3 \nTentativa: 6 \n Número do dado é 1 \nTentativa: 7 \n Número do dado é 5 \nTentativa: 8 \n Número do dado é 2 \nTentativa: 9 \n Número do dado é 4 \nTentativa: 10 \n Número do dado é 2 \nTentativa: 11 \n Número do dado é 4 \nTentativa: 12 \n Número do dado é 2 \nTentativa: 13 \n Número do dado é 1 \nTentativa: 14 \n Número do dado é 1 \nTentativa: 15 \n Número do dado é 1 \nTentativa: 16 \n Número do dado é 4 \nTentativa: 17 \n Número do dado é 5 \nTentativa: 18 \n Número do dado é 4 \nTentativa: 19 \n Número do dado é 1 \nTentativa: 20 \n Número do dado é 3 \nTentativa: 21 \n Número do dado é 5 \nTentativa: 22 \n Número do dado é 4 \nTentativa: 23 \n Número do dado é 4 \nTentativa: 24 \n Número do dado é 5 \nTentativa: 25 \n Número do dado é 5 \nTentativa: 26 \n Número do dado é 2 \nTentativa: 27 \n Número do dado é 5 \nTentativa: 28 \n Número do dado é 5 \nTentativa: 29 \n Número do dado é 5 \nTentativa: 30 \n Número do dado é 1 \nTentativa: 31 \n Número do dado é 3 \nTentativa: 32 \n Número do dado é 4 \nTentativa: 33 \n Número do dado é 4 \nTentativa: 34 \n Número do dado é 4 \nTentativa: 35 \n Número do dado é 4 \nTentativa: 36 \n Número do dado é 6 \n\n\n\nObservação: a diferença principal entre um loop for e um loop while é: um loop for é usado quando o número de iterações que um código deve ser executado é conhecido, enquanto um loop while é usado quando o número de iterações não é conhecido.\n\n\n\n\n\nUm loop repeat é usado para iterar sobre um bloco de código várias vezes.\nNão há uma expressão de teste em um loop repeat para encerrar ou sair do loop.\nEm vez disso, devemos colocar uma declaração de condição explicitamente dentro do corpo do loop e usar a função break para sair do loop. Não fazer isso resultará em um loop infinito.\nA ideia é repetir um loop e parar quando a condição for satisfeita, para isso será utiliza a função break\n\n\ncontador = 1\nrepeat {\n  # código será executado repetidamente\n  if (condition) {\n    break  # se a condição for satisfeita, para a repetição\n  }\n  contador = contador+1\n}\n\n\nRode esse código no seu computador\nAvaliar como o tamanho da amostra afeta a média amostral\n\n\nN = 1000\npopulacao = runif(N, 0, 100) # gerar N números entre 0 e 100\nhead(populacao)\n(media.populacao = mean(populacao))\nn = 5 # tamanho da amostra inicial\nrepeat {\n  amostra = sample(populacao, n, replace = T) # sorteando n observações da população\n  media.amostra = mean(amostra)\n  if (abs(media.amostra - media.populacao) &lt; 0.01) {\n    n = 2 * n\n    cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n    break\n  }\n  n = 2 * n\n  cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n}\n\n\n\n\n\nÉ útil quando queremos pular a iteração atual de um loop sem terminá-lo.\nAo encontrar next, o analisador R pula a avaliação adicional e inicia a próxima iteração do loop.\n\n\nx &lt;- 1:5\nfor (i in x) {\nif (i == 3){\nnext\n}\nprint (i)\n}\n\n[1] 1\n[1] 2\n[1] 4\n[1] 5\n\n\n\n\n\n\nA função break é usada para sair imediatamente de um loop, independentemente da iteração em que o loop possa estar.\nAs funções break geralmente estão embutidas em uma declaração if, na qual uma condição é avaliada: se for VERDADEIRA, sai do loop; se for FALSA, continua com o loop.\nEm uma situação de looping aninhado, onde há um loop dentro de outro loop, essa declaração sai do loop mais interno que está sendo avaliado.\n\n\nx &lt;- 1:5\nfor (i in x) {\n  if (i == 3){\n  break\n  }\nprint (i)\n}\n\n[1] 1\n[1] 2",
+    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#erro-stop-condition",
+    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#erro-stop-condition",
+    "title": "Funções",
+    "section": "Erro (Stop Condition):",
+    "text": "Erro (Stop Condition):\n\nA função stop() é usada para sinalizar um erro. Quando um erro é sinalizado, a execução do código é interrompida e uma mensagem de erro é exibida.\n\n\ncalcular_media &lt;- function(x) {\n  if (length(x) == 0) {\n    stop(\"Erro: O vetor está vazio.\")\n  }\n  if (is.numeric(x) == F) {\n    stop(\"Erro: vetor deve ser do tipo numérico\")\n  }\n  return(mean(x))\n}\ncalcular_media(1:4)\n\n[1] 2.5\n\n\n\ncalcular_media &lt;- function(x) {\n  if (length(x) == 0) {\n    stop(\"Erro: O vetor está vazio.\")\n  }\n  if (is.numeric(x) == F) {\n    stop(\"Erro: vetor deve ser do tipo numérico\")\n  }\n  return(mean(x))\n}\ncalcular_media(c(1,2,3,\"l\"))\n# Error in calcular_media(c(1, 2, 3, \"l\")) : \n#  Erro: vetor deve ser do tipo numérico",
     "crumbs": [
       "Cursos",
       "Introdução ao R",
-      "Estruturas de Controles"
+      "Funções"
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Introducao_R.html",
-    "href": "Cursos/Introducao_R/Introducao_R.html",
-    "title": "Introducao_R oi",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#aviso-warning-condition",
+    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#aviso-warning-condition",
+    "title": "Funções",
+    "section": "Aviso (Warning Condition):",
+    "text": "Aviso (Warning Condition):\n\nA função warning() é usada para sinalizar um aviso. Um aviso não interrompe a execução do código, mas alerta o usuário sobre algo que pode ser problemático.\n\n\ncalcular_raiz_quadrada &lt;- function(x) {\n  if (any(x &lt; 0)) {\n    warning(\"Alguns valores são negativos. A raiz quadrada de números negativos será tratada como NaN.\")\n  }\n  return(sqrt(x))\n}\n\n# Exemplo de uso\nresultado &lt;- calcular_raiz_quadrada(c(4, -9, 16))\nprint(resultado)\n\n[1]   2 NaN   4",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Funções"
+    ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Introducao_R.html#quarto",
-    "href": "Cursos/Introducao_R/Introducao_R.html#quarto",
-    "title": "Introducao_R oi",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#mensagem-informativa-message-condition",
+    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#mensagem-informativa-message-condition",
+    "title": "Funções",
+    "section": "Mensagem Informativa (Message Condition):",
+    "text": "Mensagem Informativa (Message Condition):\n\nA função message() é usada para sinalizar mensagens informativas. Essas mensagens são úteis para fornecer informações adicionais durante a execução do código.\n\n\ncalcular_cubo &lt;- function(x) {\n  message(\"Calculando o cubo dos valores.\")\n  return(x^3)\n}\n\n# Exemplo de uso\nresultado &lt;- calcular_cubo(c(2, 3, 4))\nprint(resultado)\n\n[1]  8 27 64",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Funções"
+    ]
+  },
+  {
+    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#ignorando-as-condições",
+    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#ignorando-as-condições",
+    "title": "Funções",
+    "section": "Ignorando as condições",
+    "text": "Ignorando as condições\n\nAo lidar com condições em R, você pode usar as funções try(), suppressWarnings(), e suppressMessages() para controlar o tratamento de erros, avisos e mensagens.\n\n\ntry()\n\nA função try() é usada para avaliar expressões e manipular erros sem interromper a execução do código. Ela retorna um objeto que você pode verificar usando inherits() para determinar se ocorreu um erro.\n\n\nx = c()\nmean(x)\n\n[1] NA\n\nresultado &lt;- try(mean(), silent = TRUE)\nresultado\n\n[1] \"Error in mean.default() : argumento \\\"x\\\" ausente, sem padrão\\n\"\nattr(,\"class\")\n[1] \"try-error\"\nattr(,\"condition\")\n&lt;simpleError in mean.default(): argumento \"x\" ausente, sem padrão&gt;\n\nif (inherits(resultado, \"try-error\")) { # verifica se o objeto resultado é da classe \"try-error\n    cat(\"Erro: Ocorreu um problema ao calcular a média.\\n\")}\n\nErro: Ocorreu um problema ao calcular a média.\n\n\n\n\nsuppressWarnings() para Suprimir Avisos:\n\nA função suppressWarnings() é usada para executar uma expressão e suprimir os avisos que ela pode gerar.\n\n\nx = c()\nmean(x)\n\nWarning in mean.default(x): argumento não é numérico nem lógico: retornando NA\n\n\n[1] NA\n\nsuppressWarnings(mean(x))\n\n[1] NA\n\n\n\n\nsuppressMessages() para Suprimir Mensagens:\n\nA função suppressMessages() é usada para executar uma expressão e suprimir as mensagens informativas que ela pode gerar.\n\n\ncalcular_cubo &lt;- function(x) {\n  message(\"Calculando o cubo dos valores.\")\n  return(x^3)\n}\n\n# Exemplo de uso\nresultado &lt;- suppressMessages(calcular_cubo(c(2, 3, 4)))\nresultado\n\n[1]  8 27 64",
+    "crumbs": [
+      "Cursos",
+      "Introdução ao R",
+      "Funções"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#exemplo---compra-da-tv",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#exemplo---compra-da-tv",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplo - Compra da TV",
+    "text": "Exemplo - Compra da TV\n\nSuponha que você queira comprar uma televisão e quer saber qual é a loja que apresenta o melhor preço. O que você faz?\n\nDefine as características da televisão que você deseja;\nVocê inicia sua pesquisa nas lojas anotando os preços dos televisores;\nDepois você compara os preços de cada loja;\nApós comparar os preços, você seleciona aquela loja com melhor preço e se dirige até ela para efetuar a sua compra.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#exemplo---compra-da-tv-continuação",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#exemplo---compra-da-tv-continuação",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplo - Compra da TV (Continuação)",
+    "text": "Exemplo - Compra da TV (Continuação)\n\nNote que a Estatística estava presente quando você:\n\nDefiniu as características da televisão;\nColetou os dados;\nExtraiu as informações a partir da sua pesquisa;\nTomou decisão baseada nas informações extraídas.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#etimologia",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#etimologia",
+    "title": "Probabilidade e Estatística",
+    "section": "Etimologia",
+    "text": "Etimologia\n\nHistóricamente, a palavra “estatística” tem origem no latim “statisticus”, que significa “relativo ao Estado”;\nSeu uso estava associado à coleta e análise de dados demográficos e econômicos para governos, especialmente para fins de planejamento e tomada de decisões políticas;\nAo longo do tempo, o termo foi adotado em um contexto mais amplo, abrangendo a análise de dados em diversos campos, como ciências naturais, ciências sociais, negócios e muito mais.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#definição",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#definição",
+    "title": "Probabilidade e Estatística",
+    "section": "Definição",
+    "text": "Definição\n\nEstatística\n\nÉ a ciência que fornece os princípios e os métodos para coleta, organização, resumo, análise e interpretação de dados.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#aplicações-gerais",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#aplicações-gerais",
+    "title": "Probabilidade e Estatística",
+    "section": "Aplicações Gerais",
+    "text": "Aplicações Gerais\n\nEconomia: Modelagem econométrica para estudar relações entre variáveis econômicas, como oferta e demanda, inflação e desemprego;\nCiências Ambientais: Estudos para prever mudanças climáticas e seus efeitos;\nMedicina: Testes clínicos para avaliar a eficácia de novos tratamentos;\nBiologia: Estudos de epidemiologia para analisar a propagação de doenças em populações.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#aplicações-na-área-de-computação",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#aplicações-na-área-de-computação",
+    "title": "Probabilidade e Estatística",
+    "section": "Aplicações na Área de Computação",
+    "text": "Aplicações na Área de Computação\n\nAnálisar o Tempo e a ordem de falhas de componentes eletrônicos;\nA quantidade de memória alocada para a execução de determinado programa;\nQuantidade de defeitos em softwares recém lançados;\nQuantidade de arquivos e diretórios afetados por um vírus;\nClassificar se uma mensagem é um Spam.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#artigos",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#artigos",
+    "title": "Probabilidade e Estatística",
+    "section": "Artigos",
+    "text": "Artigos\n\nEm Sullivan and Chillarege (1991) é realizado uma comparação dos defeitos regulares com os defeitos que corrompem a memória do programa;\nEm Galinac Grbac and Huljenić (2015) foi analisada a distribuição de probabilidade das falhas detectadas durante a verificação em quatro versões consecutivas de um sistema de software complexo de grande escala para as centrais de telecomunicações;\nEm Khalid et al. (2023) foi utilizado modelos de Machine Learning para realizar predições de defeitos em software.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#população-e-amostra",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#população-e-amostra",
+    "title": "Probabilidade e Estatística",
+    "section": "População e Amostra",
+    "text": "População e Amostra\n\nPopulação e Amostra\n\nPopulação é o conjunto de elementos (pessoas, objetos) que possuem pelos menos uma característica em comum de interesse do pesquisador. Amostra é qualquer subconjunto da população.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#variável",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#variável",
+    "title": "Probabilidade e Estatística",
+    "section": "Variável",
+    "text": "Variável\n\nVariável\n\nÉ alguma característica que pode ser observada a partir da amostra.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#dados",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#dados",
+    "title": "Probabilidade e Estatística",
+    "section": "Dados",
+    "text": "Dados\n\nDados\n\nConjuntos de valores numéricos ou não.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#exemplos",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#exemplos",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplos",
+    "text": "Exemplos\n\nIdentifique a população, a amostra e a variável para cada um dos exemplos abaixo:\n\n\nConsideremos uma pesquisa para estudar os salários dos 500 funcionários de uma empresa. Seleciona-se 36 funcionários e anotam-se os seus salários.\nUm grupo de pesquisadores está interessado em estudar a preferência de linguagens de programação entre os desenvolvedores de software. Eles decidem realizar uma pesquisa online e coletam dados de uma amostra de 500 desenvolvedores.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#exemplos-continuação",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#exemplos-continuação",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplos (Continuação)",
+    "text": "Exemplos (Continuação)\n\nUma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#representações-das-variáveis",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#representações-das-variáveis",
+    "title": "Probabilidade e Estatística",
+    "section": "Representações das variáveis",
+    "text": "Representações das variáveis\n\nAs representações das variáveis podem ser feitas através de uma letra:\n\n\n\n\nVariável\nRepresentação\n\n\n\n\nEstado Civil\nX\n\n\nGrau de Instrução\nY\n\n\nNúmero de Filhos\nZ",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#quantitativas",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#quantitativas",
+    "title": "Probabilidade e Estatística",
+    "section": "Quantitativas",
+    "text": "Quantitativas\n\nEstão relacionadas às observações associadas a contagem ou mensurações. Elas podem ser:\n\nDiscretas: assumem somente valores inteiros em um conjunto de valores , é resultado de uma possível contagem. Exemplos: número de irmãos, número de estudantes em sala de aula;\nContínuas: assumem somente valores em um intervalo de valores. É o resultado de um processo de medição. Exemplos: temperatura, velocidade, peso, altura.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#qualitativas",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#qualitativas",
+    "title": "Probabilidade e Estatística",
+    "section": "Qualitativas",
+    "text": "Qualitativas\n\nRepresentam uma “qualidade” dos objetos da população. Também são chamadas de variáveis categóricas. Elas podem ser:\n\nNominal: possíveis respostas que não possuem uma ordenação natural. Exemplos: raça, sexo.\nOrdinal: possíveis respostas possuem uma ordenação natural. Exemplos: Classe social, escolaridade.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#observação",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#observação",
+    "title": "Probabilidade e Estatística",
+    "section": "Observação",
+    "text": "Observação\n\nObservação: algumas variáveis podem ser classificadas em mais de um tipo dependendo da unidade usada. Por exemplo, a renda medida em salários mínimos pode ser classificada como uma variável discreta, mas pode também ser ordinal se categorizada como baixa, média e alta.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#exemplos-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#exemplos-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplos",
+    "text": "Exemplos\n\nIdentifique e classifique as variáveis\n\n\nUma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia\nQuantidade de defeitos em softwares recém lançados;\nClassificar se uma mensagem é um Spam.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#amostragem",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#amostragem",
+    "title": "Probabilidade e Estatística",
+    "section": "Amostragem",
+    "text": "Amostragem\n\nTécnicas para colher amostras representativas da população;",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#estatísticas-descritivas",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#estatísticas-descritivas",
+    "title": "Probabilidade e Estatística",
+    "section": "Estatísticas Descritivas",
+    "text": "Estatísticas Descritivas\n\nEm geral, é utilizada na etapa inicial da análise, em um primeiro contato com os dados. Apresenta os dados em tabelas ou gráficos além de organizar e resumir resultados preliminares.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#probabilidade",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#probabilidade",
+    "title": "Probabilidade e Estatística",
+    "section": "Probabilidade",
+    "text": "Probabilidade\n\nÉ a teoria matemática utilizada para estudar a incerteza oriunda de fenômenos aleatório",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#inferência-estatística",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#inferência-estatística",
+    "title": "Probabilidade e Estatística",
+    "section": "Inferência estatística",
+    "text": "Inferência estatística\n\nTécnicas que tentam identificar um modelo de probabilidade para a exploração de informações e conclusões obtidas a partir de uma amostra. Pode ser dividida em teste de hipótese e estimação dos parâmetros.\nObservação: Note que a inferência ocorre quando as informações são obtidas a partir de uma amostra. Não se faz inferência nos casos em que toda a população é investigada. Esse tipo de estudo, onde toda a população é considerada, é denominado censo.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#causa-e-efeito-x-associação",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#causa-e-efeito-x-associação",
+    "title": "Probabilidade e Estatística",
+    "section": "Causa e Efeito X Associação",
+    "text": "Causa e Efeito X Associação\n\nAntes de definir estudos experimentais e observacionais, irei comentar sobre a diferença entre Causa e Efeito e Associção. Suponha o seguinte exemplo:\n\n\nSuponha que uma equipe de pesquisadores queira investigar se a utilização de um determinado algoritmo de compressão de dados melhora o desempenho de um sistema de armazenamento em nuvem.\nEles realizam um experimento onde um grupo de servidores utiliza o algoritmo de compressão, enquanto outro grupo utiliza o armazenamento sem compressão.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#causa-e-efeito-x-associação-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#causa-e-efeito-x-associação-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Causa e Efeito X Associação",
+    "text": "Causa e Efeito X Associação\n\nEm seguida, eles medem métricas de desempenho, como taxa de transferência de dados e tempo de resposta do servidor, ao longo de um período de tempo.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#causa-e-efeito-x-associação-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#causa-e-efeito-x-associação-2",
+    "title": "Probabilidade e Estatística",
+    "section": "Causa e Efeito X Associação",
+    "text": "Causa e Efeito X Associação\n\nSuponha o seguinte exemplo:\n\nSuponha que uma equipe de pesquisadores esteja interessada em estudar a associação entre o uso de um determinado sistema operacional e a segurança dos dispositivos móveis.\nEles coletam dados de uma amostra de usuários de dispositivos móveis, registrando qual sistema operacional eles utilizam e quantos incidentes de segurança relataram ao longo de um período de tempo.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#causa-e-efeito-x-associação-3",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#causa-e-efeito-x-associação-3",
+    "title": "Probabilidade e Estatística",
+    "section": "Causa e Efeito X Associação",
+    "text": "Causa e Efeito X Associação\n\nOs usuários de um sistema operacional específico relatam mais incidentes de segurança em comparação com os usuários de outros sistemas operacionais\n\n\nNo entanto, eles não podem concluir que o uso desse sistema operacional causa diretamente mais incidentes de segurança, pois outros fatores podem influenciar essa relação.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#experimental-x-observacional",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#experimental-x-observacional",
+    "title": "Probabilidade e Estatística",
+    "section": "Experimental X Observacional",
+    "text": "Experimental X Observacional\n\nSuponha as seguintes situações:\n\n\nUm grupo de pesquisadores está interessado em estudar a preferência de linguagens de programação entre os desenvolvedores de software. Eles decidem realizar uma pesquisa online e coletam dados de uma amostra de 500 desenvolvedores",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#experimental-x-observacional-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#experimental-x-observacional-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Experimental X Observacional",
+    "text": "Experimental X Observacional\n\nUma equipe de pesquisa está investigando o impacto de diferentes configurações de hardware na Temperatura e consumo de energia em computadores pessoais durante a execução de determinado jogo. Para isso, selecionaram 50 computadores pessoais e analisaram durante 30 minutos o impacto do jogo na Temperatura e consumo de energia.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#experimental-x-observacional-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#experimental-x-observacional-2",
+    "title": "Probabilidade e Estatística",
+    "section": "Experimental X Observacional",
+    "text": "Experimental X Observacional\n\nExperimental\n\n\nEm um experimento, aplicamos determinado tratamento e passamos então a observar seus efeitos sobre os elementos.\nUm estudo experimental envolve a manipulação de uma ou mais variáveis para observar o efeito que essa manipulação tem em outra variável.\nEsse tipo de estudo é mais capaz de estabelecer causalidade, pois os pesquisadores podem controlar as condições experimentais.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#observacional",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html#observacional",
+    "title": "Probabilidade e Estatística",
+    "section": "Observacional",
+    "text": "Observacional\n\nObervacional\n\n\nVerificamos e medimos características específicas, mas não tentamos manipular ou modificar os elementos que estão sendo estudados.\nUm estudo observacional observa e registra informações sobre um grupo, mas não tenta modificar as variáveis do ambiente\nEste tipo de estudo é útil para identificar associações entre variáveis, mas não pode estabelecer causalidade definitiva.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Conceitos Iniciais"
+    ]
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#conceitos-básicos",
@@ -1842,14 +2131,14 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#apresentação-da-base-de-dados",
     "title": "Probabilidade e Estatística",
     "section": "Apresentação da base de dados",
-    "text": "Apresentação da base de dados\n\nBase simulada usando o programa R\nEmails de 100 remetentes\n\n\nprint(head(dados_email))\n\n                    remetente              assunto tamanho_kb prioridade  spam\n1     Maria-Silva@example.com  Convite para Evento        102       Alta  TRUE\n2  Pedro-Oliveira@example.com      Oferta Especial        497       Alta FALSE\n3 Rafael-Ferreira@example.com      Oferta Especial        472      Média FALSE\n4     Pedro-Souza@example.com      Oferta Especial        144       Alta FALSE\n5       Ana-Silva@example.com      Oferta Especial        174      Média  TRUE\n6      José-Souza@example.com Atualização de Conta         57       Alta FALSE\n  qtd_caracteres formato\n1            277   Texto\n2            235    HTML\n3            293    HTML\n4            127   Texto\n5            240    HTML\n6            119   Texto"
+    "text": "Apresentação da base de dados\n\nBase simulada usando o programa R\nEmails de 100 remetentes\n\n\nprint(head(dados_email))\n\n                    remetente               assunto tamanho_kb prioridade  spam\n1     Ana-Almeida@example.com Confirmação de Pedido         90      Média  TRUE\n2 Tatiane-Martins@example.com Confirmação de Pedido        311      Baixa FALSE\n3      José-Silva@example.com Confirmação de Pedido        481      Média  TRUE\n4   Lucas-Pereira@example.com   Convite para Evento        364       Alta FALSE\n5      Ana-Santos@example.com          Prêmio Ganho        363       Alta  TRUE\n6  Fernanda-Souza@example.com   Convite para Evento        139       Alta FALSE\n  qtd_caracteres formato\n1            296    HTML\n2            183    HTML\n3            148   Texto\n4            225   Texto\n5            255   Texto\n6            256    HTML"
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#identificações-das-variáveis",
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#identificações-das-variáveis",
     "title": "Probabilidade e Estatística",
     "section": "Identificações das variáveis",
-    "text": "Identificações das variáveis\n\nstr(dados_email)\n\n'data.frame':   100 obs. of  7 variables:\n $ remetente     : chr  \"Maria-Silva@example.com\" \"Pedro-Oliveira@example.com\" \"Rafael-Ferreira@example.com\" \"Pedro-Souza@example.com\" ...\n $ assunto       : chr  \"Convite para Evento\" \"Oferta Especial\" \"Oferta Especial\" \"Oferta Especial\" ...\n $ tamanho_kb    : num  102 497 472 144 174 57 156 182 209 256 ...\n $ prioridade    : chr  \"Alta\" \"Alta\" \"Média\" \"Alta\" ...\n $ spam          : logi  TRUE FALSE FALSE FALSE TRUE FALSE ...\n $ qtd_caracteres: num  277 235 293 127 240 119 230 77 296 223 ...\n $ formato       : chr  \"Texto\" \"HTML\" \"HTML\" \"Texto\" ..."
+    "text": "Identificações das variáveis\n\nstr(dados_email)\n\n'data.frame':   100 obs. of  7 variables:\n $ remetente     : chr  \"Ana-Almeida@example.com\" \"Tatiane-Martins@example.com\" \"José-Silva@example.com\" \"Lucas-Pereira@example.com\" ...\n $ assunto       : chr  \"Confirmação de Pedido\" \"Confirmação de Pedido\" \"Confirmação de Pedido\" \"Convite para Evento\" ...\n $ tamanho_kb    : num  90 311 481 364 363 139 218 246 246 111 ...\n $ prioridade    : chr  \"Média\" \"Baixa\" \"Média\" \"Alta\" ...\n $ spam          : logi  TRUE FALSE TRUE FALSE TRUE FALSE ...\n $ qtd_caracteres: num  296 183 148 225 255 256 263 290 103 127 ...\n $ formato       : chr  \"HTML\" \"HTML\" \"Texto\" \"Texto\" ..."
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#histogramas",
@@ -1870,7 +2159,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#gráficos-de-barras",
     "title": "Probabilidade e Estatística",
     "section": "Gráficos de Barras",
-    "text": "Gráficos de Barras\n\nTabelas: Frequências Absolutas e Relativas\n\n\ndados_email$prioridade &lt;- factor(dados_email$prioridade,levels = c(\"Baixa\",\"Média\",\"Alta\"))\n(tabela = table(dados_email$prioridade) ) \n\n\nBaixa Média  Alta \n   18    40    42 \n\n(tabela.prop = prop.table(tabela)) \n\n\nBaixa Média  Alta \n 0.18  0.40  0.42"
+    "text": "Gráficos de Barras\n\nTabelas: Frequências Absolutas e Relativas\n\n\ndados_email$prioridade &lt;- factor(dados_email$prioridade,levels = c(\"Baixa\",\"Média\",\"Alta\"))\n(tabela = table(dados_email$prioridade) ) \n\n\nBaixa Média  Alta \n   24    36    40 \n\n(tabela.prop = prop.table(tabela)) \n\n\nBaixa Média  Alta \n 0.24  0.36  0.40"
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#gráficos-de-barras-1",
@@ -1979,7 +2268,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -1991,7 +2280,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2003,7 +2292,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2015,7 +2304,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2027,7 +2316,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2039,7 +2328,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2051,7 +2340,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2063,7 +2352,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2075,7 +2364,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2087,7 +2376,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2099,7 +2388,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2111,7 +2400,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2123,7 +2412,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2135,7 +2424,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2147,7 +2436,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2159,7 +2448,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2171,7 +2460,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2183,7 +2472,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2195,7 +2484,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2207,7 +2496,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2219,7 +2508,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2231,7 +2520,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2243,7 +2532,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2255,7 +2544,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2267,7 +2556,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2279,7 +2568,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2291,7 +2580,7 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
@@ -2303,7 +2592,115 @@
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
-      "Medidas de Posição"
+      "Medidas de Posição e Separatrizes"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#exemplos",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#exemplos",
+    "title": "Probabilidade e Estatística",
+    "section": "Exemplos",
+    "text": "Exemplos\n\nDeterminar os 10% mais ricos ou os 25% mais pobres\nIdentificar os 20% de clientes que geram mais receita\n10% das requisições estão enfrentando atrasos significativos\n75% dos usuários do aplicativo gastam até 3 minutos nas sessões",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Posição e Separatrizes"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#quartis",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#quartis",
+    "title": "Probabilidade e Estatística",
+    "section": "Quartis",
+    "text": "Quartis\n\nOs quartis são três valores que dividem os dados em quatro partes iguais:\n\n\nPrimeiro quartil \\(Q_1\\): é o valor abaixo do qual 25% dos dados estão situados.\nSegundo quartil \\(Q_2\\): é a mediana, divide os dados ao meio, com 50% dos dados abaixo dele.\nTerceiro quartil \\(Q_3\\): é o valor abaixo do qual 75% dos dados estão situados.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Posição e Separatrizes"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#quartis-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#quartis-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Quartis",
+    "text": "Quartis\nPara calcular os quartis, siga estes passos:\n\nOrdene os dados em ordem crescente.\nEncontre a mediana (\\(Q_2\\)), divide os dados em duas metades.\n\\(Q_1\\) é o número que está na metade inferior dos dados (do menor valor até \\(Q_2\\)).\n\\(Q_3\\) é o número que está da metade superior dos dados (de \\(Q_2\\) até o maior valor).",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Posição e Separatrizes"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#quartis---exemplos",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#quartis---exemplos",
+    "title": "Probabilidade e Estatística",
+    "section": "Quartis - Exemplos",
+    "text": "Quartis - Exemplos\n\nConsidere os tempos, em segundos, de cinco tarefas realizadas por uma CPU: \\[30; 25;20;28;33;31;32. \\]",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Posição e Separatrizes"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#quartis---exemplos-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#quartis---exemplos-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Quartis - Exemplos",
+    "text": "Quartis - Exemplos\n\nNo REscrito\n\n\n\nz = c(30,25,20,28,33,31,32)\nsummary(z)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  20.00   26.50   30.00   28.43   31.50   33.00 \n\n\n\n\n\nDados ordenados: 20, 25, 28, 30, 31, 32, 33\n\\(Q_1 = \\frac{25+28}{2} = 26.5\\). Portanto, 25% das tarefas foram realizadas em até 26.5 segundos\n\\(Q_2 = 30\\). Portanto, 50% das tarefas foram realizadas em até 30 segundos\n\\(Q_3 = \\frac{31+32}{2} = 31.5\\). Portanto, 75% das tarefas foram realizadas em até 31.5 segundos",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Posição e Separatrizes"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#percentis",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#percentis",
+    "title": "Probabilidade e Estatística",
+    "section": "Percentis",
+    "text": "Percentis\n\nDe forma geral, pode-se determinar o \\(p\\)-ésimo percentil.\n\n\nPercentil\n\nO p-ésimo percentil é o valor que pelo menos \\(p\\) por cento das observações são menores ou iguais a esse valor e pelo menos (100 − p) por cento das observações são maiores ou iguais a esse valor.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Posição e Separatrizes"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#percentis-1",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#percentis-1",
+    "title": "Probabilidade e Estatística",
+    "section": "Percentis",
+    "text": "Percentis\nO procedimento a seguir pode ser usado para calcular o \\(p\\)-ésimo percentil.\n\nEtapa 1: Organize os dados em ordem crescente.\nEtapa 2: Calcule um índice \\(i\\) \\[\ni = \\left(\\frac{p}{100}\\right)n\n\\] onde \\(p\\) é o percentil procurado e \\(n\\) é o número de observações.",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Posição e Separatrizes"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#percentis-2",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#percentis-2",
+    "title": "Probabilidade e Estatística",
+    "section": "Percentis",
+    "text": "Percentis\n\nEtapa 3:\n\nSe \\(i\\) não for um número inteiro, arredonde-o para cima. O próximo número inteiro maior do que \\(i\\) denota a posição do \\(p\\)-ésimo percentil.\nSe \\(i\\) for um número inteiro, o \\(p\\)-ésimo percentil será a média dos valores que ocupam as posições \\(i\\) e \\(i+1\\).",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Posição e Separatrizes"
+    ]
+  },
+  {
+    "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#percentis---exemplos",
+    "href": "Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.html#percentis---exemplos",
+    "title": "Probabilidade e Estatística",
+    "section": "Percentis - Exemplos",
+    "text": "Percentis - Exemplos\n\nz = c(30,25,20,28,33,31,32)\nper = c(.10,.20,.25,.50,.75,.90)\nquantile(z,per)\n\n 10%  20%  25%  50%  75%  90% \n23.0 25.6 26.5 30.0 31.5 32.4 \n\n\n\n20% das tarefas foram realizadas em até 25.6 segundos\n90% das tarefas foram realizadas em até 32.4 segundos\nObservação: às vezes são utilizadas outras convenções para calcular os percentis, e os valores reais atribuídos aos percentis podem variar ligeiramente. Para mais informações, digite: ?quantile",
+    "crumbs": [
+      "Cursos",
+      "Probabilidade e Estatística",
+      "Medidas de Posição e Separatrizes"
     ]
   },
   {
