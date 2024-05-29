@@ -25,6 +25,12 @@ website:
                 text: Estruturas de dados
               - href: Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.qmd 
                 text: Estruturas de Controles
+              - href: Cursos/Introducao_R/Cadernos/4-Funcoes.qmd 
+                text: Funções
+              - href: Cursos/Introducao_R/Cadernos/5-Funcoes_Prob.qmd 
+                text: Funções de Probabilidades
+                
+               
           -  section: "Probabilidade e Estatística"
              contents:
               - href: Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.qmd
@@ -34,7 +40,9 @@ website:
               - href: Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.qmd  
                 text: "Tabelas e Gráficos"
               - href: Cursos/Probabilidade_Estatistica/Cadernos/4-Medidas_Posicao.qmd 
-                text: "Medidas de Posição"
+                text: "Medidas de Posição e Separatrizes"
+              - href: Cursos/Probabilidade_Estatistica/Cadernos/5-Medidas_de_Dispersao.qmd 
+                text: "Medidas de Dispersão"
           
             
 
