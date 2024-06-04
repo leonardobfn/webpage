@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html" rel="next">
+<link href="../../../Cursos/Introducao_R/Cadernos/6-Ambientes.html" rel="next">
 <link href="../../../Cursos/Introducao_R/Cadernos/4-Funcoes.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
@@ -232,6 +232,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../../../Cursos/Introducao_R/Cadernos/5-Funcoes_Prob.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Funções de Probabilidades</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../Cursos/Introducao_R/Cadernos/6-Ambientes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Environment</span></a>
   </div>
 </li>
       </ul>
@@ -407,13 +413,13 @@ P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">1</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>(<span class="at">x =</span> <span class="fu">rbinom</span>(N,n,<span class="at">prob =</span> <span class="fl">0.5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 1 1 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 0</code></pre>
+<pre><code> [1] 0 1 0 0 0 1 0 1 0 0 0 0 1 1 1 1 1 0 1 1</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(<span class="fu">table</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>x
  0  1 
-14  6 </code></pre>
+10 10 </code></pre>
 </div>
 </div>
 </section>
@@ -454,8 +460,8 @@ P(X = x) = \frac{e^{-\lambda} \lambda^x}{x!}
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>x
-1 2 3 4 
-3 4 2 1 </code></pre>
+1 2 3 6 
+2 5 2 1 </code></pre>
 </div>
 </div>
 </section>
@@ -566,14 +572,175 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2} \left(\frac{x - \mu}{\sigma}
 </section>
 <section id="atividade" class="level1">
 <h1>Atividade</h1>
-<ul>
-<li><p>Pesquisar sobre as distribuições: exponencial e uniforme</p>
+<ol type="1">
+<li><p>Pesquisar sobre as distribuições: exponencial e uniforme:</p>
 <ul>
 <li><p>Elabore exemplos de uso dessas distribuições usando as funções em R apresentadas no exemplo da Normal</p></li>
 <li><p>Calcule propbabilidades</p></li>
 <li><p>Gere dessas distribuições para diferentes parâmetros</p></li>
 </ul></li>
-</ul>
+<li><p>A tabela abaixo mostra uma simulação de controle de estoque para 15 dias. Reproduza a tabela. Considere:</p>
+<ol type="1">
+<li><p>Estoque inicial de 200</p></li>
+<li><p>Demanda <span class="math inline">\sim</span> Poisson<span class="math inline">(50)</span></p></li>
+<li><p>Se Prob = P(Demanda&gt;Estoque Final)&gt;0.10, então o estoque do dia seguinte é Prob <span class="math inline">\times</span> Estoque inicial(200) + Estoque Final do dia anterior</p></li>
+<li><p>Se Prob = P(Demanda&gt;Estoque Final)&gt;0.10 e Prob <span class="math inline">\times</span> Estoque inicial(200) + Estoque Final do dia anterior for maior que 200, então o estoque do dia seguinte é 200.</p></li>
+</ol></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 28%">
+<col style="width: 18%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Dia</th>
+<th style="text-align: right;">Estoque</th>
+<th style="text-align: right;">Demanda</th>
+<th style="text-align: right;">Demanda não atendida</th>
+<th style="text-align: right;">Estoque Final</th>
+<th style="text-align: right;">P(Demanda&gt;Estoque)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">143</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">143</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">0.6303318</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">173</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">0.0000206</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">0.9990832</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">0.6303318</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">173</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">0.1448594</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0.9139300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">141</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">141</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">0.6833224</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">183</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
 <section id="referências" class="level1">
 <h1>Referências</h1>
@@ -998,8 +1165,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html" class="pagination-link" aria-label="Conceitos Iniciais">
-        <span class="nav-page-text">Conceitos Iniciais</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../Cursos/Introducao_R/Cadernos/6-Ambientes.html" class="pagination-link" aria-label="Environment">
+        <span class="nav-page-text">Environment</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
