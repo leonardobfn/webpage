@@ -352,11 +352,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>rf <span class="ot">&lt;-</span> <span class="cf">function</span>(f,...) <span class="fu">f</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>,...))</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rf</span>(mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -0.1867754</code></pre>
+<pre><code>[1] 0.04039659</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rf</span>(sum)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 19.64564</code></pre>
+<pre><code>[1] 7.595019</code></pre>
 </div>
 </div>
 <ul>
@@ -525,7 +525,7 @@ TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE </code></pre>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="fu">map_dbl</span>(trims, <span class="sc">~</span> <span class="fu">mean</span>(x, <span class="at">trim =</span> .))<span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -0.39159364  0.02379165  0.06359198  0.04561605</code></pre>
+<pre><code>[1] -0.480029731  0.055024950  0.037281260  0.006624742</code></pre>
 </div>
 </div>
 <ul>
@@ -535,13 +535,13 @@ TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE </code></pre>
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">map</span>(<span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">50</span>), <span class="sc">~</span> <span class="fu">rnorm</span>(<span class="dv">2</span>,<span class="at">mean=</span>.))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[[1]]
-[1]  1.4458991 -0.7520861
+[1]  0.7038779 -0.6414499
 
 [[2]]
-[1] 12.31814 10.62504
+[1]  8.890039 11.570038
 
 [[3]]
-[1] 51.25877 50.67510</code></pre>
+[1] 50.41475 49.43275</code></pre>
 </div>
 </div>
 </section>
@@ -603,16 +603,16 @@ NULL</code></pre>
 <span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a><span class="fu">pmap</span>(parametros,rnorm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[[1]]
-[1] 2.082661
+[1] -0.2354338
 
 [[2]]
-[1] 38.56801 37.99267
+[1] 42.20973 37.45780
 
 [[3]]
-[1]  96.87916  98.73771 102.36202
+[1]  76.60983 103.12085  98.98302
 
 [[4]]
-[1] 199.9049 199.9302 198.7930 200.9689</code></pre>
+[1] 199.1121 200.5957 198.7863 200.1690</code></pre>
 </div>
 </div>
 <p><img src="Figuras/pmap2.png" class="img-fluid"></p>

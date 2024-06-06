@@ -104,49 +104,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
@@ -385,11 +342,11 @@ window.Quarto = {
 <section id="distribuição-binomial" class="level1">
 <h1>Distribuição Binomial</h1>
 <ul>
-<li>A distribuição binomial é usada para modelar o número de sucessos (<span class="math inline">x</span>) em um número fixo de tentativas (<span class="math inline">n</span>) independentes, onde cada tentativa tem a mesma probabilidade (<span class="math inline">p</span>) de sucesso.</li>
+<li>A distribuição binomial é usada para modelar o número de sucessos (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>) em um número fixo de tentativas (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>) independentes, onde cada tentativa tem a mesma probabilidade (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>) de sucesso.</li>
 </ul>
-<p><span class="math display">
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>=</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mi>n</mi><mi>x</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>p</mi><mi>x</mi></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">
 P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}
-</span></p>
+</annotation></semantics></math></p>
 <ul>
 <li>Suponha que estamos lançando uma moeda justa 10 vezes e queremos calcular a probabilidade de obter exatamente 4 caras.</li>
 </ul>
@@ -419,24 +376,24 @@ P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">1</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>(<span class="at">x =</span> <span class="fu">rbinom</span>(N,n,<span class="at">prob =</span> <span class="fl">0.5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 1 1 1 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1 1 1</code></pre>
+<pre><code> [1] 1 0 0 0 0 0 0 1 0 0 1 0 0 0 1 1 1 0 0 0</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(<span class="fu">table</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>x
  0  1 
-11  9 </code></pre>
+14  6 </code></pre>
 </div>
 </div>
 </section>
 <section id="distribuição-de-poisson" class="level1">
 <h1><strong>Distribuição de Poisson</strong></h1>
 <ul>
-<li>A distribuição de Poisson modela a probabilidade de um número de eventos (<span class="math inline">x</span>) ocorrer em um intervalo fixo de tempo ou espaço, dado um número médio (<span class="math inline">\lambda</span>) de eventos que ocorrem nesse intervalo.</li>
+<li>A distribuição de Poisson modela a probabilidade de um número de eventos (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>) ocorrer em um intervalo fixo de tempo ou espaço, dado um número médio (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>) de eventos que ocorrem nesse intervalo.</li>
 </ul>
-<p><span class="math display">
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>=</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><msup><mi>λ</mi><mi>x</mi></msup></mrow><mrow><mi>x</mi><mi>!</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 P(X = x) = \frac{e^{-\lambda} \lambda^x}{x!}
-</span></p>
+</annotation></semantics></math></p>
 <ul>
 <li>Suponha que em média 2 clientes entram em uma loja por minuto. Queremos calcular a probabilidade de exatamente 3 clientes entrarem na loja em um minuto específico.</li>
 </ul>
@@ -466,8 +423,8 @@ P(X = x) = \frac{e^{-\lambda} \lambda^x}{x!}
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>x
-0 1 2 4 5 7 
-2 3 1 1 2 1 </code></pre>
+0 1 2 3 4 
+1 3 3 2 1 </code></pre>
 </div>
 </div>
 </section>
@@ -476,13 +433,13 @@ P(X = x) = \frac{e^{-\lambda} \lambda^x}{x!}
 <ul>
 <li>A distribuição normal (gaussiana) é usada para modelar uma grande variedade de fenômenos com variáveis contínuas. É caracterizada por sua forma de sino e é completamente determinada por sua média e desvio padrão.</li>
 </ul>
-<p><span class="math display">
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>σ</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow></mfrac><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></msup></mrow><annotation encoding="application/x-tex">
 f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2} \left(\frac{x - \mu}{\sigma}\right)^2}
-</span></p>
+</annotation></semantics></math></p>
 <ul>
-<li><p><span class="math inline">x</span> é a variável aleatória,</p></li>
-<li><p><span class="math inline">\mu</span> é a média da distribuição,</p></li>
-<li><p><span class="math inline">\sigma</span> é o desvio padrão da distribuição.</p></li>
+<li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é a variável aleatória,</p></li>
+<li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> é a média da distribuição,</p></li>
+<li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math> é o desvio padrão da distribuição.</p></li>
 <li><p>Suponha que estamos analisando os resultados de um teste padronizado em que a pontuação média é 100 e o desvio padrão é 15. Queremos calcular a probabilidade de um aluno ter uma pontuação abaixo de 110.</p></li>
 </ul>
 <div class="cell">
@@ -550,7 +507,7 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2} \left(\frac{x - \mu}{\sigma}
 </div>
 </div>
 <ul>
-<li><span class="math inline">f(x)</span></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Parâmetros da distribuição normal</span></span>
@@ -585,168 +542,22 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2} \left(\frac{x - \mu}{\sigma}
 <li><p>Calcule propbabilidades</p></li>
 <li><p>Gere dessas distribuições para diferentes parâmetros</p></li>
 </ul></li>
-<li><p>A tabela abaixo mostra uma simulação de controle de estoque para 15 dias. Reproduza a tabela. Considere:</p>
+<li><p>A tabela abaixo mostra uma simulação de controle de estoque para 15 dias. Construa uma função para simular o controle de estoque. Considere:</p>
 <ol type="1">
-<li><p>Estoque inicial de 200</p></li>
-<li><p>Demanda <span class="math inline">\sim</span> Poisson<span class="math inline">(50)</span></p></li>
-<li><p>Se Prob = P(Demanda&gt;Estoque Final)&gt;0.10, então o estoque do dia seguinte é Prob <span class="math inline">\times</span> Estoque inicial(200) + Estoque Final do dia anterior</p></li>
-<li><p>Se Prob = P(Demanda&gt;Estoque Final)&gt;0.10 e Prob <span class="math inline">\times</span> Estoque inicial(200) + Estoque Final do dia anterior for maior que 200, então o estoque do dia seguinte é 200.</p></li>
+<li><p>Estoque máximo: 200</p></li>
+<li><p>Estoque no dia 1 é o estoque máximo</p></li>
+<li><p>Demanda <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∼</mo><annotation encoding="application/x-tex">\sim</annotation></semantics></math> Poisson<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mn>50</mn><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(50)</annotation></semantics></math></p></li>
+<li><p>Sejam <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">Prob</mtext><mo>=</mo></mrow><annotation encoding="application/x-tex">\mbox{Prob}=</annotation></semantics></math> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mtext mathvariant="normal">Demanda</mtext><mo>≥</mo><mtext mathvariant="normal">Estoque Final</mtext><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(\mbox{Demanda} \geq \mbox{Estoque Final})</annotation></semantics></math> e <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">EDS</mtext><mo>=</mo><mtext mathvariant="normal">Prob</mtext><mo>×</mo><mtext mathvariant="normal">estoque máximo</mtext><mo>+</mo><mtext mathvariant="normal">estoque final dia anterior</mtext></mrow><annotation encoding="application/x-tex">\mbox{EDS} = \mbox{Prob} \times \mbox{estoque máximo} + \mbox{estoque final dia anterior}</annotation></semantics></math> o estoque do dia seguinte.</p></li>
+<li><p>O estoque do dia seguinte será preenchido considerando:</p>
+<ol type="1">
+<li>Se <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">Prob</mtext><mo>&gt;</mo><mn>0.10</mn></mrow><annotation encoding="application/x-tex">\mbox{Prob}&gt;0.10</annotation></semantics></math> então o estoque do dia seguinte será o mínimo entre estoque máximo e<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">EDS</mtext><annotation encoding="application/x-tex">\mbox{EDS}</annotation></semantics></math>, caso contrário o estoque do dia seguinte é o estoque final do dia anterior.</li>
+</ol></li>
 </ol></li>
 </ol>
-<div class="cell">
-<div class="cell-output-display">
-<table class="table table-sm table-striped small">
-<colgroup>
-<col style="width: 5%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 28%">
-<col style="width: 18%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Dia</th>
-<th style="text-align: right;">Estoque</th>
-<th style="text-align: right;">Demanda</th>
-<th style="text-align: right;">Demanda não atendida</th>
-<th style="text-align: right;">Estoque Final</th>
-<th style="text-align: right;">P(Demanda&gt;Estoque)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">200</td>
-<td style="text-align: right;">48</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">152</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">152</td>
-<td style="text-align: right;">43</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">109</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">109</td>
-<td style="text-align: right;">52</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">57</td>
-<td style="text-align: right;">0.1448594</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">86</td>
-<td style="text-align: right;">52</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">34</td>
-<td style="text-align: right;">0.9892185</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">200</td>
-<td style="text-align: right;">46</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">154</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">154</td>
-<td style="text-align: right;">61</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">93</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">93</td>
-<td style="text-align: right;">59</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">34</td>
-<td style="text-align: right;">0.9892185</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">200</td>
-<td style="text-align: right;">42</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">158</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">158</td>
-<td style="text-align: right;">58</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">100</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">100</td>
-<td style="text-align: right;">45</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">55</td>
-<td style="text-align: right;">0.2155296</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">98</td>
-<td style="text-align: right;">48</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: right;">0.4624833</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">142</td>
-<td style="text-align: right;">66</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">76</td>
-<td style="text-align: right;">0.0002366</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">76</td>
-<td style="text-align: right;">51</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">0.9999284</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">200</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">150</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">150</td>
-<td style="text-align: right;">55</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">95</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">95</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<ul>
+<li>Dica: no dia 1, fixe o estoque máximo e simule a demanda usando <code>rpois(n=1,lambda=50)</code>. Depois calcule a probabilidade de a demanda ser maior que o estoque final do dia 1 usando <code>1-ppois(Estoque final,50)</code>. Utilize a regra 5 para fazer os incrementos dos estoques diários</li>
+</ul>
+<p><img src="Figuras/tab-estoque.png" class="img-fluid"></p>
 </section>
 <section id="referências" class="level1">
 <h1>Referências</h1>

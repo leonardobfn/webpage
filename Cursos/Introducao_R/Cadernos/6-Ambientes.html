@@ -366,7 +366,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>rlang<span class="sc">::</span><span class="fu">env_print</span>(novo_ambiente)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;environment: 0x000002c1235aac50&gt;
+<pre><code>&lt;environment: 0x0000013bedf20390&gt;
 Parent: &lt;environment: global&gt;
 Bindings:
 • nome: &lt;chr&gt;
@@ -389,7 +389,7 @@ Bindings:
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>novo_ambiente<span class="sc">$</span>idade <span class="ot">=</span> <span class="dv">30</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>rlang<span class="sc">::</span><span class="fu">env_print</span>(novo_ambiente)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;environment: 0x000002c1235aac50&gt;
+<pre><code>&lt;environment: 0x0000013bedf20390&gt;
 Parent: &lt;environment: global&gt;
 Bindings:
 • nome: &lt;chr&gt;
@@ -472,18 +472,18 @@ Bindings:
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>novo_ambiente_2 <span class="ot">=</span> rlang<span class="sc">::</span><span class="fu">env</span>(novo_ambiente) </span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">parent.env</span>(novo_ambiente_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;environment: 0x000002c1235aac50&gt;</code></pre>
+<pre><code>&lt;environment: 0x0000013bedf20390&gt;</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>rlang<span class="sc">::</span><span class="fu">env_print</span>(novo_ambiente_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;environment: 0x000002c123b7a060&gt;
-Parent: &lt;environment: 0x000002c1235aac50&gt;</code></pre>
+<pre><code>&lt;environment: 0x0000013bec30a308&gt;
+Parent: &lt;environment: 0x0000013bedf20390&gt;</code></pre>
 </div>
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>rlang<span class="sc">::</span><span class="fu">env_parents</span>(novo_ambiente_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[[1]]   &lt;env: 0x000002c1235aac50&gt;
+<pre><code>[[1]]   &lt;env: 0x0000013bedf20390&gt;
 [[2]] $ &lt;env: global&gt;</code></pre>
 </div>
 </div>
@@ -494,7 +494,7 @@ Parent: &lt;environment: 0x000002c1235aac50&gt;</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>rlang<span class="sc">::</span><span class="fu">env_parents</span>(novo_ambiente_2,<span class="at">last =</span> rlang<span class="sc">::</span><span class="fu">empty_env</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [[1]]   &lt;env: 0x000002c1235aac50&gt;
+<pre><code> [[1]]   &lt;env: 0x0000013bedf20390&gt;
  [[2]] $ &lt;env: global&gt;
  [[3]] $ &lt;env: package:stats&gt;
  [[4]] $ &lt;env: package:graphics&gt;
@@ -698,7 +698,7 @@ Parent: &lt;environment: 0x000002c1235aac50&gt;</code></pre>
 <span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a><span class="fu">f</span>(<span class="at">y=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$ran.in
-&lt;environment: 0x000002c12cc9c390&gt;
+&lt;environment: 0x0000013bf33197d0&gt;
 
 $parent
 &lt;environment: R_GlobalEnv&gt;
@@ -734,7 +734,7 @@ y :  num 1</code></pre>
 <span id="cb67-21"><a href="#cb67-21" aria-hidden="true" tabindex="-1"></a><span class="co"># fun_externa é chamada e retorna fun_interna</span></span>
 <span id="cb67-22"><a href="#cb67-22" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="fu">fun_externa</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;environment: 0x000002c123008148&gt;</code></pre>
+<pre><code>&lt;environment: 0x0000013bf39b2240&gt;</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>f</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -743,12 +743,12 @@ y :  num 1</code></pre>
     print(rlang::env_parent(rlang::current_env()))
     return(a + b + d)
   }
-&lt;environment: 0x000002c123008148&gt;</code></pre>
+&lt;environment: 0x0000013bf39b2240&gt;</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fun_interna é chamada com argumento 3</span></span>
 <span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">f</span>(<span class="dv">3</span>))  <span class="co"># Imprime 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;environment: 0x000002c123008148&gt;
+<pre><code>&lt;environment: 0x0000013bf39b2240&gt;
 [1] 6</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="fu">environment</span>(fun_externa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -773,10 +773,10 @@ y :  num 1</code></pre>
 <span id="cb75-11"><a href="#cb75-11" aria-hidden="true" tabindex="-1"></a><span class="fu">minha_funcao</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$ran.in
-&lt;environment: 0x000002c1215a63c8&gt;
+&lt;environment: 0x0000013bf4929d98&gt;
 
 $parent
-&lt;environment: 0x000002c1217abba0&gt;
+&lt;environment: 0x0000013bf4892400&gt;
 
 $objects
 a :  num 1</code></pre>
