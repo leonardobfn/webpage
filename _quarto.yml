@@ -29,6 +29,12 @@ website:
                 text: Funções
               - href: Cursos/Introducao_R/Cadernos/5-Funcoes_Prob.qmd 
                 text: Funções de Probabilidades
+              - href: Cursos/Introducao_R/Cadernos/6-Ambientes.qmd 
+                text: Environment
+              - href: Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.qmd 
+                text: Programação Funcional
+                
+                
                 
                
           -  section: "Probabilidade e Estatística"
