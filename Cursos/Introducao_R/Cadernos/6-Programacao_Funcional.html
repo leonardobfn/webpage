@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html" rel="next">
+<link href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.html" rel="next">
 <link href="../../../Cursos/Introducao_R/Cadernos/6-Ambientes.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
@@ -203,6 +203,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Programação Funcional</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programação Orientada a objeto - POO</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -272,6 +278,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#pmap" id="toc-pmap" class="nav-link" data-scroll-target="#pmap"><code>pmap</code></a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#programação-paralela" id="toc-programação-paralela" class="nav-link" data-scroll-target="#programação-paralela">Programação Paralela</a></li>
   <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
   </ul>
 </nav>
@@ -352,11 +359,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>rf <span class="ot">&lt;-</span> <span class="cf">function</span>(f,...) <span class="fu">f</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>,...))</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rf</span>(mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.04039659</code></pre>
+<pre><code>[1] -0.04028962</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rf</span>(sum)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 7.595019</code></pre>
+<pre><code>[1] 11.68323</code></pre>
 </div>
 </div>
 <ul>
@@ -525,7 +532,7 @@ TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE </code></pre>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="fu">map_dbl</span>(trims, <span class="sc">~</span> <span class="fu">mean</span>(x, <span class="at">trim =</span> .))<span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -0.480029731  0.055024950  0.037281260  0.006624742</code></pre>
+<pre><code>[1] 1.15427629 0.14025531 0.12853147 0.09826293</code></pre>
 </div>
 </div>
 <ul>
@@ -535,13 +542,13 @@ TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE </code></pre>
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">map</span>(<span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">50</span>), <span class="sc">~</span> <span class="fu">rnorm</span>(<span class="dv">2</span>,<span class="at">mean=</span>.))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[[1]]
-[1]  0.7038779 -0.6414499
+[1]  1.4506878 -0.3009476
 
 [[2]]
-[1]  8.890039 11.570038
+[1] 8.871664 8.366341
 
 [[3]]
-[1] 50.41475 49.43275</code></pre>
+[1] 49.87751 50.72762</code></pre>
 </div>
 </div>
 </section>
@@ -603,21 +610,51 @@ NULL</code></pre>
 <span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a><span class="fu">pmap</span>(parametros,rnorm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[[1]]
-[1] -0.2354338
+[1] -1.537303
 
 [[2]]
-[1] 42.20973 37.45780
+[1] 40.76965 36.51833
 
 [[3]]
-[1]  76.60983 103.12085  98.98302
+[1] 109.62454  94.32624  81.46346
 
 [[4]]
-[1] 199.1121 200.5957 198.7863 200.1690</code></pre>
+[1] 199.1221 200.0886 198.2268 202.1033</code></pre>
 </div>
 </div>
 <p><img src="Figuras/pmap2.png" class="img-fluid"></p>
 </section>
 </section>
+</section>
+<section id="programação-paralela" class="level1">
+<h1>Programação Paralela</h1>
+<ul>
+<li><p>Muitos cálculos em R podem ser feitos mais rapidamente pelo uso de computação paralela.&nbsp;</p></li>
+<li><p>Geralmente, a computação paralela é a execução simultânea de diferentes partes de uma computação maior em vários processadores ou núcleos de computação</p></li>
+<li><p>Os núcleos de um computador se referem às unidades de processamento que podem executar instruções independentes.</p></li>
+</ul>
+<p><img src="Figuras/parallel.png" class="img-fluid"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(parallel)</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>num_nucleos <span class="ot">&lt;-</span> <span class="fu">detectCores</span>()</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>nucleos <span class="ot">=</span> <span class="fu">round</span>(<span class="fl">0.60</span><span class="sc">*</span>num_nucleos)</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(i) {</span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">lm</span>(Petal.Width <span class="sc">~</span>  Species, <span class="at">data =</span> iris))</span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(snowfall)</span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a><span class="fu">sfInit</span>(<span class="at">parallel=</span><span class="cn">TRUE</span>, <span class="at">cpus=</span>nucleos)</span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a><span class="fu">sfExportAll</span>() <span class="co"># exportar os objetos para todos os núcleos</span></span>
+<span id="cb48-12"><a href="#cb48-12" aria-hidden="true" tabindex="-1"></a><span class="fu">sfLibrary</span>(<span class="st">"nome_pacote"</span>) <span class="co"># exportar o pacote para todos os núcleos</span></span>
+<span id="cb48-13"><a href="#cb48-13" aria-hidden="true" tabindex="-1"></a><span class="fu">system.time</span>(<span class="fu">sfLapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100000</span>, <span class="at">fun=</span>f))</span>
+<span id="cb48-14"><a href="#cb48-14" aria-hidden="true" tabindex="-1"></a><span class="fu">sfStop</span>()</span>
+<span id="cb48-15"><a href="#cb48-15" aria-hidden="true" tabindex="-1"></a><span class="fu">system.time</span>(</span>
+<span id="cb48-16"><a href="#cb48-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100000</span>){</span>
+<span id="cb48-17"><a href="#cb48-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">f</span>(i)</span>
+<span id="cb48-18"><a href="#cb48-18" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb48-19"><a href="#cb48-19" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="referências" class="level1">
 <h1>Referências</h1>
@@ -1047,8 +1084,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html" class="pagination-link" aria-label="Conceitos Iniciais">
-        <span class="nav-page-text">Conceitos Iniciais</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.html" class="pagination-link" aria-label="Programação Orientada a objeto - POO">
+        <span class="nav-page-text">Programação Orientada a objeto - POO</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
