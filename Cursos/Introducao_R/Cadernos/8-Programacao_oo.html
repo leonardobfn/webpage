@@ -275,6 +275,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#funções-genéricas-s3" id="toc-funções-genéricas-s3" class="nav-link" data-scroll-target="#funções-genéricas-s3">Funções Genéricas S3</a></li>
   <li><a href="#exemplo" id="toc-exemplo" class="nav-link" data-scroll-target="#exemplo">Exemplo</a></li>
   </ul></li>
+  <li><a href="#sistema-s4" id="toc-sistema-s4" class="nav-link" data-scroll-target="#sistema-s4">Sistema S4</a>
+  <ul class="collapse">
+  <li><a href="#definindo-a-classe" id="toc-definindo-a-classe" class="nav-link" data-scroll-target="#definindo-a-classe">Definindo a Classe</a></li>
+  <li><a href="#funções-genéricas-s4" id="toc-funções-genéricas-s4" class="nav-link" data-scroll-target="#funções-genéricas-s4">Funções Genéricas S4</a>
+  <ul class="collapse">
+  <li><a href="#exemplo-1" id="toc-exemplo-1" class="nav-link" data-scroll-target="#exemplo-1">Exemplo 1</a></li>
+  <li><a href="#exemplo-2" id="toc-exemplo-2" class="nav-link" data-scroll-target="#exemplo-2">Exemplo 2</a></li>
+  </ul></li>
+  </ul></li>
   <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
   </ul>
 </nav>
@@ -518,7 +527,7 @@ attr(,"row.names")
 <span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>objeto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 67 52 49 46 51 52 54 57 34 47
+<pre><code> [1] 46 62 52 48 58 47 53 49 50 50
 attr(,"class")
 [1] "minha_classe"
 attr(,"dist")
@@ -658,6 +667,9 @@ see '?methods' for accessing help and source code</code></pre>
 </section>
 <section id="exemplo" class="level2">
 <h2 class="anchored" data-anchor-id="exemplo">Exemplo</h2>
+<ul>
+<li>Aqui será definido um método para um genérico existente</li>
+</ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">10</span>;LAMBDA <span class="ot">=</span> <span class="dv">50</span></span>
 <span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -668,7 +680,7 @@ see '?methods' for accessing help and source code</code></pre>
 <span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>objeto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 56 46 46 50 49 50 52 39 46 52
+<pre><code> [1] 46 46 49 52 55 46 55 52 51 50
 attr(,"class")
 [1] "minha_classe"
 attr(,"dist")
@@ -683,7 +695,7 @@ attr(,"dist")
 <span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(objeto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   39.0    46.0    49.5    48.6    51.5    56.0 </code></pre>
+  46.00   46.75   50.50   50.20   52.00   55.00 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>summary.minha_classe <span class="ot">=</span> \(x){</span>
 <span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"O máximo é"</span>,<span class="fu">max</span>(x))</span>
@@ -691,21 +703,246 @@ attr(,"dist")
 <span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(objeto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>O máximo é 56</code></pre>
+<pre><code>O máximo é 55</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">gerar</span>(n,LAMBDA))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>O máximo é 62</code></pre>
+<pre><code>O máximo é 65</code></pre>
 </div>
 </div>
+</section>
+</section>
+<section id="sistema-s4" class="level1">
+<h1>Sistema S4</h1>
+<ul>
+<li><p>S4 fornece uma abordagem formal para OOP funcional.&nbsp;As ideias subjacentes são semelhantes às do S3 , mas a implementação é muito mais rigorosa e faz uso de funções especializadas para:</p>
+<ul>
+<li><p>Criação de classes <code>setClass()</code></p></li>
+<li><p>Genéricos <code>setGeneric()</code></p></li>
+<li><p>Métodos <code>setMethod()</code></p></li>
+</ul></li>
+</ul>
+<section id="definindo-a-classe" class="level2">
+<h2 class="anchored" data-anchor-id="definindo-a-classe">Definindo a Classe</h2>
+<p>Para definir uma classe S4, use a função <code>setClass()</code>com três argumentos:</p>
+<ul>
+<li><p>O <strong>nome</strong> da classe . Por convenção, os nomes das classes S4 usam <code>UpperCamelCase</code>.</p></li>
+<li><p>Um vetor de caracteres nomeado que descreve os nomes e classes dos <strong>slots</strong> (campos). Por exemplo, uma pessoa pode ser representada por um nome (character) e uma idade (numérica): <code>c(name = "character", age = "numeric")</code>. A pseudoclasse <code>ANY</code>permite que um slot aceite objetos de qualquer tipo.</p></li>
+<li><p>Um <strong>protótipo</strong> , uma lista de valores padrão para cada slot. Tecnicamente, o protótipo é opcional</p></li>
+</ul>
+<!-- -->
+<ul>
+<li>Definindo a classe “Person” com os atributos name e age</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setClass</span>(<span class="st">"Person"</span>, </span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">slots =</span> <span class="fu">c</span>(</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"character"</span>, </span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">age =</span> <span class="st">"numeric"</span></span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a>  ), </span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">prototype =</span> <span class="fu">list</span>(</span>
+<span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="cn">NA_character_</span>,</span>
+<span id="cb62-8"><a href="#cb62-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">age =</span> <span class="cn">NA_real_</span></span>
+<span id="cb62-9"><a href="#cb62-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb62-10"><a href="#cb62-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Uma vez definida a classe, você pode construir novos objetos a partir da função <code>new()</code> com nome da classe e um valor para cada slot:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>maria <span class="ot">&lt;-</span> <span class="fu">new</span>(<span class="st">"Person"</span>, <span class="at">name =</span> <span class="st">"Maria"</span>, <span class="at">age =</span> <span class="dv">32</span>)</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>maria<span class="sc">@</span>name <span class="co"># acessando os splots</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Maria"</code></pre>
+</div>
+</div>
+<ul>
+<li>Outra forma de criar objetos<br>
+</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>nota_aluno <span class="ot">=</span> <span class="fu">setClass</span>(</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"nota_aluno"</span>,</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">slots =</span> <span class="fu">c</span>(</span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">nome =</span> <span class="st">"character"</span>,</span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">notas =</span> <span class="st">"numeric"</span></span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a>leo <span class="ot">=</span> <span class="fu">nota_aluno</span>(<span class="at">nome =</span> <span class="st">"Leo"</span>,<span class="at">notas =</span> <span class="fu">c</span>(<span class="dv">5</span>,<span class="dv">9</span>))</span>
+<span id="cb65-10"><a href="#cb65-10" aria-hidden="true" tabindex="-1"></a>leo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>An object of class "nota_aluno"
+Slot "nome":
+[1] "Leo"
+
+Slot "notas":
+[1] 5 9</code></pre>
+</div>
+</div>
+</section>
+<section id="funções-genéricas-s4" class="level2">
+<h2 class="anchored" data-anchor-id="funções-genéricas-s4">Funções Genéricas S4</h2>
+<ul>
+<li><p>A função de um genérico é realizar o despacho de métodos, ou seja, encontrar a implementação específica para a combinação de classes passadas para o genérico.</p></li>
+<li><p>Para criar um novo genérico S4, use <code>setGeneric()</code>com uma função que chama&nbsp;<code>standardGeneric()</code></p></li>
+<li><p>Por convenção, os novos genéricos S4 devem usar&nbsp;<code>lowerCamelCase</code>.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setGeneric</span>(<span class="st">"myGeneric"</span>, <span class="cf">function</span>(x) <span class="fu">standardGeneric</span>(<span class="st">"myGeneric"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "myGeneric"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setGeneric</span>(<span class="st">"idade"</span>, <span class="cf">function</span>(x) <span class="fu">standardGeneric</span>(<span class="st">"idade"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "idade"</code></pre>
+</div>
+</div>
+<ul>
+<li><p>Um genérico não é útil sem alguns métodos, e no S4 você define métodos com&nbsp;<code>setMethod()</code>.</p></li>
+<li><p>Existem três argumentos importantes: o nome do genérico, o nome da classe e o próprio método.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setMethod</span>(<span class="st">"myGeneric"</span>, <span class="st">"minha_classe"</span>, <span class="cf">function</span>(x) {</span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># implementação</span></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Acessando o slot age da classe “Person”</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setMethod</span>(<span class="st">"idade"</span>, <span class="st">"Person"</span>, <span class="cf">function</span>(x) x<span class="sc">@</span>age)</span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a><span class="fu">idade</span>(maria)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 32</code></pre>
+</div>
+</div>
+<ul>
+<li><p>Obs:</p>
+<ul>
+<li>Para listar todos os métodos que pertencem a um genérico, ou que estão associados a uma classe, use&nbsp;<code>methods("generic")</code>ou&nbsp;<code>methods(class = "class")</code>; para encontrar a implementação de um método específico, use&nbsp;<code>selectMethod("generic", "class")</code>.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">methods</span>(<span class="st">"idade"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] idade,Person-method
+see '?methods' for accessing help and source code</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">methods</span>(<span class="at">class =</span> <span class="st">"Person"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] idade
+see '?methods' for accessing help and source code</code></pre>
+</div>
+</div></li>
+<li><p><strong>Aqui será definido um método para um genérico existente</strong>: <code>show</code></p></li>
+<li><p><code>show</code> Controla como o objeto aparece quando é impresso.</p></li>
+<li><p>Para definir um método para um genérico existente, primeiro você deve determinar os argumentos.</p></li>
+<li><p>Nesse caso, o argumento da função <code>show</code>:</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="fu">args</span>(<span class="st">"show"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>function (object) 
+NULL</code></pre>
+</div>
+</div>
+<ul>
+<li>Portanto, nosso método show precisa ter um único argumento&nbsp;<code>object</code>:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>maria <span class="co"># antes de criar o método</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>An object of class "Person"
+Slot "name":
+[1] "Maria"
+
+Slot "age":
+[1] 32</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setMethod</span>(<span class="at">f =</span> <span class="st">"show"</span>,</span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">signature =</span> <span class="st">"Person"</span>,</span>
+<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">definition =</span> <span class="cf">function</span>(object){</span>
+<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a>            <span class="fu">cat</span>(<span class="st">"Essa é a impressão da classe:"</span>,<span class="fu">is</span>(object)[<span class="dv">1</span>],<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Nome:"</span>,object<span class="sc">@</span>name,<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb82-6"><a href="#cb82-6" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Idade:"</span>,object<span class="sc">@</span>age)</span>
+<span id="cb82-7"><a href="#cb82-7" aria-hidden="true" tabindex="-1"></a>          })</span>
+<span id="cb82-8"><a href="#cb82-8" aria-hidden="true" tabindex="-1"></a>maria <span class="co"># após criar o método</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Essa é a impressão da classe: Person 
+ Nome: Maria 
+ Idade: 32</code></pre>
+</div>
+</div>
+<ul>
+<li>Criando o gerérico “media” e o método “media” para a classe “nota_aluno</li>
+</ul>
+<section id="exemplo-1" class="level3">
+<h3 class="anchored" data-anchor-id="exemplo-1">Exemplo 1</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setGeneric</span>(<span class="st">"media"</span>,<span class="at">def =</span> <span class="cf">function</span>(x) <span class="fu">standardGeneric</span>(<span class="st">"media"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "media"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setMethod</span>(<span class="st">"media"</span>,<span class="at">signature =</span> <span class="st">"nota_aluno"</span>,<span class="at">definition =</span> <span class="cf">function</span>(x){</span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a>  notas <span class="ot">=</span> x<span class="sc">@</span>notas</span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a>  media <span class="ot">=</span> <span class="fu">sum</span>(notas)<span class="sc">/</span><span class="fu">length</span>(notas)</span>
+<span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(media)</span>
+<span id="cb86-5"><a href="#cb86-5" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb86-6"><a href="#cb86-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-7"><a href="#cb86-7" aria-hidden="true" tabindex="-1"></a><span class="fu">media</span>(leo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7</code></pre>
+</div>
+</div>
+<ul>
+<li>Definindo a classe do resultdo de uma função e criando um método a partir da função genérica <code>summary</code></li>
+</ul>
+</section>
+<section id="exemplo-2" class="level3">
+<h3 class="anchored" data-anchor-id="exemplo-2">Exemplo 2</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">10</span>;LAMBDA <span class="ot">=</span> <span class="dv">50</span></span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a><span class="co"># criando a classe</span></span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a><span class="fu">setClass</span>(<span class="at">Class =</span> <span class="st">"minha_classe_S4"</span>,</span>
+<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">slots =</span>  <span class="fu">c</span>(<span class="at">amostra =</span> <span class="fu">c</span>(<span class="st">"numeric"</span>))</span>
+<span id="cb88-6"><a href="#cb88-6" aria-hidden="true" tabindex="-1"></a>         )</span>
+<span id="cb88-7"><a href="#cb88-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-8"><a href="#cb88-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-9"><a href="#cb88-9" aria-hidden="true" tabindex="-1"></a><span class="co"># criando a função e definindo a classe do resultado</span></span>
+<span id="cb88-10"><a href="#cb88-10" aria-hidden="true" tabindex="-1"></a>gerar <span class="ot">=</span> <span class="cf">function</span>(...){</span>
+<span id="cb88-11"><a href="#cb88-11" aria-hidden="true" tabindex="-1"></a>   x <span class="ot">=</span> <span class="fu">rpois</span>(n,<span class="at">lambda=</span>LAMBDA)</span>
+<span id="cb88-12"><a href="#cb88-12" aria-hidden="true" tabindex="-1"></a>   resultado <span class="ot">=</span> <span class="fu">new</span>(<span class="at">Class =</span> <span class="st">"minha_classe_S4"</span>,<span class="at">amostra=</span>x)</span>
+<span id="cb88-13"><a href="#cb88-13" aria-hidden="true" tabindex="-1"></a>   <span class="fu">return</span>(resultado)</span>
+<span id="cb88-14"><a href="#cb88-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb88-15"><a href="#cb88-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-16"><a href="#cb88-16" aria-hidden="true" tabindex="-1"></a>(<span class="at">amostra =</span> <span class="fu">gerar</span>(n,LAMBDA))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>An object of class "minha_classe_S4"
+Slot "amostra":
+ [1] 67 48 54 55 55 39 38 40 46 53</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setMethod</span>(<span class="st">"summary"</span>,<span class="at">signature =</span> <span class="st">"minha_classe_S4"</span>,<span class="at">definition =</span> <span class="cf">function</span>(object){</span>
+<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">max</span>(object<span class="sc">@</span>amostra)</span>
+<span id="cb90-3"><a href="#cb90-3" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb90-5"><a href="#cb90-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(amostra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 67</code></pre>
+</div>
+</div>
+</section>
 </section>
 </section>
 <section id="referências" class="level1">
 <h1>Referências</h1>
 <ul>
-<li><p><a href="https://adv-r.hadley.nz/index.html"><u>Advanced R</u></a></p></li>
-<li><p><a href="https://r4ds.had.co.nz/index.html"><u>R for Data Science</u></a></p></li>
-<li><p><a href="https://web.itu.edu.tr/~tokerem/Hands-On_R.pdf">Hands-On Programming with R</a></p></li>
+<li><a href="https://adv-r.hadley.nz/index.html"><u>Advanced R</u></a></li>
+<li><a href="https://cran.r-project.org/doc/contrib/Genolini-S4tutorialV0-5en.pdf">A (Not So) Short Introduction to S4</a></li>
+<li><a href="https://r4ds.had.co.nz/index.html"><u>R for Data Science</u></a></li>
+<li><a href="https://web.itu.edu.tr/~tokerem/Hands-On_R.pdf">Hands-On Programming with R</a></li>
 </ul>
 
 

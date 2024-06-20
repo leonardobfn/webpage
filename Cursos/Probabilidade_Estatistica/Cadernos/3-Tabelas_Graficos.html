@@ -1350,20 +1350,20 @@ Y          ensino fundamental ensino médio  superior
 <div class="cell">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">print</span>(<span class="fu">head</span>(dados_email))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>                   remetente               assunto tamanho_kb prioridade  spam
-1  Laura-Martins@example.com   Convite para Evento        229      Média  TRUE
-2   José-Almeida@example.com   Convite para Evento        487       Alta FALSE
-3 Lucas-Ferreira@example.com   Convite para Evento         81      Média  TRUE
-4  Mariana-Gomes@example.com       Oferta Especial         86      Média  TRUE
-5  Laura-Martins@example.com Confirmação de Pedido        236      Baixa FALSE
-6      Ana-Gomes@example.com       Oferta Especial        382       Alta  TRUE
-  qtd_caracteres formato
-1            218   Texto
-2            191    HTML
-3             98    HTML
-4             99   Texto
-5            123    HTML
-6            168   Texto</code></pre>
+<pre><code>                     remetente               assunto tamanho_kb prioridade
+1      Ana-Almeida@example.com Confirmação de Pedido        178      Baixa
+2    Rafael-Santos@example.com       Oferta Especial        364       Alta
+3 Maria-Cavalcante@example.com  Atualização de Conta        181       Alta
+4   Laura-Oliveira@example.com  Atualização de Conta         61      Média
+5   Rafael-Ribeiro@example.com Confirmação de Pedido        254      Média
+6    Tatiane-Costa@example.com  Atualização de Conta         54      Baixa
+   spam qtd_caracteres formato
+1 FALSE             83   Texto
+2  TRUE            266   Texto
+3 FALSE            232    HTML
+4  TRUE            163    HTML
+5 FALSE             54    HTML
+6 FALSE            245   Texto</code></pre>
 </div>
 </div>
 </section>
@@ -1373,13 +1373,13 @@ Y          ensino fundamental ensino médio  superior
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a><span class="fu">str</span>(dados_email)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   100 obs. of  7 variables:
- $ remetente     : chr  "Laura-Martins@example.com" "José-Almeida@example.com" "Lucas-Ferreira@example.com" "Mariana-Gomes@example.com" ...
- $ assunto       : chr  "Convite para Evento" "Convite para Evento" "Convite para Evento" "Oferta Especial" ...
- $ tamanho_kb    : num  229 487 81 86 236 382 198 128 285 465 ...
- $ prioridade    : chr  "Média" "Alta" "Média" "Média" ...
- $ spam          : logi  TRUE FALSE TRUE TRUE FALSE TRUE ...
- $ qtd_caracteres: num  218 191 98 99 123 168 183 221 155 251 ...
- $ formato       : chr  "Texto" "HTML" "HTML" "Texto" ...</code></pre>
+ $ remetente     : chr  "Ana-Almeida@example.com" "Rafael-Santos@example.com" "Maria-Cavalcante@example.com" "Laura-Oliveira@example.com" ...
+ $ assunto       : chr  "Confirmação de Pedido" "Oferta Especial" "Atualização de Conta" "Atualização de Conta" ...
+ $ tamanho_kb    : num  178 364 181 61 254 54 161 428 301 342 ...
+ $ prioridade    : chr  "Baixa" "Alta" "Alta" "Média" ...
+ $ spam          : logi  FALSE TRUE FALSE TRUE FALSE FALSE ...
+ $ qtd_caracteres: num  83 266 232 163 54 245 273 107 95 198 ...
+ $ formato       : chr  "Texto" "Texto" "HTML" "HTML" ...</code></pre>
 </div>
 </div>
 <!-- ## Histogramas -->
@@ -1408,13 +1408,13 @@ Y          ensino fundamental ensino médio  superior
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Baixa Média  Alta 
-   16    44    40 </code></pre>
+   15    40    45 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a>(<span class="at">tabela.prop =</span> <span class="fu">prop.table</span>(tabela)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Baixa Média  Alta 
- 0.16  0.44  0.40 </code></pre>
+ 0.15  0.40  0.45 </code></pre>
 </div>
 </div>
 </section>
@@ -1479,8 +1479,8 @@ Baixa Média  Alta
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a>x <span class="ot">=</span> <span class="fu">runif</span>(<span class="dv">30</span>,<span class="dv">1</span>,<span class="dv">40</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>() <span class="co"># simulação</span></span>
 <span id="cb51-2"><a></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 18 23 12  5 34 21 11 30 18  4 31  7 34 26 24  2 32  5 25 37 34 36 15  9  8
-[26] 11 39  9 22 20</code></pre>
+<pre><code> [1]  5  2 25  3 20 26 21  3 21 26 22  4 35 23 27  9 21 13 35 18 19 29  7 26 26
+[26] 27 37 36 31  8</code></pre>
 </div>
 </div>
 </section>
@@ -1520,37 +1520,37 @@ Baixa Média  Alta
 <tr class="odd">
 <td style="text-align: left;">(0,5]</td>
 <td style="text-align: right;">2.5</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">0.1333</td>
-<td style="text-align: right;">0.0267</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.1667</td>
+<td style="text-align: right;">0.0333</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">(5,10]</td>
 <td style="text-align: right;">7.5</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">0.1333</td>
-<td style="text-align: right;">0.0267</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.1000</td>
+<td style="text-align: right;">0.0200</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">(10,15]</td>
 <td style="text-align: right;">12.5</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">0.1333</td>
-<td style="text-align: right;">0.0267</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.0333</td>
+<td style="text-align: right;">0.0067</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">(15,30]</td>
 <td style="text-align: right;">22.5</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">0.3333</td>
-<td style="text-align: right;">0.0222</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.5333</td>
+<td style="text-align: right;">0.0356</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">(30,50]</td>
 <td style="text-align: right;">40.0</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">0.2667</td>
-<td style="text-align: right;">0.0133</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.1667</td>
+<td style="text-align: right;">0.0083</td>
 </tr>
 </tbody>
 </table>
