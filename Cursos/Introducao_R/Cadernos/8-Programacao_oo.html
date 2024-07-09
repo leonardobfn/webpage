@@ -64,8 +64,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html" rel="next">
-<link href="../../../Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -117,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cursos</li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html">Introdução ao R</a></li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.html">Programação Orientada a objeto - POO</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Programação Orientada a Objetos</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -154,13 +152,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
  <span class="menu-text">Introdução ao R</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html" class="sidebar-item-text sidebar-link">
@@ -205,8 +203,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Programação Orientada a objeto - POO</span></a>
+  <a href="../../../Cursos/Introducao_R/Cadernos/9-Importacao_Exportacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Importação e Exportação</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../Cursos/Introducao_R/Cadernos/Aula_23-01-2024.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Manipulação de dados</span></a>
   </div>
 </li>
       </ul>
@@ -291,7 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cursos</li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html">Introdução ao R</a></li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.html">Programação Orientada a objeto - POO</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Programação Orientada a Objetos</h1>
 </div>
@@ -527,7 +531,7 @@ attr(,"row.names")
 <span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>objeto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 46 62 52 48 58 47 53 49 50 50
+<pre><code> [1] 48 42 59 57 50 51 66 58 47 54
 attr(,"class")
 [1] "minha_classe"
 attr(,"dist")
@@ -680,7 +684,7 @@ see '?methods' for accessing help and source code</code></pre>
 <span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>objeto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 46 46 49 52 55 46 55 52 51 50
+<pre><code> [1] 57 49 55 60 58 54 49 42 54 61
 attr(,"class")
 [1] "minha_classe"
 attr(,"dist")
@@ -695,7 +699,7 @@ attr(,"dist")
 <span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(objeto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  46.00   46.75   50.50   50.20   52.00   55.00 </code></pre>
+  42.00   50.25   54.50   53.90   57.75   61.00 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>summary.minha_classe <span class="ot">=</span> \(x){</span>
 <span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"O máximo é"</span>,<span class="fu">max</span>(x))</span>
@@ -703,11 +707,11 @@ attr(,"dist")
 <span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(objeto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>O máximo é 55</code></pre>
+<pre><code>O máximo é 61</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">gerar</span>(n,LAMBDA))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>O máximo é 65</code></pre>
+<pre><code>O máximo é 57</code></pre>
 </div>
 </div>
 </section>
@@ -922,7 +926,7 @@ Slot "age":
 <div class="cell-output cell-output-stdout">
 <pre><code>An object of class "minha_classe_S4"
 Slot "amostra":
- [1] 67 48 54 55 55 39 38 40 46 53</code></pre>
+ [1] 47 44 59 56 49 56 63 66 50 45</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setMethod</span>(<span class="st">"summary"</span>,<span class="at">signature =</span> <span class="st">"minha_classe_S4"</span>,<span class="at">definition =</span> <span class="cf">function</span>(object){</span>
 <span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">max</span>(object<span class="sc">@</span>amostra)</span>
@@ -930,7 +934,7 @@ Slot "amostra":
 <span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb90-5"><a href="#cb90-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(amostra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 67</code></pre>
+<pre><code>[1] 66</code></pre>
 </div>
 </div>
 </section>
@@ -1358,18 +1362,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../../Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html" class="pagination-link" aria-label="Programação Funcional">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Programação Funcional</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../../Cursos/Probabilidade_Estatistica/Cadernos/1-Conceitos_Iniciais.html" class="pagination-link" aria-label="Conceitos Iniciais">
-        <span class="nav-page-text">Conceitos Iniciais</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 

@@ -205,8 +205,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Programação Orientada a objeto - POO</span></a>
+  <a href="../../../Cursos/Introducao_R/Cadernos/9-Importacao_Exportacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Importação e Exportação</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../Cursos/Introducao_R/Cadernos/Aula_23-01-2024.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Manipulação de dados</span></a>
   </div>
 </li>
       </ul>
@@ -382,7 +388,7 @@ P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">1</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>(<span class="at">x =</span> <span class="fu">rbinom</span>(N,n,<span class="at">prob =</span> <span class="fl">0.5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 1 1 0 1 0 1 0 1 0 1 0 1 1 0 1 1 1 0 0 0</code></pre>
+<pre><code> [1] 0 1 0 0 0 1 1 1 0 0 1 1 1 1 1 1 0 0 0 1</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(<span class="fu">table</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -429,8 +435,8 @@ P(X = x) = \frac{e^{-\lambda} \lambda^x}{x!}
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>x
-0 1 2 3 4 6 
-1 1 4 1 2 1 </code></pre>
+1 2 3 4 5 6 
+1 2 3 2 1 1 </code></pre>
 </div>
 </div>
 </section>
