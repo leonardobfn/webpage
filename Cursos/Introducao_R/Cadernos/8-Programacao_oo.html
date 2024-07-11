@@ -203,6 +203,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.qmd.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programação OO</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../Cursos/Introducao_R/Cadernos/9-Importacao_Exportacao.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Importação e Exportação</span></a>
   </div>
@@ -210,7 +216,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../Cursos/Introducao_R/Cadernos/Aula_23-01-2024.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Manipulação de dados</span></a>
+ <span class="menu-text">Manipulação de dados - dplyr</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../Cursos/Introducao_R/Cadernos/Aula_30-01-2024.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Manipulação de dados - string</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../Cursos/Introducao_R/Cadernos/Aula_06_02_2024.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Manipulação de dados - fatores</span></a>
   </div>
 </li>
       </ul>
@@ -531,7 +549,7 @@ attr(,"row.names")
 <span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>objeto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 48 42 59 57 50 51 66 58 47 54
+<pre><code> [1] 37 46 53 56 41 49 48 50 52 49
 attr(,"class")
 [1] "minha_classe"
 attr(,"dist")
@@ -684,7 +702,7 @@ see '?methods' for accessing help and source code</code></pre>
 <span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>objeto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 57 49 55 60 58 54 49 42 54 61
+<pre><code> [1] 49 54 55 54 61 47 46 49 50 49
 attr(,"class")
 [1] "minha_classe"
 attr(,"dist")
@@ -699,7 +717,7 @@ attr(,"dist")
 <span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(objeto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  42.00   50.25   54.50   53.90   57.75   61.00 </code></pre>
+   46.0    49.0    49.5    51.4    54.0    61.0 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>summary.minha_classe <span class="ot">=</span> \(x){</span>
 <span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"O máximo é"</span>,<span class="fu">max</span>(x))</span>
@@ -711,7 +729,7 @@ attr(,"dist")
 </div>
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">gerar</span>(n,LAMBDA))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>O máximo é 57</code></pre>
+<pre><code>O máximo é 56</code></pre>
 </div>
 </div>
 </section>
@@ -926,7 +944,7 @@ Slot "age":
 <div class="cell-output cell-output-stdout">
 <pre><code>An object of class "minha_classe_S4"
 Slot "amostra":
- [1] 47 44 59 56 49 56 63 66 50 45</code></pre>
+ [1] 45 49 44 46 62 49 64 57 45 37</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setMethod</span>(<span class="st">"summary"</span>,<span class="at">signature =</span> <span class="st">"minha_classe_S4"</span>,<span class="at">definition =</span> <span class="cf">function</span>(object){</span>
 <span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">max</span>(object<span class="sc">@</span>amostra)</span>
@@ -934,7 +952,7 @@ Slot "amostra":
 <span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb90-5"><a href="#cb90-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(amostra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 66</code></pre>
+<pre><code>[1] 64</code></pre>
 </div>
 </div>
 </section>
