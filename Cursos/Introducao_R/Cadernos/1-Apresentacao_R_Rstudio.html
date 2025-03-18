@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.554">
@@ -54,7 +54,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -89,17 +109,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -114,11 +134,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cursos</li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html">Introdução ao R</a></li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html">Apresentação do R e Rstudio</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -132,7 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Procurar"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -147,7 +167,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
  <span class="menu-text">Cursos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -156,7 +176,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
  <span class="menu-text">Introdução ao R</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -239,7 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
  <span class="menu-text">Probabilidade e Estatística</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -302,7 +322,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#caminho-absoluto" id="toc-caminho-absoluto" class="nav-link" data-scroll-target="#caminho-absoluto">Caminho Absoluto</a></li>
   <li><a href="#caminho-relativo" id="toc-caminho-relativo" class="nav-link" data-scroll-target="#caminho-relativo">Caminho Relativo</a></li>
   <li><a href="#diretório-de-trabalho" id="toc-diretório-de-trabalho" class="nav-link" data-scroll-target="#diretório-de-trabalho">Diretório de trabalho</a></li>
-  <li><a href="#observações" id="toc-observações" class="nav-link" data-scroll-target="#observações">Observações</a></li>
+  <li><a href="#observações" id="toc-observações" class="nav-link" data-scroll-target="#observações">Observações</a>
+  <ul class="collapse">
+  <li><a href="#tabela-1-localização-de-pastas-no-linux" id="toc-tabela-1-localização-de-pastas-no-linux" class="nav-link" data-scroll-target="#tabela-1-localização-de-pastas-no-linux">Tabela 1: Localização de pastas no Linux</a></li>
+  <li><a href="#tabela-2-localização-de-pastas-em-versão-recente-do-windows" id="toc-tabela-2-localização-de-pastas-em-versão-recente-do-windows" class="nav-link" data-scroll-target="#tabela-2-localização-de-pastas-em-versão-recente-do-windows">Tabela 2: Localização de pastas em versão recente do Windows</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#projetos" id="toc-projetos" class="nav-link" data-scroll-target="#projetos">Projetos</a>
   <ul class="collapse">
@@ -310,9 +334,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#positcloud" id="toc-positcloud" class="nav-link" data-scroll-target="#positcloud">PositCloud</a></li>
   <li><a href="#git-e-github" id="toc-git-e-github" class="nav-link" data-scroll-target="#git-e-github">Git e GitHub</a></li>
+  <li><a href="#pacotes" id="toc-pacotes" class="nav-link" data-scroll-target="#pacotes">Pacotes</a>
+  <ul class="collapse">
+  <li><a href="#instalação" id="toc-instalação" class="nav-link" data-scroll-target="#instalação">Instalação</a></li>
+  <li><a href="#carregar" id="toc-carregar" class="nav-link" data-scroll-target="#carregar">Carregar</a></li>
+  </ul></li>
+  <li><a href="#solicitando-ajuda" id="toc-solicitando-ajuda" class="nav-link" data-scroll-target="#solicitando-ajuda">Solicitando ajuda</a></li>
   <li><a href="#fluxo-de-trabalho" id="toc-fluxo-de-trabalho" class="nav-link" data-scroll-target="#fluxo-de-trabalho">Fluxo de Trabalho</a></li>
-  <li><a href="#atividade" id="toc-atividade" class="nav-link" data-scroll-target="#atividade">Atividade</a></li>
-  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
+  <li><a href="#escrevendo-o-código" id="toc-escrevendo-o-código" class="nav-link" data-scroll-target="#escrevendo-o-código">Escrevendo o código</a></li>
+  <li><a href="#r-e-ciência-de-dados" id="toc-r-e-ciência-de-dados" class="nav-link" data-scroll-target="#r-e-ciência-de-dados">R e Ciência de Dados</a></li>
+  <li><a href="#atividades" id="toc-atividades" class="nav-link" data-scroll-target="#atividades">Atividades</a></li>
   </ul>
 </nav>
     </div>
@@ -476,8 +507,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>Caminho Absoluto</figcaption>
 </figure>
 </div>
+<ul>
+<li><code>getwd()</code> é uma forma abreviada de dizer <em>get working directory</em> (me diga qual a pasta de trabalho atual).</li>
+</ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r watch-out code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r watch-out code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R/Cadernos"</code></pre>
 </div>
@@ -495,7 +529,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">".."</span>) <span class="co"># trocando local referência ou diretório de trabalho</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R"</code></pre>
 </div>
@@ -528,11 +562,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li><p>Como você separa os componentes do caminho. Mac e Linux usam barras (por exemplo&nbsp; <code>plots/diamonds.pdf</code>) e o Windows usa barras invertidas (por exemplo&nbsp; <code>plots\diamonds.pdf</code>). R pode funcionar com qualquer tipo. Porém, barras invertidas significam algo especial para R, e para obter uma única barra invertida no caminho, você precisa digitar duas barras invertidas! Recomendo sempre usar o estilo Linux/Mac com barras.</p></li>
 <li><p>Ao criar scripts ou projetos em R, é uma boa prática <strong>usar caminhos relativos</strong>, pois isso torna o código mais portátil e facilita a colaboração. Além disso, evita problemas quando você compartilha seu código com outros ou move seu projeto para um novo sistema operacional.</p></li>
-<li><p>A última pequena diferença é o local para onde <code>~</code>aponta. <code>~</code>é um atalho conveniente para o seu diretório inicial. No Windows, ele aponta para o diretório de documentos.</p></li>
+<li><p>A última pequena diferença é o local para onde <code>~</code>aponta. <code>~</code>é um atalho conveniente para o seu diretório inicial. No Windows, ele aponta para o diretório de documentos. undefined</p></li>
 </ol></li>
+</ul>
+<section id="tabela-1-localização-de-pastas-no-linux" class="level3">
+<h3 class="anchored" data-anchor-id="tabela-1-localização-de-pastas-no-linux">Tabela 1: Localização de pastas no Linux</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Nome fantasia</th>
+<th>Localização real</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pasta pessoal</td>
+<td><code>/home/estudante</code> ou <code>~/</code></td>
+</tr>
+<tr class="even">
+<td>Área de trabalho</td>
+<td><code>/home/estudante/Desktop</code></td>
+</tr>
+<tr class="odd">
+<td>Pendrive</td>
+<td><code>/media/RotuloDoPendrive</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tabela-2-localização-de-pastas-em-versão-recente-do-windows" class="level3">
+<h3 class="anchored" data-anchor-id="tabela-2-localização-de-pastas-em-versão-recente-do-windows">Tabela 2: Localização de pastas em versão recente do Windows</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Nome fantasia</th>
+<th>Localização real</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pasta pessoal</td>
+<td><code>C:/Users/estudante/Meus documentos</code> ou <code>~/</code></td>
+</tr>
+<tr class="even">
+<td>Área de trabalho</td>
+<td><code>C:/Users/estudante/Desktop</code> ou <code>~/../Desktop</code></td>
+</tr>
+<tr class="odd">
+<td>Pendrive</td>
+<td><code>F:/</code> (ou outra letra)</td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li><p>Nesses casos, criar projetos no R é uma prática recomendada e traz vários benefícios para a organização, colaboração e reprodutibilidade do trabalho</p></li>
 <li><p>Crie um diretório onde você possa colocar todos os programas/projetos em R</p></li>
 </ul>
+</section>
 </section>
 </section>
 <section id="projetos" class="level1">
@@ -652,6 +738,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ul>
 </section>
+<section id="pacotes" class="level1">
+<h1>Pacotes</h1>
+<ul>
+<li><p>É muito provável que alguém já tenha resolvido o problema em que você está trabalhando, e você pode se beneficiar do trabalho deles baixando o pacote correspondente.</p></li>
+<li><p>Um pacote reúne código, dados e documentação, proporcionando um método fácil de compartilhamento com outros usuários.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figuras/rpackage.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="499"></p>
+</figure>
+</div>
+<section id="instalação" class="level2">
+<h2 class="anchored" data-anchor-id="instalação">Instalação</h2>
+<ul>
+<li><p>O R é construído como um conjunto de bibliotecas/pacotes voltadas para diferentes aplicações;</p></li>
+<li><p>Todos esses pacotes (com a respectiva documentação) podem ser facilmente baixados e instalados a partir do repositório CRAN.</p></li>
+<li><p>No entanto, muitas vezes, durante a programação, é necessário um pacote adicional para o nosso projeto. O RStudio permite baixar e instalá-lo através da função <code>install.packages("nome_do_pacote")</code>;</p></li>
+<li><p>Por exemplo, para instalar o pacote ggplot2 <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span>: <code>install.packages("ggplot2")</code>. Dessa forma, o pacote ggplot2 e os dependentes são automaticamente instalados;</p></li>
+<li><p>Para atualizar os pacotes: <strong>Tools &gt; Check for Package Updates…</strong></p></li>
+<li><p>Para instalar pacotes do GitHub [@]: <code>devtools::install_github("username/packagename")</code> . Esse comando irá instalar o pacote que está na página <code>github.com/username/packagename</code></p></li>
+</ul>
+</section>
+<section id="carregar" class="level2">
+<h2 class="anchored" data-anchor-id="carregar">Carregar</h2>
+<ul>
+<li><p>Após instalado, o pacote é carregado na atual sessão através do comando <code>library(ggplot2)</code> ;</p></li>
+<li><p>Outra forma é utilizar: <code>ggplot2::nome_do_comando</code>. Nesse caso, não precisa carregar o pacote na sessão</p></li>
+</ul>
+</section>
+</section>
+<section id="solicitando-ajuda" class="level1">
+<h1>Solicitando ajuda</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver todos os pacotes instalados</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>()</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver pacotes atualmente carregados</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">search</span>()</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Fornece detalhes sobre o conteúdo de um pacote</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(<span class="at">package =</span> <span class="st">"nome_do_pacote"</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Fornecer detalhes sobre a base de dados "diamonds" que está dentro do pacote "ggplot2"</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(diamonds, <span class="at">package=</span><span class="st">"ggplot2"</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Fornecer detalhes sobre o uso da função "mean" que está dentro do pacote base</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(mean)</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>?mean</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Listar as vinhetas/tutorias disponíveis para um pacote específico</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="at">package =</span> <span class="st">"nome_do_pacote"</span>)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizar uma vinheta específica</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"nome_da_vinheta"</span>)</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizar todas as vinhetas disponíveis no seu computador</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
 <section id="fluxo-de-trabalho" class="level1">
 <h1>Fluxo de Trabalho</h1>
 <ul>
@@ -680,26 +827,125 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ol>
 </section>
-<section id="atividade" class="level1">
-<h1>Atividade</h1>
-<ol type="1">
-<li><p>Crie uma conta no <a href="https://github.com/"><u>Github</u></a></p></li>
-<li><p>Faça a instalação do <a href="https://git-scm.com/"><u>Git</u></a></p></li>
-<li><p>Crie um projeto</p></li>
-</ol>
-</section>
-<section id="referências" class="level1">
-<h1>Referências</h1>
+<section id="escrevendo-o-código" class="level1">
+<h1>Escrevendo o código</h1>
 <ul>
-<li><p><a href="https://adv-r.hadley.nz/names-values.html"><u>Advanced R</u></a></p></li>
-<li><p><a href="https://r4ds.had.co.nz/index.html"><u>R for Data Science</u></a></p></li>
-<li><p><a href="https://livro.curso-r.com/index.html"><u>Ciência de Dados em R</u></a></p></li>
+<li><p>Ao escrever código, é muito importante ser claro e seguir uma estrutura racional. Normalmente, nosso código será depurado, lido, usado ou modificado por outras pessoas, portanto, deve ser muito claro</p></li>
+<li><p>Uma das práticas recomendadas que mais ajudam na clareza são os comentários no código. Eles são frases em linguagem natural precedidas por um símbolo de hash <code>#</code> ou <code>#'.</code></p></li>
+<li><p>Os comentários não são lidos durante a execução do código e servem para expressar ideias adicionais que ajudam outras pessoas a entenderem o que programamos.</p></li>
+<li><p>É possível pegar qualquer <strong>script R</strong> e compilá-lo em um relatório que inclua comentários, código-fonte e saída do script.</p></li>
+<li><p>Os relatórios podem ser gerados em diversos formatos, como <strong>HTML, PDF, MS Word e Markdown</strong>.</p></li>
+<li><p>Para compilar um relatório <strong>a partir de um script R</strong>, basta passá-lo para a função <code>render()</code>. Por exemplo: <code>rmarkdown::render("meu_script.R",pdf_document)</code> ou usar o comando <em>Compile Report</em> command (Ctrl+Shift+K) após a instalação do pacote <code>rmarkdown</code> .</p></li>
+<li><p>Para realizar os comentários dentro do script R algumas dicas básicas são:</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' ---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' title: "Aula 1"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' author: "Leonardo"</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#' date: "17/03/2025"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' ---</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">#' Use #' para escrever um texto </span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">#' Use # para escrever um texto dentro do código</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">#' Pode-se criar seções e subseções no código. Selecione Ctrl+Shift+o para identificá-las</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Seção --------------------------------------- (Ctrl+Shift+r para criar a seção)</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co">#' Realizando a soma de dois números </span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">+</span><span class="dv">2</span> <span class="co"># o símbolo "+" representa a soma (comentando no código)</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="do">## Subseção --------</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="co"># código</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="do">### Subseção da Subseção ------------</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="co"># mais código</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="co">#' Use # para comentar uma parte do código </span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="co">#' Selecione várias linhas de código e use Ctrl+Shift+c para comentar as linhas</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="co">#' Use #+ para adicionar configurações </span></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="co">#+ fig.width=5, fig.height=5</span></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> ; y <span class="ot">=</span> <span class="dv">2</span><span class="sc">*</span>x</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y)</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="co">#' Escreva expressões matemáticas: $\bar{X}=\frac{\sum_{i=1}^{n}x_i}{n}$</span></span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="co">#' A média de x é `r mean(x)`</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>O código acima gera o seguinte documento html:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figuras/doc.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ul>
+<li><p>Um dos melhores ambientes para desenvolvimento de código é um arquivo RMarkdown. Recentemente foi criado o Quarto com o mesmo objetivo. Para mais detalhes sobre documentação dinâmica, pesquisar sobre os pacotes <code>rmarkdown</code> e o aplicatico <code>Quarto</code> para R.<br>
+</p></li>
+<li><p>Para criar um arquivo Rmarkdown, basta clicar em File &gt; New File &gt; R Markdown</p>
+<p><img src="Figuras/rmd.png" class="img-fluid" width="588"></p></li>
+</ul>
+</section>
+<section id="r-e-ciência-de-dados" class="level1">
+<h1>R e Ciência de Dados</h1>
+<ul>
+<li><p>Ciência de dados é um conjunto de ferramentas que permite o pesquisador transformar dados brutos em compreensão,&nbsp;<em>insights</em>&nbsp;e conhecimento.</p></li>
+<li><p>Aprender as ferramentas mais importantes em R, permitirão que o pesquisador realize ciência de dados de forma eficiente e reprodutível</p></li>
+<li><p>A ciência de dados é um campo vasto e por isso vamos seguir as seguintes etapas:</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figuras/fases_da_CD.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ol type="1">
+<li><p>O pesquisador começa com a importação e organização dos dados.</p></li>
+<li><p>Em seguida, entende seus dados por meio de um ciclo iterativo de transformação, visualização e modelagem.</p></li>
+<li><p>Por fim, finaliza o ciclo comunicando seus resultados para outras pessoas.</p></li>
+</ol>
+<ul>
+<li><p>Todas essas etapas são realizadas utilizando a linguagem de programação em R integradas com outras linguagens</p></li>
+<li><p>Algumas referências para o curso: <span class="citation" data-cites="irizarry2019introduction">Irizarry (<a href="#ref-irizarry2019introduction" role="doc-biblioref">2019</a>)</span>,<span class="citation" data-cites="boehmke2016data">Boehmke (<a href="#ref-boehmke2016data" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="wickham2017r">Wickham, Grolemund, et al. (<a href="#ref-wickham2017r" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="ZamoraSaiz2020">Zamora Saiz et al. (<a href="#ref-ZamoraSaiz2020" role="doc-biblioref">2020</a>)</span> e <span class="citation" data-cites="wickham2019advanced">Wickham (<a href="#ref-wickham2019advanced" role="doc-biblioref">2019</a>)</span></p></li>
+</ul>
+</section>
+<section id="atividades" class="level1">
+<h1>Atividades</h1>
+<ul>
+<li><p>Crie uma conta no <a href="https://github.com/"><u>Github</u></a></p></li>
+<li><p>Crie um projeto</p></li>
 </ul>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-boehmke2016data" class="csl-entry" role="listitem">
+Boehmke, Bradley C. 2016. <em>Data wrangling with R</em>. Springer.
+</div>
+<div id="ref-irizarry2019introduction" class="csl-entry" role="listitem">
+Irizarry, Rafael A. 2019. <em>Introduction to data science: Data analysis and prediction algorithms with R</em>. Chapman; Hall/CRC.
+</div>
+<div id="ref-ggplot2" class="csl-entry" role="listitem">
+Wickham, Hadley. 2016. <span>«ggplot2: Elegant Graphics for Data Analysis»</span>. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
+</div>
+<div id="ref-wickham2019advanced" class="csl-entry" role="listitem">
+———. 2019. <em>Advanced r</em>. chapman; hall/CRC.
+</div>
+<div id="ref-wickham2017r" class="csl-entry" role="listitem">
+Wickham, Hadley, Garrett Grolemund, et al. 2017. <em>R for data science</em>. Vol. 2. O’Reilly Sebastopol, CA.
+</div>
+<div id="ref-ZamoraSaiz2020" class="csl-entry" role="listitem">
+Zamora Saiz, Alfonso, Carlos Quesada González, Lluís Hurtado Gil, e Diego Mondéjar Ruiz. 2020. <em>An Introduction to Data Analysis in R: Hands-on Coding, Data Mining, Visualization and Statistics from Scratch</em>. Springer International Publishing.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -754,12 +1000,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiada");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
