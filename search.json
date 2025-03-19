@@ -752,14 +752,14 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#apresentação-da-base-de-dados",
     "title": "Probabilidade e Estatística",
     "section": "Apresentação da base de dados",
-    "text": "Apresentação da base de dados\n\nBase simulada usando o programa R\nEmails de 100 remetentes\n\n\nprint(head(dados_email))\n\n                       remetente               assunto tamanho_kb prioridade\n1     Fernanda-Gomes@example.com       Oferta Especial        391      Média\n2    Rafael-Oliveira@example.com   Convite para Evento        134       Alta\n3    Fernanda-Santos@example.com       Oferta Especial        421       Alta\n4 Tatiane-Cavalcante@example.com       Oferta Especial         97      Média\n5    Mariana-Pereira@example.com Confirmação de Pedido        454       Alta\n6      Laura-Martins@example.com Confirmação de Pedido        250      Baixa\n   spam qtd_caracteres formato\n1 FALSE            223    HTML\n2 FALSE            208   Texto\n3  TRUE            254    HTML\n4 FALSE            185    HTML\n5  TRUE            235    HTML\n6  TRUE            100   Texto"
+    "text": "Apresentação da base de dados\n\nBase simulada usando o programa R\nEmails de 100 remetentes\n\n\nprint(head(dados_email))\n\n                      remetente               assunto tamanho_kb prioridade\n1 Fernanda-Ferreira@example.com  Atualização de Conta        108      Baixa\n2  Maria-Cavalcante@example.com Confirmação de Pedido        302      Média\n3  Tatiane-Ferreira@example.com Confirmação de Pedido        151       Alta\n4        José-Gomes@example.com Confirmação de Pedido         96       Alta\n5     Pedro-Martins@example.com  Atualização de Conta        442      Média\n6    Carlos-Almeida@example.com Confirmação de Pedido        260       Alta\n   spam qtd_caracteres formato\n1  TRUE            229    HTML\n2  TRUE            125   Texto\n3 FALSE            133    HTML\n4  TRUE            200   Texto\n5  TRUE             84    HTML\n6 FALSE            153   Texto"
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#identificações-das-variáveis",
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#identificações-das-variáveis",
     "title": "Probabilidade e Estatística",
     "section": "Identificações das variáveis",
-    "text": "Identificações das variáveis\n\nstr(dados_email)\n\n'data.frame':   100 obs. of  7 variables:\n $ remetente     : chr  \"Fernanda-Gomes@example.com\" \"Rafael-Oliveira@example.com\" \"Fernanda-Santos@example.com\" \"Tatiane-Cavalcante@example.com\" ...\n $ assunto       : chr  \"Oferta Especial\" \"Convite para Evento\" \"Oferta Especial\" \"Oferta Especial\" ...\n $ tamanho_kb    : num  391 134 421 97 454 250 493 224 476 77 ...\n $ prioridade    : chr  \"Média\" \"Alta\" \"Alta\" \"Média\" ...\n $ spam          : logi  FALSE FALSE TRUE FALSE TRUE TRUE ...\n $ qtd_caracteres: num  223 208 254 185 235 100 112 163 126 225 ...\n $ formato       : chr  \"HTML\" \"Texto\" \"HTML\" \"HTML\" ..."
+    "text": "Identificações das variáveis\n\nstr(dados_email)\n\n'data.frame':   100 obs. of  7 variables:\n $ remetente     : chr  \"Fernanda-Ferreira@example.com\" \"Maria-Cavalcante@example.com\" \"Tatiane-Ferreira@example.com\" \"José-Gomes@example.com\" ...\n $ assunto       : chr  \"Atualização de Conta\" \"Confirmação de Pedido\" \"Confirmação de Pedido\" \"Confirmação de Pedido\" ...\n $ tamanho_kb    : num  108 302 151 96 442 260 52 469 263 229 ...\n $ prioridade    : chr  \"Baixa\" \"Média\" \"Alta\" \"Alta\" ...\n $ spam          : logi  TRUE TRUE FALSE TRUE TRUE FALSE ...\n $ qtd_caracteres: num  229 125 133 200 84 153 285 92 244 89 ...\n $ formato       : chr  \"HTML\" \"Texto\" \"HTML\" \"Texto\" ..."
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#histogramas",
@@ -780,7 +780,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#gráficos-de-barras",
     "title": "Probabilidade e Estatística",
     "section": "Gráficos de Barras",
-    "text": "Gráficos de Barras\n\nTabelas: Frequências Absolutas e Relativas\n\n\ndados_email$prioridade &lt;- factor(dados_email$prioridade,levels = c(\"Baixa\",\"Média\",\"Alta\"))\n(tabela = table(dados_email$prioridade) ) \n\n\nBaixa Média  Alta \n   28    30    42 \n\n(tabela.prop = prop.table(tabela)) \n\n\nBaixa Média  Alta \n 0.28  0.30  0.42"
+    "text": "Gráficos de Barras\n\nTabelas: Frequências Absolutas e Relativas\n\n\ndados_email$prioridade &lt;- factor(dados_email$prioridade,levels = c(\"Baixa\",\"Média\",\"Alta\"))\n(tabela = table(dados_email$prioridade) ) \n\n\nBaixa Média  Alta \n   22    41    37 \n\n(tabela.prop = prop.table(tabela)) \n\n\nBaixa Média  Alta \n 0.22  0.41  0.37"
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/3-Graficos.html#gráficos-de-barras-1",
@@ -1229,655 +1229,11 @@
     ]
   },
   {
-    "objectID": "Cursos/Introducao_R/Cadernos/9-Importacao_Exportacao.html",
-    "href": "Cursos/Introducao_R/Cadernos/9-Importacao_Exportacao.html",
-    "title": "Importação e Exportação de base de dados",
-    "section": "",
-    "text": "Introdução\n\nPara a exploração de dados, é importante saber como carregar conjuntos de dados no RStudio antes de começarmos a trabalhar.\nNeste capítulo, aprenderemos as diferentes maneiras de carregar e exportar dados em uma sessão do RStudio. ,\nAntes de qualquer tipo de processamento, há quatro aspectos a considerar, independentemente do tipo de dados com que um analista se depara ou que tipo de análise vai ser efetuada.\n\nObtenção: embora os dados estejam em todo o lado, a sua obtenção pode variar entre algo tão simples como receber um ficheiro tabulado com toda a informação a algo avançado como a programação de um guião automático que recolhe a informação.\nFiabilidade: a própria fonte de dados deve ser posta em causa. Será que estamos a obter os dados da fonte original? Quando nós próprios geramos os dados, o que pode está errado? Todas as fontes de dados têm de ser examinadas em profundidade para verificar o seu grau de fiabilidade e detectar possíveis imprecisões.\nArmazenamento: por vezes, e cada vez com mais frequência, a quantidade de dados é tão grande que não cabem nem mesmo no maior disco rígido. Esta é a primeira razão para adotar soluções online, onde as vantagens de trabalhar na nuvem superam os problemas de armazenamento.\nProcessamento: mesmo quando o volume não é tão grande e pode ser armazenado num computador, é frequente que a memória RAM fique sobrecarregada. Por exemplo, uma base de dados de 10 GB num único ficheiro pode ser armazenada no disco rígido de qualquer computador, mas mas esse ficheiro não pode ser totalmente carregado na memória RAM, uma vez que a maioria dos computadores não têm normalmente mais de 8GB de RAM.\n\nAdvanced R\nR for Data Science\nHands-On Programming with R",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Importação e Exportação"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html",
-    "href": "Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html",
-    "title": "Programação Funcional",
-    "section": "",
-    "text": "Entende-se como paradigma uma forma de fazer algo. Ou seja, paradigma de programação é o nome que se dá a maneira como se programa, \nSão conjuntos de regras que guiam os desenvolvedores. Cada linguagem de programação é criada com base nessas regras.\nSão como limites nas formas como as linguagens são usadas, orientando um estilo particular de programação. \nDefine a metodologia e os princípios que guiam a escrita de código\n\n\n\n\n\nToda linguagem de programação possui funções, então o que torna uma linguagem de programação funcional?\nExistem muitas definições sobre o que exatamente torna uma linguagem funcional, mas existem dois (entre outros) pontos comuns:\n\nAs linguagens funcionais possuem funções de primeira classe.\n\nEm R, isso significa que você pode fazer muitas das coisas com uma função que você pode fazer com um vetor: você pode atribuí-las a variáveis, armazená-las em listas, passá-las como argumentos para outras funções, criá-las dentro de funções e até mesmo retorná-los como resultado de uma função.\n\nEm linguagens funcionais exigem que as funções sejam puras\n\nA saída depende apenas das entradas, ou seja, se você chamar novamente com as mesmas entradas, obterá as mesmas saídas.\nA função não tem efeitos colaterais, como alterar o valor de uma variável global.\n\n\nEstritamente falando, R não é uma linguagem de programação funcional porque não exige que você escreva funções puras. No entanto, você certamente pode adotar um estilo funcional em partes do seu código.\nAqui, podemos definir estilo funcional como:\n\nDecompor um grande problema em partes menores e, em seguida, resolver cada parte com uma função ou combinação de funções.\n\nAo usar um estilo funcional, você se esforça para decompor os componentes do problema em funções isoladas que operam de forma independente.\nCada função isoladamente é simples e direta de entender; a complexidade é tratada compondo funções de várias maneiras.\nExistem três principais técnicas funcionais que ajudam a decompor problemas em partes menores:\n\nFunções que recebem outras funções como argumentos. Usar funções para fazer loops. Funções functionals (funcionais)\nFunções que criam funções. Funções factories\nFunções que recebem funções como entrada e produzem funções como saída. Normalmente modificam o funcionamento de uma função. Funções operators\n\nEsses tipos de funções são chamados de higher-order functions (funções de ordem superior )",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Programação Funcional"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html#o-que-é-paradigma-de-programação",
-    "href": "Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html#o-que-é-paradigma-de-programação",
-    "title": "Programação Funcional",
-    "section": "",
-    "text": "Entende-se como paradigma uma forma de fazer algo. Ou seja, paradigma de programação é o nome que se dá a maneira como se programa, \nSão conjuntos de regras que guiam os desenvolvedores. Cada linguagem de programação é criada com base nessas regras.\nSão como limites nas formas como as linguagens são usadas, orientando um estilo particular de programação. \nDefine a metodologia e os princípios que guiam a escrita de código",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Programação Funcional"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html#programação-funcional",
-    "href": "Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html#programação-funcional",
-    "title": "Programação Funcional",
-    "section": "",
-    "text": "Toda linguagem de programação possui funções, então o que torna uma linguagem de programação funcional?\nExistem muitas definições sobre o que exatamente torna uma linguagem funcional, mas existem dois (entre outros) pontos comuns:\n\nAs linguagens funcionais possuem funções de primeira classe.\n\nEm R, isso significa que você pode fazer muitas das coisas com uma função que você pode fazer com um vetor: você pode atribuí-las a variáveis, armazená-las em listas, passá-las como argumentos para outras funções, criá-las dentro de funções e até mesmo retorná-los como resultado de uma função.\n\nEm linguagens funcionais exigem que as funções sejam puras\n\nA saída depende apenas das entradas, ou seja, se você chamar novamente com as mesmas entradas, obterá as mesmas saídas.\nA função não tem efeitos colaterais, como alterar o valor de uma variável global.\n\n\nEstritamente falando, R não é uma linguagem de programação funcional porque não exige que você escreva funções puras. No entanto, você certamente pode adotar um estilo funcional em partes do seu código.\nAqui, podemos definir estilo funcional como:\n\nDecompor um grande problema em partes menores e, em seguida, resolver cada parte com uma função ou combinação de funções.\n\nAo usar um estilo funcional, você se esforça para decompor os componentes do problema em funções isoladas que operam de forma independente.\nCada função isoladamente é simples e direta de entender; a complexidade é tratada compondo funções de várias maneiras.\nExistem três principais técnicas funcionais que ajudam a decompor problemas em partes menores:\n\nFunções que recebem outras funções como argumentos. Usar funções para fazer loops. Funções functionals (funcionais)\nFunções que criam funções. Funções factories\nFunções que recebem funções como entrada e produzem funções como saída. Normalmente modificam o funcionamento de uma função. Funções operators\n\nEsses tipos de funções são chamados de higher-order functions (funções de ordem superior )",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Programação Funcional"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html#pacote-purrr",
-    "href": "Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html#pacote-purrr",
-    "title": "Programação Funcional",
-    "section": "Pacote purrr",
-    "text": "Pacote purrr\n\nO funcional mais fundamental é purrr::map() . Ele pega um vetor e uma função, chama a função uma vez para cada elemento do vetor e retorna os resultados em uma lista. \nEm outras palavras, map(1:3, f) é equivalente a list(f(1), f(2), f(3)).\n\n\nx = NULL\ny = 1:3\nfor(i in 1:length(y)){\n  x[i] &lt;- 2*y[i]\n}\nx\n\n[1] 2 4 6\n\n\n\nf = function(x){2*x}\npurrr::map(y,f)\n\n[[1]]\n[1] 2\n\n[[2]]\n[1] 4\n\n[[3]]\n[1] 6\n\n\n\nA função do pacote base equivalente a purr::map()é lapply().\n\n\nf = function(x){2*x}\nlapply(y,f)\n\n[[1]]\n[1] 2\n\n[[2]]\n[1] 4\n\n[[3]]\n[1] 6\n\n\n\nmap()retorna uma lista, o que a torna a mais geral da família de mapas.\nMas é inconveniente retornar uma lista quando uma estrutura de dados mais simples serviria, então existem mais quatro variantes específicas: map_lgl(), map_int(), map_dbl(), e map_chr()\n\n\nrequire(purrr)\nhead(mtcars)\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\nmap_chr(mtcars, typeof) # character\n\n     mpg      cyl     disp       hp     drat       wt     qsec       vs \n\"double\" \"double\" \"double\" \"double\" \"double\" \"double\" \"double\" \"double\" \n      am     gear     carb \n\"double\" \"double\" \"double\" \n\nmap_lgl(mtcars, is.double) # lógical\n\n mpg  cyl disp   hp drat   wt qsec   vs   am gear carb \nTRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE \n\nmap_int(mtcars, ~length(unique(x))) # inteiro\n\n mpg  cyl disp   hp drat   wt qsec   vs   am gear carb \n   3    3    3    3    3    3    3    3    3    3    3 \n\n#map_int(mtcars, function(x) length(unique(x))) # inteiro\nmap_dbl(mtcars, mean) # double\n\n       mpg        cyl       disp         hp       drat         wt       qsec \n 20.090625   6.187500 230.721875 146.687500   3.596563   3.217250  17.848750 \n        vs         am       gear       carb \n  0.437500   0.406250   3.687500   2.812500 \n\n\n\n\nTodas as funções de map sempre retornam um vetor de saída do mesmo comprimento que a entrada, o que implica que cada chamada .f deve retornar um único valor.\nAs funções do map também possuem atalhos para extrair elementos de um vetor\nVocê pode usar um vetor de caracteres para selecionar elementos por nome, um vetor inteiro para selecionar por posição ou uma lista para selecionar por nome e posição.\n\n\nx &lt;- list(\n  list(-1, x = 1, y = c(2), z = \"a\"),\n  list(-2, x = 4, y = c(5, 6), z = \"b\"),\n  list(-3, x = 8, y = c(9, 10, 11))\n)\n\n# Select by name\nmap_dbl(x, \"x\")\n\n[1] 1 4 8\n\n# Or by position\nmap_dbl(x, 1)\n\n[1] -1 -2 -3\n\n# Or by both\nmap_dbl(x, list(\"y\", 1))\n\n[1] 2 5 9\n\n\n\n# Erro se o componente não existir:\nmap_chr(x, \"z\")\n#&gt; Error: Result 3 must be a single string, not NULL of length 0\n\n\n# Suprimir com um .default value\nmap_chr(x, \"z\", .default = NA)\n\n[1] \"a\" \"b\" NA \n\n\n\nListas aninhadas com JSON.\n\n\ndados_json &lt;- '[\n  {\"nome\": \"Alice\", \"idade\": 25, \"cidade\": \"São Paulo\"},\n  {\"nome\": \"Bob\", \"idade\": 30, \"cidade\": \"Rio de Janeiro\"},\n  {\"nome\": \"Charlie\", \"idade\": 22, \"cidade\": \"Belo Horizonte\"}\n]'\n\nlista_pessoas &lt;- rjson::fromJSON(dados_json)\n\n# Usar map para extrair os nomes de cada pessoa\n(nomes &lt;- map_chr(lista_pessoas, \"nome\"))\n\n[1] \"Alice\"   \"Bob\"     \"Charlie\"\n\n(idade &lt;- map_dbl(lista_pessoas, 2))\n\n[1] 25 30 22\n\n\n\nO primeiro argumento for constante e você quiser variar um argumento diferente\n\n\ntrims &lt;- c(0, 0.1, 0.2, 0.5)\nx &lt;- rcauchy(1000)\n\nmap_dbl(trims, ~ mean(x, trim = .))#\n\n[1]  1.416387218 -0.027132146 -0.009873303 -0.007816484\n\n\n\nGerar variáveis aleatórias\n\n\nmap(c(0,10,50), ~ rnorm(2,mean=.))\n\n[[1]]\n[1] 1.538814 1.063042\n\n[[2]]\n[1] 11.68551 11.00152\n\n[[3]]\n[1] 51.22313 50.61898",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Programação Funcional"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html#variações-do-map",
-    "href": "Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html#variações-do-map",
-    "title": "Programação Funcional",
-    "section": "Variações do map",
-    "text": "Variações do map\n\nmap2\n\nmap()é vetorizado em um único argumento, .x. Isso significa que ele varia apenas .x durante a chamada .f e todos os outros argumentos são transmitidos inalterados.\nConsidere, por exemplo, encontrar uma média ponderada para uma lista de observações e uma lista de pesos\n\n\nobs &lt;- list(c(1,2,3),c(1,5,6))\nwd &lt;- list(c(1,1,1),c(4,5,6))\nmap2_dbl(obs,wd,weighted.mean,na.rm=T)\n\n[1] 2.000000 4.333333\n\n\n\n\n\npmap\n\nVocê fornece uma única lista, que contém qualquer número de argumentos\nNa maioria dos casos, será uma lista de vetores de comprimento igual\n\n\npmap(list(obs, wd), weighted.mean, na.rm = TRUE) #ou \n\n[[1]]\n[1] 2\n\n[[2]]\n[1] 4.333333\n\npmap_dbl(list(obs, wd), weighted.mean, na.rm = TRUE)\n\n[1] 2.000000 4.333333\n\n\n\n\nMuitas vezes é conveniente ligar pmap()com um data frame\nNote os nomes dos argumentos da função rnorn\n\n\nargs(rnorm)\n\nfunction (n, mean = 0, sd = 1) \nNULL\n\nparametros = data.frame(\n  n = c(1L,2L,3L,4L),\n  mean = c(0,40,100,200),\n  sd = c(1,4,10,1)\n)\n\npmap(parametros,rnorm)\n\n[[1]]\n[1] 1.50682\n\n[[2]]\n[1] 46.21003 42.98749\n\n[[3]]\n[1]  99.44740  82.71286 113.78586\n\n[[4]]\n[1] 200.6749 200.4949 200.4827 200.4890",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Programação Funcional"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/5-Funcoes_Prob.html",
-    "href": "Cursos/Introducao_R/Cadernos/5-Funcoes_Prob.html",
-    "title": "Funções de Probabilidade",
-    "section": "",
-    "text": "Definição\n\nFunções de probabilidade são funções matemáticas que descrevem a distribuição de probabilidade de uma variável aleatória.\nElas atribuem uma probabilidade a cada possível resultado dessa variável aleatória.\nExistem diferentes tipos de funções de probabilidade, dependendo do tipo de variável aleatória em questão.\nFunção de probabilidade discreta: Usada quando a variável aleatória é discreta, ou seja, pode assumir valores contáveis. Exemplos: Bernoulli, Binomial, Poisson\nFunção de densidade de probabilidade (PDF): Usada quando a variável aleatória é contínua, ou seja, pode assumir qualquer valor dentro de um intervalo. Exemplos: Normal (Guassiana), Exponencial e Uniforme\nEssas funções são fundamentais em estatística e teoria das probabilidades para entender e modelar o comportamento de variáveis aleatórias em diferentes contextos.\n\n\n\nEm R\n\nPara cada distribuição de probabilidade existem quatro funções no R. Cada uma delas é chamada adicionando o seguinte prefixo ao nome da distribuição correspondente:\n\n- d - para a função de massa ou densidade.\n- p - para a função de distribuição (cumulativa).\n- q - para quantis, ou seja, para calcular o valor correspondente para a função de distribuição cumulativa dada uma probabilidade.\n- r-para gerar amostras aleatórias com a distribuição dada.\n\n\n\n\n\nDiscrete Distribution Name\nContinuous Distribution Name\n\n\n\n\nBinomial (binom)\nNormal (norm)\n\n\nNegative binomial (nbinom)\nExponential (exp)\n\n\nGeometric (geom)\nUniform (unif)\n\n\nPoisson (pois)\nGama (gamma)\n\n\n\n\n\nDistribuição Binomial\n\nA distribuição binomial é usada para modelar o número de sucessos (xx) em um número fixo de tentativas (nn) independentes, onde cada tentativa tem a mesma probabilidade (pp) de sucesso.\n\nP(X=x)=(nx)px(1−p)n−x\nP(X = x) = \\binom{n}{x} p^x (1-p)^{n-x}\n\n\nSuponha que estamos lançando uma moeda justa 10 vezes e queremos calcular a probabilidade de obter exatamente 4 caras.\n\n\n# Função dbinom() para calcular a probabilidade em uma distribuição binomial\nprobabilidade &lt;- dbinom(x=4, size = 10, prob = 0.5)\nprint(probabilidade)\n\n[1] 0.2050781\n\n\n\nSuponha que estamos lançando uma moeda justa 10 vezes e queremos calcular a probabilidade de obter no máximo 4 caras.\n\n\nprobabilidade &lt;- pbinom(q=4, size = 10, prob = 0.5)\nprint(probabilidade)\n\n[1] 0.3769531\n\n\n\nSimulando valores\n\n\nN = 20\nn = 1\n(x = rbinom(N,n,prob = 0.5))\n\n [1] 1 1 0 0 0 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0\n\n(table(x))\n\nx\n 0  1 \n12  8 \n\n\n\n\nDistribuição de Poisson\n\nA distribuição de Poisson modela a probabilidade de um número de eventos (xx) ocorrer em um intervalo fixo de tempo ou espaço, dado um número médio (λ\\lambda) de eventos que ocorrem nesse intervalo.\n\nP(X=x)=e−λλxx!\nP(X = x) = \\frac{e^{-\\lambda} \\lambda^x}{x!}\n\n\nSuponha que em média 2 clientes entram em uma loja por minuto. Queremos calcular a probabilidade de exatamente 3 clientes entrarem na loja em um minuto específico.\n\n\n# Função dpois() para calcular a probabilidade em uma distribuição de Poisson\nprobabilidade &lt;- dpois(3, lambda = 2)\nprint(probabilidade)\n\n[1] 0.180447\n\n\n\nSuponha que em média 2 clientes entram em uma loja por minuto. Queremos calcular a probabilidade de até 3 clientes entrarem na loja em um minuto específico.\n\n\nprobabilidade &lt;- ppois(3, lambda = 2)\nprint(probabilidade)\n\n[1] 0.8571235\n\n\n\nSimulando valores\n\n\nx &lt;- rpois(n = 10, lambda = 2)\ntable(x)\n\nx\n0 1 2 3 4 6 \n3 1 2 1 2 1 \n\n\n\n\nDistribuição Normal\n\nA distribuição normal (gaussiana) é usada para modelar uma grande variedade de fenômenos com variáveis contínuas. É caracterizada por sua forma de sino e é completamente determinada por sua média e desvio padrão.\n\nf(x)=1σ2πe−12(x−μσ)2\nf(x) = \\frac{1}{\\sigma \\sqrt{2\\pi}} e^{-\\frac{1}{2} \\left(\\frac{x - \\mu}{\\sigma}\\right)^2}\n\n\nxx é a variável aleatória,\nμ\\mu é a média da distribuição,\nσ\\sigma é o desvio padrão da distribuição.\nSuponha que estamos analisando os resultados de um teste padronizado em que a pontuação média é 100 e o desvio padrão é 15. Queremos calcular a probabilidade de um aluno ter uma pontuação abaixo de 110.\n\n\n# Função pnorm() para calcular a probabilidade em uma distribuição normal\nprobabilidade &lt;- pnorm(110, mean = 100, sd = 15)\nprint(probabilidade)\n\n[1] 0.7475075\n\n\n\nSuponha que estamos analisando os resultados de um teste padronizado em que a pontuação média é 100 e o desvio padrão é 15. Queremos calcular a probabilidade de um aluno ter uma pontuação entre 110 e 120.\n\n\nprobabilidade &lt;- pnorm(120, mean = 100, sd = 15) - pnorm(110, mean = 100, sd = 15)\nprint(probabilidade)\n\n[1] 0.1612813\n\n\n\nSuponha que estamos analisando os resultados de um teste padronizado em que a pontuação média é 100 e o desvio padrão é 15. Queremos calcular a probabilidade de um aluno ter uma pontuação maior que 120.\n\n\nprobabilidade &lt;- pnorm(120, mean = 100, sd = 15,lower.tail = F) \nprint(probabilidade) # ou\n\n[1] 0.09121122\n\nprobabilidade &lt;- 1-pnorm(120, mean = 100, sd = 15,lower.tail = T) \nprint(probabilidade)\n\n[1] 0.09121122\n\n\n\nQuantis\n\n\nqnorm(0.75,mean = 100,15)\n\n[1] 110.1173\n\nqnorm(0.09,mean = 100,15,lower.tail = F)\n\n[1] 120.1113\n\n\n\nSimulando valores\n\n\nz = rnorm(1000,mean = 0,sd = 1)\nx1 = rnorm(10000,mean = 100,sd = 1)\nx2 = rnorm(1000,mean = 100,sd = 10)\nx3 = rnorm(1000,mean = 10,sd = 10)\npar(mfrow=c(2,2))\nhist(z);hist(x1);hist(x2);hist(x3)\n\n\n\n\n\n\n\n\n\nf(x)f(x)\n\n\n# Parâmetros da distribuição normal\nmu &lt;- 0  # Média\nsigma &lt;- 1  # Desvio padrão\n\n# Valores para o eixo x\nx &lt;- seq(-4, 4, length.out = 100)\n\n# Calculando os valores da densidade de probabilidade para os valores de x\ny &lt;- dnorm(x, mean = mu, sd = sigma)\n\n# Plotando a curva da distribuição normal\nplot(x, y, type = \"l\", lwd = 2, col = \"blue\", \n     main = \"Curva da Distribuição Normal\", \n     xlab = \"x\", ylab = \"Densidade de Probabilidade\")\n\n\n\n\n\n\n\n\n\n\nAtividade\n\nPesquisar sobre as distribuições: exponencial e uniforme:\n\nElabore exemplos de uso dessas distribuições usando as funções em R apresentadas no exemplo da Normal\nCalcule propbabilidades\nGere dessas distribuições para diferentes parâmetros\n\nA tabela abaixo mostra uma simulação de controle de estoque para 15 dias. Construa uma função para simular o controle de estoque. Considere:\n\nEstoque máximo: 200\nEstoque no dia 1 é o estoque máximo\nDemanda ∼\\sim Poisson(50)(50)\nSejam Prob=\\mbox{Prob}= P(Demanda≥Estoque Final)P(\\mbox{Demanda} \\geq \\mbox{Estoque Final}) e EDS=Prob×estoque máximo+estoque final dia anterior\\mbox{EDS} = \\mbox{Prob} \\times \\mbox{estoque máximo} + \\mbox{estoque final dia anterior} o estoque do dia seguinte.\nO estoque do dia seguinte será preenchido considerando:\n\nSe Prob&gt;0.10\\mbox{Prob}&gt;0.10 então o estoque do dia seguinte será o mínimo entre estoque máximo eEDS\\mbox{EDS}, caso contrário o estoque do dia seguinte é o estoque final do dia anterior.\n\n\n\n\nDica: no dia 1, fixe o estoque máximo e simule a demanda usando rpois(n=1,lambda=50). Depois calcule a probabilidade de a demanda ser maior que o estoque final do dia 1 usando 1-ppois(Estoque final,50). Utilize a regra 5 para fazer os incrementos dos estoques diários\n\n\n\n\nReferências",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções de Probabilidades"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html",
-    "href": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html",
-    "title": "Estruturas de Controles",
-    "section": "",
-    "text": "Estruturas de controle são trechos de código que resultam em diferentes desfechos dependendo do resultado da verificação de uma ou mais condições lógicas.\nÉ um processo de tomada de decisão automatizado onde o programa escolhe executar uma instrução ou outra, ou até mesmo nenhuma delas, dependendo do resultado de uma parte anterior do código.\nIsso é especialmente útil quando o analista deseja realizar uma tarefa que é diferente dependendo da variável ou da situação.\nExistem duas estruturas de controle:\n\nCondicional: onde uma determinada instrução é executada com base na veracidade de uma condição.\nLoop: repete uma instrução várias vezes\n\n\n\n\n\nA estrutura condicional “if” é uma construção que permite a execução de determinados blocos de código com base na avaliação de uma condição lógica\nEssa condição lógica pode ser qualquer expressão que resulte em verdadeiro ou falso.\nSe a condição for verdadeira, o bloco de código associado ao “if” é executado; caso contrário, o programa pode optar por executar um bloco de código alternativo, definido pela estrutura “else”\n\n\nif (condition) true_action\n \nif (\"condition is satisfied\") {\n\"do something\"\n}\n\n\nif (condition) true_action else false_action\n \nif(\"condition is satisfied\"){\n \"do something\"\n} else {\n \"otherwise do something else\"\n}\n\n\nIf condition is TRUE, true_action é avaliada;\nif condition is FALSE, a opção false_action é avaliada.\n\n\nx = \"Leonardo\"\nif(class(x)==\"character\"){\n  cat(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n}\n\n O objeto x= Leonardo é da classe character\n\n\n\nx = 1\n\nif(class(x)==\"character\"){\n  paste(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n} else{\n  paste(\" O objeto x=\",x,\" é da classe\",class(x),sep=\" \")\n}\n\n[1] \" O objeto x= 1  é da classe numeric\"\n\n\n\nA função ifelse() permite executar duas instruções com base no resultado de uma condição lógica em uma única linha. A sintaxe para isso é a seguinte:\n\n\nifelse(condição, instrução_se_verdadeiro, instrução_se_falso)\n\n\ncondição: Uma condição lógica que avalia para TRUE ou FALSE.\ninstrução_se_verdadeiro: A instrução a ser executada se a condição for TRUE.\ninstrução_se_falso: A instrução a ser executada se a condição for FALSE.\n\n\nx = 1:10\nifelse(x %% 2 == 0, \"par\", \"ímpar\")\n\n [1] \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\"\n[10] \"par\"  \n\n\n\nx = 70\n if (x &gt;= 90 & x &lt;= 100) {\n    \"A\"\n  } else if (x &gt;= 80 & x &lt; 90) {\n    \"B\"\n  } else {\n    \"C\"\n  }\n\n[1] \"C\"\n\n\n\nx = 80\n if (x &gt;= 100 | x &lt;= 70) {\n    \"Extremo\"\n  } else {\n    \"Não é extremo\"\n  } \n\n[1] \"Não é extremo\"\n\n\n\n\n\nA função switch uma construção condicional que permite escolher um valor com base na correspondência de casos.\nEla é frequentemente utilizada quando você tem várias opções e deseja realizar diferentes ações dependendo do valor de uma expressão.\nÉ útil quando você tem uma série de casos possíveis e deseja evitar a aninhamento excessivo de instruções if-else.\nTorna o código mais limpo e legível, especialmente em situações em que há muitas opções possíveis.\nEsse exemplo faz uma correspondência entre o número e o dia da semana\n\n\nnumero = 1\ndia &lt;- switch(numero,\n                \"1\"=\"Domingo\",\n                \"2\"=\"Segunda-feira\",\n                \"3\"=\"Terça-feira\",\n                \"4\"=\"Quarta-feira\",\n                \"5\"=\"Quinta-feira\",\n                \"6\"=\"Sexta-feira\",\n                \"7\"=\"Sábado\"\n               )\ncat(\"O dia correspondente ao número\", numero, \"é\", dia, \"\\n\")\n\nO dia correspondente ao número 1 é Domingo \n\n\n\nEsse exemplo faz uma correspondência entre o número percentual (character) e o número decimal (numeric)\n\n\nPROP = \"25%\"\nprop &lt;- switch (PROP,\n    \"25%\" = 0.25,\n    \"50%\" = 0.5,\n    \"75%\" = 0.75\n  )\nprop\n\n[1] 0.25\n\n\n\n\n\n\n\nOs loops, ou laços de repetição, são estruturas que permitem executar um bloco de código repetidamente\n\n\n\n\nO loop for é empregado para executar instruções de código repetitivas um número determinado de vezes.\n\n\nfor (variavel in sequencia) {\n  # código a ser executado em cada iteração\n}\n#ou\nfor (variavel in 1:n) { # n = quantidade de iterações\n  # código a ser executado em cada iteração\n}\n\n\nAo executar este código, você verá a saída que mostra os quadrados dos números de 1 a 5.\n\n\nfor (i in 1:5) {\n  quadrado &lt;- i^2\n  cat(\"O quadrado de\", i, \"é\", quadrado, \"\\n\")\n}\n\nO quadrado de 1 é 1 \nO quadrado de 2 é 4 \nO quadrado de 3 é 9 \nO quadrado de 4 é 16 \nO quadrado de 5 é 25 \n\n\n\nAo executar este código, você obterá a saída mostrando a soma dos primeiros 10 números naturais.\n\n\nn = 12\nsoma &lt;- 0\nfor (i in 1:n) {\n  soma &lt;- soma + i\n}\ncat(\"A soma dos primeiros\",n, \"números naturais é:\", soma, \"\\n\")\n\nA soma dos primeiros 12 números naturais é: 78 \n\ncumsum(1:n) # forma alternativa\n\n [1]  1  3  6 10 15 21 28 36 45 55 66 78\n\n\n\nSe quisermos combinar as saídas anteriores em um único vetor x, podemos primeiro iniciar x e depois anexar a saída do loop for a x.\n\n\nx &lt;- NULL # criando vetor vazio\n\nfor(i in 2010:2016) {\noutput &lt;- paste (\"The year is\", i)\nx &lt;- append(x, output)\n}\nhead(x)\n\n[1] \"The year is 2010\" \"The year is 2011\" \"The year is 2012\" \"The year is 2013\"\n[5] \"The year is 2014\" \"The year is 2015\"\n\n\n\nSorteio de n números de uma sequência de 1 a N\n\n\nN = 1000 # número total de elementos 1:N\nm = 10 # colunas\nn = 500 # linhas ; amostra de tamanho n \nmatrix_amostra_sorteada = matrix(0,nrow = n,ncol = m) # criando a matriz\nmedia_amostra_sorteada = NULL\n\nset.seed(2) # gerar sempre as mesmas amostras\nfor(k in 1:m){\n  x = sample(1:N,n,replace=T) # sorteando n números de uma sequência de 1:N\n  media_amostra_sorteada = append(media_amostra_sorteada,mean(x))\n  matrix_amostra_sorteada[,k] &lt;- x # guardando a amostra sorteada na coluna\n}\nmatrix_amostra_sorteada[1:6,1:3]\n\n     [,1] [,2] [,3]\n[1,]  853  239  586\n[2,]  975  732  623\n[3,]  710  906  488\n[4,]  774   59  848\n[5,]  416  373  784\n[6,]  392   48   57\n\nhead(media_amostra_sorteada)\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nUsando a função replicate()\n\n\nset.seed(2)\nmatrix_amostra_sorteada = replicate(m,sample(1:N,n,replace=T))\nhead( colMeans(matrix_amostra_sorteada) )\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nVariando dentro do vetor\n\n\nn = c(10,20,30,40)\nfor(k in n){\n  print(2*k)\n}\n\n[1] 20\n[1] 40\n[1] 60\n[1] 80\n\n\n\nUtilizando dois for\n\n\nmatriz &lt;- matrix(0, nrow = 3, ncol = 3)\n\n# Preencher a matriz com números sequenciais usando um loop for\ncontador &lt;- 1\n\nfor (i in 1:3) {\n  for (j in 1:3) { # fixa o i e varia o j\n    matriz[i, j] &lt;- contador \n    contador &lt;- contador + 1\n  }\n}\nmatriz\n\n     [,1] [,2] [,3]\n[1,]    1    2    3\n[2,]    4    5    6\n[3,]    7    8    9\n\n\n\n\n\n\nOs loops while começam testando uma condição. Se for verdadeira, então eles executam a instrução.\nUma vez que a instrução é executada, a condição é testada novamente, e assim por diante, até que a condição seja falsa, momento em que o loop é encerrado.\nÉ considerada uma boa prática incluir um objeto contador para acompanhar o número total de iterações.\n\n\ncontador &lt;- 0\n while (condition) {\n   # código executado enquanto a condição for verdade \n   # contador &lt;- contador + 1\n }\n\n\nO código a seguir irá imprimir o valor de i enquanto este objeto for menor que 5.\nQuando a condição não for mais respeitada, o processo será interrompido.\n\n\ni = 0\nwhile(i&lt;5){\n  cat(i,\"é menor que 5\",\"\\n\")\n  i = i+1\n}\n\n0 é menor que 5 \n1 é menor que 5 \n2 é menor que 5 \n3 é menor que 5 \n4 é menor que 5 \n\n\n\nLançamento de um dado até que um determinado número seja obtido.\n\n\nnumero_escolhido &lt;- 6\nresultado_dado = 1 # iniciar com número diferente do número escolhido\ntentativas = 0\nwhile (resultado_dado!=numero_escolhido) {\n  resultado_dado = sample(1:6,1,replace = T,prob = NULL) # sorteando número de 1 a 6\n   tentativas = tentativas + 1\n   cat(\"Tentativa:\",tentativas,\"\\n\",\"Número do dado é\",resultado_dado,\"\\n\")\n  \n}\n\nTentativa: 1 \n Número do dado é 1 \nTentativa: 2 \n Número do dado é 5 \nTentativa: 3 \n Número do dado é 3 \nTentativa: 4 \n Número do dado é 3 \nTentativa: 5 \n Número do dado é 3 \nTentativa: 6 \n Número do dado é 1 \nTentativa: 7 \n Número do dado é 5 \nTentativa: 8 \n Número do dado é 2 \nTentativa: 9 \n Número do dado é 4 \nTentativa: 10 \n Número do dado é 2 \nTentativa: 11 \n Número do dado é 4 \nTentativa: 12 \n Número do dado é 2 \nTentativa: 13 \n Número do dado é 1 \nTentativa: 14 \n Número do dado é 1 \nTentativa: 15 \n Número do dado é 1 \nTentativa: 16 \n Número do dado é 4 \nTentativa: 17 \n Número do dado é 5 \nTentativa: 18 \n Número do dado é 4 \nTentativa: 19 \n Número do dado é 1 \nTentativa: 20 \n Número do dado é 3 \nTentativa: 21 \n Número do dado é 5 \nTentativa: 22 \n Número do dado é 4 \nTentativa: 23 \n Número do dado é 4 \nTentativa: 24 \n Número do dado é 5 \nTentativa: 25 \n Número do dado é 5 \nTentativa: 26 \n Número do dado é 2 \nTentativa: 27 \n Número do dado é 5 \nTentativa: 28 \n Número do dado é 5 \nTentativa: 29 \n Número do dado é 5 \nTentativa: 30 \n Número do dado é 1 \nTentativa: 31 \n Número do dado é 3 \nTentativa: 32 \n Número do dado é 4 \nTentativa: 33 \n Número do dado é 4 \nTentativa: 34 \n Número do dado é 4 \nTentativa: 35 \n Número do dado é 4 \nTentativa: 36 \n Número do dado é 6 \n\n\n\nObservação: a diferença principal entre um loop for e um loop while é: um loop for é usado quando o número de iterações que um código deve ser executado é conhecido, enquanto um loop while é usado quando o número de iterações não é conhecido.\n\n\n\n\n\nUm loop repeat é usado para iterar sobre um bloco de código várias vezes.\nNão há uma expressão de teste em um loop repeat para encerrar ou sair do loop.\nEm vez disso, devemos colocar uma declaração de condição explicitamente dentro do corpo do loop e usar a função break para sair do loop. Não fazer isso resultará em um loop infinito.\nA ideia é repetir um loop e parar quando a condição for satisfeita, para isso será utiliza a função break\n\n\ncontador = 1\nrepeat {\n  # código será executado repetidamente\n  if (condition) {\n    break  # se a condição for satisfeita, para a repetição\n  }\n  contador = contador+1\n}\n\n\nRode esse código no seu computador\nAvaliar como o tamanho da amostra afeta a média amostral\n\n\nN = 1000\npopulacao = runif(N, 0, 100) # gerar N números entre 0 e 100\nhead(populacao)\n(media.populacao = mean(populacao))\nn = 5 # tamanho da amostra inicial\nrepeat {\n  amostra = sample(populacao, n, replace = T) # sorteando n observações da população\n  media.amostra = mean(amostra)\n  if (abs(media.amostra - media.populacao) &lt; 0.01) {\n    n = 2 * n\n    cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n    break\n  }\n  n = 2 * n\n  cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n}\n\n\n\n\n\nÉ útil quando queremos pular a iteração atual de um loop sem terminá-lo.\nAo encontrar next, o analisador R pula a avaliação adicional e inicia a próxima iteração do loop.\n\n\nx &lt;- 1:5\nfor (i in x) {\nif (i == 3){\nnext\n}\nprint (i)\n}\n\n[1] 1\n[1] 2\n[1] 4\n[1] 5\n\n\n\n\n\n\nA função break é usada para sair imediatamente de um loop, independentemente da iteração em que o loop possa estar.\nAs funções break geralmente estão embutidas em uma declaração if, na qual uma condição é avaliada: se for VERDADEIRA, sai do loop; se for FALSA, continua com o loop.\nEm uma situação de looping aninhado, onde há um loop dentro de outro loop, essa declaração sai do loop mais interno que está sendo avaliado.\n\n\nx &lt;- 1:5\nfor (i in x) {\n  if (i == 3){\n  break\n  }\nprint (i)\n}\n\n[1] 1\n[1] 2",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de Controles"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#condicional",
-    "href": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#condicional",
-    "title": "Estruturas de Controles",
-    "section": "",
-    "text": "A estrutura condicional “if” é uma construção que permite a execução de determinados blocos de código com base na avaliação de uma condição lógica\nEssa condição lógica pode ser qualquer expressão que resulte em verdadeiro ou falso.\nSe a condição for verdadeira, o bloco de código associado ao “if” é executado; caso contrário, o programa pode optar por executar um bloco de código alternativo, definido pela estrutura “else”\n\n\nif (condition) true_action\n \nif (\"condition is satisfied\") {\n\"do something\"\n}\n\n\nif (condition) true_action else false_action\n \nif(\"condition is satisfied\"){\n \"do something\"\n} else {\n \"otherwise do something else\"\n}\n\n\nIf condition is TRUE, true_action é avaliada;\nif condition is FALSE, a opção false_action é avaliada.\n\n\nx = \"Leonardo\"\nif(class(x)==\"character\"){\n  cat(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n}\n\n O objeto x= Leonardo é da classe character\n\n\n\nx = 1\n\nif(class(x)==\"character\"){\n  paste(\" O objeto x=\",x,\"é da classe character\",sep=\" \")\n} else{\n  paste(\" O objeto x=\",x,\" é da classe\",class(x),sep=\" \")\n}\n\n[1] \" O objeto x= 1  é da classe numeric\"\n\n\n\nA função ifelse() permite executar duas instruções com base no resultado de uma condição lógica em uma única linha. A sintaxe para isso é a seguinte:\n\n\nifelse(condição, instrução_se_verdadeiro, instrução_se_falso)\n\n\ncondição: Uma condição lógica que avalia para TRUE ou FALSE.\ninstrução_se_verdadeiro: A instrução a ser executada se a condição for TRUE.\ninstrução_se_falso: A instrução a ser executada se a condição for FALSE.\n\n\nx = 1:10\nifelse(x %% 2 == 0, \"par\", \"ímpar\")\n\n [1] \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\" \"par\"   \"ímpar\"\n[10] \"par\"  \n\n\n\nx = 70\n if (x &gt;= 90 & x &lt;= 100) {\n    \"A\"\n  } else if (x &gt;= 80 & x &lt; 90) {\n    \"B\"\n  } else {\n    \"C\"\n  }\n\n[1] \"C\"\n\n\n\nx = 80\n if (x &gt;= 100 | x &lt;= 70) {\n    \"Extremo\"\n  } else {\n    \"Não é extremo\"\n  } \n\n[1] \"Não é extremo\"\n\n\n\n\n\nA função switch uma construção condicional que permite escolher um valor com base na correspondência de casos.\nEla é frequentemente utilizada quando você tem várias opções e deseja realizar diferentes ações dependendo do valor de uma expressão.\nÉ útil quando você tem uma série de casos possíveis e deseja evitar a aninhamento excessivo de instruções if-else.\nTorna o código mais limpo e legível, especialmente em situações em que há muitas opções possíveis.\nEsse exemplo faz uma correspondência entre o número e o dia da semana\n\n\nnumero = 1\ndia &lt;- switch(numero,\n                \"1\"=\"Domingo\",\n                \"2\"=\"Segunda-feira\",\n                \"3\"=\"Terça-feira\",\n                \"4\"=\"Quarta-feira\",\n                \"5\"=\"Quinta-feira\",\n                \"6\"=\"Sexta-feira\",\n                \"7\"=\"Sábado\"\n               )\ncat(\"O dia correspondente ao número\", numero, \"é\", dia, \"\\n\")\n\nO dia correspondente ao número 1 é Domingo \n\n\n\nEsse exemplo faz uma correspondência entre o número percentual (character) e o número decimal (numeric)\n\n\nPROP = \"25%\"\nprop &lt;- switch (PROP,\n    \"25%\" = 0.25,\n    \"50%\" = 0.5,\n    \"75%\" = 0.75\n  )\nprop\n\n[1] 0.25",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de Controles"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#loops",
-    "href": "Cursos/Introducao_R/Cadernos/3-Estruturas_de_Controle.html#loops",
-    "title": "Estruturas de Controles",
-    "section": "",
-    "text": "Os loops, ou laços de repetição, são estruturas que permitem executar um bloco de código repetidamente\n\n\n\n\nO loop for é empregado para executar instruções de código repetitivas um número determinado de vezes.\n\n\nfor (variavel in sequencia) {\n  # código a ser executado em cada iteração\n}\n#ou\nfor (variavel in 1:n) { # n = quantidade de iterações\n  # código a ser executado em cada iteração\n}\n\n\nAo executar este código, você verá a saída que mostra os quadrados dos números de 1 a 5.\n\n\nfor (i in 1:5) {\n  quadrado &lt;- i^2\n  cat(\"O quadrado de\", i, \"é\", quadrado, \"\\n\")\n}\n\nO quadrado de 1 é 1 \nO quadrado de 2 é 4 \nO quadrado de 3 é 9 \nO quadrado de 4 é 16 \nO quadrado de 5 é 25 \n\n\n\nAo executar este código, você obterá a saída mostrando a soma dos primeiros 10 números naturais.\n\n\nn = 12\nsoma &lt;- 0\nfor (i in 1:n) {\n  soma &lt;- soma + i\n}\ncat(\"A soma dos primeiros\",n, \"números naturais é:\", soma, \"\\n\")\n\nA soma dos primeiros 12 números naturais é: 78 \n\ncumsum(1:n) # forma alternativa\n\n [1]  1  3  6 10 15 21 28 36 45 55 66 78\n\n\n\nSe quisermos combinar as saídas anteriores em um único vetor x, podemos primeiro iniciar x e depois anexar a saída do loop for a x.\n\n\nx &lt;- NULL # criando vetor vazio\n\nfor(i in 2010:2016) {\noutput &lt;- paste (\"The year is\", i)\nx &lt;- append(x, output)\n}\nhead(x)\n\n[1] \"The year is 2010\" \"The year is 2011\" \"The year is 2012\" \"The year is 2013\"\n[5] \"The year is 2014\" \"The year is 2015\"\n\n\n\nSorteio de n números de uma sequência de 1 a N\n\n\nN = 1000 # número total de elementos 1:N\nm = 10 # colunas\nn = 500 # linhas ; amostra de tamanho n \nmatrix_amostra_sorteada = matrix(0,nrow = n,ncol = m) # criando a matriz\nmedia_amostra_sorteada = NULL\n\nset.seed(2) # gerar sempre as mesmas amostras\nfor(k in 1:m){\n  x = sample(1:N,n,replace=T) # sorteando n números de uma sequência de 1:N\n  media_amostra_sorteada = append(media_amostra_sorteada,mean(x))\n  matrix_amostra_sorteada[,k] &lt;- x # guardando a amostra sorteada na coluna\n}\nmatrix_amostra_sorteada[1:6,1:3]\n\n     [,1] [,2] [,3]\n[1,]  853  239  586\n[2,]  975  732  623\n[3,]  710  906  488\n[4,]  774   59  848\n[5,]  416  373  784\n[6,]  392   48   57\n\nhead(media_amostra_sorteada)\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nUsando a função replicate()\n\n\nset.seed(2)\nmatrix_amostra_sorteada = replicate(m,sample(1:N,n,replace=T))\nhead( colMeans(matrix_amostra_sorteada) )\n\n[1] 523.802 491.546 485.894 503.402 506.608 510.678\n\n\n\nVariando dentro do vetor\n\n\nn = c(10,20,30,40)\nfor(k in n){\n  print(2*k)\n}\n\n[1] 20\n[1] 40\n[1] 60\n[1] 80\n\n\n\nUtilizando dois for\n\n\nmatriz &lt;- matrix(0, nrow = 3, ncol = 3)\n\n# Preencher a matriz com números sequenciais usando um loop for\ncontador &lt;- 1\n\nfor (i in 1:3) {\n  for (j in 1:3) { # fixa o i e varia o j\n    matriz[i, j] &lt;- contador \n    contador &lt;- contador + 1\n  }\n}\nmatriz\n\n     [,1] [,2] [,3]\n[1,]    1    2    3\n[2,]    4    5    6\n[3,]    7    8    9\n\n\n\n\n\n\nOs loops while começam testando uma condição. Se for verdadeira, então eles executam a instrução.\nUma vez que a instrução é executada, a condição é testada novamente, e assim por diante, até que a condição seja falsa, momento em que o loop é encerrado.\nÉ considerada uma boa prática incluir um objeto contador para acompanhar o número total de iterações.\n\n\ncontador &lt;- 0\n while (condition) {\n   # código executado enquanto a condição for verdade \n   # contador &lt;- contador + 1\n }\n\n\nO código a seguir irá imprimir o valor de i enquanto este objeto for menor que 5.\nQuando a condição não for mais respeitada, o processo será interrompido.\n\n\ni = 0\nwhile(i&lt;5){\n  cat(i,\"é menor que 5\",\"\\n\")\n  i = i+1\n}\n\n0 é menor que 5 \n1 é menor que 5 \n2 é menor que 5 \n3 é menor que 5 \n4 é menor que 5 \n\n\n\nLançamento de um dado até que um determinado número seja obtido.\n\n\nnumero_escolhido &lt;- 6\nresultado_dado = 1 # iniciar com número diferente do número escolhido\ntentativas = 0\nwhile (resultado_dado!=numero_escolhido) {\n  resultado_dado = sample(1:6,1,replace = T,prob = NULL) # sorteando número de 1 a 6\n   tentativas = tentativas + 1\n   cat(\"Tentativa:\",tentativas,\"\\n\",\"Número do dado é\",resultado_dado,\"\\n\")\n  \n}\n\nTentativa: 1 \n Número do dado é 1 \nTentativa: 2 \n Número do dado é 5 \nTentativa: 3 \n Número do dado é 3 \nTentativa: 4 \n Número do dado é 3 \nTentativa: 5 \n Número do dado é 3 \nTentativa: 6 \n Número do dado é 1 \nTentativa: 7 \n Número do dado é 5 \nTentativa: 8 \n Número do dado é 2 \nTentativa: 9 \n Número do dado é 4 \nTentativa: 10 \n Número do dado é 2 \nTentativa: 11 \n Número do dado é 4 \nTentativa: 12 \n Número do dado é 2 \nTentativa: 13 \n Número do dado é 1 \nTentativa: 14 \n Número do dado é 1 \nTentativa: 15 \n Número do dado é 1 \nTentativa: 16 \n Número do dado é 4 \nTentativa: 17 \n Número do dado é 5 \nTentativa: 18 \n Número do dado é 4 \nTentativa: 19 \n Número do dado é 1 \nTentativa: 20 \n Número do dado é 3 \nTentativa: 21 \n Número do dado é 5 \nTentativa: 22 \n Número do dado é 4 \nTentativa: 23 \n Número do dado é 4 \nTentativa: 24 \n Número do dado é 5 \nTentativa: 25 \n Número do dado é 5 \nTentativa: 26 \n Número do dado é 2 \nTentativa: 27 \n Número do dado é 5 \nTentativa: 28 \n Número do dado é 5 \nTentativa: 29 \n Número do dado é 5 \nTentativa: 30 \n Número do dado é 1 \nTentativa: 31 \n Número do dado é 3 \nTentativa: 32 \n Número do dado é 4 \nTentativa: 33 \n Número do dado é 4 \nTentativa: 34 \n Número do dado é 4 \nTentativa: 35 \n Número do dado é 4 \nTentativa: 36 \n Número do dado é 6 \n\n\n\nObservação: a diferença principal entre um loop for e um loop while é: um loop for é usado quando o número de iterações que um código deve ser executado é conhecido, enquanto um loop while é usado quando o número de iterações não é conhecido.\n\n\n\n\n\nUm loop repeat é usado para iterar sobre um bloco de código várias vezes.\nNão há uma expressão de teste em um loop repeat para encerrar ou sair do loop.\nEm vez disso, devemos colocar uma declaração de condição explicitamente dentro do corpo do loop e usar a função break para sair do loop. Não fazer isso resultará em um loop infinito.\nA ideia é repetir um loop e parar quando a condição for satisfeita, para isso será utiliza a função break\n\n\ncontador = 1\nrepeat {\n  # código será executado repetidamente\n  if (condition) {\n    break  # se a condição for satisfeita, para a repetição\n  }\n  contador = contador+1\n}\n\n\nRode esse código no seu computador\nAvaliar como o tamanho da amostra afeta a média amostral\n\n\nN = 1000\npopulacao = runif(N, 0, 100) # gerar N números entre 0 e 100\nhead(populacao)\n(media.populacao = mean(populacao))\nn = 5 # tamanho da amostra inicial\nrepeat {\n  amostra = sample(populacao, n, replace = T) # sorteando n observações da população\n  media.amostra = mean(amostra)\n  if (abs(media.amostra - media.populacao) &lt; 0.01) {\n    n = 2 * n\n    cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n    break\n  }\n  n = 2 * n\n  cat(\"n=\", n, \"\\n\", \"Media amostral=\", media.amostra, \"\\n\")\n}\n\n\n\n\n\nÉ útil quando queremos pular a iteração atual de um loop sem terminá-lo.\nAo encontrar next, o analisador R pula a avaliação adicional e inicia a próxima iteração do loop.\n\n\nx &lt;- 1:5\nfor (i in x) {\nif (i == 3){\nnext\n}\nprint (i)\n}\n\n[1] 1\n[1] 2\n[1] 4\n[1] 5\n\n\n\n\n\n\nA função break é usada para sair imediatamente de um loop, independentemente da iteração em que o loop possa estar.\nAs funções break geralmente estão embutidas em uma declaração if, na qual uma condição é avaliada: se for VERDADEIRA, sai do loop; se for FALSA, continua com o loop.\nEm uma situação de looping aninhado, onde há um loop dentro de outro loop, essa declaração sai do loop mais interno que está sendo avaliado.\n\n\nx &lt;- 1:5\nfor (i in x) {\n  if (i == 3){\n  break\n  }\nprint (i)\n}\n\n[1] 1\n[1] 2",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de Controles"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html",
-    "title": "Apresentação do R e Rstudio",
-    "section": "",
-    "text": "R é uma linguagem e um ambiente de desenvolvimento integrado, livre e gratuito;\nO software R disponibiliza recursos para vários tipos de análises:\n\nEstatística descritiva: medidas de posição, dispersão, tabelas e gráficos;\nModelos lineares, não lineares, generalizados: estimação dos parâmetros, resíduos, métodos de diagnóstico;\nAnálise multivariada: Análise de componentes principais, clusters, fatorial;\nAprendizado de Máquina\nDeepLearning,",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#telas",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#telas",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Telas",
-    "text": "Telas\n\nEle oferece várias telas e painéis para facilitar o desenvolvimento, análise de dados e criação de visualizações.\n\n\n\n\nPainés do Rstudio\n\n\n\nSegue uma breve explicação das telas principais do RStudio.\n\n\nConsole:\n\nA tela principal onde você digita comandos R e recebe a saída imediata.\n\nScript Editor:\n\nOnde você escreve e edita seus scripts em R. Os scripts são arquivos contendo código R que podem ser executados no console.\n\nEnvironment/Painel de Ambiente:\n\nExibe informações sobre objetos (variáveis, datasets) em sua sessão R atual.\n\nHistory/Histórico:\n\nMantém um histórico de comandos R previamente executados.\n\nFiles/Painel de Arquivos:\n\nMostra os arquivos e diretórios do seu projeto. Facilita a navegação e a organização.\n\nPlots/Painel de Gráficos:\n\nExibe visualizações geradas a partir do R.\n\nPackages/Pacotes:\n\nGerencia pacotes R instalados e fornece ferramentas para instalação e atualização.\n\nHelp/Ajuda:\n\nFornece acesso à documentação e ajuda sobre funções e pacotes R.\n\nViewer/Visualizador:\n\nExibe visualizações mais complexas, como páginas web, no próprio IDE.\n\nGit:\n\nFacilita a integração com sistemas de controle de versão Git, permitindo o rastreamento de alterações em projetos.\n\nConnections/Conexões:\n\nPermite conectar-se a fontes de dados externas\n\nTerminal:\n\nUm terminal embutido para execução de comandos do sistema operacional.",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#cheatsheets",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#cheatsheets",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Cheatsheets",
-    "text": "Cheatsheets\n\nAs “cheatsheets” (folhas de dicas) no RStudio são recursos visuais e resumidos que fornecem informações rápidas e úteis sobre tópicos específicos relacionados à linguagem de programação R, ao ambiente RStudio e a pacotes específicos do R.\nPara acessar as cheatsheets, você pode ir diretamente à página de cheatsheets do RStudio\nTambém pode ser acessada cliclando em Help -&gt; Cheat Sheets",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminhos",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminhos",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Caminhos",
-    "text": "Caminhos\n\nEntende-se por caminho o endereço do arquivo no computador\nExistem duas formas de passarmos o caminho de arquivo: caminho absoluto ou caminho relativo",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-absoluto",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Caminho Absoluto",
-    "text": "Caminho Absoluto\n\nO caminho absoluto especifica o local exato de um arquivo desde a raiz do sistema de arquivo.\nO diretório raiz é o que está no topo da hierarquia do sistema, isso significa que outros diretórios estão contidos nele.\n\n\n\n\nCaminho Absoluto\n\n\n\ngetwd() é uma forma abreviada de dizer get working directory (me diga qual a pasta de trabalho atual).\n\n\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R/Cadernos\"\n\n\n\nObserve que o local de referência é a pasta “Cadernos”, pois este é o caminho absoluto para a pasta onde essa aula foi produzida. Vamos voltar para a pasta “Introducao_R” utilizando o conceito de caminho relativo",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-relativo",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#caminho-relativo",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Caminho Relativo",
-    "text": "Caminho Relativo\n\nO caminho relativo é especificado em relação ao diretório de trabalho atual ou a outro local de referência. Assim, se você quiser acessar alguma base de dados na pasta “dados” partindo da pasta”Cadernos”, o caminho seria: ../dados/base_de_dados.formato.\nNesse caso, ../ é o comando para voltar uma pasta dentro do caminho e ./ representa a pasta/diretório atual.\nCaso você queira trocar o local referência da pasta “caderno” para a pasta”Introducao_R “, use o seguinte código:\n\n\nsetwd(\"..\") # trocando local referência ou diretório de trabalho\ngetwd()\n\n[1] \"C:/Users/Leonardo_Nascimento/Documents/GitHub/webpage/Cursos/Introducao_R\"",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#diretório-de-trabalho",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#diretório-de-trabalho",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Diretório de trabalho",
-    "text": "Diretório de trabalho\n\nBasicamente, diretório de trabalho refere-se a uma pasta específica no sistema de arquivos do computador em que um programa está atualmente operando ou onde ele procura por arquivos para ler e salvar por padrão.\nNo contexto do R, o diretório de trabalho é particularmente importante porque é o local onde o R procura por arquivos . Isso significa que, se você carregar ou salvar um arquivo sem especificar a pasta, o R assumirá que o arquivo está no diretório de trabalho.\nÉ no diretório de trabalho que o R procura os arquivos que você pede para carregar e onde ele coloca todos os arquivos que você pede para salvar. De forma geral, é o local que está localizada sua análise.\nRStudio mostra seu diretório de trabalho atual na parte superior do console:\n\n\n\n\nDiretório\n\n\n\nVocê também pode visualizar o diretório de trabalho atual usando a função getwd().\nVocê também pode definir o diretório de trabalho dentro do R utilizando a\nfunção setwd(\"colocar_o_caminho\").",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#observações",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#observações",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Observações",
-    "text": "Observações\n\nCaminhos e diretórios são um pouco complicados porque existem dois estilos básicos de caminhos: Mac/Linux e Windows. Existem três maneiras principais pelas quais eles diferem\n\nComo você separa os componentes do caminho. Mac e Linux usam barras (por exemplo  plots/diamonds.pdf) e o Windows usa barras invertidas (por exemplo  plots\\diamonds.pdf). R pode funcionar com qualquer tipo. Porém, barras invertidas significam algo especial para R, e para obter uma única barra invertida no caminho, você precisa digitar duas barras invertidas! Recomendo sempre usar o estilo Linux/Mac com barras.\nAo criar scripts ou projetos em R, é uma boa prática usar caminhos relativos, pois isso torna o código mais portátil e facilita a colaboração. Além disso, evita problemas quando você compartilha seu código com outros ou move seu projeto para um novo sistema operacional.\nA última pequena diferença é o local para onde ~aponta. ~é um atalho conveniente para o seu diretório inicial. No Windows, ele aponta para o diretório de documentos. undefined\n\n\n\nTabela 1: Localização de pastas no Linux\n\n\n\nNome fantasia\nLocalização real\n\n\n\n\nPasta pessoal\n/home/estudante ou ~/\n\n\nÁrea de trabalho\n/home/estudante/Desktop\n\n\nPendrive\n/media/RotuloDoPendrive\n\n\n\n\n\nTabela 2: Localização de pastas em versão recente do Windows\n\n\n\nNome fantasia\nLocalização real\n\n\n\n\nPasta pessoal\nC:/Users/estudante/Meus documentos ou ~/\n\n\nÁrea de trabalho\nC:/Users/estudante/Desktop ou ~/../Desktop\n\n\nPendrive\nF:/ (ou outra letra)\n\n\n\n\nNesses casos, criar projetos no R é uma prática recomendada e traz vários benefícios para a organização, colaboração e reprodutibilidade do trabalho\nCrie um diretório onde você possa colocar todos os programas/projetos em R",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#instalação",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#instalação",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Instalação",
-    "text": "Instalação\n\nO R é construído como um conjunto de bibliotecas/pacotes voltadas para diferentes aplicações;\nTodos esses pacotes (com a respectiva documentação) podem ser facilmente baixados e instalados a partir do repositório CRAN.\nNo entanto, muitas vezes, durante a programação, é necessário um pacote adicional para o nosso projeto. O RStudio permite baixar e instalá-lo através da função install.packages(\"nome_do_pacote\");\nPor exemplo, para instalar o pacote ggplot2 (Wickham 2016): install.packages(\"ggplot2\"). Dessa forma, o pacote ggplot2 e os dependentes são automaticamente instalados;\nPara atualizar os pacotes: Tools &gt; Check for Package Updates…\nPara instalar pacotes do GitHub [@]: devtools::install_github(\"username/packagename\") . Esse comando irá instalar o pacote que está na página github.com/username/packagename",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#carregar",
-    "href": "Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html#carregar",
-    "title": "Apresentação do R e Rstudio",
-    "section": "Carregar",
-    "text": "Carregar\n\nApós instalado, o pacote é carregado na atual sessão através do comando library(ggplot2) ;\nOutra forma é utilizar: ggplot2::nome_do_comando. Nesse caso, não precisa carregar o pacote na sessão",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Apresentação do R e Rstudio"
-    ]
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html",
-    "title": "Estrutura de dados",
-    "section": "",
-    "text": "No contexto da linguagem de programação R, objetos e vetores são conceitos fundamentais relacionados à manipulação de dados;",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#vetores-atômicos",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#vetores-atômicos",
-    "title": "Estrutura de dados",
-    "section": "Vetores atômicos",
-    "text": "Vetores atômicos\n\nExistem quatro tipos principais de vetores atômicos: lógico, inteiro, double e caractere (que contém strings);\nVetores inteiros e double são conhecidos como vetores numéricos;\n\n\n\nPara criar vetores use a função c() (combine)\nPara saber o tipo de vetor, você pode utilizar a funcão typeof(). Para saber seu comprimento a função length().\nVocê pode testar se um vetor é de um determinado tipo com uma função is.*()\n\n\nLógico\n\nlgl_var &lt;- c(TRUE, FALSE)# lógico\nlgl_var &lt;- c(T, F)# lógico\ntypeof(lgl_var)# verificar o tipo\n\n[1] \"logical\"\n\nis.logical(lgl_var) # testar se o vetor é do tipo lógico\n\n[1] TRUE\n\nis.integer(lgl_var)\n\n[1] FALSE\n\nlength(lgl_var)\n\n[1] 2\n\n\n\n\nDouble\n\ndbl_var &lt;- c(1, 2.5, 4.5)#forma decimal \ndbl_var &lt;- c(1.23e4)##forma científica \ntypeof(dbl_var) \n\n[1] \"double\"\n\nis.double(dbl_var) # testar se o vetor é do tipo Double \n\n[1] TRUE\n\nis.character(lgl_var)\n\n[1] FALSE\n\nlength(dbl_var)\n\n[1] 1\n\n\n\nExistem três valores especiais exclusivos para Double: Inf, -Inf e NaN (Not a Number)\n\n\ndbl_var &lt;- c(Inf,-Inf,NaN)\ntypeof(dbl_var)\n\n[1] \"double\"\n\n\n\n\nInteiro\n\nOs inteiros são escritos de forma semelhante aos Double, mas devem ser seguidos por L\n\n\nint_var &lt;- c(1L, 6L, 10L)# inteiro\ntypeof(int_var)\n\n[1] \"integer\"\n\nis.integer(int_var)\n\n[1] TRUE\n\nis.character(int_var)\n\n[1] FALSE\n\nlength(int_var)\n\n[1] 3\n\n\n\n\nCaractere (string)\n\nAs strings são colocadas entre ” ”\n\n\nchr_var &lt;- c(\"Leonardo\", \"Nascimento\")\nchr_var &lt;- c(\"Ótimo\", \"Bom\",\"Ruim\")\nchr_var &lt;- c(\"Masculino\", \"Feminino\")\nis.character(chr_var)\n\n[1] TRUE\n\ntypeof(chr_var)\n\n[1] \"character\"\n\n\n\n\nObservações\n\nEm um vetor, cada valor ocupa uma posição específica determinada pela ordem em que os elementos foram adicionados durante a criação do vetor.\nEssa ordem é crucial para acessar cada valor de maneira individual dentro do vetor.\n\n\nmeu_vetor = c(1,2,10,4,5)\nmeu_vetor[3]\n\n[1] 10\n\n\n\nNULL\n\nEmbora não seja um vetor, NULLestá intimamente relacionado aos vetores e geralmente desempenha a função de um vetor genérico de comprimento zero.\n\n\nvetor_null &lt;- c(NULL)\nvetor_null\n\nNULL\n\ntypeof(vetor_null)\n\n[1] \"NULL\"\n\n\n\n\nNA\n\nEm R, “NA” (Not Available) é usado para representar valores ausentes ou desconhecidos.\nA maioria dos cálculos envolvendo um valor faltante retornará outro valor faltante.\n\n\nmeu_vetor &lt;- c(10,NA)\n2*meu_vetor\n\n[1] 20 NA\n\n\n\nPara verificar se um valor é “NA”, você pode usar a função is.na().\n\n\nx &lt;- c(1, 2,3,NA, 5)\nis.na(x)\n\n[1] FALSE FALSE FALSE  TRUE FALSE\n\n\n\nMuitas funções em R têm maneiras para lidar com valores ausentes. Por exemplo, algumas funções têm argumentos como na.rm para remover NAs durante cálculos\n\n\nnotas_alunos &lt;- c(10, 7, NA, 8, 8.5)\nmean(notas_alunos, na.rm = TRUE) # média\n\n[1] 8.375\n\n\n\nVocê pode substituir valores NA por outros valores usando a função is.na() e indexação\n\n\nmeu_vetor &lt;- c(1, 2,3, 4, NA)\nmeu_vetor[is.na(meu_vetor)] &lt;- 0\n\n\n\n\nCoerção\n\nPara vetores atômicos, o tipo é uma propriedade de todo o vetor\nTodos os elementos devem ser do mesmo tipo.\nQuando você tenta combinar tipos diferentes, eles serão forçados em uma ordem fixa: caractere → double → inteiro → lógico.\n\n\ny1 &lt;- c(1L,\"leonardo\") # inteiro, character\ny1\n\n[1] \"1\"        \"leonardo\"\n\ntypeof(y1)\n\n[1] \"character\"\n\ny2 &lt;- c(5.5,10L) # double, inteiro\ny2\n\n[1]  5.5 10.0\n\ntypeof(y2)\n\n[1] \"double\"",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#listas",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#listas",
-    "title": "Estrutura de dados",
-    "section": "Listas",
-    "text": "Listas\n\nAs listas são um avanço em complexidade em relação aos vetores atômicos: cada elemento pode ser de qualquer tipo\nVocê constrói listas com a função list()\n\n\nl1 &lt;- list(\n  1:3, \n  \"a\", \n  c(TRUE, FALSE, TRUE), \n  c(2.3, 5.9)\n)\nprint(l1)\n\n[[1]]\n[1] 1 2 3\n\n[[2]]\n[1] \"a\"\n\n[[3]]\n[1]  TRUE FALSE  TRUE\n\n[[4]]\n[1] 2.3 5.9\n\ntypeof(l1)\n\n[1] \"list\"\n\n\n\nPara acessa um elemento da lista usamos [[ ]]\n\n\nl1 &lt;- list(\n  1:3, \n  \"a\", \n  c(TRUE, FALSE, TRUE), \n  c(2.3, 5.9)\n)\nl1[[4]]\n\n[1] 2.3 5.9\n\nl1[[4]][1]\n\n[1] 2.3\n\n\n\nVocê pode testar uma lista com is.list() e forçar uma lista com as.list()\n\n\nminha_lista = list(1:3)\nprint(minha_lista)\n\n[[1]]\n[1] 1 2 3\n\nis.list(minha_lista)\n\n[1] TRUE\n\nvec &lt;- c(1,2,3)\nis.list(vec)\n\n[1] FALSE\n\nas.list(vec)\n\n[[1]]\n[1] 1\n\n[[2]]\n[1] 2\n\n[[3]]\n[1] 3\n\n\nVocê pode transformar uma lista em um vetor atômico com unlist().\n\nminha_lista = list(1:3,4:10)\nprint(minha_lista)\n\n[[1]]\n[1] 1 2 3\n\n[[2]]\n[1]  4  5  6  7  8  9 10\n\nunlist(minha_lista)\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\nAs regras para o tipo resultante são complexas, não estão bem documentadas e nem sempre são equivalentes ao que você obteria com c().",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#nomes",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#nomes",
-    "title": "Estrutura de dados",
-    "section": "Nomes",
-    "text": "Nomes\n\nVocê pode atribuir nomes a cada elemento do vetor usando a função names(). Isso facilita a referência a elementos específicos pelo nome.\n\n\nmeu_vetor &lt;- c(1, 2, 3)\nnames(meu_vetor) &lt;- c(\"primeiro\", \"segundo\", \"terceiro\")\nmeu_vetor\n\nprimeiro  segundo terceiro \n       1        2        3 \n\nattributes(meu_vetor)\n\n$names\n[1] \"primeiro\" \"segundo\"  \"terceiro\"\n\n\n\nFormas alternativas para nomear um vetor\n\n\nx1 &lt;- c(a = 1, b = 2, c = 3)\nx1\n\na b c \n1 2 3 \n\nx2 &lt;- setNames(1:3, c(\"a\", \"b\", \"c\"))\nx2\n\na b c \n1 2 3",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#dimensão",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#dimensão",
-    "title": "Estrutura de dados",
-    "section": "Dimensão",
-    "text": "Dimensão\n\nEm R, vetores podem ter atributos de dimensão, que são comumente associados a matrizes.\n\n\nmeu_vetor &lt;- 1:5\nmeu_vetor\n\n[1] 1 2 3 4 5\n\ndim(meu_vetor) &lt;- c(5, 1) # linha x coluna\nmeu_vetor\n\n     [,1]\n[1,]    1\n[2,]    2\n[3,]    3\n[4,]    4\n[5,]    5\n\nattributes(meu_vetor)\n\n$dim\n[1] 5 1",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#classe",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#classe",
-    "title": "Estrutura de dados",
-    "section": "Classe",
-    "text": "Classe\n\nA classe de um objeto é uma propriedade que indica a natureza ou tipo do objeto em termos de programação orientada a objetos\nA classe é uma parte fundamental em R, pois determina como o objeto será tratado em operações específicas e quais métodos (funções associadas) podem ser aplicados a ele.\nAqui estão algumas das classes mais comuns em R:\n\nnumeric: Números reais (double).\ninteger: Números inteiros.\nlogical: Valores lógicos (TRUE ou FALSE).\ncharacter: Strings de caracteres.\nfactor: Fatores, usados para representar variáveis categóricas com níveis\nDate: Representação de datas.\nPOSIXct e POSIXlt: Representação de datas e horas.\ndata.frame: Uma estrutura bidimensional que pode conter colunas de diferentes classes.\nmatrix: Uma estrutura bidimensional que contém elementos de uma única classe.\narray: Uma estrutura de dados multidimensional que pode conter elementos de uma única classe.\nlist: Uma estrutura que pode conter elementos de diferentes classes e até outras listas.\nfunction: Funções.\n\nEm R, a função class() é usada para obter a classe de um objeto\n\n\nvec1 = c(1,2)\nvec2 = c(3,4)\nclass(vec1)\n\n[1] \"numeric\"\n\nminha_matriz &lt;- matrix(c(vec1,vec2), nrow = 2, ncol = 2)\nminha_matriz\n\n     [,1] [,2]\n[1,]    1    3\n[2,]    2    4\n\nclass(minha_matriz)\n\n[1] \"matrix\" \"array\" \n\n\n\nVocê pode atribuir uma classe a um vetor usando a função class(). Isso é comumente usado em programação orientada a objetos em R.\n\n\nvec &lt;- c(1,2,3,4)\nclass(vec)\n\n[1] \"numeric\"\n\nclass(vec)&lt;- \"minha_classe\"\nclass(vec)\n\n[1] \"minha_classe\"",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#exemplo",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#exemplo",
-    "title": "Estrutura de dados",
-    "section": "Exemplo",
-    "text": "Exemplo\n\nCriando um objeto da classe Pessoa\n\n\npessoa1 &lt;- structure(\n  c(\"Leonardo\"), \n  idade = 31,\n  last_name = \"Nascimento\",\n  class = \"Pessoa\"\n)\npessoa1\n\n[1] \"Leonardo\"\nattr(,\"idade\")\n[1] 31\nattr(,\"last_name\")\n[1] \"Nascimento\"\nattr(,\"class\")\n[1] \"Pessoa\"\n\nclass(pessoa1)\n\n[1] \"Pessoa\"\n\nattr(pessoa1,\"idade\") # selecionado o atributo idade\n\n[1] 31\n\nnames(pessoa1)\n\nNULL",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#questão-1",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#questão-1",
-    "title": "Estrutura de dados",
-    "section": "Questão 1",
-    "text": "Questão 1\n\n#'Criar uma classe simples chamada \"Produto\" que representa um produto. \n#'Considere os atributos: preço e validade.\n#'Utilizar a função structure para criar objetos da classe \"Produto\".\n\n#' Considere o exemplo para trabalhar com datas\n\nexem_data = as.Date(\"2023-12-31\") # ano-mês-dia\ndata_formatada = format(exem_data, format = \"%d/%m/%Y\") # dia-mês-ano\ndata_formatada",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#questão-2",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#questão-2",
-    "title": "Estrutura de dados",
-    "section": "Questão 2",
-    "text": "Questão 2\n\n#'Criar uma classe simples chamada \"Livro\" que representa um livro com atributos: autor e ano de publicação.\n#'Utilizar a função structure para criar objetos da classe \"Livro\" com informações fictícias.",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#questão-3",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#questão-3",
-    "title": "Estrutura de dados",
-    "section": "Questão 3",
-    "text": "Questão 3\n\n## letra a)---------\n#' Crie um data.frame contendo as variáveis: nome e nota\n#' escolha os nomes e valores\n#' 5 linhas\n\n\n## letra b)---------\n#' Adicione um atributo chamado \"disciplina\", representando o nome da disciplina e \n#' Exiba o atributo \"disciplina\" \n\n## letra c)---------\n#'Modifique o valor do atributo \"disciplina\" para representar outra disciplina.\n\n## letra d)---------\n\n#'Adicione o atributo \"semestre\" e  Exiba o atributo \"semestre\"",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#questão-4",
-    "href": "Cursos/Introducao_R/Cadernos/2-Estrutura_de_dados.html#questão-4",
-    "title": "Estrutura de dados",
-    "section": "Questão 4",
-    "text": "Questão 4\n\nCrie um data frame com as seguintes informações:\n\nColuna 1: nome de duas cidades, cada uma repetindo 5 vezes.\nColuna 2: variável temperatura, escolha o valor da temperatura para as cidades\nPara cada cidade, calcule a média (mean()) e o desvio padrão (sd()) da temperatura.\nPara cada cidade, use a função summary()\nTransforme o data frame em uma matriz. O que acontece?",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Estruturas de dados"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html",
-    "title": "Funções",
-    "section": "",
-    "text": "Funções são blocos de código que podem ser chamados para realizar uma tarefa específica\nElas facilitam a organização do código, promovem a reutilização e tornam o código mais organizados.\nAs funções permitem-lhe reduzir a duplicação de código, automatizando uma tarefa generalizada a ser aplicada recursivamente.\nDica: você deve considerar escrever uma função sempre que copiar e colar um bloco de código mais de duas vezes\nPara definir uma função em R, você usa a palavra-chave function seguida pelos parâmetros/argumentos da função e o corpo da função\n\n\nname &lt;- function(arguments) {\n  body\n  return(objeto que guarda o resultado final)\n}\n\n\nFunções são objetos, assim como vetores são objetos.\nDe forma geral, as funções podem ser divididas em três partes:\n\nO formals(), a lista de argumentos que controlam como você chama a função.\nO body(), o código dentro da função.\nO environment(), a estrutura de dados que determina como a função encontra os valores associados aos nomes.\n\nEmbora os formals() e o body() sejam especificados explicitamente quando você cria uma função, o environment() é especificado implicitamente, com base em onde você definiu a função.\nO environment() da função sempre existe, mas só é impresso quando a função não está definida no ambiente global.\nf(x) = 2x\n\n\nf_x = function(x){\n  f_x = 2*x # função\n  return(f_x)\n}\n\nx = c(1,2,3,4)\n(y = f_x(x))\n\n[1] 2 4 6 8\n\nargs(f_x)\n\nfunction (x) \nNULL\n\nplot(x,y)\n\n\n\n\n\n\n\n\n\nformals(f_x)\n\n$x\n\nbody(f_x)\n\n{\n    f_x = 2 * x\n    return(f_x)\n}\n\nenvironment(f_x)\n\n&lt;environment: R_GlobalEnv&gt;\n\nattr(f_x, \"srcref\")\n\nfunction(x){\n  f_x = 2*x # função\n  return(f_x)\n}\n\n\n\nMédia de um vetor numérico\n\n\nmedia = function(x){\n  media_x = sum(x)/length(x)\n  return(media_x)\n}\ny = sample(1:100,20,replace=T)\nmedia(y)\n\n[1] 56.8\n\nmean(y)\n\n[1] 56.8\n\n\n\nFunção para fazer uma correspondência entre o número e o dia da semana\n\n\ndia_semana &lt;- function(numero_dia) {\n  dia &lt;- switch(\n    numero_dia,\n    \"1\" = \"Domingo\",\n    \"2\" = \"Segunda-feira\",\n    \"3\" = \"Terça-feira\",\n    \"4\" = \"Quarta-feira\",\n    \"5\" = \"Quinta-feira\",\n    \"6\" = \"Sexta-feira\",\n    \"7\" = \"Sábado\"\n  )\n  return(cat(\"O dia correspondente ao número\", numero_dia, \"é\", dia, \"\\n\"))\n}\ndia_semana(2)\n\nO dia correspondente ao número 2 é Segunda-feira",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#dotdotdot",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#dotdotdot",
-    "title": "Funções",
-    "section": "… dot,dot,dot",
-    "text": "… dot,dot,dot\n\nNa definição de uma função, você pode usar três pontos (...) para indicar que a função aceita argumentos adicionais.\nEsses argumentos adicionais não precisam ser explicitamente listados na definição da função\nEsses argumentos adicionais geralmente são passados para outras funções dentro do corpo da função.\nNo exemplo abaixo, ... permite a passagem de argumentos adicionais, como na.rm para remover valores ausentes ao calcular a média.\n\n\nmedia_ponderada &lt;- function(valores,pesos,...) {\n  # Calcula a média ponderada\n  resultado &lt;- sum(valores * pesos,...) / sum(pesos,...)\n  return(resultado)\n}\nmedia_ponderada(c(1,2,NA),c(1,2,3))\n\n[1] NA\n\nmedia_ponderada(c(1,2,NA),c(1,2,3),na.rm=T)\n\n[1] 0.8333333",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#on.exit",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#on.exit",
-    "title": "Funções",
-    "section": "on.exit",
-    "text": "on.exit\n\nA função on.exit é usada para especificar código que deve ser executado quando a execução de uma função é concluída\nFrequentemente usada para garantir que determinadas ações sejam realizadas antes que a função termine, independentemente de como ele termina\nNo exemplo a seguir vamos trocar de diretório\n\n\nnames_wd_atual &lt;- \"colocar caminho\" # diretório atual\nwd_atual &lt;- setwd(names_wd_atual)\n\ncriar_grafico &lt;- function() {\n  x11() # abrindo nova janela para a figura\n  new_wd &lt;- paste0(wd_atual,\"/Figuras/figura_exemplo_on_exit.jpg\")\n  jpeg(new_wd) # salvando figura no novo diretório\n  plot(1:10, main = \"Meu Gráfico\", ylab = \"Valores\")\n  # Configura on.exit para fechar o dispositivo gráfico ao sair\n  on.exit({\n    dev.off()\n    cat(\"Fechando o dispositivo gráfico\\n\")\n    setwd(wd_atual) # voltando para o diretório atual\n    cat(\"voltando para o diretório atual\\n\")\n  }, add = TRUE)\n}\n\n# Chama a função\ncriar_grafico()",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#formas-de-funções",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#formas-de-funções",
-    "title": "Funções",
-    "section": "Formas de Funções",
-    "text": "Formas de Funções\n\nEmbora tudo o que acontece em R seja resultado de uma função, nem todos as funções são formuladas da mesma forma.\nExistem quatro formas de funções:\n\nPrefix Functions\nInfix Functions\nReplacement Functions\nSpecial functios\n\n\n\nPrefix Functions\n\nSão as funções padrão ou regulares, identificadas por um nome seguido de argumentos entre parênteses.\n\n\nmedia_ponderada &lt;- function(x,peso=c(1,1,1),...)return(sum(peso*x,...)/sum(peso,...))\n\n\nmedia_ponderada(c(1,2,3)) # o nome da função vem antes de seus argumento\n\n[1] 2\n\n\n\n\nInfix Functions\n\nO nome da função fica entre seus argumentos\nAs formas infixas são usadas para muitos operadores matemáticos e para funções definidas pelo usuário que começam e terminam com %\n\n\n\n[1] -1\n\n\n[1] 5\n\n\n[1] 6\n\n\n[1] 0.6666667\n\n\n\nx &lt;- c(1,2,3,4,5)\n6 %in% x # o número 6 pertence ao conjuto x?\n\n[1] FALSE\n\nx &lt;- c(1,2,3,4,5)\n2 %in% x # o número 2 pertence ao conjuto x?\n\n[1] TRUE\n\n\n\nmat1 = matrix(c(1,2,3,4),2,2)\nmat2 = matrix(c(1,2,3,4),2,2)\nmat1 %*% mat2 # multiplicação de matriz\n\n     [,1] [,2]\n[1,]    7   15\n[2,]   10   22\n\n\n\nDefinindo nova função infix\n\n\n`%+%` &lt;- function(a, b) paste(a, b,sep=\"-\")\n\"new \" %+% \"string\"\n\n[1] \"new -string\"\n\n\n\nA biblioteca magrittr adiciona o operador pipe, que permite usar a saída de uma função como entrada de outra função\n\n\nrequire(magrittr) # pacote para usar %&gt;%\nx &lt;- c(1,2,3,4)\ndesvio_padrao = sqrt( var(x) )\ndesvio_padrao = var(x) %&gt;% sqrt()\ndesvio_padrao = var(x) |&gt; sqrt() # pacote base\n\n\nOs colchetes transformam o pipe no que é quase uma função anônima\n\n\n1:5 %&gt;% {(. + 1) / 2} # 1:5 são utilizados no lugar do ponto\n\n[1] 1.0 1.5 2.0 2.5 3.0\n\n\n\n\nReplacement Functions\n\nEstas funções são frequentemente usadas para atribuir valores a variáveis ou modificar objetos existentes.\n\n\n'function_name&lt;-' &lt;- function(x, additional arguments, value) \n{ \nfunction body \n} \n\n\nNomear elementos do vetor com a função names\n\n\nx = c(1,2,3,4)\nnames(x) &lt;- paste0(\"n\",1:length(x))\nx\n\nn1 n2 n3 n4 \n 1  2  3  4 \n\n\n\nMudar o segundo elemento do vetor\n\n\n\"replace_second&lt;-\" = function(x,value){\n  x[2] &lt;- value\n  x\n}\nx = c(1,2,3,4)\nreplace_second(x) &lt;- 0L\nx\n\n[1] 1 0 3 4\n\n\n\n'modify&lt;-' &lt;- function(x, position, value) {\n  x[position] &lt;- value\n  x\n}\nx = 1:5\nmodify(x, 1) &lt;- 2 # value=2\nx\n\n[1] 2 2 3 4 5\n\n\n\n\nSpecial Functions\n\nFunções especiais muitas vezes desempenham papéis específicos, como manipulação condicional, filtragem de dados e manipulação de strings.\nFerramentas de controle de fluxo\n\nif (cond) true (`if`(cond, true))\nif (cond) true else false (`if`(cond, true, false))\nfor(var in seq) action (`for`(var, seq, action))\nwhile(cond) action (`while`(cond, action))\nrepeat expr (`repeat`(expr))\nnext (`next`())\nbreak (`break`())",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#erro-stop-condition",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#erro-stop-condition",
-    "title": "Funções",
-    "section": "Erro (Stop Condition):",
-    "text": "Erro (Stop Condition):\n\nA função stop() é usada para sinalizar um erro. Quando um erro é sinalizado, a execução do código é interrompida e uma mensagem de erro é exibida.\n\n\ncalcular_media &lt;- function(x) {\n  if (length(x) == 0) {\n    stop(\"Erro: O vetor está vazio.\")\n  }\n  if (is.numeric(x) == F) {\n    stop(\"Erro: vetor deve ser do tipo numérico\")\n  }\n  return(mean(x))\n}\ncalcular_media(1:4)\n\n[1] 2.5\n\n\n\ncalcular_media &lt;- function(x) {\n  if (length(x) == 0) {\n    stop(\"Erro: O vetor está vazio.\")\n  }\n  if (is.numeric(x) == F) {\n    stop(\"Erro: vetor deve ser do tipo numérico\")\n  }\n  return(mean(x))\n}\ncalcular_media(c(1,2,3,\"l\"))\n# Error in calcular_media(c(1, 2, 3, \"l\")) : \n#  Erro: vetor deve ser do tipo numérico",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#aviso-warning-condition",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#aviso-warning-condition",
-    "title": "Funções",
-    "section": "Aviso (Warning Condition):",
-    "text": "Aviso (Warning Condition):\n\nA função warning() é usada para sinalizar um aviso. Um aviso não interrompe a execução do código, mas alerta o usuário sobre algo que pode ser problemático.\n\n\ncalcular_raiz_quadrada &lt;- function(x) {\n  if (any(x &lt; 0)) {\n    warning(\"Alguns valores são negativos. A raiz quadrada de números negativos será tratada como NaN.\")\n  }\n  return(sqrt(x))\n}\n\n# Exemplo de uso\nresultado &lt;- calcular_raiz_quadrada(c(4, -9, 16))\nprint(resultado)\n\n[1]   2 NaN   4",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#mensagem-informativa-message-condition",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#mensagem-informativa-message-condition",
-    "title": "Funções",
-    "section": "Mensagem Informativa (Message Condition):",
-    "text": "Mensagem Informativa (Message Condition):\n\nA função message() é usada para sinalizar mensagens informativas. Essas mensagens são úteis para fornecer informações adicionais durante a execução do código.\n\n\ncalcular_cubo &lt;- function(x) {\n  message(\"Calculando o cubo dos valores.\")\n  return(x^3)\n}\n\n# Exemplo de uso\nresultado &lt;- calcular_cubo(c(2, 3, 4))\nprint(resultado)\n\n[1]  8 27 64",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#ignorando-as-condições",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#ignorando-as-condições",
-    "title": "Funções",
-    "section": "Ignorando as condições",
-    "text": "Ignorando as condições\n\nAo lidar com condições em R, você pode usar as funções try(), suppressWarnings(), e suppressMessages() para controlar o tratamento de erros, avisos e mensagens.\n\n\ntry()\n\nA função try() é usada para avaliar expressões e manipular erros sem interromper a execução do código. Ela retorna um objeto que você pode verificar usando inherits() para determinar se ocorreu um erro.\n\n\nx = c()\nmean(x)\n\n[1] NA\n\nresultado &lt;- try(mean(), silent = TRUE)\nresultado\n\n[1] \"Error in mean.default() : argumento \\\"x\\\" ausente, sem padrão\\n\"\nattr(,\"class\")\n[1] \"try-error\"\nattr(,\"condition\")\n&lt;simpleError in mean.default(): argumento \"x\" ausente, sem padrão&gt;\n\nif (inherits(resultado, \"try-error\")) { # verifica se o objeto resultado é da classe \"try-error\n    cat(\"Erro: Ocorreu um problema ao calcular a média.\\n\")}\n\nErro: Ocorreu um problema ao calcular a média.\n\n\n\n\nsuppressWarnings() para Suprimir Avisos:\n\nA função suppressWarnings() é usada para executar uma expressão e suprimir os avisos que ela pode gerar.\n\n\nx = c()\nmean(x)\n\nWarning in mean.default(x): argumento não é numérico nem lógico: retornando NA\n\n\n[1] NA\n\nsuppressWarnings(mean(x))\n\n[1] NA\n\n\n\n\nsuppressMessages() para Suprimir Mensagens:\n\nA função suppressMessages() é usada para executar uma expressão e suprimir as mensagens informativas que ela pode gerar.\n\n\ncalcular_cubo &lt;- function(x) {\n  message(\"Calculando o cubo dos valores.\")\n  return(x^3)\n}\n\n# Exemplo de uso\nresultado &lt;- suppressMessages(calcular_cubo(c(2, 3, 4)))\nresultado\n\n[1]  8 27 64",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#exemplo-1",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#exemplo-1",
-    "title": "Funções",
-    "section": "Exemplo 1",
-    "text": "Exemplo 1\n\n# Lista de argumentos\nargs &lt;- list(1, 2, 3, 4, 5)\n\n# Usando do.call para chamar a função sum\nresultado &lt;- do.call(sum, args)\nprint(resultado)  # Isso imprimirá 15\n\n[1] 15",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#exemplo-2",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#exemplo-2",
-    "title": "Funções",
-    "section": "Exemplo 2",
-    "text": "Exemplo 2\n\nVocê pode usar do.call com funções que têm parâmetros nomeados\n\n\n# Definindo uma função que cria uma sequência\ncriar_sequencia &lt;- function(inicio, fim, passo = 1) {\n  return(seq(from = inicio, to = fim, by = passo))\n}\n\n# Lista de argumentos com parâmetros nomeados\nargs &lt;- list(inicio = 1, fim = 10, passo = 2)\n\n# Usando do.call para chamar a função criar_sequencia\nsequencia &lt;- do.call(criar_sequencia, args)\nprint(sequencia) \n\n[1] 1 3 5 7 9",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#exemplo-3",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#exemplo-3",
-    "title": "Funções",
-    "section": "Exemplo 3",
-    "text": "Exemplo 3\n\nUm uso comum de do.call é combinar listas de data frames:\n\n\n# Criando dois data frames\ndf1 &lt;- data.frame(a = 1:3, b = 4:6)\ndf2 &lt;- data.frame(a = 7:9, b = 10:12)\n\n# Lista de data frames\ndfs &lt;- list(df1, df2)\n\n# Usando do.call com rbind para combinar os data frames\ndf_combinado &lt;- do.call(rbind, dfs)\nprint(df_combinado)\n\n  a  b\n1 1  4\n2 2  5\n3 3  6\n4 7 10\n5 8 11\n6 9 12\n\n\n\n# Criando dois data frames\ndf1 &lt;- data.frame(a = 1:3, b = 4:6)\ndf2 &lt;- data.frame(c = 7:9, d = 10:12)\n\n# Lista de data frames\ndfs &lt;- list(df1, df2)\n\n# Usando do.call com rbind para combinar os data frames\ndf_combinado &lt;- do.call(cbind, dfs)\nprint(df_combinado)\n\n  a b c  d\n1 1 4 7 10\n2 2 5 8 11\n3 3 6 9 12",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#exemplo-4",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#exemplo-4",
-    "title": "Funções",
-    "section": "Exemplo 4",
-    "text": "Exemplo 4\n\nSelecionar funções baseada em condições\n\n\nvectors &lt;- list(c(1, 2, 3), c(4, 5, 6))\nop = \"SOMA\"\n\nif (op == \"SOMA\") {\n  result &lt;- do.call(\"+\", vectors)\n} else if(op != \"SOMA\") \n  {\n  result &lt;- do.call(\"*\", vectors)\n}\n\nresult\n\n[1] 5 7 9",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#exemplo-5",
-    "href": "Cursos/Introducao_R/Cadernos/4-Funcoes.html#exemplo-5",
-    "title": "Funções",
-    "section": "Exemplo 5",
-    "text": "Exemplo 5\n\nUsando a função paste\n\n\nstrings_list &lt;- list(\"Hello\", \"world!\", \"How\", \"are\", \"you?\")\nstrings_list\n\n[[1]]\n[1] \"Hello\"\n\n[[2]]\n[1] \"world!\"\n\n[[3]]\n[1] \"How\"\n\n[[4]]\n[1] \"are\"\n\n[[5]]\n[1] \"you?\"\n\n# Combine strings in the list into a single sentence\ndo.call(paste, c(strings_list,sep=\" \"))\n\n[1] \"Hello world! How are you?\"",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/6-Ambientes.html",
-    "href": "Cursos/Introducao_R/Cadernos/6-Ambientes.html",
-    "title": "Environments",
-    "section": "",
-    "text": "Ambientes (environments) em R são estruturas de dados que representam espaços onde objetos, como variáveis e funções, são associados a nomes.\nVocê pode pensar em um ambiente como um conjunto de nomes, sem ordem implícita.",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Environment"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/6-Ambientes.html#definição",
-    "href": "Cursos/Introducao_R/Cadernos/6-Ambientes.html#definição",
-    "title": "Environments",
-    "section": "",
-    "text": "Ambientes (environments) em R são estruturas de dados que representam espaços onde objetos, como variáveis e funções, são associados a nomes.\nVocê pode pensar em um ambiente como um conjunto de nomes, sem ordem implícita.",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Environment"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/6-Ambientes.html#ambientes-de-pacotes",
-    "href": "Cursos/Introducao_R/Cadernos/6-Ambientes.html#ambientes-de-pacotes",
-    "title": "Environments",
-    "section": "Ambientes de Pacotes",
-    "text": "Ambientes de Pacotes\n\nCada pacote anexado library()ou require()torna-se um dos pais do ambiente global.\nO pai imediato do ambiente global é o último pacote que você anexou e o pai desse pacote é o penúltimo pacote que você anexou\n\n\n\nSe você seguir todos os pais, verá a ordem em que cada pacote foi anexado. Isso é conhecido como caminho de pesquisa\nVocê pode ver os nomes desses ambientes com base::search()ou os próprios ambientes com rlang::search_envs():\n\n\nsearch()\n\n [1] \".GlobalEnv\"        \"package:stats\"     \"package:graphics\" \n [4] \"package:grDevices\" \"package:datasets\"  \"renv:shims\"       \n [7] \"package:utils\"     \"package:methods\"   \"Autoloads\"        \n[10] \"package:base\"     \n\nrlang::search_envs()\n\n [[1]] $ &lt;env: global&gt;\n [[2]] $ &lt;env: package:stats&gt;\n [[3]] $ &lt;env: package:graphics&gt;\n [[4]] $ &lt;env: package:grDevices&gt;\n [[5]] $ &lt;env: package:datasets&gt;\n [[6]] $ &lt;env: renv:shims&gt;\n [[7]] $ &lt;env: package:utils&gt;\n [[8]] $ &lt;env: package:methods&gt;\n [[9]] $ &lt;env: Autoloads&gt;\n[[10]] $ &lt;env: package:base&gt;\n\n\n\nProblema da Função attach\nConcidere o objeto cancer\n\ndados = data.frame(cancer = c(1,0,1,0,1,0,1)) # 1 = paciente com cancer\nattach(dados)\nsearch()\n\n [1] \".GlobalEnv\"        \"dados\"             \"package:stats\"    \n [4] \"package:graphics\"  \"package:grDevices\" \"package:datasets\" \n [7] \"renv:shims\"        \"package:utils\"     \"package:methods\"  \n[10] \"Autoloads\"         \"package:base\"     \n\nhead(cancer)\n\n[1] 1 0 1 0 1 0\n\n\n\nrequire(survival)\nsearch()\n\n [1] \".GlobalEnv\"        \"package:survival\"  \"dados\"            \n [4] \"package:stats\"     \"package:graphics\"  \"package:grDevices\"\n [7] \"package:datasets\"  \"renv:shims\"        \"package:utils\"    \n[10] \"package:methods\"   \"Autoloads\"         \"package:base\"     \n\nhead(cancer)\n\n  inst time status age sex ph.ecog ph.karno pat.karno meal.cal wt.loss\n1    3  306      2  74   1       1       90       100     1175      NA\n2    3  455      2  68   1       0       90        90     1225      15\n3    3 1010      1  56   1       0       90        90       NA      15\n4    5  210      2  57   1       1       90        60     1150      11\n5    1  883      2  60   1       0      100        90       NA       0\n6   12 1022      1  74   1       1       50        80      513       0\n\n\n\nÉ preciso ter cuidado ao nomear o objeto.",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Environment"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/6-Ambientes.html#ambiente-de-funções",
-    "href": "Cursos/Introducao_R/Cadernos/6-Ambientes.html#ambiente-de-funções",
-    "title": "Environments",
-    "section": "Ambiente de funções",
-    "text": "Ambiente de funções\n\nUma função vincula o ambiente atual quando é criada. Isso é chamado de ambiente de função.\nDetermina onde a função pode procurar variáveis não locais (variáveis não definidas dentro da própria função).\n\n\n# Definindo uma função no ambiente global\nf &lt;- function(x,y) {\n  z &lt;- x + y\n  return(z)\n}\n\n# Chamando a função\nresultado &lt;- f(5,1)\nprint(resultado)  \n\n[1] 6\n\nenvironment(f) #ou\n\n&lt;environment: R_GlobalEnv&gt;\n\nrlang::fn_env(f)\n\n&lt;environment: R_GlobalEnv&gt;\n\n\n\nNeste exemplo f é definida no ambiente global, portanto, seu ambiente de função é o ambiente global.",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Environment"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/6-Ambientes.html#ambiente-de-execução",
-    "href": "Cursos/Introducao_R/Cadernos/6-Ambientes.html#ambiente-de-execução",
-    "title": "Environments",
-    "section": "Ambiente de Execução",
-    "text": "Ambiente de Execução\n\nCada vez que uma função é chamada, um novo ambiente é criado para hospedar a execução. Isso é chamado de ambiente de execução e seu pai é o ambiente de função.\nEles contêm variáveis locais e referências a variáveis em escopos superiores, como o ambiente global ou ambientes de funções encapsuladoras.\nCada chamada de função tem seu próprio ambiente de execução, isolado dos ambientes de execução de outras chamadas da mesma função.\nÉ assim que R garante que uma função não sobrescreva nada que não deveria. Quaisquer objetos criados pela função são armazenados em um ambiente de tempo de execução seguro e afastado.\n\n\n# Definindo um valorno ambiente global\nx &lt;- 10\n# Definindo uma função no ambiente global\nf &lt;- function(y) {\n  z &lt;- x + y\n  return(z)\n}\n\n# Chamando a função\nf(5)\n\n[1] 15\n\n\n\nNeste exemplo:\n\nf é definida no ambiente global, portanto, seu ambiente de definição é o ambiente global.\nQuando f é chamada com o argumento 5, um novo ambiente de execução é criado.\nx é procurado primeiro no ambiente de execução de f. Como não é encontrado, a busca continua no ambiente de definição (ambiente global), onde x é encontrado com o valor 10.\n\n\n\n# Definindo um valorno ambiente global\nx &lt;- 10\n# Definindo uma função no ambiente global\nf &lt;- function(y) {\n  x &lt;- 2\n  z &lt;- x + y\n  return(z)\n}\n\n# Chamando a função\nf(5)\n\n[1] 7\n\n\n\nNeste exemplo:\n\nf é definida no ambiente global, portanto, seu ambiente de definição é o ambiente global.\nQuando f é chamada com o argumento 5, um novo ambiente de execução é criado.\nx é procurado primeiro no ambiente de execução de f, onde x é encontrado com o valor 2.\nPortanto, os cálculos realizados dentro das funções não modificam os objetos do global.\n\nVamos capturar os ambientes\n\n\nf = function(y){\n    ENV = list(ran.in = rlang::current_env(), # execução\n         parent = rlang::env_parent(rlang::current_env()), # pai \n         objects = ls.str(rlang::current_env())) # objetos no env de execução\n  return(ENV)\n}\ny = 2\nf(y=1)\n\n$ran.in\n&lt;environment: 0x00000151a813e6d8&gt;\n\n$parent\n&lt;environment: R_GlobalEnv&gt;\n\n$objects\ny :  num 1\n\n\n\nConsidere este outro exemplo\n\n\na &lt;- 1\n\n# Ambiente global\n# Ambiente de função da fun_externa\n\nfun_externa &lt;- function() {\n  # Ambiente de execução da função fun_externa\n  # Ambiente de função da fun_interna\n  print(rlang::current_env())\n  b &lt;- 2\n  \n  fun_interna &lt;- function(d) {\n    # Ambiente de execução da fun_interna\n    print(rlang::env_parent(rlang::current_env()))\n    return(a + b + d)\n  }\n  \n  return(fun_interna)\n}\n\n# fun_externa é chamada e retorna fun_interna\nf &lt;- fun_externa()\n\n&lt;environment: 0x00000151a869f350&gt;\n\nf\n\nfunction(d) {\n    # Ambiente de execução da fun_interna\n    print(rlang::env_parent(rlang::current_env()))\n    return(a + b + d)\n  }\n&lt;environment: 0x00000151a869f350&gt;\n\n# fun_interna é chamada com argumento 3\nprint(f(3))  # Imprime 6\n\n&lt;environment: 0x00000151a869f350&gt;\n[1] 6\n\nenvironment(fun_externa)\n\n&lt;environment: R_GlobalEnv&gt;\n\n\n\nCapturando os ambientes\n\n\nfun_externa &lt;- function() {\n  \n  funcao_interna &lt;- function(a=1) {\n    list(ran.in = rlang::current_env(), \n         parent = rlang::env_parent(rlang::current_env()), \n         objects = ls.str(rlang::current_env()))\n  }\n  return(funcao_interna)\n}\nminha_funcao &lt;- fun_externa()\nminha_funcao()\n\n$ran.in\n&lt;environment: 0x00000151a8c7b198&gt;\n\n$parent\n&lt;environment: 0x00000151a8c247b8&gt;\n\n$objects\na :  num 1",
-    "crumbs": [
-      "Cursos",
-      "Introdução ao R",
-      "Environment"
-    ]
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html",
-    "href": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html",
-    "title": "Programação Orientada a Objetos",
-    "section": "",
-    "text": "Nesta Aula foram apresentados os conceitos de paradigma de programação e programação funcional\nAqui vamos apresentar o paradigma de programação orientada a objetos\nConsidere as figuras a seguir:\n\n\n\n\nUma classe é um conjunto de características e comportamentos que definem o conjunto de objetos pertencentes à essa classe.\nClasse em si é um conceito abstrato, como um molde, que se torna concreto através da criação de um objeto.\nEssa criação é denominada instanciação da classe, como se estivéssemos usando esse molde (classe) para criar um objeto.\nA programação orientada a objetos (POO) é um paradigma de programação que utiliza “objetos” na estruturação do código.\nEsses objetos combinam dados (atributos) e comportamento (métodos)\n\nVocê cria um objeto de determinada classe e depois utiliza os métodos/funções que aquela classe permite.\nPortanto, os sistemas de orientação objetos permitem a criação de uma classe que define um objeto com atributos (dados/informações) e métodos que descrevam o que esse objeto pode realizar\nEm Python, por exemplo, isso é feito da seguinte forma:"
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html#criando-classes-em-s3",
-    "href": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html#criando-classes-em-s3",
-    "title": "Programação Orientada a Objetos",
-    "section": "Criando Classes em S3",
-    "text": "Criando Classes em S3\n\nO S3 não tem uma definição formal de classe: para tornar um objeto uma instância de uma classe basta definir o atributo class .\nIsso pode ser feito durante a criação com a função structure()ou após com a função class&lt;-():\n\n\n# Create and assign class in one step\nx &lt;- structure(list(), class = \"my_class\")\n\n# Create, then set class\nx &lt;- list()\nclass(x) &lt;- \"my_class\"\n\n\nExemplo:\n\n\nn = 10;LAMBDA = 50\n\nobjeto = structure(\n  rpois(n,lambda=LAMBDA),\n  class = \"minha_classe\",\n  dist = \"poisson\"\n)\nobjeto\n\n [1] 58 45 59 65 62 47 46 48 43 54\nattr(,\"class\")\n[1] \"minha_classe\"\nattr(,\"dist\")\n[1] \"poisson\""
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html#funções-genéricas-s3",
-    "href": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html#funções-genéricas-s3",
-    "title": "Programação Orientada a Objetos",
-    "section": "Funções Genéricas S3",
-    "text": "Funções Genéricas S3\n\nUma função genérica define uma interface que utiliza uma implementação diferente dependendo da classe do objeto.\nA função de um genérico S3 é realizar o despacho de métodos, ou seja, encontrar a implementação específica para uma classe. \nO envio do método é realizado por UseMethod() que todo genérico chama\nUseMethod() recebe dois argumentos: o nome da função genérica (obrigatório) e o argumento a ser usado para envio do método (opcional). \n\n\n# Definição da função genérica \n\nminha_funcao_generica &lt;- function(x) {\n  # Chamando useMethod para despachar para métodos específicos\n  UseMethod(\"minha_funcao_generica\")\n}\n\n# Definição de métodos específicos para diferentes classes\nminha_funcao_generica.default &lt;- function(x) {\n  print(\"Método padrão chamado\")\n}\n\nminha_funcao_generica.integer &lt;- function(x) {\n  print(\"Método para números inteiros chamado\")\n}\n\nminha_funcao_generica.character &lt;- function(x) {\n  print(\"Método para caracteres chamado\")\n}\n\n# Testando a função genérica com diferentes tipos de argumentos\nminha_funcao_generica(5)       # Chamará minha_funcao_generica.default\n\n[1] \"Método padrão chamado\"\n\nminha_funcao_generica(\"Hello\") # Chamará minha_funcao_generica.character\n\n[1] \"Método para caracteres chamado\"\n\nminha_funcao_generica(TRUE)    # Chamará minha_funcao_generica.default\n\n[1] \"Método padrão chamado\"\n\n\n\nPara saber qual função foi utilizada:\n\n\nx = 5L\nsloop::s3_dispatch( minha_funcao_generica(x) )\n\n=&gt; minha_funcao_generica.integer\n   minha_funcao_generica.numeric\n * minha_funcao_generica.default\n\n\n\n=&gt;indica o método que é chamado\n* indica um método que é definido, mas não chamado\nA classe “padrão” é uma pseudoclasse especial . Esta não é uma classe real, mas foi incluída para possibilitar a definição de um substituto padrão que é encontrado sempre que um método específico da classe não está disponível.\n\n\nx &lt;- rnorm(100)\nsloop::s3_dispatch(mean(x))\n\n   mean.double\n   mean.numeric\n=&gt; mean.default\n\n\n\nPara saber os métodos associados :\n\n\nmethods(\"summary\")\n\n [1] summary.aov                         summary.aovlist*                   \n [3] summary.aspell*                     summary.check_packages_in_dir*     \n [5] summary.connection                  summary.data.frame                 \n [7] summary.Date                        summary.default                    \n [9] summary.ecdf*                       summary.factor                     \n[11] summary.ggplot*                     summary.glm                        \n[13] summary.hcl_palettes*               summary.infl*                      \n[15] summary.lm                          summary.loess*                     \n[17] summary.manova                      summary.matrix                     \n[19] summary.mlm*                        summary.nls*                       \n[21] summary.packageStatus*              summary.POSIXct                    \n[23] summary.POSIXlt                     summary.ppr*                       \n[25] summary.prcomp*                     summary.princomp*                  \n[27] summary.proc_time                   summary.rlang:::list_of_conditions*\n[29] summary.rlang_error*                summary.rlang_message*             \n[31] summary.rlang_trace*                summary.rlang_warning*             \n[33] summary.srcfile                     summary.srcref                     \n[35] summary.stepfun                     summary.stl*                       \n[37] summary.table                       summary.tukeysmooth*               \n[39] summary.vctrs_sclr*                 summary.vctrs_vctr*                \n[41] summary.warnings                   \nsee '?methods' for accessing help and source code\n\nsloop::s3_methods_generic(\"summary\") |&gt; head()\n\n# A tibble: 6 × 4\n  generic class                 visible source             \n  &lt;chr&gt;   &lt;chr&gt;                 &lt;lgl&gt;   &lt;chr&gt;              \n1 summary aov                   TRUE    stats              \n2 summary aovlist               FALSE   registered S3method\n3 summary aspell                FALSE   registered S3method\n4 summary check_packages_in_dir FALSE   registered S3method\n5 summary connection            TRUE    base               \n6 summary data.frame            TRUE    base               \n\n\n\nPara sabermos se uma função é genérica, temos algumas funções: utils::isS3stdGeneric() e sloop::ftype()\n\n\nsloop::ftype(mean)\n\n[1] \"S3\"      \"generic\"\n\nsloop::ftype(data)\n\n[1] \"function\"\n\n\n\nA função sloop::ftype() retorna um vetor de caracteres de comprimento 1 ou 2.\nQuando retorna apenas um valor, do qual não obtemos o resultado generic, significa que esta função não é genérica, como é o caso da função data.\nQuando há um retorno de dois valores, e um deles é generic, significa dizer que a função é genérica, em que o primeiro valor, representa o sistema POO, como é o caso da função mean."
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html#exemplo",
-    "href": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html#exemplo",
-    "title": "Programação Orientada a Objetos",
-    "section": "Exemplo",
-    "text": "Exemplo\n\nAqui será definido um método para um genérico existente\n\n\nn = 10;LAMBDA = 50\n\nobjeto = structure(\n  rpois(n,lambda=LAMBDA),\n  class = \"minha_classe\",\n  dist = \"poisson\"\n)\nobjeto\n\n [1] 50 43 45 59 54 54 62 58 34 47\nattr(,\"class\")\n[1] \"minha_classe\"\nattr(,\"dist\")\n[1] \"poisson\"\n\ngerar = function(...){\n   x = rpois(n,lambda=LAMBDA)\n   class(x) = \"minha_classe\"\n   return(x)\n}\n\nsummary(objeto)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   34.0    45.5    52.0    50.6    57.0    62.0 \n\nsummary.minha_classe = \\(x){\n  cat(\"O máximo é\",max(x))\n}\n\nsummary(objeto)\n\nO máximo é 62\n\nsummary(gerar(n,LAMBDA))\n\nO máximo é 65"
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html#definindo-a-classe",
-    "href": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html#definindo-a-classe",
-    "title": "Programação Orientada a Objetos",
-    "section": "Definindo a Classe",
-    "text": "Definindo a Classe\nPara definir uma classe S4, use a função setClass()com três argumentos:\n\nO nome da classe . Por convenção, os nomes das classes S4 usam UpperCamelCase.\nUm vetor de caracteres nomeado que descreve os nomes e classes dos slots (campos). Por exemplo, uma pessoa pode ser representada por um nome (character) e uma idade (numérica): c(name = \"character\", age = \"numeric\"). A pseudoclasse ANYpermite que um slot aceite objetos de qualquer tipo.\nUm protótipo , uma lista de valores padrão para cada slot. Tecnicamente, o protótipo é opcional\n\n\n\nDefinindo a classe “Person” com os atributos name e age\n\n\nsetClass(\"Person\", \n  slots = c(\n    name = \"character\", \n    age = \"numeric\"\n  ), \n  prototype = list(\n    name = NA_character_,\n    age = NA_real_\n  )\n)\n\n\nUma vez definida a classe, você pode construir novos objetos a partir da função new() com nome da classe e um valor para cada slot:\n\n\nmaria &lt;- new(\"Person\", name = \"Maria\", age = 32)\nmaria@name # acessando os splots\n\n[1] \"Maria\"\n\n\n\nOutra forma de criar objetos\n\n\n\nnota_aluno = setClass(\n  \"nota_aluno\",\n  slots = c(\n    nome = \"character\",\n    notas = \"numeric\"\n  )\n)\n\nleo = nota_aluno(nome = \"Leo\",notas = c(5,9))\nleo\n\nAn object of class \"nota_aluno\"\nSlot \"nome\":\n[1] \"Leo\"\n\nSlot \"notas\":\n[1] 5 9"
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html#funções-genéricas-s4",
-    "href": "Cursos/Introducao_R/Cadernos/8-Programacao_oo.html#funções-genéricas-s4",
-    "title": "Programação Orientada a Objetos",
-    "section": "Funções Genéricas S4",
-    "text": "Funções Genéricas S4\n\nA função de um genérico é realizar o despacho de métodos, ou seja, encontrar a implementação específica para a combinação de classes passadas para o genérico.\nPara criar um novo genérico S4, use setGeneric()com uma função que chama standardGeneric()\nPor convenção, os novos genéricos S4 devem usar lowerCamelCase.\n\n\nsetGeneric(\"myGeneric\", function(x) standardGeneric(\"myGeneric\"))\n\n[1] \"myGeneric\"\n\n\n\nsetGeneric(\"idade\", function(x) standardGeneric(\"idade\"))\n\n[1] \"idade\"\n\n\n\nUm genérico não é útil sem alguns métodos, e no S4 você define métodos com setMethod().\nExistem três argumentos importantes: o nome do genérico, o nome da classe e o próprio método.\n\n\nsetMethod(\"myGeneric\", \"minha_classe\", function(x) {\n  # implementação\n})\n\n\nAcessando o slot age da classe “Person”\n\n\nsetMethod(\"idade\", \"Person\", function(x) x@age)\nidade(maria)\n\n[1] 32\n\n\n\nObs:\n\nPara listar todos os métodos que pertencem a um genérico, ou que estão associados a uma classe, use methods(\"generic\")ou methods(class = \"class\"); para encontrar a implementação de um método específico, use selectMethod(\"generic\", \"class\").\n\n\nmethods(\"idade\")\n\n[1] idade,Person-method\nsee '?methods' for accessing help and source code\n\nmethods(class = \"Person\")\n\n[1] idade\nsee '?methods' for accessing help and source code\n\n\nAqui será definido um método para um genérico existente: show\nshow Controla como o objeto aparece quando é impresso.\nPara definir um método para um genérico existente, primeiro você deve determinar os argumentos.\nNesse caso, o argumento da função show:\n\n\nargs(\"show\")\n\nfunction (object) \nNULL\n\n\n\nPortanto, nosso método show precisa ter um único argumento object:\n\n\nmaria # antes de criar o método\n\nAn object of class \"Person\"\nSlot \"name\":\n[1] \"Maria\"\n\nSlot \"age\":\n[1] 32\n\nsetMethod(f = \"show\",\n          signature = \"Person\",\n          definition = function(object){\n            cat(\"Essa é a impressão da classe:\",is(object)[1],\"\\n\",\n                \"Nome:\",object@name,\"\\n\",\n                \"Idade:\",object@age)\n          })\nmaria # após criar o método\n\nEssa é a impressão da classe: Person \n Nome: Maria \n Idade: 32\n\n\n\nCriando o gerérico “media” e o método “media” para a classe “nota_aluno\n\n\nExemplo 1\n\nsetGeneric(\"media\",def = function(x) standardGeneric(\"media\"))\n\n[1] \"media\"\n\nsetMethod(\"media\",signature = \"nota_aluno\",definition = function(x){\n  notas = x@notas\n  media = sum(notas)/length(notas)\n  return(media)\n})\n\nmedia(leo)\n\n[1] 7\n\n\n\nDefinindo a classe do resultdo de uma função e criando um método a partir da função genérica summary\n\n\n\nExemplo 2\n\nn = 10;LAMBDA = 50\n\n# criando a classe\nsetClass(Class = \"minha_classe_S4\",\n         slots =  c(amostra = c(\"numeric\"))\n         )\n\n\n# criando a função e definindo a classe do resultado\ngerar = function(...){\n   x = rpois(n,lambda=LAMBDA)\n   resultado = new(Class = \"minha_classe_S4\",amostra=x)\n   return(resultado)\n}\n\n(amostra = gerar(n,LAMBDA))\n\nAn object of class \"minha_classe_S4\"\nSlot \"amostra\":\n [1] 71 47 39 49 46 57 43 54 48 46\n\nsetMethod(\"summary\",signature = \"minha_classe_S4\",definition = function(object){\n  max(object@amostra)\n})\n\nsummary(amostra)\n\n[1] 71"
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Introducao_R.html",
-    "href": "Cursos/Introducao_R/Introducao_R.html",
-    "title": "Introducao_R oi",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "Cursos/Introducao_R/Introducao_R.html#quarto",
-    "href": "Cursos/Introducao_R/Introducao_R.html#quarto",
-    "title": "Introducao_R oi",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "Cursos/Probabilidade_Estatistica/Cadernos/2-Tecnicas_de_Amostragem.html#subdivisões-da-estatística",
@@ -2832,7 +2188,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#apresentação-da-base-de-dados",
     "title": "Probabilidade e Estatística",
     "section": "Apresentação da base de dados",
-    "text": "Apresentação da base de dados\n\nBase simulada usando o programa R\nEmails de 100 remetentes\n\n\nprint(head(dados_email))\n\n                   remetente               assunto tamanho_kb prioridade  spam\n1     José-Gomes@example.com Confirmação de Pedido        233       Alta FALSE\n2 Fernanda-Silva@example.com Confirmação de Pedido        148      Média FALSE\n3 Rafael-Pereira@example.com       Oferta Especial         61       Alta FALSE\n4  Rafael-Santos@example.com Confirmação de Pedido        309       Alta FALSE\n5     José-Costa@example.com       Oferta Especial         52       Alta  TRUE\n6 Laura-Ferreira@example.com          Prêmio Ganho         92      Baixa  TRUE\n  qtd_caracteres formato\n1            113   Texto\n2            152   Texto\n3            221    HTML\n4             79    HTML\n5            263   Texto\n6            147   Texto",
+    "text": "Apresentação da base de dados\n\nBase simulada usando o programa R\nEmails de 100 remetentes\n\n\nprint(head(dados_email))\n\n                  remetente               assunto tamanho_kb prioridade  spam\n1 Maria-Almeida@example.com  Atualização de Conta         76       Alta  TRUE\n2   Ana-Martins@example.com          Prêmio Ganho        104       Alta  TRUE\n3  Rafael-Gomes@example.com Confirmação de Pedido        280      Média FALSE\n4 Lucas-Ribeiro@example.com       Oferta Especial        486      Média  TRUE\n5 Mariana-Silva@example.com   Convite para Evento         64      Média  TRUE\n6 Rafael-Santos@example.com          Prêmio Ganho        497      Média  TRUE\n  qtd_caracteres formato\n1            110    HTML\n2            223    HTML\n3            184   Texto\n4            272   Texto\n5            204   Texto\n6             52    HTML",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -2844,7 +2200,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#identificações-das-variáveis-1",
     "title": "Probabilidade e Estatística",
     "section": "Identificações das variáveis",
-    "text": "Identificações das variáveis\n\nstr(dados_email)\n\n'data.frame':   100 obs. of  7 variables:\n $ remetente     : chr  \"José-Gomes@example.com\" \"Fernanda-Silva@example.com\" \"Rafael-Pereira@example.com\" \"Rafael-Santos@example.com\" ...\n $ assunto       : chr  \"Confirmação de Pedido\" \"Confirmação de Pedido\" \"Oferta Especial\" \"Confirmação de Pedido\" ...\n $ tamanho_kb    : num  233 148 61 309 52 92 418 339 203 179 ...\n $ prioridade    : chr  \"Alta\" \"Média\" \"Alta\" \"Alta\" ...\n $ spam          : logi  FALSE FALSE FALSE FALSE TRUE TRUE ...\n $ qtd_caracteres: num  113 152 221 79 263 147 244 161 253 67 ...\n $ formato       : chr  \"Texto\" \"Texto\" \"HTML\" \"HTML\" ...",
+    "text": "Identificações das variáveis\n\nstr(dados_email)\n\n'data.frame':   100 obs. of  7 variables:\n $ remetente     : chr  \"Maria-Almeida@example.com\" \"Ana-Martins@example.com\" \"Rafael-Gomes@example.com\" \"Lucas-Ribeiro@example.com\" ...\n $ assunto       : chr  \"Atualização de Conta\" \"Prêmio Ganho\" \"Confirmação de Pedido\" \"Oferta Especial\" ...\n $ tamanho_kb    : num  76 104 280 486 64 497 214 253 403 457 ...\n $ prioridade    : chr  \"Alta\" \"Alta\" \"Média\" \"Média\" ...\n $ spam          : logi  TRUE TRUE FALSE TRUE TRUE TRUE ...\n $ qtd_caracteres: num  110 223 184 272 204 52 129 278 55 206 ...\n $ formato       : chr  \"HTML\" \"HTML\" \"Texto\" \"Texto\" ...",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -2856,7 +2212,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#gráficos-de-barras",
     "title": "Probabilidade e Estatística",
     "section": "Gráficos de Barras",
-    "text": "Gráficos de Barras\n\nTabelas: Frequências Absolutas e Relativas\n\n\ndados_email$prioridade &lt;- factor(dados_email$prioridade,levels = c(\"Baixa\",\"Média\",\"Alta\"))\n(tabela = table(dados_email$prioridade) ) \n\n\nBaixa Média  Alta \n   21    36    43 \n\n(tabela.prop = prop.table(tabela)) \n\n\nBaixa Média  Alta \n 0.21  0.36  0.43",
+    "text": "Gráficos de Barras\n\nTabelas: Frequências Absolutas e Relativas\n\n\ndados_email$prioridade &lt;- factor(dados_email$prioridade,levels = c(\"Baixa\",\"Média\",\"Alta\"))\n(tabela = table(dados_email$prioridade) ) \n\n\nBaixa Média  Alta \n   22    36    42 \n\n(tabela.prop = prop.table(tabela)) \n\n\nBaixa Média  Alta \n 0.22  0.36  0.42",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -2928,7 +2284,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#densidades-x-frequências",
     "title": "Probabilidade e Estatística",
     "section": "Densidades X Frequências",
-    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nx = runif(30,1,40) |&gt; round() # simulação\nx\n\n [1]  6 29 16 28 19 33 36 27 39 27 26 40  5  2 34 20 36 17 12 27 15 17 10 38 11\n[26] 38 29 10 31  5",
+    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nx = runif(30,1,40) |&gt; round() # simulação\nx\n\n [1] 28 37  3  5 16 37  7 16 33 13 30 10 24 23 40 25 37 21 30 11 18 17 40 15  3\n[26] 27 35 20 34 30",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",
@@ -2952,7 +2308,7 @@
     "href": "Cursos/Probabilidade_Estatistica/Cadernos/3-Tabelas_Graficos.html#densidades-x-frequências-2",
     "title": "Probabilidade e Estatística",
     "section": "Densidades X Frequências",
-    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nknitr::kable(tabela)\n\n\n\n\nX\nPM\nf_a\nf_r\nd_i\n\n\n\n\n(0,5]\n2.5\n3\n0.1\n0.0200\n\n\n(5,10]\n7.5\n3\n0.1\n0.0200\n\n\n(10,15]\n12.5\n3\n0.1\n0.0200\n\n\n(15,30]\n22.5\n12\n0.4\n0.0267\n\n\n(30,50]\n40.0\n9\n0.3\n0.0150",
+    "text": "Densidades X Frequências\nExemplo: tempo gasto na resolução da atividade\n\nknitr::kable(tabela)\n\n\n\n\nX\nPM\nf_a\nf_r\nd_i\n\n\n\n\n(0,5]\n2.5\n3\n0.1000\n0.0200\n\n\n(5,10]\n7.5\n2\n0.0667\n0.0133\n\n\n(10,15]\n12.5\n3\n0.1000\n0.0200\n\n\n(15,30]\n22.5\n14\n0.4667\n0.0311\n\n\n(30,50]\n40.0\n8\n0.2667\n0.0133",
     "crumbs": [
       "Cursos",
       "Probabilidade e Estatística",

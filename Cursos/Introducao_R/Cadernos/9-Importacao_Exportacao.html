@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../Cursos/Introducao_R/Cadernos/Aula_23-01-2024.html" rel="next">
-<link href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.qmd.qmd" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -83,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cursos</li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html">Introdução ao R</a></li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/9-Importacao_Exportacao.html">Importação e Exportação</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Importação e Exportação de base de dados</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -120,13 +118,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
  <span class="menu-text">Introdução ao R</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html" class="sidebar-item-text sidebar-link">
@@ -167,36 +165,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../../Cursos/Introducao_R/Cadernos/6-Programacao_Funcional.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Programação Funcional</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.qmd.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Programação OO</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../Cursos/Introducao_R/Cadernos/9-Importacao_Exportacao.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Importação e Exportação</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../Cursos/Introducao_R/Cadernos/Aula_23-01-2024.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Manipulação de dados - dplyr</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../Cursos/Introducao_R/Cadernos/Aula_30-01-2024.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Manipulação de dados - string</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../Cursos/Introducao_R/Cadernos/Aula_06_02_2024.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Manipulação de dados - fatores</span></a>
   </div>
 </li>
       </ul>
@@ -261,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cursos</li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/1-Apresentacao_R_Rstudio.html">Introdução ao R</a></li><li class="breadcrumb-item"><a href="../../../Cursos/Introducao_R/Cadernos/9-Importacao_Exportacao.html">Importação e Exportação</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Importação e Exportação de base de dados</h1>
 </div>
@@ -382,7 +350,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/leonardobfn\.github\.io\/webpage\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -710,18 +678,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../../Cursos/Introducao_R/Cadernos/8-Programacao_oo.qmd.qmd" class="pagination-link" aria-label="Programação OO">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Programação OO</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../../Cursos/Introducao_R/Cadernos/Aula_23-01-2024.html" class="pagination-link" aria-label="Manipulação de dados - dplyr">
-        <span class="nav-page-text">Manipulação de dados - dplyr</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
