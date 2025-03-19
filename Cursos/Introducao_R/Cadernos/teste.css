@@ -1,0 +1,51 @@
+/* Estilos gerais da Sidebar */
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  width: 200px;  /* Aumenta a largura da sidebar */
+}
+
+/* Adiciona a logo no topo da Sidebar */
+.sidebar::before {
+  content: "";
+  display: block;
+  background-image: url("Figuras/R.png"); /* Caminho para a logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px; /* Ajuste a altura conforme necessário */
+  margin-bottom: 20px; /* Espaçamento entre logo e o sumário */
+  width: 100%; /* A largura continua ocupando 100% */
+  background-position: center; /* Alinha a imagem à esquerda, mas a centraliza verticalmente */
+}
+
+/* Estilo para o título do sumário */
+.toc-title {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Estilo do sumário (TOC) */
+.sidebar .toc {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Links do TOC */
+.sidebar .toc ul li {
+  margin: 10px 0;
+}
+
+.sidebar .toc ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar .toc ul li a:hover {
+  color: #007bff; /* Cor do link ao passar o mouse */
+}
+
+

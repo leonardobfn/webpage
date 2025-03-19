@@ -780,20 +780,20 @@ Y          ensino fundamental ensino médio superior  Sum
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">print</span>(<span class="fu">head</span>(dados_email))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>                      remetente               assunto tamanho_kb prioridade
-1 Fernanda-Ferreira@example.com  Atualização de Conta        108      Baixa
-2  Maria-Cavalcante@example.com Confirmação de Pedido        302      Média
-3  Tatiane-Ferreira@example.com Confirmação de Pedido        151       Alta
-4        José-Gomes@example.com Confirmação de Pedido         96       Alta
-5     Pedro-Martins@example.com  Atualização de Conta        442      Média
-6    Carlos-Almeida@example.com Confirmação de Pedido        260       Alta
+<pre><code>                     remetente               assunto tamanho_kb prioridade
+1    João-Oliveira@example.com          Prêmio Ganho        159      Média
+2     José-Martins@example.com Confirmação de Pedido        127      Baixa
+3   Rafael-Pereira@example.com          Prêmio Ganho        433       Alta
+4     Carlos-Silva@example.com  Atualização de Conta        490       Alta
+5 Lucas-Cavalcante@example.com Confirmação de Pedido         82      Média
+6    Maria-Martins@example.com          Prêmio Ganho        413       Alta
    spam qtd_caracteres formato
-1  TRUE            229    HTML
-2  TRUE            125   Texto
-3 FALSE            133    HTML
-4  TRUE            200   Texto
-5  TRUE             84    HTML
-6 FALSE            153   Texto</code></pre>
+1 FALSE            138    HTML
+2  TRUE             87    HTML
+3 FALSE            296    HTML
+4 FALSE            157    HTML
+5  TRUE            224    HTML
+6  TRUE            295    HTML</code></pre>
 </div>
 </div>
 </section>
@@ -803,13 +803,13 @@ Y          ensino fundamental ensino médio superior  Sum
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">str</span>(dados_email)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   100 obs. of  7 variables:
- $ remetente     : chr  "Fernanda-Ferreira@example.com" "Maria-Cavalcante@example.com" "Tatiane-Ferreira@example.com" "José-Gomes@example.com" ...
- $ assunto       : chr  "Atualização de Conta" "Confirmação de Pedido" "Confirmação de Pedido" "Confirmação de Pedido" ...
- $ tamanho_kb    : num  108 302 151 96 442 260 52 469 263 229 ...
- $ prioridade    : chr  "Baixa" "Média" "Alta" "Alta" ...
- $ spam          : logi  TRUE TRUE FALSE TRUE TRUE FALSE ...
- $ qtd_caracteres: num  229 125 133 200 84 153 285 92 244 89 ...
- $ formato       : chr  "HTML" "Texto" "HTML" "Texto" ...</code></pre>
+ $ remetente     : chr  "João-Oliveira@example.com" "José-Martins@example.com" "Rafael-Pereira@example.com" "Carlos-Silva@example.com" ...
+ $ assunto       : chr  "Prêmio Ganho" "Confirmação de Pedido" "Prêmio Ganho" "Atualização de Conta" ...
+ $ tamanho_kb    : num  159 127 433 490 82 413 84 375 290 200 ...
+ $ prioridade    : chr  "Média" "Baixa" "Alta" "Alta" ...
+ $ spam          : logi  FALSE TRUE FALSE FALSE TRUE TRUE ...
+ $ qtd_caracteres: num  138 87 296 157 224 295 79 161 149 243 ...
+ $ formato       : chr  "HTML" "HTML" "HTML" "HTML" ...</code></pre>
 </div>
 </div>
 </section>
@@ -842,13 +842,13 @@ Y          ensino fundamental ensino médio superior  Sum
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Baixa Média  Alta 
-   22    41    37 </code></pre>
+   18    39    43 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>(<span class="at">tabela.prop =</span> <span class="fu">prop.table</span>(tabela)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Baixa Média  Alta 
- 0.22  0.41  0.37 </code></pre>
+ 0.18  0.39  0.43 </code></pre>
 </div>
 </div>
 </section>

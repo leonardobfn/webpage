@@ -519,7 +519,7 @@ attr(,"row.names")
 <span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>objeto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 58 45 59 65 62 47 46 48 43 54
+<pre><code> [1] 36 54 50 51 46 59 57 62 37 48
 attr(,"class")
 [1] "minha_classe"
 attr(,"dist")
@@ -672,7 +672,7 @@ see '?methods' for accessing help and source code</code></pre>
 <span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>objeto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 50 43 45 59 54 54 62 58 34 47
+<pre><code> [1] 50 49 38 40 49 43 54 39 45 51
 attr(,"class")
 [1] "minha_classe"
 attr(,"dist")
@@ -687,7 +687,7 @@ attr(,"dist")
 <span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(objeto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   34.0    45.5    52.0    50.6    57.0    62.0 </code></pre>
+  38.00   40.75   47.00   45.80   49.75   54.00 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>summary.minha_classe <span class="ot">=</span> \(x){</span>
 <span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"O máximo é"</span>,<span class="fu">max</span>(x))</span>
@@ -695,11 +695,11 @@ attr(,"dist")
 <span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(objeto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>O máximo é 62</code></pre>
+<pre><code>O máximo é 54</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">gerar</span>(n,LAMBDA))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>O máximo é 65</code></pre>
+<pre><code>O máximo é 57</code></pre>
 </div>
 </div>
 </section>
@@ -914,7 +914,7 @@ Slot "age":
 <div class="cell-output cell-output-stdout">
 <pre><code>An object of class "minha_classe_S4"
 Slot "amostra":
- [1] 71 47 39 49 46 57 43 54 48 46</code></pre>
+ [1] 42 55 47 46 54 51 43 37 51 50</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setMethod</span>(<span class="st">"summary"</span>,<span class="at">signature =</span> <span class="st">"minha_classe_S4"</span>,<span class="at">definition =</span> <span class="cf">function</span>(object){</span>
 <span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">max</span>(object<span class="sc">@</span>amostra)</span>
@@ -922,7 +922,7 @@ Slot "amostra":
 <span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb90-5"><a href="#cb90-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(amostra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 71</code></pre>
+<pre><code>[1] 55</code></pre>
 </div>
 </div>
 </section>
@@ -1022,7 +1022,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/leonardobfn\.github\.io\/webpage\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
