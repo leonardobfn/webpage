@@ -102,6 +102,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CVT0T86G7F"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CVT0T86G7F', { 'anonymize_ip': true});
+</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
@@ -455,11 +464,11 @@ NULL</code></pre>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>,<span class="dv">20</span>,<span class="at">replace=</span>T)</span>
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">media</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 53.6</code></pre>
+<pre><code>[1] 57</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 53.6</code></pre>
+<pre><code>[1] 57</code></pre>
 </div>
 </div>
 <ul>
@@ -543,7 +552,7 @@ NULL</code></pre>
         x[sample.int(length(x), size, replace, prob)]
     }
 }
-&lt;bytecode: 0x00000206bf685cf0&gt;
+&lt;bytecode: 0x00000167b7a86b70&gt;
 &lt;environment: namespace:base&gt;</code></pre>
 </div>
 </div>
@@ -1110,7 +1119,7 @@ attr(,"condition")
 <span id="cb100-2"><a href="#cb100-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb100-3"><a href="#cb100-3" aria-hidden="true" tabindex="-1"></a><span class="fu">do.call</span>(<span class="at">what =</span> <span class="cf">function</span>(x) <span class="fu">var</span>(x)<span class="sc">|&gt;</span> <span class="fu">sqrt</span>(),<span class="at">args =</span> y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 1.042902</code></pre>
+<pre><code>[1] 1.001266</code></pre>
 </div>
 </div>
 <div class="cell">
