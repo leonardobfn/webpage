@@ -1,3 +1,6 @@
 [submodule "Cursos/Probabilidade_Estatistica"]
 	path = Cursos/Probabilidade_Estatistica
 	url = https://github.com/leonardobfn/Probabilidade_Estatistica.git
+[submodule "Cursos/Introducao_R"]
+	path = Cursos/Introducao_R
+	url = https://github.com/leonardobfn/Introducao_R
