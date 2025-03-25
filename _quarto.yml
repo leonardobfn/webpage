@@ -3,8 +3,10 @@ project:
   
 website:
   title: ""
+  google-analytics: "G-CVT0T86G7F"
   page-navigation: true
   sidebar: 
+    background: "#f8f9fa"
     style: floating
     search: true
     contents:
@@ -64,7 +66,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    #theme: cosmo
     css: styles.css
     toc: true
 
